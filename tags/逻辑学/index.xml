@@ -1,117 +1,266 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>逻辑学 on xgDebug's Blog</title><link>http://www.xgdebug.com/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/</link><description>Recent content in 逻辑学 on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 05 Aug 2023 15:11:00 +0000</lastBuildDate><atom:link href="http://www.xgdebug.com/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>一些常见的谬误类型和它们的解释</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E8%B0%AC%E8%AF%AF%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E8%A7%A3%E9%87%8A/</link><pubDate>Sat, 05 Aug 2023 15:11:00 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E8%B0%AC%E8%AF%AF%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E8%A7%A3%E9%87%8A/</guid><description>&lt;ol>
-&lt;li>陈述错误谬误（Fallacy of Assertion）：在这种谬误中，陈述没有提供充分的证据或支持，而只是以断言的方式宣称事实。例如：&amp;ldquo;每个人都知道我是最聪明的人。&amp;rdquo;&lt;/li>
-&lt;li>因果关系谬误（Fallacy of Causation）：这种谬误在于错误地假设两个事件之间的因果关系。例如：&amp;ldquo;我吃了草莓冰淇淋，所以导致天气变冷了。&amp;rdquo; 这个谬误忽略了其他可能影响天气的因素。&lt;/li>
-&lt;li>诉诸个人攻击谬误（Ad Hominem Fallacy）：这种谬误中，论点的论证者受到攻击，而不是对论点本身进行合理的辩论。例如：&amp;ldquo;这个计划是不明智的，因为它是由一个愚蠢的人提出的。&amp;rdquo;&lt;/li>
-&lt;li>诉诸情感谬误（Appeal to Emotion）：在这种谬误中，试图通过激发情感而不是通过逻辑和证据来说服人们接受某个论点。例如：&amp;ldquo;支持这个政策，让我们一起创造更美好的未来。&amp;rdquo;&lt;/li>
-&lt;li>诉诸无效权威谬误（Appeal to Invalid Authority）：这种谬误中，试图使用无效或不相关的权威来支持论点。例如：&amp;ldquo;名人 X 喜欢这个产品，所以它一定是好的。&amp;rdquo;&lt;/li>
-&lt;li>假设性谬误（Hasty Generalization）：这种谬误在于根据有限的证据或样本做出过于笼统的结论。例如：&amp;ldquo;我见过两个人不喜欢这部电影，所以所有人都不会喜欢它。&amp;rdquo;&lt;/li>
-&lt;li>误导性比较谬误（False Analogy）：这种谬误中，通过进行不合适或不恰当的比较来支持论点。例如：&amp;ldquo;让孩子吃蔬菜就像给宠物狗喂食一样，都是为了它们的好。&amp;rdquo;&lt;/li>
-&lt;li>链式谬误（Chain of Fallacy）：这种谬误中，一个错误的前提导致了一系列错误的结论。例如：&amp;ldquo;如果我们不改变教育体系，我们的经济将崩溃；如果经济崩溃，我们的社会就会崩溃；所以，我们必须改变教育体系。&amp;rdquo; 这里的前提和结论之间并没有合理的逻辑联系。&lt;/li>
-&lt;li>形而上学谬误（Metaphysical Fallacy）：这种谬误中，从语言或词汇的含义出发，得出了不正确的结论。例如：&amp;ldquo;金钱是一种形式的能量，所以如果我拥有足够的金钱，我就可以控制一切。&amp;rdquo;&lt;/li>
-&lt;li>诉诸无知谬误（Appeal to Ignorance）：这种谬误中，认为因为某件事情无法被证明为真或假，所以它一定是真的或假的。例如：&amp;ldquo;没有人能够证明外星人的存在，所以外星人一定存在。&amp;rdquo;&lt;/li>
-&lt;li>拉锯谬误（False Dilemma 或 Either/Or Fallacy）：这种谬误中，将问题简化为只有两种选择，而忽略了其他可能的选项。例如：&amp;ldquo;你要么支持 A 党，要么支持 B 党，没有其他选择。&amp;rdquo;&lt;/li>
-&lt;li>没有中间地带谬误（False Continuum 或 Continuum Fallacy）：这种谬误中，错误地认为两个极端之间存在无限的连续性，而忽略了可能存在的中间地带。例如：&amp;ldquo;如果你不是 100%赞同我的观点，那你就是反对我的。&amp;rdquo;&lt;/li>
-&lt;li>群体谬误（Fallacy of Composition 和 Fallacy of Division）：群体谬误涉及将个体的特征应用到整个群体，或者将群体的特征应用到每个个体。例如：&amp;ldquo;这个学校的足球队很强大，所以这个学校的每个学生都是优秀的运动员。&amp;rdquo;&lt;/li>
-&lt;li>投机谬误（Gambler&amp;rsquo;s Fallacy）：这种谬误中，错误地认为随机事件之间存在一种必然的平衡，以为之前的结果会影响未来的结果。例如：&amp;ldquo;在投掷硬币时连续出现了 5 次正面，所以下一次一定会是反面。&amp;rdquo;&lt;/li>
-&lt;li>历史谬误（Fallacy of Past Belief）：在历史谬误中，认为过去的信仰或观点一定是正确的。例如：&amp;ldquo;我们的祖先相信地球是平的，所以地球一定是平的。&amp;rdquo;&lt;/li>
-&lt;li>答案就在那里谬误（Fallacy of Assuming the Conclusion）：这种谬误中，通过将结论作为前提来支持自己的论点。例如：&amp;ldquo;这本书是真理的圣经，因为它说的都是真理。&amp;rdquo;&lt;/li>
-&lt;li>自相矛盾谬误（Fallacy of Self-Contradiction 或 Contradictory Premises）：这种谬误中，论证的前提之间相互矛盾，导致结论无效。例如：&amp;ldquo;我永远不会说谎，我现在在说谎。&amp;rdquo;&lt;/li>
-&lt;li>误导性问题谬误（Fallacy of Loaded Question）：在这种谬误中，提问问题本身带有误导性，使被问者很难回答而不陷入陷阱。例如：&amp;ldquo;你什么时候停止打你的妻子？&amp;rdquo;&lt;/li>
-&lt;/ol></description></item><item><title>在搞清楚用户的问题之前就动手开发，这是我多次犯过的大忌。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link><pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</guid><description>&lt;p>1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p>
-&lt;p>2. If there was a solution, would they buy it?&lt;/p>
-&lt;p>3. Would they buy it from us?&lt;/p>
-&lt;p>4. Can we build a solution for that problem?” The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.&lt;/p></description></item><item><title>资本家必须在一定的工作时长后辞退那些老员工。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E8%B5%84%E6%9C%AC%E5%AE%B6%E5%BF%85%E9%A1%BB%E5%9C%A8%E4%B8%80%E5%AE%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%95%BF%E5%90%8E%E8%BE%9E%E9%80%80%E9%82%A3%E4%BA%9B%E8%80%81%E5%91%98%E5%B7%A5/</link><pubDate>Mon, 26 Jun 2023 08:49:36 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E8%B5%84%E6%9C%AC%E5%AE%B6%E5%BF%85%E9%A1%BB%E5%9C%A8%E4%B8%80%E5%AE%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%95%BF%E5%90%8E%E8%BE%9E%E9%80%80%E9%82%A3%E4%BA%9B%E8%80%81%E5%91%98%E5%B7%A5/</guid><description>&lt;p>根据博弈论来分析，员工对于公司的贡献都是抛物线，而工资水平却一直在上涨。这也是为什么互联网企业都 35 岁退休的原因&lt;/p></description></item><item><title>你能够听到、看到、接触到的，只有幸存者。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E4%BD%A0%E8%83%BD%E5%A4%9F%E5%90%AC%E5%88%B0%E7%9C%8B%E5%88%B0%E6%8E%A5%E8%A7%A6%E5%88%B0%E7%9A%84%E5%8F%AA%E6%9C%89%E5%B9%B8%E5%AD%98%E8%80%85/</link><pubDate>Mon, 26 Jun 2023 08:49:35 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E4%BD%A0%E8%83%BD%E5%A4%9F%E5%90%AC%E5%88%B0%E7%9C%8B%E5%88%B0%E6%8E%A5%E8%A7%A6%E5%88%B0%E7%9A%84%E5%8F%AA%E6%9C%89%E5%B9%B8%E5%AD%98%E8%80%85/</guid><description>&lt;p>倒霉的人被竞争淘汰了发不了声，你看不到他们的心路历程和思想感悟&lt;/p></description></item><item><title>原命题：只要努力工作，你就会成功。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%8E%9F%E5%91%BD%E9%A2%98%E5%8F%AA%E8%A6%81%E5%8A%AA%E5%8A%9B%E5%B7%A5%E4%BD%9C%E4%BD%A0%E5%B0%B1%E4%BC%9A%E6%88%90%E5%8A%9F/</link><pubDate>Tue, 20 Jun 2023 13:13:23 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%8E%9F%E5%91%BD%E9%A2%98%E5%8F%AA%E8%A6%81%E5%8A%AA%E5%8A%9B%E5%B7%A5%E4%BD%9C%E4%BD%A0%E5%B0%B1%E4%BC%9A%E6%88%90%E5%8A%9F/</guid><description>&lt;p>陈述 1 ：如果你已经成功了，那说明你工作很努力。陈述 2 ：如果工作不努力，你就不会成功。陈述 3 ：如果你没成功，那说明你工作不努力。上述哪句陈述是原命题的逻辑推论呢？&lt;/p></description></item><item><title>因为语言问题导致的逻辑漏洞</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E8%AF%AD%E8%A8%80%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</link><pubDate>Tue, 20 Jun 2023 13:13:22 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E8%AF%AD%E8%A8%80%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</guid><description>&lt;p>所有地方的赌博活动都应该被合法化，因为我们根本无法避免这件事。赌博就是人生不可分割的一部分。只要一坐到方向盘后面或者说出自己的结婚誓言，我们就是在赌博。”这里的“赌博”就是一个模棱两可的词。。&lt;/p></description></item><item><title>很多人之所以讨厌逻辑，是因为他们说的话大都禁不起推敲。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E4%B9%8B%E6%89%80%E4%BB%A5%E8%AE%A8%E5%8E%8C%E9%80%BB%E8%BE%91%E6%98%AF%E5%9B%A0%E4%B8%BA%E4%BB%96%E4%BB%AC%E8%AF%B4%E7%9A%84%E8%AF%9D%E5%A4%A7%E9%83%BD%E7%A6%81/</link><pubDate>Tue, 20 Jun 2023 13:13:22 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E4%B9%8B%E6%89%80%E4%BB%A5%E8%AE%A8%E5%8E%8C%E9%80%BB%E8%BE%91%E6%98%AF%E5%9B%A0%E4%B8%BA%E4%BB%96%E4%BB%AC%E8%AF%B4%E7%9A%84%E8%AF%9D%E5%A4%A7%E9%83%BD%E7%A6%81/</guid><description>&lt;p>学会识别和应对逻辑漏洞的一个好处在于，它可以让我们不至于在不知不觉中陷入逻辑误区。“感觉”某个逻辑有问题是一回事，能具体指出到底是哪儿出了问题是另一回事。这就好比一个人感觉身体有点不舒服，但却说不出到底自己得了什么病一样，只有看了医生，一切才会真相大白。&lt;/p></description></item><item><title>我没说瞎话，我只是稍微夸大了一下事实罢了。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E6%B2%A1%E8%AF%B4%E7%9E%8E%E8%AF%9D%E6%88%91%E5%8F%AA%E6%98%AF%E7%A8%8D%E5%BE%AE%E5%A4%B8%E5%A4%A7%E4%BA%86%E4%B8%80%E4%B8%8B%E4%BA%8B%E5%AE%9E%E7%BD%A2%E4%BA%86/</link><pubDate>Tue, 20 Jun 2023 13:13:21 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E6%B2%A1%E8%AF%B4%E7%9E%8E%E8%AF%9D%E6%88%91%E5%8F%AA%E6%98%AF%E7%A8%8D%E5%BE%AE%E5%A4%B8%E5%A4%A7%E4%BA%86%E4%B8%80%E4%B8%8B%E4%BA%8B%E5%AE%9E%E7%BD%A2%E4%BA%86/</guid><description>&lt;p>“说瞎话”和“夸大事实”之间有何不同？&lt;/p></description></item><item><title>因为“糟糕”的论据而导致的逻辑漏洞</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E7%B3%9F%E7%B3%95%E7%9A%84%E8%AE%BA%E6%8D%AE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</link><pubDate>Tue, 20 Jun 2023 13:13:20 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E7%B3%9F%E7%B3%95%E7%9A%84%E8%AE%BA%E6%8D%AE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</guid><description>&lt;p>“威利先生的办公桌总是乱七八糟的，因为他这人能力不行。桌面乱说明他思维混乱，这只能说明一件事：他不胜任自己的工作。”&lt;br>
-上面这句话其实很简单：“能力不行，所以桌面乱；因为桌面乱，所以无法胜任自己的工作。” ·&lt;br>
-反面论据&lt;br>
-当我们仅仅因为一件事“没有被证明是错的”就断定它是对的，或者“没有被证明是对的”就断定它是错的，我们的判断就出现了逻辑漏洞。&lt;br>
-比如说，虽然迄今为止还没人找到亚特兰蒂斯存在的证据，但这并不能说明亚特兰蒂斯就不存在。&lt;/p>
-&lt;p>以偏概全当我们急于做出总结，只根据一小撮样本就得出某个结论时，就容易犯以偏概全的错误。“我去过凤凰城三次，每次那里都在下雨，所以凤凰城肯定是一座多雨的城市。”（事实上，凤凰城是个气候干燥的城市。）&lt;/p>
-&lt;p>“因为公司里的实习生都没有抱怨过薪水太低，所以我们可以自信地说，公司里的实习生对自己的薪水都很满意。”&lt;br>
-· 个人偏好&lt;br>
-当我们判断一件事情时，只从个人情绪出发，而不考虑实际情况，我们就是在犯个人偏好错误。“你怎么能向茜拉咨询婚姻问题呢？难道你不知道她曾因为邮件诈骗而坐过牢吗？”&lt;/p>
-&lt;p>· 毒水井&lt;br>
-当我们过于从一个人的背景，尤其是国籍、种族、性别等，来判断其言论时，我们的逻辑就会出问题。“你说的话怎么能算数呢？你是从悉尼来的，当然会说悉尼比墨尔本好。”&lt;/p>
-&lt;p>· 你也好不到哪儿去&lt;/p>
-&lt;p>如果我们因为一个人也犯了跟我们一样的错误，就拒绝接受对方的观点，那我们的逻辑也会出问题。父亲：“孩子，你不该喝酒。喝酒伤肝，整天醉醺醺的怎么行？”儿子：“老爸，你现在手里不就拿着酒杯吗？”虽然这孩子的父亲也在喝酒，但这并不能说明他对儿子的建议是错误的。&lt;/p>
-&lt;p>· 红鲱鱼&lt;/p>
-&lt;p>当我们在谈话中试图通过转移话题来回避自己的弱点时，我们就是在犯“红鲱鱼”错误。（上司对下属）：“别跟我说工资太低。我像你这么大的时候，一个星期才赚 100 美元。”“上司年轻时收入低”这个事实跟当前的对话无关，因为上司年轻时工资低不等于下属就不应该涨工资。&lt;/p>
-&lt;p>强求不相关的目标或功能&lt;br>
-当我们因为某个规定或计划不能满足某个不相关的目标而拒绝接受它时，我们就是在犯这种逻辑错误。皮特：“你真的以为学习逻辑就能解决这个世界的问题吗？”蒂凡尼：“应该不能。”皮特：“那我们干吗浪费时间学它呢？” · 随心所欲当我们因为自己极其希望某件事是真的（或假的）就去这么假定时，我们就是在犯“随心所欲”的逻辑错误。“不管我们的球队之前表现怎么样，这次我们都会在第一轮比赛中打败卫冕冠军。我们的队员都很有信心，铆足了劲儿要大获全胜。”&lt;/p>
-&lt;p>· 倚老卖老当我们想要凭资历、传统等因素，而非凭事实或证据等来说服对手时，我们就是在犯这种逻辑错误。“蒂姆，去安纳波利斯这件事你别太当真了！你们家祖祖辈辈 —— 包括你的父亲、兄弟、祖父、叔父等等 —— 一直都是当兵的，而且以后也会一直留在部队。所以小伙子，你的未来在西点军校！” · 诉诸公众观点当我们因为大家都认同某个观点而去接受或支持它时，那就是在犯这个逻辑错误。“我要给税法修正案投赞成票。根据最近一项民意测验的结果，在 25 岁以下的登记选民中，超过三分之二的人都支持修正案。” · 装可怜所谓装可怜，就是利用对方的同情心，而非事实证据，来说服对方的方式。（茜拉对约翰说）“你一定要给孤儿院捐款。这些孩子生下来就不知道自己的生身父母是谁，更不要说衣食无忧了。”&lt;/p></description></item><item><title>因为错误的假设而导致的逻辑漏洞</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%81%87%E8%AE%BE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</link><pubDate>Tue, 20 Jun 2023 13:13:20 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%81%87%E8%AE%BE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</guid><description>&lt;p>· 非此即彼不能因为摆在面前的只有两个选择，就认为其中一个必定是对的。很多事情都不是“非此即彼”或“非黑即白”的。“既然不支持自由贸易，那你一定是支持保护主义了！”&lt;/p>
-&lt;p>· 中间值&lt;br>
-很多人喜欢在两个选择之间取中间值，因为它远离任何一个极端，所以有时这种做法也被称为中庸主义。“初中老师相信，学校应该安排固定的课程表。而家长们则认为，学生应该可以自由选课。所以最好的办法就是把二者结合起来。”&lt;/p>
-&lt;p>· 大杂烩&lt;br>
-把局部是正确的东西拼在一起，未必就能得到一个正确的结果。“布拉德是个不错的年轻男士，珍妮特是个优秀的女士，他们二人一定是完美的一对儿。”婚姻并不是“1+1=2”那么简单，两个优秀的男女未必能成为一对优秀的夫妻，所以局部正确未必意味着总体就一定正确。&lt;/p>
-&lt;p>· 局部错误&lt;br>
-不能因为整体是对的，就断定其中的每一部分都是正确的。打个比方，一个球队伟大，并不意味着该球队所有的球员都同样伟大。“因为车子很重，所以车子上的所有配件都很重。”显然，这句话并不成立！&lt;/p>
-&lt;p>· 连续性漏洞&lt;br>
-有时人们会觉得一些差异太过渺小，不值得重视，这时就会出现连续性漏洞。“每天学一个新单词，提升你的词汇量。拿本中型词典，从头开始背。每天背一个新单词，慢慢你就能翻到最后一页。而且更重要的是，你还能学会英语中几乎所有重要单词。但是有几个人能做到这点呢？”&lt;/p>
-&lt;p>· 以点攻击面&lt;br>
-很多人相信，被归纳的东西很容易被驳倒，因为只要找出一个例外就够了。比如说，一家电影院宣称不允许 18 岁以下的孩子入场，但这并不意味着父母不能带着 7 个月大的婴儿进去看电影。学生甲：“众所周知，吸烟会缩短人的寿命。”学生乙：“是的，可我曾祖父每天一包烟，现在都 90 多岁了，还是活得好好的，这该怎么解释呢？”找出例外并不意味着归纳有误 —— 凡事都有例外，但例外总是例外，只是小概率事件。&lt;/p>
-&lt;p>· 扭曲&lt;br>
-所谓扭曲，就是指故意歪曲对手的观点，从而达到驳倒对手的目的。正方：“要想提升发展中国家的教育水平，唯一的办法就是多提供一些物质支持，比如说教科书。”反方：“你的意思是，不论砍掉多少棵树，都要去印更多课本吗？”&lt;/p>
-&lt;p>· 错误的类比&lt;br>
-我们不能因为两件事在某一方面或某几个方面比较相似（或者不相似），就断定它们在其他方面也相似（或者不相似）。“说到人工鱼饵，我最喜欢的就是拉帕拉鱼饵。今年夏天的时候，我每次用它都能钓到很多小嘴鲈鱼，所以我秋天去钓鳟鱼时一定还会用它。”&lt;/p>
-&lt;p>· 因果错误&lt;br>
-当我们随意把某件事情归因于某个方面时，我们就是在犯因果错误。“听说有钱人工作都很努力，所以我要努力工作，让自己变成有钱人。”的确，努力工作可能会让一个人变得富有（至少从金钱角度来说），但它只是其中一个因素而已。我们不能武断地认为只靠努力工作就足以让一个穷光蛋变成有钱人。&lt;/p>
-&lt;p>· 多米诺错误&lt;br>
-我们不能因为一件事会引发另一件事，就断定它会引发随后的一系列事件。多米诺错误有时也被称作“链式反应错误”。“我并不反对给无家可归的人提供免费食物，但既然提供免费食物，我们就会需要提供免费衣服，然后是免费住宿。很快，我们就要给他们提供固定的年薪了。”&lt;/p>
-&lt;p>· 赌徒的谬误&lt;br>
-当我们不是根据事实，而只是根据之前发生的事情来判断未来某件事情发生的概率时 —— 而且这两件事完全独立，毫不相干 —— 我们就是在犯赌徒的谬误。（父母对医生说）“因为我们已经有三个男孩了，所以我相信，下一个肯定是女孩。”上一次生育的结果跟下一次的生育结果其实毫无关系，可以肯定的是，这一次生儿生女的概率仍然是各占一半。&lt;/p>
-&lt;p>· 错误的精确&lt;br>
-所谓错误的精确，就是指随意举出一些看似精确但其实毫无事实根据的数字来证明自己的观点。“在莎士比亚的时代，每四个人中就有一个人不喜欢莎士比亚的戏剧。”说话人是不可能获取这么精确的数据的，尤其是四百多年前的莎士比亚时代的数据。&lt;/p></description></item><item><title>推理过程中的逻辑错误</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E6%8E%A8%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%80%BB%E8%BE%91%E9%94%99%E8%AF%AF/</link><pubDate>Tue, 20 Jun 2023 13:13:19 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E6%8E%A8%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%80%BB%E8%BE%91%E9%94%99%E8%AF%AF/</guid><description>&lt;p>· 断定结果的错误&lt;br>
-我们不能因为“当 A 成立时， B 就成立”，就断定“当 B 成立时， A 就成立”。这种错误也被称为“转化错误”。“每次去度假时，我都会感觉很放松。所以当我感觉很放松时，我就一定是在度假。”度假时放松不代表只有在度假时才会放松，在家时可能会放松，吃晚饭时可能会放松，跟朋友在一起聊天时，也可能会感到放松 …… 所以上述说法的谬误显而易见。&lt;/p>
-&lt;p>· 否定前项&lt;br>
-我们不能因为“只要 A 成立， B 就成立”，就断定“只要 A 不成立， B 就不成立”。“每次一下雨，地面就变湿。昨夜没下雨，所以地面不可能变湿。”毫无疑问，很多情况都会让地面变湿，不一定非要下雨。&lt;/p></description></item><item><title>避免不恰当的推论</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E9%81%BF%E5%85%8D%E4%B8%8D%E6%81%B0%E5%BD%93%E7%9A%84%E6%8E%A8%E8%AE%BA/</link><pubDate>Tue, 20 Jun 2023 13:13:18 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E9%81%BF%E5%85%8D%E4%B8%8D%E6%81%B0%E5%BD%93%E7%9A%84%E6%8E%A8%E8%AE%BA/</guid><description>&lt;p>首先，我们一定要分清什么是推论，什么是假设。所谓假设，就是一段论述的前提部分，它是论述过程中不可分割的一部分。&lt;/p></description></item><item><title>现实中“傻子”实在太多了，而且他们根本意识不到自己的愚蠢</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%82%BB%E5%AD%90%E5%AE%9E%E5%9C%A8%E5%A4%AA%E5%A4%9A%E4%BA%86%E8%80%8C%E4%B8%94%E4%BB%96%E4%BB%AC%E6%A0%B9%E6%9C%AC%E6%84%8F%E8%AF%86%E4%B8%8D/</link><pubDate>Sun, 18 Jun 2023 03:42:37 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%82%BB%E5%AD%90%E5%AE%9E%E5%9C%A8%E5%A4%AA%E5%A4%9A%E4%BA%86%E8%80%8C%E4%B8%94%E4%BB%96%E4%BB%AC%E6%A0%B9%E6%9C%AC%E6%84%8F%E8%AF%86%E4%B8%8D/</guid><description>&lt;p>归根结底是因为他们不了解自己的利益之所在，比如瘾君子、工作狂、被错误利益关系纠缠的人、支持大政府的人、出版商、书评人或某些令人尊敬的官员，他们都没有意识到他们的行为正在损害自身的利益&lt;/p></description></item><item><title>很多人都会介意自己的记性不好，却很少有人在意自己的判断能力。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E9%83%BD%E4%BC%9A%E4%BB%8B%E6%84%8F%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%E5%8D%B4%E5%BE%88%E5%B0%91%E6%9C%89%E4%BA%BA%E5%9C%A8%E6%84%8F/</link><pubDate>Sun, 18 Jun 2023 03:42:36 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E9%83%BD%E4%BC%9A%E4%BB%8B%E6%84%8F%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%E5%8D%B4%E5%BE%88%E5%B0%91%E6%9C%89%E4%BA%BA%E5%9C%A8%E6%84%8F/</guid><description>&lt;p>指人们往往会更加留意那些自己需要或喜欢的信息，而忽视真实的信息 —— 他们更愿意看到自己“想要看到的”世界，而不是真实客观的世界。&lt;/p></description></item><item><title>苏格拉底的警告</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E7%9A%84%E8%AD%A6%E5%91%8A/</link><pubDate>Sun, 18 Jun 2023 03:42:36 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E7%9A%84%E8%AD%A6%E5%91%8A/</guid><description>&lt;p>每一个人，无论多么的位高权重，或者拥有多少财富，都有头脑混乱思路不清、甚至失去理智的时候&lt;/p></description></item><item><title>下次查尔斯王子结婚时，一定要提前把教皇送进医院。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%8B%E6%AC%A1%E6%9F%A5%E5%B0%94%E6%96%AF%E7%8E%8B%E5%AD%90%E7%BB%93%E5%A9%9A%E6%97%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E6%8F%90%E5%89%8D%E6%8A%8A%E6%95%99%E7%9A%87%E9%80%81%E8%BF%9B%E5%8C%BB/</link><pubDate>Sun, 18 Jun 2023 03:42:35 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%8B%E6%AC%A1%E6%9F%A5%E5%B0%94%E6%96%AF%E7%8E%8B%E5%AD%90%E7%BB%93%E5%A9%9A%E6%97%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E6%8F%90%E5%89%8D%E6%8A%8A%E6%95%99%E7%9A%87%E9%80%81%E8%BF%9B%E5%8C%BB/</guid><description>&lt;p>1981 年：查尔斯王子结婚；利物浦足球队拿到欧洲杯冠军；澳大利亚输掉灰烬杯板球锦标赛；教皇去世。 2005 年：查尔斯王子结婚；利物浦足球队拿到欧洲杯冠军；澳大利亚输掉灰烬杯板球锦标赛；教皇去世&lt;/p></description></item><item><title>我们总是会有选择地去理解一些事情，以此来满足自己的需求</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E4%BB%AC%E6%80%BB%E6%98%AF%E4%BC%9A%E6%9C%89%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8E%BB%E7%90%86%E8%A7%A3%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%E4%BB%A5%E6%AD%A4%E6%9D%A5%E6%BB%A1%E8%B6%B3/</link><pubDate>Sun, 18 Jun 2023 03:42:35 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E4%BB%AC%E6%80%BB%E6%98%AF%E4%BC%9A%E6%9C%89%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8E%BB%E7%90%86%E8%A7%A3%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%E4%BB%A5%E6%AD%A4%E6%9D%A5%E6%BB%A1%E8%B6%B3/</guid><description>&lt;p>打个比方，如果我们内心深处“希望”或“需要”一件事情是“这样”或者“那样”的，我们就会有意识地选择、删减、排列自己所搜集的信息，使得这件事情变成我们所希望或需要的样子。&lt;/p></description></item><item><title>光环效应</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%85%89%E7%8E%AF%E6%95%88%E5%BA%94/</link><pubDate>Sun, 18 Jun 2023 03:42:34 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%85%89%E7%8E%AF%E6%95%88%E5%BA%94/</guid><description>&lt;p>所谓“光环效应”，就是指人们总是喜欢根据某起单一事件或某个单一特质来积极地看待某个人、某个地点或某个事物。&lt;/p></description></item><item><title>常见的24个逻辑谬误</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%B8%B8%E8%A7%81%E7%9A%8424%E4%B8%AA%E9%80%BB%E8%BE%91%E8%B0%AC%E8%AF%AF/</link><pubDate>Sun, 18 Jun 2023 03:42:33 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%B8%B8%E8%A7%81%E7%9A%8424%E4%B8%AA%E9%80%BB%E8%BE%91%E8%B0%AC%E8%AF%AF/</guid><description>&lt;p>歪曲观点&lt;/p>
-&lt;p>直译：稻草假人&lt;/p>
-&lt;p>又做：欲加之罪&lt;/p>
-&lt;p>歪曲他人的论据以使其变得更易受抨击。&lt;/p>
-&lt;p>通过夸大、歪曲，又甚至完全假造对手的论据，让自身的立场呈现更多的合理性。但坦诚理性的辩论会被这种实质是欺诈的论述破坏。&lt;/p>
-&lt;p>例：小明说：国家应当向医疗和教育领域投入更多的资金。小亮回答：太可怕了，你居然这么仇恨国家，想要通过减少国防开支，让我们的军队手无寸铁而无法保卫国家。&lt;/p>
-&lt;p>注释：英文中这条谬误的原文“strawman”，直译“稻草假人”。因为稻草人不是真人，所以它不会在战斗中做出任何抵抗，并且很容易被击倒。在英国这个谬误又常被称为“莎莉姨妈”（Aunt Sally）。&lt;br>
-归因错误&lt;/p>
-&lt;p>因事物之间或真实存在、或假想出来的关联关系，得出两者之间存在因果关系的结论。&lt;/p>
-&lt;p>因为事物之间具有关联，又或仅仅是因为两者同时存在，即错认为两者间具有因果关系。不同事物可能同时或先后发生，但这并非意味其中一件事是另一件事的起因。有时候两者之间的关联纯粹只是巧合，甚至有可能两件事起因都是相同的。&lt;/p>
-&lt;p>例：小明指着一张表格说，过去几个世纪以来全球气温一直在升高，同时海盗的数量一直在减少，所以我们可以得出结论：海盗的存在降低了全球气温，全球变暖是一场骗局。&lt;/p>
-&lt;p>情感绑架&lt;/p>
-&lt;p>通过操弄情绪来替代真正有效的论据。&lt;/p>
-&lt;p>情感绑架包括操弄恐惧、嫉妒、憎恨、怜悯、骄傲，等等。有一件很重要的事我们必须知道：有时候一个符合逻辑的论据也许会带动强烈的情绪层面的反馈。但抛弃逻辑，只靠诉诸情绪来掩盖自身观点没有强有力的证据这一事实，只会带来更多的问题和谬误。每个心智正常的人都会为情绪所影响，所以情感绑架是很常见也有效的辩论策略，但本质上这是一种错谬并虚伪的论述方式，且会让辩论另一方的情绪失控合理化。&lt;/p>
-&lt;p>例：小亮不喜欢喝羊杂汤，但他父亲让他“想想非洲贫困国家里那些被生生饿毙的小孩，那些可怜的娃什么都吃不上”。&lt;/p>
-&lt;p>谬导致误&lt;/p>
-&lt;p>直译：谬误谬误&lt;/p>
-&lt;p>又做：将错就错&lt;/p>
-&lt;p>因为论述水平很差，又或者论述中有谬误，就判定这结论一定是错误的。&lt;/p>
-&lt;p>谬误的观点一定会导致谬误的结论是不符合逻辑的结论：即便是错误的论据也完全是有可能被人用合理的逻辑阐述出来的；同样的，在辩论的过程中以错误的论据来证明正确的观点，或是在论述过程中参杂着逻辑谬误也是有可能的。&lt;/p>
-&lt;p>例：小丽发现小红提倡健康饮食仅仅是因为某野鸡营养学家提出“健康饮食是一种流行生活方式“这样不靠谱的理由，但因此小丽就认为“需要健康饮食这个结论是错误的，每天暴饮暴食是没问题的”，这也是谬误的。&lt;/p>
-&lt;p>滑坡推断&lt;/p>
-&lt;p>如果 A 发生了，那么最终坏事 Z 也会发生，所以我们不能让 A 发生。&lt;/p>
-&lt;p>问题在于，这种论证方式避开了去讨论当前的问题 A，取而代之的是将讨论中心转移到假想出来的极端假设 Z。同时还没有证据能证明假设的 Z 一定会因为 A 的发生而发生。此谬误也是利用恐惧来进行情感绑架的一种形式，进而以未经证实的猜想来破坏当前讨论的公正性。&lt;/p>
-&lt;p>例：小强断言如果我们允许同性婚姻，接下来会发生的事情就是我们会允许乱伦婚姻，甚至允许人和猴子结婚，人和汽车结婚。&lt;/p>
-&lt;p>人身攻击&lt;/p>
-&lt;p>通过抨击对手的个人品行或其他个人特质，如身高外貌、社会地位等等，来贬损对手的论据。&lt;/p>
-&lt;p>人身攻击既可以是在大庭广众下的公然抨击，也可以是隐晦地暗示对手的品格存疑，以此来抹黑对手的论据。人身攻击在论战中往往可以起到不战而屈人之兵的效果。&lt;/p>
-&lt;p>例：慧慧用无可争辩的实例展现了新的的纳税系统是更加公平合理值得推广的，大壮反问在场的人：“大家觉得是否应该相信一个未婚、有犯罪史、身上有狐臭的女人所说的任何一句话？”&lt;/p>
-&lt;p>彼此彼此&lt;/p>
-&lt;p>以批评来应对批评：为了避免正面回应批评，反将矛头指向提出批评的人本身。&lt;/p>
-&lt;p>此谬误原文是拉丁文“tu quoque”，意为“你不也一样（犯过错）”。这个逻辑谬误通常也以“批评他人的伪善”而广为人知。通常是用来转移注意力的障眼法，它能让必须为了辩护自己论据的一方，将关注点从自己身上转回到提出批评的人身上。&lt;/p>
-&lt;p>例：在医院里小美指出小丽没有严格遵医嘱导致身体状况恶化，小丽不反省为什么自己不遵医嘱，反倒是指责小美：“别说我了，你以前不是也不爱听医生的话，从不按时吃药！”&lt;/p>
-&lt;p>注释：在中国这条谬论也被称为“臭虫论”：鲁迅于 1933 年的文章《外国也有》中讽刺当时的中国人被批评时会声称其他国家也有同样的错误，来掩饰自己的错误。“凡中国所有的，外国也都有。外国人说中国多臭虫，但西洋也有臭虫。”&lt;br>
-个人局限&lt;/p>
-&lt;p>直译：自身怀疑&lt;/p>
-&lt;p>受自身水平所限，无法或很难理解某件事，由此得出这件事可能是错的、假的这样的结论。&lt;/p>
-&lt;p>针对某些复杂的话题的讨论，如“生物进化，物竞天择”，是需要一些对于这个话题有基本的知识储备才能进行的。仅仅因为不了解这些知识，即认定这些理论一定是错误的，这是一种谬误。&lt;/p>
-&lt;p>例：小明画了一条鱼和一个人，他不屑地问小强：“看看这两种生物，你真的认为我会愚蠢到相信一条鱼能随着时间推移，随机地以某种方式变成人类？”&lt;/p>
-&lt;p>片面特例&lt;/p>
-&lt;p>当某个观点被证明是错误的时候，更改讨论规则或用特例来开脱错误。&lt;/p>
-&lt;p>愚蠢的人类总是厌恶承认自己错了。他们非但不愿意通过更好的理解问题来改善自己的认知，有时甚至还会固执地想方设法证明自己的正确性。常见的方式就是在事后给自己的错误找个合理化的理由。找个理由来相信我们习惯的事物很容易，而真正难点在于别人证实了我们的错误后，我们如何检验自身的三观，修正自己的想法。&lt;/p>
-&lt;p>例：小明说自己能预知未来，当大家让他在合理科学的测试环境下他的预言时，他却退缩了。小明说你必须首先相信他有预知能力，才能看到他的预言生效。&lt;/p>
-&lt;p>预设提问&lt;/p>
-&lt;p>也叫“诱导提问”，在提问中预先置入假设，使对方无论如何作答都只能显得有问题。&lt;/p>
-&lt;p>预设式提问也叫诱导式提问，它在破坏理性的辩论方面特别有效，因为它们具有煽动性。而被提问者往往需要慌乱地被迫为自己做出辩护。&lt;/p>
-&lt;p>例如：小美和小丽都喜欢阿辉。某次小美在阿辉在场的时候故意用好奇的语气问小丽：“小美你现在是不是已经不赌钱了？”。&lt;/p>
-&lt;p>举证负担&lt;/p>
-&lt;p>认定举证的责任不在提出观点的人，而是在质疑观点的人。&lt;/p>
-&lt;p>谁主张，谁举证，不应该把举证的责任丢给那个对论据表示怀疑的人。对一个观点无法证伪或举出反例，并不能因此证明这个观点即是合理的，或由此认定这个观点是可信的。同时，我们又必须清楚 “事无绝对”，所以需要基于已知的证据来加强论据的可信度，因某个观点没有被证明过为由而驳斥它也是一种推论谬误。&lt;/p>
-&lt;p>例：小强说他能看到鬼魂，因为其他人都没法看到鬼魂，也就没法证明他的说法是不是真的。&lt;/p>
-&lt;p>一语双关&lt;/p>
-&lt;p>使用了双重含义的语句或含糊不清存有歧义的陈述来误导或歪曲事实。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>逻辑学 on xgDebug&#39;s Blog</title>
+    <link>https://www.xgdebug.com/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/</link>
+    <description>Recent content in 逻辑学 on xgDebug&#39;s Blog</description>
+    <image>
+      <title>xgDebug&#39;s Blog</title>
+      <url>https://www.xgdebug.com/images/avatar.jpg</url>
+      <link>https://www.xgdebug.com/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.135.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2023 15:11:00 +0000</lastBuildDate>
+    <atom:link href="https://www.xgdebug.com/tags/%E9%80%BB%E8%BE%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一些常见的谬误类型和它们的解释</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E8%B0%AC%E8%AF%AF%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Sat, 05 Aug 2023 15:11:00 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E8%B0%AC%E8%AF%AF%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E8%A7%A3%E9%87%8A/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;陈述错误谬误（Fallacy of Assertion）：在这种谬误中，陈述没有提供充分的证据或支持，而只是以断言的方式宣称事实。例如：&amp;ldquo;每个人都知道我是最聪明的人。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;因果关系谬误（Fallacy of Causation）：这种谬误在于错误地假设两个事件之间的因果关系。例如：&amp;ldquo;我吃了草莓冰淇淋，所以导致天气变冷了。&amp;rdquo; 这个谬误忽略了其他可能影响天气的因素。&lt;/li&gt;
+&lt;li&gt;诉诸个人攻击谬误（Ad Hominem Fallacy）：这种谬误中，论点的论证者受到攻击，而不是对论点本身进行合理的辩论。例如：&amp;ldquo;这个计划是不明智的，因为它是由一个愚蠢的人提出的。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;诉诸情感谬误（Appeal to Emotion）：在这种谬误中，试图通过激发情感而不是通过逻辑和证据来说服人们接受某个论点。例如：&amp;ldquo;支持这个政策，让我们一起创造更美好的未来。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;诉诸无效权威谬误（Appeal to Invalid Authority）：这种谬误中，试图使用无效或不相关的权威来支持论点。例如：&amp;ldquo;名人 X 喜欢这个产品，所以它一定是好的。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;假设性谬误（Hasty Generalization）：这种谬误在于根据有限的证据或样本做出过于笼统的结论。例如：&amp;ldquo;我见过两个人不喜欢这部电影，所以所有人都不会喜欢它。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;误导性比较谬误（False Analogy）：这种谬误中，通过进行不合适或不恰当的比较来支持论点。例如：&amp;ldquo;让孩子吃蔬菜就像给宠物狗喂食一样，都是为了它们的好。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;链式谬误（Chain of Fallacy）：这种谬误中，一个错误的前提导致了一系列错误的结论。例如：&amp;ldquo;如果我们不改变教育体系，我们的经济将崩溃；如果经济崩溃，我们的社会就会崩溃；所以，我们必须改变教育体系。&amp;rdquo; 这里的前提和结论之间并没有合理的逻辑联系。&lt;/li&gt;
+&lt;li&gt;形而上学谬误（Metaphysical Fallacy）：这种谬误中，从语言或词汇的含义出发，得出了不正确的结论。例如：&amp;ldquo;金钱是一种形式的能量，所以如果我拥有足够的金钱，我就可以控制一切。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;诉诸无知谬误（Appeal to Ignorance）：这种谬误中，认为因为某件事情无法被证明为真或假，所以它一定是真的或假的。例如：&amp;ldquo;没有人能够证明外星人的存在，所以外星人一定存在。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;拉锯谬误（False Dilemma 或 Either/Or Fallacy）：这种谬误中，将问题简化为只有两种选择，而忽略了其他可能的选项。例如：&amp;ldquo;你要么支持 A 党，要么支持 B 党，没有其他选择。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;没有中间地带谬误（False Continuum 或 Continuum Fallacy）：这种谬误中，错误地认为两个极端之间存在无限的连续性，而忽略了可能存在的中间地带。例如：&amp;ldquo;如果你不是 100%赞同我的观点，那你就是反对我的。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;群体谬误（Fallacy of Composition 和 Fallacy of Division）：群体谬误涉及将个体的特征应用到整个群体，或者将群体的特征应用到每个个体。例如：&amp;ldquo;这个学校的足球队很强大，所以这个学校的每个学生都是优秀的运动员。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;投机谬误（Gambler&amp;rsquo;s Fallacy）：这种谬误中，错误地认为随机事件之间存在一种必然的平衡，以为之前的结果会影响未来的结果。例如：&amp;ldquo;在投掷硬币时连续出现了 5 次正面，所以下一次一定会是反面。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;历史谬误（Fallacy of Past Belief）：在历史谬误中，认为过去的信仰或观点一定是正确的。例如：&amp;ldquo;我们的祖先相信地球是平的，所以地球一定是平的。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;答案就在那里谬误（Fallacy of Assuming the Conclusion）：这种谬误中，通过将结论作为前提来支持自己的论点。例如：&amp;ldquo;这本书是真理的圣经，因为它说的都是真理。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;自相矛盾谬误（Fallacy of Self-Contradiction 或 Contradictory Premises）：这种谬误中，论证的前提之间相互矛盾，导致结论无效。例如：&amp;ldquo;我永远不会说谎，我现在在说谎。&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;误导性问题谬误（Fallacy of Loaded Question）：在这种谬误中，提问问题本身带有误导性，使被问者很难回答而不陷入陷阱。例如：&amp;ldquo;你什么时候停止打你的妻子？&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>在搞清楚用户的问题之前就动手开发，这是我多次犯过的大忌。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link>
+      <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</guid>
+      <description>&lt;p&gt;1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p&gt;
+&lt;p&gt;2. If there was a solution, would they buy it?&lt;/p&gt;
+&lt;p&gt;3. Would they buy it from us?&lt;/p&gt;
+&lt;p&gt;4. Can we build a solution for that problem?” The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>资本家必须在一定的工作时长后辞退那些老员工。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E8%B5%84%E6%9C%AC%E5%AE%B6%E5%BF%85%E9%A1%BB%E5%9C%A8%E4%B8%80%E5%AE%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%95%BF%E5%90%8E%E8%BE%9E%E9%80%80%E9%82%A3%E4%BA%9B%E8%80%81%E5%91%98%E5%B7%A5/</link>
+      <pubDate>Mon, 26 Jun 2023 08:49:36 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E8%B5%84%E6%9C%AC%E5%AE%B6%E5%BF%85%E9%A1%BB%E5%9C%A8%E4%B8%80%E5%AE%9A%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%95%BF%E5%90%8E%E8%BE%9E%E9%80%80%E9%82%A3%E4%BA%9B%E8%80%81%E5%91%98%E5%B7%A5/</guid>
+      <description>&lt;p&gt;根据博弈论来分析，员工对于公司的贡献都是抛物线，而工资水平却一直在上涨。这也是为什么互联网企业都 35 岁退休的原因&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>你能够听到、看到、接触到的，只有幸存者。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E4%BD%A0%E8%83%BD%E5%A4%9F%E5%90%AC%E5%88%B0%E7%9C%8B%E5%88%B0%E6%8E%A5%E8%A7%A6%E5%88%B0%E7%9A%84%E5%8F%AA%E6%9C%89%E5%B9%B8%E5%AD%98%E8%80%85/</link>
+      <pubDate>Mon, 26 Jun 2023 08:49:35 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E4%BD%A0%E8%83%BD%E5%A4%9F%E5%90%AC%E5%88%B0%E7%9C%8B%E5%88%B0%E6%8E%A5%E8%A7%A6%E5%88%B0%E7%9A%84%E5%8F%AA%E6%9C%89%E5%B9%B8%E5%AD%98%E8%80%85/</guid>
+      <description>&lt;p&gt;倒霉的人被竞争淘汰了发不了声，你看不到他们的心路历程和思想感悟&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>原命题：只要努力工作，你就会成功。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%8E%9F%E5%91%BD%E9%A2%98%E5%8F%AA%E8%A6%81%E5%8A%AA%E5%8A%9B%E5%B7%A5%E4%BD%9C%E4%BD%A0%E5%B0%B1%E4%BC%9A%E6%88%90%E5%8A%9F/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:23 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%8E%9F%E5%91%BD%E9%A2%98%E5%8F%AA%E8%A6%81%E5%8A%AA%E5%8A%9B%E5%B7%A5%E4%BD%9C%E4%BD%A0%E5%B0%B1%E4%BC%9A%E6%88%90%E5%8A%9F/</guid>
+      <description>&lt;p&gt;陈述 1 ：如果你已经成功了，那说明你工作很努力。陈述 2 ：如果工作不努力，你就不会成功。陈述 3 ：如果你没成功，那说明你工作不努力。上述哪句陈述是原命题的逻辑推论呢？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>因为语言问题导致的逻辑漏洞</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E8%AF%AD%E8%A8%80%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:22 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E8%AF%AD%E8%A8%80%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</guid>
+      <description>&lt;p&gt;所有地方的赌博活动都应该被合法化，因为我们根本无法避免这件事。赌博就是人生不可分割的一部分。只要一坐到方向盘后面或者说出自己的结婚誓言，我们就是在赌博。”这里的“赌博”就是一个模棱两可的词。。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>很多人之所以讨厌逻辑，是因为他们说的话大都禁不起推敲。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E4%B9%8B%E6%89%80%E4%BB%A5%E8%AE%A8%E5%8E%8C%E9%80%BB%E8%BE%91%E6%98%AF%E5%9B%A0%E4%B8%BA%E4%BB%96%E4%BB%AC%E8%AF%B4%E7%9A%84%E8%AF%9D%E5%A4%A7%E9%83%BD%E7%A6%81/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:22 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E4%B9%8B%E6%89%80%E4%BB%A5%E8%AE%A8%E5%8E%8C%E9%80%BB%E8%BE%91%E6%98%AF%E5%9B%A0%E4%B8%BA%E4%BB%96%E4%BB%AC%E8%AF%B4%E7%9A%84%E8%AF%9D%E5%A4%A7%E9%83%BD%E7%A6%81/</guid>
+      <description>&lt;p&gt;学会识别和应对逻辑漏洞的一个好处在于，它可以让我们不至于在不知不觉中陷入逻辑误区。“感觉”某个逻辑有问题是一回事，能具体指出到底是哪儿出了问题是另一回事。这就好比一个人感觉身体有点不舒服，但却说不出到底自己得了什么病一样，只有看了医生，一切才会真相大白。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>我没说瞎话，我只是稍微夸大了一下事实罢了。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E6%B2%A1%E8%AF%B4%E7%9E%8E%E8%AF%9D%E6%88%91%E5%8F%AA%E6%98%AF%E7%A8%8D%E5%BE%AE%E5%A4%B8%E5%A4%A7%E4%BA%86%E4%B8%80%E4%B8%8B%E4%BA%8B%E5%AE%9E%E7%BD%A2%E4%BA%86/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:21 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E6%B2%A1%E8%AF%B4%E7%9E%8E%E8%AF%9D%E6%88%91%E5%8F%AA%E6%98%AF%E7%A8%8D%E5%BE%AE%E5%A4%B8%E5%A4%A7%E4%BA%86%E4%B8%80%E4%B8%8B%E4%BA%8B%E5%AE%9E%E7%BD%A2%E4%BA%86/</guid>
+      <description>&lt;p&gt;“说瞎话”和“夸大事实”之间有何不同？&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>因为“糟糕”的论据而导致的逻辑漏洞</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E7%B3%9F%E7%B3%95%E7%9A%84%E8%AE%BA%E6%8D%AE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:20 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E7%B3%9F%E7%B3%95%E7%9A%84%E8%AE%BA%E6%8D%AE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</guid>
+      <description>&lt;p&gt;“威利先生的办公桌总是乱七八糟的，因为他这人能力不行。桌面乱说明他思维混乱，这只能说明一件事：他不胜任自己的工作。”&lt;br&gt;
+上面这句话其实很简单：“能力不行，所以桌面乱；因为桌面乱，所以无法胜任自己的工作。” ·&lt;br&gt;
+反面论据&lt;br&gt;
+当我们仅仅因为一件事“没有被证明是错的”就断定它是对的，或者“没有被证明是对的”就断定它是错的，我们的判断就出现了逻辑漏洞。&lt;br&gt;
+比如说，虽然迄今为止还没人找到亚特兰蒂斯存在的证据，但这并不能说明亚特兰蒂斯就不存在。&lt;/p&gt;
+&lt;p&gt;以偏概全当我们急于做出总结，只根据一小撮样本就得出某个结论时，就容易犯以偏概全的错误。“我去过凤凰城三次，每次那里都在下雨，所以凤凰城肯定是一座多雨的城市。”（事实上，凤凰城是个气候干燥的城市。）&lt;/p&gt;
+&lt;p&gt;“因为公司里的实习生都没有抱怨过薪水太低，所以我们可以自信地说，公司里的实习生对自己的薪水都很满意。”&lt;br&gt;
+· 个人偏好&lt;br&gt;
+当我们判断一件事情时，只从个人情绪出发，而不考虑实际情况，我们就是在犯个人偏好错误。“你怎么能向茜拉咨询婚姻问题呢？难道你不知道她曾因为邮件诈骗而坐过牢吗？”&lt;/p&gt;
+&lt;p&gt;· 毒水井&lt;br&gt;
+当我们过于从一个人的背景，尤其是国籍、种族、性别等，来判断其言论时，我们的逻辑就会出问题。“你说的话怎么能算数呢？你是从悉尼来的，当然会说悉尼比墨尔本好。”&lt;/p&gt;
+&lt;p&gt;· 你也好不到哪儿去&lt;/p&gt;
+&lt;p&gt;如果我们因为一个人也犯了跟我们一样的错误，就拒绝接受对方的观点，那我们的逻辑也会出问题。父亲：“孩子，你不该喝酒。喝酒伤肝，整天醉醺醺的怎么行？”儿子：“老爸，你现在手里不就拿着酒杯吗？”虽然这孩子的父亲也在喝酒，但这并不能说明他对儿子的建议是错误的。&lt;/p&gt;
+&lt;p&gt;· 红鲱鱼&lt;/p&gt;
+&lt;p&gt;当我们在谈话中试图通过转移话题来回避自己的弱点时，我们就是在犯“红鲱鱼”错误。（上司对下属）：“别跟我说工资太低。我像你这么大的时候，一个星期才赚 100 美元。”“上司年轻时收入低”这个事实跟当前的对话无关，因为上司年轻时工资低不等于下属就不应该涨工资。&lt;/p&gt;
+&lt;p&gt;强求不相关的目标或功能&lt;br&gt;
+当我们因为某个规定或计划不能满足某个不相关的目标而拒绝接受它时，我们就是在犯这种逻辑错误。皮特：“你真的以为学习逻辑就能解决这个世界的问题吗？”蒂凡尼：“应该不能。”皮特：“那我们干吗浪费时间学它呢？” · 随心所欲当我们因为自己极其希望某件事是真的（或假的）就去这么假定时，我们就是在犯“随心所欲”的逻辑错误。“不管我们的球队之前表现怎么样，这次我们都会在第一轮比赛中打败卫冕冠军。我们的队员都很有信心，铆足了劲儿要大获全胜。”&lt;/p&gt;
+&lt;p&gt;· 倚老卖老当我们想要凭资历、传统等因素，而非凭事实或证据等来说服对手时，我们就是在犯这种逻辑错误。“蒂姆，去安纳波利斯这件事你别太当真了！你们家祖祖辈辈 —— 包括你的父亲、兄弟、祖父、叔父等等 —— 一直都是当兵的，而且以后也会一直留在部队。所以小伙子，你的未来在西点军校！” · 诉诸公众观点当我们因为大家都认同某个观点而去接受或支持它时，那就是在犯这个逻辑错误。“我要给税法修正案投赞成票。根据最近一项民意测验的结果，在 25 岁以下的登记选民中，超过三分之二的人都支持修正案。” · 装可怜所谓装可怜，就是利用对方的同情心，而非事实证据，来说服对方的方式。（茜拉对约翰说）“你一定要给孤儿院捐款。这些孩子生下来就不知道自己的生身父母是谁，更不要说衣食无忧了。”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>因为错误的假设而导致的逻辑漏洞</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%81%87%E8%AE%BE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:20 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%9B%A0%E4%B8%BA%E9%94%99%E8%AF%AF%E7%9A%84%E5%81%87%E8%AE%BE%E8%80%8C%E5%AF%BC%E8%87%B4%E7%9A%84%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E/</guid>
+      <description>&lt;p&gt;· 非此即彼不能因为摆在面前的只有两个选择，就认为其中一个必定是对的。很多事情都不是“非此即彼”或“非黑即白”的。“既然不支持自由贸易，那你一定是支持保护主义了！”&lt;/p&gt;
+&lt;p&gt;· 中间值&lt;br&gt;
+很多人喜欢在两个选择之间取中间值，因为它远离任何一个极端，所以有时这种做法也被称为中庸主义。“初中老师相信，学校应该安排固定的课程表。而家长们则认为，学生应该可以自由选课。所以最好的办法就是把二者结合起来。”&lt;/p&gt;
+&lt;p&gt;· 大杂烩&lt;br&gt;
+把局部是正确的东西拼在一起，未必就能得到一个正确的结果。“布拉德是个不错的年轻男士，珍妮特是个优秀的女士，他们二人一定是完美的一对儿。”婚姻并不是“1+1=2”那么简单，两个优秀的男女未必能成为一对优秀的夫妻，所以局部正确未必意味着总体就一定正确。&lt;/p&gt;
+&lt;p&gt;· 局部错误&lt;br&gt;
+不能因为整体是对的，就断定其中的每一部分都是正确的。打个比方，一个球队伟大，并不意味着该球队所有的球员都同样伟大。“因为车子很重，所以车子上的所有配件都很重。”显然，这句话并不成立！&lt;/p&gt;
+&lt;p&gt;· 连续性漏洞&lt;br&gt;
+有时人们会觉得一些差异太过渺小，不值得重视，这时就会出现连续性漏洞。“每天学一个新单词，提升你的词汇量。拿本中型词典，从头开始背。每天背一个新单词，慢慢你就能翻到最后一页。而且更重要的是，你还能学会英语中几乎所有重要单词。但是有几个人能做到这点呢？”&lt;/p&gt;
+&lt;p&gt;· 以点攻击面&lt;br&gt;
+很多人相信，被归纳的东西很容易被驳倒，因为只要找出一个例外就够了。比如说，一家电影院宣称不允许 18 岁以下的孩子入场，但这并不意味着父母不能带着 7 个月大的婴儿进去看电影。学生甲：“众所周知，吸烟会缩短人的寿命。”学生乙：“是的，可我曾祖父每天一包烟，现在都 90 多岁了，还是活得好好的，这该怎么解释呢？”找出例外并不意味着归纳有误 —— 凡事都有例外，但例外总是例外，只是小概率事件。&lt;/p&gt;
+&lt;p&gt;· 扭曲&lt;br&gt;
+所谓扭曲，就是指故意歪曲对手的观点，从而达到驳倒对手的目的。正方：“要想提升发展中国家的教育水平，唯一的办法就是多提供一些物质支持，比如说教科书。”反方：“你的意思是，不论砍掉多少棵树，都要去印更多课本吗？”&lt;/p&gt;
+&lt;p&gt;· 错误的类比&lt;br&gt;
+我们不能因为两件事在某一方面或某几个方面比较相似（或者不相似），就断定它们在其他方面也相似（或者不相似）。“说到人工鱼饵，我最喜欢的就是拉帕拉鱼饵。今年夏天的时候，我每次用它都能钓到很多小嘴鲈鱼，所以我秋天去钓鳟鱼时一定还会用它。”&lt;/p&gt;
+&lt;p&gt;· 因果错误&lt;br&gt;
+当我们随意把某件事情归因于某个方面时，我们就是在犯因果错误。“听说有钱人工作都很努力，所以我要努力工作，让自己变成有钱人。”的确，努力工作可能会让一个人变得富有（至少从金钱角度来说），但它只是其中一个因素而已。我们不能武断地认为只靠努力工作就足以让一个穷光蛋变成有钱人。&lt;/p&gt;
+&lt;p&gt;· 多米诺错误&lt;br&gt;
+我们不能因为一件事会引发另一件事，就断定它会引发随后的一系列事件。多米诺错误有时也被称作“链式反应错误”。“我并不反对给无家可归的人提供免费食物，但既然提供免费食物，我们就会需要提供免费衣服，然后是免费住宿。很快，我们就要给他们提供固定的年薪了。”&lt;/p&gt;
+&lt;p&gt;· 赌徒的谬误&lt;br&gt;
+当我们不是根据事实，而只是根据之前发生的事情来判断未来某件事情发生的概率时 —— 而且这两件事完全独立，毫不相干 —— 我们就是在犯赌徒的谬误。（父母对医生说）“因为我们已经有三个男孩了，所以我相信，下一个肯定是女孩。”上一次生育的结果跟下一次的生育结果其实毫无关系，可以肯定的是，这一次生儿生女的概率仍然是各占一半。&lt;/p&gt;
+&lt;p&gt;· 错误的精确&lt;br&gt;
+所谓错误的精确，就是指随意举出一些看似精确但其实毫无事实根据的数字来证明自己的观点。“在莎士比亚的时代，每四个人中就有一个人不喜欢莎士比亚的戏剧。”说话人是不可能获取这么精确的数据的，尤其是四百多年前的莎士比亚时代的数据。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>推理过程中的逻辑错误</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E6%8E%A8%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%80%BB%E8%BE%91%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:19 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E6%8E%A8%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%80%BB%E8%BE%91%E9%94%99%E8%AF%AF/</guid>
+      <description>&lt;p&gt;· 断定结果的错误&lt;br&gt;
+我们不能因为“当 A 成立时， B 就成立”，就断定“当 B 成立时， A 就成立”。这种错误也被称为“转化错误”。“每次去度假时，我都会感觉很放松。所以当我感觉很放松时，我就一定是在度假。”度假时放松不代表只有在度假时才会放松，在家时可能会放松，吃晚饭时可能会放松，跟朋友在一起聊天时，也可能会感到放松 …… 所以上述说法的谬误显而易见。&lt;/p&gt;
+&lt;p&gt;· 否定前项&lt;br&gt;
+我们不能因为“只要 A 成立， B 就成立”，就断定“只要 A 不成立， B 就不成立”。“每次一下雨，地面就变湿。昨夜没下雨，所以地面不可能变湿。”毫无疑问，很多情况都会让地面变湿，不一定非要下雨。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>避免不恰当的推论</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E9%81%BF%E5%85%8D%E4%B8%8D%E6%81%B0%E5%BD%93%E7%9A%84%E6%8E%A8%E8%AE%BA/</link>
+      <pubDate>Tue, 20 Jun 2023 13:13:18 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E9%81%BF%E5%85%8D%E4%B8%8D%E6%81%B0%E5%BD%93%E7%9A%84%E6%8E%A8%E8%AE%BA/</guid>
+      <description>&lt;p&gt;首先，我们一定要分清什么是推论，什么是假设。所谓假设，就是一段论述的前提部分，它是论述过程中不可分割的一部分。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>现实中“傻子”实在太多了，而且他们根本意识不到自己的愚蠢</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%82%BB%E5%AD%90%E5%AE%9E%E5%9C%A8%E5%A4%AA%E5%A4%9A%E4%BA%86%E8%80%8C%E4%B8%94%E4%BB%96%E4%BB%AC%E6%A0%B9%E6%9C%AC%E6%84%8F%E8%AF%86%E4%B8%8D/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:37 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%82%BB%E5%AD%90%E5%AE%9E%E5%9C%A8%E5%A4%AA%E5%A4%9A%E4%BA%86%E8%80%8C%E4%B8%94%E4%BB%96%E4%BB%AC%E6%A0%B9%E6%9C%AC%E6%84%8F%E8%AF%86%E4%B8%8D/</guid>
+      <description>&lt;p&gt;归根结底是因为他们不了解自己的利益之所在，比如瘾君子、工作狂、被错误利益关系纠缠的人、支持大政府的人、出版商、书评人或某些令人尊敬的官员，他们都没有意识到他们的行为正在损害自身的利益&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>很多人都会介意自己的记性不好，却很少有人在意自己的判断能力。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E9%83%BD%E4%BC%9A%E4%BB%8B%E6%84%8F%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%E5%8D%B4%E5%BE%88%E5%B0%91%E6%9C%89%E4%BA%BA%E5%9C%A8%E6%84%8F/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:36 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%BE%88%E5%A4%9A%E4%BA%BA%E9%83%BD%E4%BC%9A%E4%BB%8B%E6%84%8F%E8%87%AA%E5%B7%B1%E7%9A%84%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%E5%8D%B4%E5%BE%88%E5%B0%91%E6%9C%89%E4%BA%BA%E5%9C%A8%E6%84%8F/</guid>
+      <description>&lt;p&gt;指人们往往会更加留意那些自己需要或喜欢的信息，而忽视真实的信息 —— 他们更愿意看到自己“想要看到的”世界，而不是真实客观的世界。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>苏格拉底的警告</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E7%9A%84%E8%AD%A6%E5%91%8A/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:36 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E7%9A%84%E8%AD%A6%E5%91%8A/</guid>
+      <description>&lt;p&gt;每一个人，无论多么的位高权重，或者拥有多少财富，都有头脑混乱思路不清、甚至失去理智的时候&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>下次查尔斯王子结婚时，一定要提前把教皇送进医院。</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E4%B8%8B%E6%AC%A1%E6%9F%A5%E5%B0%94%E6%96%AF%E7%8E%8B%E5%AD%90%E7%BB%93%E5%A9%9A%E6%97%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E6%8F%90%E5%89%8D%E6%8A%8A%E6%95%99%E7%9A%87%E9%80%81%E8%BF%9B%E5%8C%BB/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:35 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E4%B8%8B%E6%AC%A1%E6%9F%A5%E5%B0%94%E6%96%AF%E7%8E%8B%E5%AD%90%E7%BB%93%E5%A9%9A%E6%97%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E6%8F%90%E5%89%8D%E6%8A%8A%E6%95%99%E7%9A%87%E9%80%81%E8%BF%9B%E5%8C%BB/</guid>
+      <description>&lt;p&gt;1981 年：查尔斯王子结婚；利物浦足球队拿到欧洲杯冠军；澳大利亚输掉灰烬杯板球锦标赛；教皇去世。 2005 年：查尔斯王子结婚；利物浦足球队拿到欧洲杯冠军；澳大利亚输掉灰烬杯板球锦标赛；教皇去世&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>我们总是会有选择地去理解一些事情，以此来满足自己的需求</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E4%BB%AC%E6%80%BB%E6%98%AF%E4%BC%9A%E6%9C%89%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8E%BB%E7%90%86%E8%A7%A3%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%E4%BB%A5%E6%AD%A4%E6%9D%A5%E6%BB%A1%E8%B6%B3/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:35 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E6%88%91%E4%BB%AC%E6%80%BB%E6%98%AF%E4%BC%9A%E6%9C%89%E9%80%89%E6%8B%A9%E5%9C%B0%E5%8E%BB%E7%90%86%E8%A7%A3%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85%E4%BB%A5%E6%AD%A4%E6%9D%A5%E6%BB%A1%E8%B6%B3/</guid>
+      <description>&lt;p&gt;打个比方，如果我们内心深处“希望”或“需要”一件事情是“这样”或者“那样”的，我们就会有意识地选择、删减、排列自己所搜集的信息，使得这件事情变成我们所希望或需要的样子。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>光环效应</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%85%89%E7%8E%AF%E6%95%88%E5%BA%94/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:34 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%85%89%E7%8E%AF%E6%95%88%E5%BA%94/</guid>
+      <description>&lt;p&gt;所谓“光环效应”，就是指人们总是喜欢根据某起单一事件或某个单一特质来积极地看待某个人、某个地点或某个事物。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>常见的24个逻辑谬误</title>
+      <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%B8%B8%E8%A7%81%E7%9A%8424%E4%B8%AA%E9%80%BB%E8%BE%91%E8%B0%AC%E8%AF%AF/</link>
+      <pubDate>Sun, 18 Jun 2023 03:42:33 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/2023/wordpress/%E5%B8%B8%E8%A7%81%E7%9A%8424%E4%B8%AA%E9%80%BB%E8%BE%91%E8%B0%AC%E8%AF%AF/</guid>
+      <description>&lt;p&gt;歪曲观点&lt;/p&gt;
+&lt;p&gt;直译：稻草假人&lt;/p&gt;
+&lt;p&gt;又做：欲加之罪&lt;/p&gt;
+&lt;p&gt;歪曲他人的论据以使其变得更易受抨击。&lt;/p&gt;
+&lt;p&gt;通过夸大、歪曲，又甚至完全假造对手的论据，让自身的立场呈现更多的合理性。但坦诚理性的辩论会被这种实质是欺诈的论述破坏。&lt;/p&gt;
+&lt;p&gt;例：小明说：国家应当向医疗和教育领域投入更多的资金。小亮回答：太可怕了，你居然这么仇恨国家，想要通过减少国防开支，让我们的军队手无寸铁而无法保卫国家。&lt;/p&gt;
+&lt;p&gt;注释：英文中这条谬误的原文“strawman”，直译“稻草假人”。因为稻草人不是真人，所以它不会在战斗中做出任何抵抗，并且很容易被击倒。在英国这个谬误又常被称为“莎莉姨妈”（Aunt Sally）。&lt;br&gt;
+归因错误&lt;/p&gt;
+&lt;p&gt;因事物之间或真实存在、或假想出来的关联关系，得出两者之间存在因果关系的结论。&lt;/p&gt;
+&lt;p&gt;因为事物之间具有关联，又或仅仅是因为两者同时存在，即错认为两者间具有因果关系。不同事物可能同时或先后发生，但这并非意味其中一件事是另一件事的起因。有时候两者之间的关联纯粹只是巧合，甚至有可能两件事起因都是相同的。&lt;/p&gt;
+&lt;p&gt;例：小明指着一张表格说，过去几个世纪以来全球气温一直在升高，同时海盗的数量一直在减少，所以我们可以得出结论：海盗的存在降低了全球气温，全球变暖是一场骗局。&lt;/p&gt;
+&lt;p&gt;情感绑架&lt;/p&gt;
+&lt;p&gt;通过操弄情绪来替代真正有效的论据。&lt;/p&gt;
+&lt;p&gt;情感绑架包括操弄恐惧、嫉妒、憎恨、怜悯、骄傲，等等。有一件很重要的事我们必须知道：有时候一个符合逻辑的论据也许会带动强烈的情绪层面的反馈。但抛弃逻辑，只靠诉诸情绪来掩盖自身观点没有强有力的证据这一事实，只会带来更多的问题和谬误。每个心智正常的人都会为情绪所影响，所以情感绑架是很常见也有效的辩论策略，但本质上这是一种错谬并虚伪的论述方式，且会让辩论另一方的情绪失控合理化。&lt;/p&gt;
+&lt;p&gt;例：小亮不喜欢喝羊杂汤，但他父亲让他“想想非洲贫困国家里那些被生生饿毙的小孩，那些可怜的娃什么都吃不上”。&lt;/p&gt;
+&lt;p&gt;谬导致误&lt;/p&gt;
+&lt;p&gt;直译：谬误谬误&lt;/p&gt;
+&lt;p&gt;又做：将错就错&lt;/p&gt;
+&lt;p&gt;因为论述水平很差，又或者论述中有谬误，就判定这结论一定是错误的。&lt;/p&gt;
+&lt;p&gt;谬误的观点一定会导致谬误的结论是不符合逻辑的结论：即便是错误的论据也完全是有可能被人用合理的逻辑阐述出来的；同样的，在辩论的过程中以错误的论据来证明正确的观点，或是在论述过程中参杂着逻辑谬误也是有可能的。&lt;/p&gt;
+&lt;p&gt;例：小丽发现小红提倡健康饮食仅仅是因为某野鸡营养学家提出“健康饮食是一种流行生活方式“这样不靠谱的理由，但因此小丽就认为“需要健康饮食这个结论是错误的，每天暴饮暴食是没问题的”，这也是谬误的。&lt;/p&gt;
+&lt;p&gt;滑坡推断&lt;/p&gt;
+&lt;p&gt;如果 A 发生了，那么最终坏事 Z 也会发生，所以我们不能让 A 发生。&lt;/p&gt;
+&lt;p&gt;问题在于，这种论证方式避开了去讨论当前的问题 A，取而代之的是将讨论中心转移到假想出来的极端假设 Z。同时还没有证据能证明假设的 Z 一定会因为 A 的发生而发生。此谬误也是利用恐惧来进行情感绑架的一种形式，进而以未经证实的猜想来破坏当前讨论的公正性。&lt;/p&gt;
+&lt;p&gt;例：小强断言如果我们允许同性婚姻，接下来会发生的事情就是我们会允许乱伦婚姻，甚至允许人和猴子结婚，人和汽车结婚。&lt;/p&gt;
+&lt;p&gt;人身攻击&lt;/p&gt;
+&lt;p&gt;通过抨击对手的个人品行或其他个人特质，如身高外貌、社会地位等等，来贬损对手的论据。&lt;/p&gt;
+&lt;p&gt;人身攻击既可以是在大庭广众下的公然抨击，也可以是隐晦地暗示对手的品格存疑，以此来抹黑对手的论据。人身攻击在论战中往往可以起到不战而屈人之兵的效果。&lt;/p&gt;
+&lt;p&gt;例：慧慧用无可争辩的实例展现了新的的纳税系统是更加公平合理值得推广的，大壮反问在场的人：“大家觉得是否应该相信一个未婚、有犯罪史、身上有狐臭的女人所说的任何一句话？”&lt;/p&gt;
+&lt;p&gt;彼此彼此&lt;/p&gt;
+&lt;p&gt;以批评来应对批评：为了避免正面回应批评，反将矛头指向提出批评的人本身。&lt;/p&gt;
+&lt;p&gt;此谬误原文是拉丁文“tu quoque”，意为“你不也一样（犯过错）”。这个逻辑谬误通常也以“批评他人的伪善”而广为人知。通常是用来转移注意力的障眼法，它能让必须为了辩护自己论据的一方，将关注点从自己身上转回到提出批评的人身上。&lt;/p&gt;
+&lt;p&gt;例：在医院里小美指出小丽没有严格遵医嘱导致身体状况恶化，小丽不反省为什么自己不遵医嘱，反倒是指责小美：“别说我了，你以前不是也不爱听医生的话，从不按时吃药！”&lt;/p&gt;
+&lt;p&gt;注释：在中国这条谬论也被称为“臭虫论”：鲁迅于 1933 年的文章《外国也有》中讽刺当时的中国人被批评时会声称其他国家也有同样的错误，来掩饰自己的错误。“凡中国所有的，外国也都有。外国人说中国多臭虫，但西洋也有臭虫。”&lt;br&gt;
+个人局限&lt;/p&gt;
+&lt;p&gt;直译：自身怀疑&lt;/p&gt;
+&lt;p&gt;受自身水平所限，无法或很难理解某件事，由此得出这件事可能是错的、假的这样的结论。&lt;/p&gt;
+&lt;p&gt;针对某些复杂的话题的讨论，如“生物进化，物竞天择”，是需要一些对于这个话题有基本的知识储备才能进行的。仅仅因为不了解这些知识，即认定这些理论一定是错误的，这是一种谬误。&lt;/p&gt;
+&lt;p&gt;例：小明画了一条鱼和一个人，他不屑地问小强：“看看这两种生物，你真的认为我会愚蠢到相信一条鱼能随着时间推移，随机地以某种方式变成人类？”&lt;/p&gt;
+&lt;p&gt;片面特例&lt;/p&gt;
+&lt;p&gt;当某个观点被证明是错误的时候，更改讨论规则或用特例来开脱错误。&lt;/p&gt;
+&lt;p&gt;愚蠢的人类总是厌恶承认自己错了。他们非但不愿意通过更好的理解问题来改善自己的认知，有时甚至还会固执地想方设法证明自己的正确性。常见的方式就是在事后给自己的错误找个合理化的理由。找个理由来相信我们习惯的事物很容易，而真正难点在于别人证实了我们的错误后，我们如何检验自身的三观，修正自己的想法。&lt;/p&gt;
+&lt;p&gt;例：小明说自己能预知未来，当大家让他在合理科学的测试环境下他的预言时，他却退缩了。小明说你必须首先相信他有预知能力，才能看到他的预言生效。&lt;/p&gt;
+&lt;p&gt;预设提问&lt;/p&gt;
+&lt;p&gt;也叫“诱导提问”，在提问中预先置入假设，使对方无论如何作答都只能显得有问题。&lt;/p&gt;
+&lt;p&gt;预设式提问也叫诱导式提问，它在破坏理性的辩论方面特别有效，因为它们具有煽动性。而被提问者往往需要慌乱地被迫为自己做出辩护。&lt;/p&gt;
+&lt;p&gt;例如：小美和小丽都喜欢阿辉。某次小美在阿辉在场的时候故意用好奇的语气问小丽：“小美你现在是不是已经不赌钱了？”。&lt;/p&gt;
+&lt;p&gt;举证负担&lt;/p&gt;
+&lt;p&gt;认定举证的责任不在提出观点的人，而是在质疑观点的人。&lt;/p&gt;
+&lt;p&gt;谁主张，谁举证，不应该把举证的责任丢给那个对论据表示怀疑的人。对一个观点无法证伪或举出反例，并不能因此证明这个观点即是合理的，或由此认定这个观点是可信的。同时，我们又必须清楚 “事无绝对”，所以需要基于已知的证据来加强论据的可信度，因某个观点没有被证明过为由而驳斥它也是一种推论谬误。&lt;/p&gt;
+&lt;p&gt;例：小强说他能看到鬼魂，因为其他人都没法看到鬼魂，也就没法证明他的说法是不是真的。&lt;/p&gt;
+&lt;p&gt;一语双关&lt;/p&gt;
+&lt;p&gt;使用了双重含义的语句或含糊不清存有歧义的陈述来误导或歪曲事实。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
