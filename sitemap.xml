@@ -2,19 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.xgdebug.com/posts/reading/always-say-less-than-necessary/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/categories/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/categories/insights/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
     <loc>https://www.xgdebug.com/posts/</loc>
-    <lastmod>2024-09-29T16:48:16+08:00</lastmod>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/series/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/</loc>
-    <lastmod>2024-09-29T16:48:16+08:00</lastmod>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/series/the-48-laws-of-power/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/</loc>
-    <lastmod>2024-09-29T16:48:16+08:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/posts/2024/economic/the-biggest-implements-stimulus/</loc>
-    <lastmod>2024-09-29T16:48:16+08:00</lastmod>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/tags/%E9%98%85%E8%AF%BB%E6%84%9F%E6%82%9F/</loc>
+    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/posts/reading/never-outshine-the-master/</loc>
+    <lastmod>2024-09-29T21:33:45+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/posts/2024/economic/the-biggest-implements-stimulus/</loc>
     <lastmod>2024-09-29T16:48:16+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/2024/diary/0929/</loc>
@@ -22,9 +43,6 @@
   </url><url>
     <loc>https://www.xgdebug.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
     <lastmod>2024-09-29T11:01:12+08:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/categories/</loc>
-    <lastmod>2024-09-29T10:08:49+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/linux/</loc>
     <lastmod>2024-09-29T10:08:49+08:00</lastmod>
@@ -40,6 +58,9 @@
   </url><url>
     <loc>https://www.xgdebug.com/tags/%E6%8A%95%E8%B5%84/</loc>
     <lastmod>2024-09-28T23:14:51+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/series/the-simple-path-to-wealth/</loc>
+    <lastmod>2024-09-28T21:32:02+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/2024/financial/the_simple_path_to_wealth/</loc>
     <lastmod>2024-09-28T21:32:02+08:00</lastmod>
@@ -84,9 +105,6 @@
     <lastmod>2023-09-12T15:21:53+00:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%94%9F%E7%9A%84%E5%93%B2%E5%AD%A6%E4%B8%8D%E8%A6%81%E7%9C%8B%E8%BF%99%E4%B8%AA%E4%BA%BA%E5%AF%B9%E4%BD%A0%E6%80%8E%E4%B9%88%E6%A0%B7%E8%A6%81%E7%9C%8B/</loc>
-    <lastmod>2023-09-08T01:15:04+00:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/tags/%E9%98%85%E8%AF%BB%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2023-09-08T01:15:04+00:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/2023/wordpress/%E5%AE%B9%E5%BF%8D%E5%82%BB%E5%AD%90%E7%90%86%E8%A7%A3%E5%82%BB%E5%AD%90%E6%94%B6%E5%89%B2%E5%82%BB%E5%AD%90/</loc>
