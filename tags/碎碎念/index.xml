@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Aug 2023 09:52:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2024 11:01:12 +0800</lastBuildDate>
     <atom:link href="https://www.xgdebug.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>尝试开始写日记，记录一直时间是怎么没的</title>
+      <link>https://www.xgdebug.com/posts/2024/diary/0929/</link>
+      <pubDate>Sun, 29 Sep 2024 11:01:12 +0800</pubDate>
+      <guid>https://www.xgdebug.com/posts/2024/diary/0929/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;上午 10 点半才起床，把我的 blog 部署到了 github,改为使用 github action 来部署，感觉比以前两个仓库方便多了&lt;/li&gt;
+&lt;li&gt;上午 11 点开始放视频，所以接下来这一个小时基本上要浪费掉的。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>容忍傻子，理解傻子，收割傻子。</title>
       <link>https://www.xgdebug.com/posts/2023/wordpress/%E5%AE%B9%E5%BF%8D%E5%82%BB%E5%AD%90%E7%90%86%E8%A7%A3%E5%82%BB%E5%AD%90%E6%94%B6%E5%89%B2%E5%82%BB%E5%AD%90/</link>
