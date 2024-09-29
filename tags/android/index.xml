@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ANDROID on xgDebug's Blog</title><link>http://www.xgdebug.com/tags/android/</link><description>Recent content in ANDROID on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 28 Sep 2024 13:08:49 +0800</lastBuildDate><atom:link href="http://www.xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>使用ncnn布署pytorch模型到Android手机</title><link>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</link><pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</guid><description>&lt;h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">
+ 使用 ncnn 布署 pytorch 模型到 Android 手机
+ &lt;a class="heading-link" href="#%e4%bd%bf%e7%94%a8-ncnn-%e5%b8%83%e7%bd%b2-pytorch-%e6%a8%a1%e5%9e%8b%e5%88%b0-android-%e6%89%8b%e6%9c%ba">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>编译 NCNN 时要打开显卡支持 vulkan 是针对 gpu 的 -DNCNN_VULKAN=ON&lt;/li>
+&lt;li>MobileNetV3&lt;/li>
+&lt;/ol>
+&lt;h2 id="編譯成-mt-時要打開-cmake-0091-特性">
+ 編譯成 MT 時要打開 CMAKE 0091 特性
+ &lt;a class="heading-link" href="#%e7%b7%a8%e8%ad%af%e6%88%90-mt-%e6%99%82%e8%a6%81%e6%89%93%e9%96%8b-cmake-0091-%e7%89%b9%e6%80%a7">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cmake" data-lang="cmake">&lt;span style="display:flex;">&lt;span>cmake_minimum_required(&lt;span style="color:#a5d6ff">VERSION&lt;/span> &lt;span style="color:#a5d6ff">3.20.0&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f85149">&lt;/span>cmake_policy(&lt;span style="color:#a5d6ff">SET&lt;/span> &lt;span style="color:#a5d6ff">CMP0091&lt;/span> &lt;span style="color:#a5d6ff">NEW&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f85149">&lt;/span>set(&lt;span style="color:#a5d6ff">CMAKE_MSVC_RUNTIME_LIBRARY&lt;/span> &lt;span style="color:#a5d6ff">&amp;#34;MultiThreaded$&amp;lt;$&amp;lt;CONFIG:Debug&amp;gt;:Debug&amp;gt;&amp;#34;&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f85149">&lt;/span>project(&lt;span style="color:#a5d6ff">&amp;#34;client-project&amp;#34;&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="训练-yolo">
+ 训练 YOLO
+ &lt;a class="heading-link" href="#%e8%ae%ad%e7%bb%83-yolo">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#79c0ff">\E&lt;/span>nvs&lt;span style="color:#79c0ff">\t&lt;/span>orch&lt;span style="color:#79c0ff">\S&lt;/span>cripts&lt;span style="color:#79c0ff">\a&lt;/span>ctivate.ps1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python train.py --batch &lt;span style="color:#a5d6ff">6&lt;/span> --workers &lt;span style="color:#a5d6ff">2&lt;/span> --imgsz &lt;span style="color:#a5d6ff">960&lt;/span> --epochs &lt;span style="color:#a5d6ff">300&lt;/span> --data &lt;span style="color:#a5d6ff">&amp;#34;\Core\yaml\data.yaml&amp;#34;&lt;/span> --cfg &lt;span style="color:#a5d6ff">&amp;#34;\Core\yaml\cfg.yaml&amp;#34;&lt;/span> --weights &lt;span style="color:#79c0ff">\C&lt;/span>ore&lt;span style="color:#79c0ff">\w&lt;/span>eights&lt;span style="color:#79c0ff">\b&lt;/span>est.pt --device &lt;span style="color:#a5d6ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="转换模型">
+ 转换模型
+ &lt;a class="heading-link" href="#%e8%bd%ac%e6%8d%a2%e6%a8%a1%e5%9e%8b">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">torch&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> nn
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">import&lt;/span> &lt;span style="color:#ff7b72">torch.utils.model_zoo&lt;/span> &lt;span style="color:#ff7b72">as&lt;/span> &lt;span style="color:#ff7b72">model_zoo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">import&lt;/span> &lt;span style="color:#ff7b72">torch.onnx&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">libs&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> define
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">libs.net&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> Net
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">libs.dataset&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> ImageDataset
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">import&lt;/span> &lt;span style="color:#ff7b72">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>test_data &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> ImageDataset(define&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>testPath,&lt;span style="color:#79c0ff">False&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>test_loader &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>utils&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>data&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>DataLoader( test_data, batch_size&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#a5d6ff">1&lt;/span>, shuffle&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#79c0ff">True&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>device &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>device(&lt;span style="color:#a5d6ff">&amp;#34;cuda&amp;#34;&lt;/span> &lt;span style="color:#ff7b72">if&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>cuda&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>is_available() &lt;span style="color:#ff7b72">else&lt;/span> &lt;span style="color:#a5d6ff">&amp;#34;cpu&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> Net(out_dim&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#a5d6ff">19&lt;/span>)&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>to(device)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>load_state_dict(torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>load( &lt;span style="color:#a5d6ff">&amp;#34;./widget/last.pt&amp;#34;&lt;/span> ))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>eval()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">def&lt;/span> &lt;span style="color:#d2a8ff;font-weight:bold">saveOnnx&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff7b72">for&lt;/span> data, target &lt;span style="color:#ff7b72;font-weight:bold">in&lt;/span> test_loader:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data, target &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> data&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>to(device), target&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>to(device)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> label &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> target&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>long()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> y &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> model(data)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b949e;font-style:italic"># Export the model&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>onnx&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>export(model, &lt;span style="color:#8b949e;font-style:italic"># model being run&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data, &lt;span style="color:#8b949e;font-style:italic"># model input (or a tuple for multiple inputs)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a5d6ff">&amp;#34;./widget/best.onnx&amp;#34;&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># where to save the model (can be a file or file-like object)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> export_params&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#79c0ff">True&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># store the trained parameter weights inside the model file&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> opset_version&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#a5d6ff">10&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># the ONNX version to export the model to&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> do_constant_folding&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#79c0ff">True&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># whether to execute constant folding for optimization&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> input_names &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> [&lt;span style="color:#a5d6ff">&amp;#39;input&amp;#39;&lt;/span>], &lt;span style="color:#8b949e;font-style:italic"># the model&amp;#39;s input names&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> output_names &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> [&lt;span style="color:#a5d6ff">&amp;#39;output&amp;#39;&lt;/span>], &lt;span style="color:#8b949e;font-style:italic"># the model&amp;#39;s output names&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dynamic_axes&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>{&lt;span style="color:#a5d6ff">&amp;#39;input&amp;#39;&lt;/span> : {&lt;span style="color:#a5d6ff">0&lt;/span> : &lt;span style="color:#a5d6ff">&amp;#39;batch_size&amp;#39;&lt;/span>}, &lt;span style="color:#8b949e;font-style:italic"># variable lenght axes&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a5d6ff">&amp;#39;output&amp;#39;&lt;/span> : {&lt;span style="color:#a5d6ff">0&lt;/span> : &lt;span style="color:#a5d6ff">&amp;#39;batch_size&amp;#39;&lt;/span>}})
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> traced_script_module &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>jit&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>trace(model, data)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff7b72">return&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>saveOnnx()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b949e;font-style:italic"># 转换&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>system(&lt;span style="color:#a5d6ff">&amp;#34;python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>system(&lt;span style="color:#a5d6ff">&amp;#34;./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>system(&lt;span style="color:#a5d6ff">&amp;#34;./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>python .&lt;span style="color:#79c0ff">\e&lt;/span>xport.py --weights weights/best.pt --img &lt;span style="color:#a5d6ff">960&lt;/span> --batch &lt;span style="color:#a5d6ff">1&lt;/span> --train
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python -m onnxsim best.onnx best-sim.onnx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#79c0ff">\o&lt;/span>nnx2ncnn.exe best-sim.onnx best.param best.bin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ncnnoptimize best.param best.bin best-opt.param best-opt.bin &lt;span style="color:#a5d6ff">65536&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="git-clone-ncnn-repo-with-submodule">
+ Git clone ncnn repo with submodule
+ &lt;a class="heading-link" href="#git-clone-ncnn-repo-with-submodule">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;pre tabindex="0">&lt;code>$ git clone https://github.com/Tencent/ncnn.git
+$ cd ncnn
+$ git submodule update --init
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="#build-for-linux" >Build for Linux / NVIDIA Jetson / Raspberry Pi&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-windows-x64-using-visual-studio-community-2017" >Build for Windows x64 using VS2017&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-macos" >Build for macOS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-arm-cortex-a-family-with-cross-compiling" >Build for ARM Cortex-A family with cross-compiling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-hisilicon-platform-with-cross-compiling" >Build for Hisilicon platform with cross-compiling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-android" >Build for Android&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-ios-on-macos-with-xcode" >Build for iOS on macOS with xcode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-webassembly" >Build for WebAssembly&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-allwinner-d1" >Build for AllWinner D1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-loongson-2k1000" >Build for Loongson 2K1000&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#Build-for-Termux-on-Android" >Build for Termux on Android&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="build-for-linux">
+ Build for Linux
+ &lt;a class="heading-link" href="#build-for-linux">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;p>Install required build dependencies:&lt;/p></description></item><item><title>在Android 11 上使用 LLDV 调试原生程序</title><link>http://www.xgdebug.com/posts/2024/my-first-post/</link><pubDate>Sat, 28 Sep 2024 12:32:12 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/my-first-post/</guid><description>&lt;h1 id="手机端">
+ 手机端
+ &lt;a class="heading-link" href="#%e6%89%8b%e6%9c%ba%e7%ab%af">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h1>
+&lt;h2 id="push-调试服务器到手机">
+ PUSH 调试服务器到手机
+ &lt;a class="heading-link" href="#push-%e8%b0%83%e8%af%95%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%88%b0%e6%89%8b%e6%9c%ba">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>adb push lldb-server /data/local/tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>chmod &lt;span style="color:#a5d6ff">755&lt;/span> /data/local/tmp/lldb-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="启动调试器服务">
+ 启动调试器服务
+ &lt;a class="heading-link" href="#%e5%90%af%e5%8a%a8%e8%b0%83%e8%af%95%e5%99%a8%e6%9c%8d%e5%8a%a1">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>/data/local/tmp/lldb-server platform --listen &lt;span style="color:#a5d6ff">&amp;#34;*:8888&amp;#34;&lt;/span> --server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h1 id="电脑端">
+ 电脑端
+ &lt;a class="heading-link" href="#%e7%94%b5%e8%84%91%e7%ab%af">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h1>
+&lt;h2 id="端口转发">
+ 端口转发
+ &lt;a class="heading-link" href="#%e7%ab%af%e5%8f%a3%e8%bd%ac%e5%8f%91">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>adb forward tcp:8888 tcp:8888
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="启动-lldb">
+ 启动 LLDB
+ &lt;a class="heading-link" href="#%e5%90%af%e5%8a%a8-lldb">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#79c0ff">\l&lt;/span>ldb.exe
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查看支持平台">
+ 查看支持平台
+ &lt;a class="heading-link" href="#%e6%9f%a5%e7%9c%8b%e6%94%af%e6%8c%81%e5%b9%b3%e5%8f%b0">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>platform list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="选-android-平台">
+ 选 ANDROID 平台
+ &lt;a class="heading-link" href="#%e9%80%89-android-%e5%b9%b3%e5%8f%b0">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>platform &lt;span style="color:#ff7b72">select&lt;/span> remote-android
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="连接到手机-手机序列号-9643e0ec0604-要换成当前调试的手机使用-adb-devices-查看序列号">
+ 连接到手机 手机序列号: &lt;strong>9643e0ec0604&lt;/strong> 要换成当前调试的手机,使用 adb devices 查看序列号
+ &lt;a class="heading-link" href="#%e8%bf%9e%e6%8e%a5%e5%88%b0%e6%89%8b%e6%9c%ba-%e6%89%8b%e6%9c%ba%e5%ba%8f%e5%88%97%e5%8f%b7-9643e0ec0604-%e8%a6%81%e6%8d%a2%e6%88%90%e5%bd%93%e5%89%8d%e8%b0%83%e8%af%95%e7%9a%84%e6%89%8b%e6%9c%ba%e4%bd%bf%e7%94%a8-adb-devices-%e6%9f%a5%e7%9c%8b%e5%ba%8f%e5%88%97%e5%8f%b7">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>platform connect connect://9643e0ec0604:8888
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查看当前正在运行的进程">
+ 查看当前正在运行的进程
+ &lt;a class="heading-link" href="#%e6%9f%a5%e7%9c%8b%e5%bd%93%e5%89%8d%e6%ad%a3%e5%9c%a8%e8%bf%90%e8%a1%8c%e7%9a%84%e8%bf%9b%e7%a8%8b">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>platform process list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="附加上去">
+ 附加上去
+ &lt;a class="heading-link" href="#%e9%99%84%e5%8a%a0%e4%b8%8a%e5%8e%bb">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>attach &lt;span style="color:#a5d6ff">9053&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="下断点">
+ 下断点
+ &lt;a class="heading-link" href="#%e4%b8%8b%e6%96%ad%e7%82%b9">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>b send
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="跑起来">
+ 跑起来
+ &lt;a class="heading-link" href="#%e8%b7%91%e8%b5%b7%e6%9d%a5">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>c
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查看线程列表">
+ 查看线程列表
+ &lt;a class="heading-link" href="#%e6%9f%a5%e7%9c%8b%e7%ba%bf%e7%a8%8b%e5%88%97%e8%a1%a8">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>thread list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查看调用栈">
+ 查看调用栈
+ &lt;a class="heading-link" href="#%e6%9f%a5%e7%9c%8b%e8%b0%83%e7%94%a8%e6%a0%88">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>bt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Use ncnn to deploy pytorch model to Android phone</title><link>http://www.xgdebug.com/posts/2023/wordpress/use-ncnn-to-deploy-pytorch-model-to-android-phone/</link><pubDate>Fri, 11 Aug 2023 01:18:11 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/use-ncnn-to-deploy-pytorch-model-to-android-phone/</guid><description>&lt;h2 id="use-ncnn-to-deploy-pytorch-model-to-android-phone">
+ Use ncnn to deploy pytorch model to Android phone
+ &lt;a class="heading-link" href="#use-ncnn-to-deploy-pytorch-model-to-android-phone">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON&lt;/li>
+&lt;li>MobileNetV3&lt;/li>
+&lt;/ol>
+&lt;h2 id="open-cmake-0091-feature-when-compiling-into-mt">
+ Open CMAKE 0091 feature when compiling into MT
+ &lt;a class="heading-link" href="#open-cmake-0091-feature-when-compiling-into-mt">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>cmake_minimum_required(VERSION 3.20.0)
+cmake_policy(SET CMP0091 NEW)
+set(CMAKE_MSVC_RUNTIME_LIBRARY &amp;#34;MultiThreaded$&amp;lt;$&amp;lt;CONFIG:Debug&amp;gt;:Debug&amp;gt;&amp;#34;)
+project(&amp;#34;client-project&amp;#34;)
+&lt;/code>&lt;/pre>&lt;h3 id="train-yolo">
+ Train YOLO
+ &lt;a class="heading-link" href="#train-yolo">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;pre tabindex="0">&lt;code>\Envs\torch\Scripts\activate.ps1
+python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data &amp;#34;\Core\yaml\data.yaml&amp;#34; --cfg &amp;#34;\Core\yaml\cfg.yaml&amp;#34; --weights \ Core\weights\best.pt --device 0
+&lt;/code>&lt;/pre>&lt;h4 id="conversion-model">
+ Conversion model
+ &lt;a class="heading-link" href="#conversion-model">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h4>
+&lt;pre tabindex="0">&lt;code>from torch import nn
+import torch.utils.model_zoo as model_zoo
+import torch.onnx
+from libs import define
+from libs.net import Net
+from libs.dataset import ImageDataset
+import os
+
+test_data = ImageDataset(define.testPath,False)
+test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True)
+
+device = torch.device(&amp;#34;cuda&amp;#34; if torch.cuda.is_available() else &amp;#34;cpu&amp;#34;)
+model = Net(out_dim=19).to(device)
+model.load_state_dict(torch.load( &amp;#34;./widget/last.pt&amp;#34; ))
+model.eval()
+
+def saveOnnx():
+ for data, target in test_loader:
+ data, target = data.to(device), target.to(device)
+ label = target.long()
+ y = model(data)
+ # Export the model
+ torch.onnx.export(model, # model being run
+ data, # model input (or a tuple for multiple inputs)
+ &amp;#34;./widget/best.onnx&amp;#34;, # where to save the model (can be a file or file-like object)
+ export_params=True, # store the trained parameter weights inside the model file
+ opset_version=10, # the ONNX version to export the model to
+ do_constant_folding=True, # whether to execute constant folding for optimization
+ input_names = [&amp;#39;input&amp;#39;], # the model&amp;#39;s input names
+ output_names = [&amp;#39;output&amp;#39;], # the model&amp;#39;s output names
+ dynamic_axes={&amp;#39;input&amp;#39;: {0:&amp;#39;batch_size&amp;#39;}, # variable lenght axes
+ &amp;#39;output&amp;#39;: {0:&amp;#39;batch_size&amp;#39;}})
+
+ traced_script_module = torch.jit.trace(model, data)
+ return
+
+saveOnnx()
+# Conversion
+os.system(&amp;#34;python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx&amp;#34;)
+os.system(&amp;#34;./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin&amp;#34;)
+os.system(&amp;#34;./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536&amp;#34;)
+&lt;/code>&lt;/pre>&lt;p>python .\export.py &amp;ndash;weights weights/best.pt &amp;ndash;img 960 &amp;ndash;batch 1 &amp;ndash;train
+python -m onnxsim best.onnx best-sim.onnx
+.\onnx2ncnn.exe best-sim.onnx best.param best.bin
+ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536&lt;/p></description></item><item><title>Debugging native applications with LLDV on Android 11</title><link>http://www.xgdebug.com/posts/2023/wordpress/debugging-native-applications-with-lldv-on-android-11/</link><pubDate>Fri, 11 Aug 2023 01:14:06 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/debugging-native-applications-with-lldv-on-android-11/</guid><description>&lt;h2 id="mobile">
+ Mobile
+ &lt;a class="heading-link" href="#mobile">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;h2 id="push-debug-server-to-mobile">
+ PUSH debug server to mobile
+ &lt;a class="heading-link" href="#push-debug-server-to-mobile">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>adb push lldb-server /data/local/tmp
+chmod 755 /data/local/tmp/lldb-server
+&lt;/code>&lt;/pre>&lt;h2 id="start-the-debugger-service">
+ Start the debugger service
+ &lt;a class="heading-link" href="#start-the-debugger-service">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>/data/local/tmp/lldb-server platform --listen &amp;#34;*:8888&amp;#34; --server
+&lt;/code>&lt;/pre>&lt;hr>
+&lt;h2 id="computer-side">
+ Computer side
+ &lt;a class="heading-link" href="#computer-side">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;h2 id="port-forwarding">
+ Port forwarding
+ &lt;a class="heading-link" href="#port-forwarding">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>adb forward tcp:8888 tcp:8888
+&lt;/code>&lt;/pre>&lt;h2 id="start-lldb">
+ Start LLDB
+ &lt;a class="heading-link" href="#start-lldb">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>. \lldb.exe
+&lt;/code>&lt;/pre>&lt;h2 id="view-supported-platforms">
+ View supported platforms
+ &lt;a class="heading-link" href="#view-supported-platforms">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>platform list
+&lt;/code>&lt;/pre>&lt;h2 id="select-android-platform">
+ Select ANDROID platform
+ &lt;a class="heading-link" href="#select-android-platform">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>platform select remote-android
+&lt;/code>&lt;/pre>&lt;h2 id="connect-to-the-phone-phone-serial-number-9643e0ec0604-to-change-to-the-current-debugging-phone-use-adb-devices-to-check-the-serial-number">
+ Connect to the phone Phone serial number: &lt;strong>9643e0ec0604&lt;/strong> To change to the current debugging phone, use adb devices to check the serial number
+ &lt;a class="heading-link" href="#connect-to-the-phone-phone-serial-number-9643e0ec0604-to-change-to-the-current-debugging-phone-use-adb-devices-to-check-the-serial-number">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>platform connect connect://9643e0ec0604:8888
+&lt;/code>&lt;/pre>&lt;h2 id="view-the-currently-running-process">
+ View the currently running process
+ &lt;a class="heading-link" href="#view-the-currently-running-process">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>platform process list
+&lt;/code>&lt;/pre>&lt;h2 id="attach-to">
+ Attach to
+ &lt;a class="heading-link" href="#attach-to">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>attach 9053
+&lt;/code>&lt;/pre>&lt;h2 id="breakpoint">
+ Breakpoint
+ &lt;a class="heading-link" href="#breakpoint">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>b send
+&lt;/code>&lt;/pre>&lt;h2 id="run-up">
+ Run up
+ &lt;a class="heading-link" href="#run-up">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>c
+&lt;/code>&lt;/pre>&lt;h2 id="view-the-list-of-threads">
+ View the list of threads
+ &lt;a class="heading-link" href="#view-the-list-of-threads">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>thread list
+&lt;/code>&lt;/pre>&lt;h2 id="view-the-call-stack">
+ View the call stack
+ &lt;a class="heading-link" href="#view-the-call-stack">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;pre tabindex="0">&lt;code>bt
+&lt;/code>&lt;/pre></description></item></channel></rss>

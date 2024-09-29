@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on xgDebug's Blog</title><link>http://www.xgdebug.com/tags/linux/</link><description>Recent content in Linux on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 29 Sep 2024 10:08:49 +0800</lastBuildDate><atom:link href="http://www.xgdebug.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Deploy Key自动部署hugo博客到github</title><link>http://www.xgdebug.com/posts/2024/linux/deploy-hugo-blog-to-github-pages/</link><pubDate>Sun, 29 Sep 2024 10:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/linux/deploy-hugo-blog-to-github-pages/</guid><description>&lt;h2 id="1生成-ssh-密钥">
+ 1：生成 SSH 密钥
+ &lt;a class="heading-link" href="#1%e7%94%9f%e6%88%90-ssh-%e5%af%86%e9%92%a5">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;p>在本地终端生成一个新的 SSH 密钥对：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh-keygen -t rsa -b &lt;span style="color:#a5d6ff">4096&lt;/span> -C &lt;span style="color:#a5d6ff">&amp;#34;your_email@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>执行后，它会要求你指定文件名，按回车即可使用默认路径（~/.ssh/id_rsa），然后你会得到两个文件：&lt;/p>
+&lt;p>id_rsa（私钥）
+id_rsa.pub（公钥）&lt;/p>
+&lt;h2 id="2在-github-pages-仓库中添加-deploy-key">
+ 2：在 GitHub Pages 仓库中添加 Deploy Key
+ &lt;a class="heading-link" href="#2%e5%9c%a8-github-pages-%e4%bb%93%e5%ba%93%e4%b8%ad%e6%b7%bb%e5%8a%a0-deploy-key">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;p>打开你的 GitHub Pages 仓库 xgDebug/xgdebug.github.io。
+进入 Settings -&amp;gt; Deploy keys。
+点击 Add deploy key。
+Title: 取个描述性标题（如 &amp;ldquo;Hugo Blog Deployment Key&amp;rdquo;）。
+Key: 将上一步生成的公钥 id_rsa.pub 的内容复制粘贴进去。
+勾选 Allow write access，因为需要写权限。
+点击 Add key。&lt;/p>
+&lt;h2 id="3将私钥添加到-github-secrets">
+ 3：将私钥添加到 GitHub Secrets
+ &lt;a class="heading-link" href="#3%e5%b0%86%e7%a7%81%e9%92%a5%e6%b7%bb%e5%8a%a0%e5%88%b0-github-secrets">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;p>在你的 Hugo 仓库 xgDebug/xgDebug_blog 中，进入 Settings -&amp;gt; Secrets -&amp;gt; Actions。
+点击 New repository secret，创建新的密钥：
+Name: DEPLOY_KEY
+Value: 将生成的私钥 id_rsa 的内容粘贴进去。&lt;/p></description></item></channel></rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>APP on xgDebug's Blog</title><link>http://www.xgdebug.com/tags/app/</link><description>Recent content in APP on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 26 Jul 2023 12:19:30 +0000</lastBuildDate><atom:link href="http://www.xgdebug.com/tags/app/index.xml" rel="self" type="application/rss+xml"/><item><title>在搞清楚用户的问题之前就动手开发，这是我多次犯过的大忌。</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link><pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</guid><description>&lt;p>1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p>
+&lt;p>2. If there was a solution, would they buy it?&lt;/p>
+&lt;p>3. Would they buy it from us?&lt;/p>
+&lt;p>4. Can we build a solution for that problem?” The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.&lt;/p></description></item><item><title>Zero to Sold</title><link>http://www.xgdebug.com/posts/2023/wordpress/zero-to-sold/</link><pubDate>Mon, 24 Jul 2023 07:30:19 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/zero-to-sold/</guid><description>&lt;p>We found out that many other teachers did the same when they started talking about their self-built solutions in their online communities. Teachers began to share their templates through Google sheets. It was clear that this was a shared problem in a very tight-knit community.&lt;/p>
+&lt;p>Note - Location 252&lt;/p>
+&lt;p>发现了一个群体的集体痛点&lt;/p>
+&lt;p>Highlight(pink) - Location 252&lt;/p>
+&lt;p>even though it helped, was clunky and overwhelming. I looked into it, and it seemed quite possible to build a web-based application that would do this work faster and more reliably.&lt;/p></description></item><item><title>How to start an app business with no money?</title><link>http://www.xgdebug.com/posts/2023/wordpress/how-to-start-an-app-business-with-no-money/</link><pubDate>Wed, 19 Jul 2023 03:57:24 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/how-to-start-an-app-business-with-no-money/</guid><description>&lt;ul>
+&lt;li>Use free or low-cost tools. For example, you can build cross-platform apps with frameworks like React Native which don&amp;rsquo;t require paying for multiple native platforms. Use free graphics tools like GIMP instead of Photoshop.&lt;/li>
+&lt;li>&lt;strong>Validate your app idea first.&lt;/strong> Get feedback from target users before investing time and money into full development. Create mockups or prototypes to gauge interest.&lt;/li>
+&lt;li>Consider freelancers instead of full-time staff. Hire affordable freelancers to help with things like graphics, marketing, etc.&lt;/li>
+&lt;li>&lt;strong>Leverage app marketplaces&lt;/strong> like App Store and Google Play. They make distribution easy without needing your own marketing budget.&lt;/li>
+&lt;li>Use free promotion channels. Promote your app on social media, forums, blogs relevant to your niche. Reach out to influencers and the press.&lt;/li>
+&lt;li>Monetize with ads. Mobile ads through networks like AdMob can provide revenue even for free apps.&lt;/li>
+&lt;li>Build up over time and reinvest revenue. Start lean, prove the concept, then grow organically by reinvesting any profits.&lt;/li>
+&lt;li>Consider crowdfunding. Run a Kickstarter campaign to fund development costs and assess demand.&lt;/li>
+&lt;li>Look for startup grants and investments. Apply to app startup funding programs and pitch to angel investors once you have traction.&lt;/li>
+&lt;/ul>
+&lt;p>The key is to &lt;strong>start small, validate demand, leverage free/low-cost&lt;/strong> tools and use creativity instead of big capital initially when bootstrapping your app busine&lt;/p></description></item><item><title>一个现代化APP的开发通常会涉及以下几个步骤和工具</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</link><pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</guid><description>&lt;p>需求分析 - 分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。&lt;br>
+信息架构和交互设计 - 根据需求和用户研究,设计 APP 的信息架构,确定界面流程和交互逻辑。常用的设计工具有 Axure、Sketch 等。&lt;br>
+视觉设计 - 进行 APP 的视觉设计,包括界面样式、图标、颜色、字体等。常用工具有 Photoshop、Illustrator 等。&lt;br>
+前端开发 - 使用前端开发框架开发 APP 界面,比如 React Native、Flutter 等。需要对 JavaScript、Dart 等语言熟练。&lt;br>
+后端开发 - 开发 APP 后端业务逻辑,提供接口和数据支持。使用 PHP、Java、Python 等服务器语言,以及 MySQL、MongoDB 等数据库。&lt;br>
+测试 - 在开发过程中进行功能测试、界面测试、性能测试、安全测试等,确保 APP 质量。使用工具如 Appium、JMeter 等。&lt;br>
+发布和运维 - 将 APP 发布到 App Store 和 Google Play,并进行持续监控和后期优化升级。使用平台如 Firebase。&lt;br>
+所以现代 APP 开发需要多学科协作,也需要掌握各种专业工具,才能开发出用户喜欢的产品。这个过程需要设计、开发和测试人员通力合作。&lt;/p></description></item><item><title>一个现代的APP是如何诞生的？</title><link>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</link><pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</guid><description>&lt;p>一个现代的 APP 是如何诞生的？&lt;/p>
+&lt;p>从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>创意&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>产品经理：负责制定产品的目标、功能和用户体验。&lt;/li>
+&lt;li>设计师：负责设计产品的界面和交互。&lt;/li>
+&lt;li>开发人员：负责开发产品的代码。&lt;/li>
+&lt;/ul>
+&lt;ol start="2">
+&lt;li>&lt;strong>开发&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>开发人员：负责开发产品的代码。&lt;/li>
+&lt;li>测试人员：负责测试产品的功能和性能。&lt;/li>
+&lt;li>质量保证工程师：负责确保产品达到质量标准。&lt;/li>
+&lt;/ul>
+&lt;ol start="3">
+&lt;li>&lt;strong>上线&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>产品经理：负责制定产品上线的策略。&lt;/li>
+&lt;li>运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>&lt;strong>运营&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。&lt;/li>
+&lt;li>数据分析师：负责分析产品的用户数据，并根据数据做出改进。&lt;/li>
+&lt;/ul>
+&lt;p>以下是一些常用的工具：&lt;/p>
+&lt;ul>
+&lt;li>产品管理工具：Jira、Asana、Trello&lt;/li>
+&lt;li>设计工具：Sketch、Figma、Adobe XD&lt;/li>
+&lt;li>开发工具：Xcode、Android Studio、Visual Studio&lt;/li>
+&lt;li>测试工具：JUnit、Selenium、Xcode UI Testing&lt;/li>
+&lt;li>质量保证工具：SonarQube、Codeship、Travis CI&lt;/li>
+&lt;li>营销工具：Google Ads、Facebook Ads、Twitter Ads&lt;/li>
+&lt;li>客服工具：Zendesk、Intercom、HubSpot&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>注意&lt;/strong>：以上只是一个概述，具体的步骤和工作岗位可能会有所不同，具体情况要根据产品的不同而定。&lt;/p></description></item></channel></rss>
