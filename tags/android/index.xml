@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ANDROID on xgDebug's Blog</title><link>http://www.xgdebug.com/tags/android/</link><description>Recent content in ANDROID on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 28 Sep 2024 13:08:49 +0800</lastBuildDate><atom:link href="http://www.xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>使用ncnn布署pytorch模型到Android手机</title><link>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</link><pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</guid><description>&lt;h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on xgDebug's Blog</title><link>http://www.xgdebug.com/tags/android/</link><description>Recent content in Android on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 28 Sep 2024 13:08:49 +0800</lastBuildDate><atom:link href="http://www.xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>使用ncnn布署pytorch模型到Android手机</title><link>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</link><pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</guid><description>&lt;h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">
  使用 ncnn 布署 pytorch 模型到 Android 手机
  &lt;a class="heading-link" href="#%e4%bd%bf%e7%94%a8-ncnn-%e5%b8%83%e7%bd%b2-pytorch-%e6%a8%a1%e5%9e%8b%e5%88%b0-android-%e6%89%8b%e6%9c%ba">
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
@@ -338,7 +338,7 @@ chmod 755 /data/local/tmp/lldb-server
  &lt;/a>
 &lt;/h2>
 &lt;pre tabindex="0">&lt;code>/data/local/tmp/lldb-server platform --listen &amp;#34;*:8888&amp;#34; --server
-&lt;/code>&lt;/pre>&lt;hr>
+&lt;/code>&lt;/pre>&lt;p>+++&lt;/p>
 &lt;h2 id="computer-side">
  Computer side
  &lt;a class="heading-link" href="#computer-side">

@@ -20,7 +20,7 @@ id_rsa.pub（公钥）&lt;/p>
 &lt;p>打开你的 GitHub Pages 仓库 xgDebug/xgdebug.github.io。
 进入 Settings -&amp;gt; Deploy keys。
 点击 Add deploy key。
-Title: 取个描述性标题（如 &amp;ldquo;Hugo Blog Deployment Key&amp;rdquo;）。
+title = 取个描述性标题（如 &amp;ldquo;Hugo Blog Deployment Key&amp;rdquo;）。
 Key: 将上一步生成的公钥 id_rsa.pub 的内容复制粘贴进去。
 勾选 Allow write access，因为需要写权限。
 点击 Add key。&lt;/p>
@@ -34,4 +34,121 @@ Key: 将上一步生成的公钥 id_rsa.pub 的内容复制粘贴进去。
 &lt;p>在你的 Hugo 仓库 xgDebug/xgDebug_blog 中，进入 Settings -&amp;gt; Secrets -&amp;gt; Actions。
 点击 New repository secret，创建新的密钥：
 Name: DEPLOY_KEY
-Value: 将生成的私钥 id_rsa 的内容粘贴进去。&lt;/p></description></item></channel></rss>
+Value: 将生成的私钥 id_rsa 的内容粘贴进去。&lt;/p></description></item><item><title>使用ncnn布署pytorch模型到Android手机</title><link>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</link><pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/develop-pytorch-models-to-android-using-ncnn-cn/</guid><description>&lt;h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">
+ 使用 ncnn 布署 pytorch 模型到 Android 手机
+ &lt;a class="heading-link" href="#%e4%bd%bf%e7%94%a8-ncnn-%e5%b8%83%e7%bd%b2-pytorch-%e6%a8%a1%e5%9e%8b%e5%88%b0-android-%e6%89%8b%e6%9c%ba">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>编译 NCNN 时要打开显卡支持 vulkan 是针对 gpu 的 -DNCNN_VULKAN=ON&lt;/li>
+&lt;li>MobileNetV3&lt;/li>
+&lt;/ol>
+&lt;h2 id="編譯成-mt-時要打開-cmake-0091-特性">
+ 編譯成 MT 時要打開 CMAKE 0091 特性
+ &lt;a class="heading-link" href="#%e7%b7%a8%e8%ad%af%e6%88%90-mt-%e6%99%82%e8%a6%81%e6%89%93%e9%96%8b-cmake-0091-%e7%89%b9%e6%80%a7">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cmake" data-lang="cmake">&lt;span style="display:flex;">&lt;span>cmake_minimum_required(&lt;span style="color:#a5d6ff">VERSION&lt;/span> &lt;span style="color:#a5d6ff">3.20.0&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f85149">&lt;/span>cmake_policy(&lt;span style="color:#a5d6ff">SET&lt;/span> &lt;span style="color:#a5d6ff">CMP0091&lt;/span> &lt;span style="color:#a5d6ff">NEW&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f85149">&lt;/span>set(&lt;span style="color:#a5d6ff">CMAKE_MSVC_RUNTIME_LIBRARY&lt;/span> &lt;span style="color:#a5d6ff">&amp;#34;MultiThreaded$&amp;lt;$&amp;lt;CONFIG:Debug&amp;gt;:Debug&amp;gt;&amp;#34;&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f85149">&lt;/span>project(&lt;span style="color:#a5d6ff">&amp;#34;client-project&amp;#34;&lt;/span>)&lt;span style="color:#f85149">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="训练-yolo">
+ 训练 YOLO
+ &lt;a class="heading-link" href="#%e8%ae%ad%e7%bb%83-yolo">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#79c0ff">\E&lt;/span>nvs&lt;span style="color:#79c0ff">\t&lt;/span>orch&lt;span style="color:#79c0ff">\S&lt;/span>cripts&lt;span style="color:#79c0ff">\a&lt;/span>ctivate.ps1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python train.py --batch &lt;span style="color:#a5d6ff">6&lt;/span> --workers &lt;span style="color:#a5d6ff">2&lt;/span> --imgsz &lt;span style="color:#a5d6ff">960&lt;/span> --epochs &lt;span style="color:#a5d6ff">300&lt;/span> --data &lt;span style="color:#a5d6ff">&amp;#34;\Core\yaml\data.yaml&amp;#34;&lt;/span> --cfg &lt;span style="color:#a5d6ff">&amp;#34;\Core\yaml\cfg.yaml&amp;#34;&lt;/span> --weights &lt;span style="color:#79c0ff">\C&lt;/span>ore&lt;span style="color:#79c0ff">\w&lt;/span>eights&lt;span style="color:#79c0ff">\b&lt;/span>est.pt --device &lt;span style="color:#a5d6ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="转换模型">
+ 转换模型
+ &lt;a class="heading-link" href="#%e8%bd%ac%e6%8d%a2%e6%a8%a1%e5%9e%8b">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">torch&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> nn
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">import&lt;/span> &lt;span style="color:#ff7b72">torch.utils.model_zoo&lt;/span> &lt;span style="color:#ff7b72">as&lt;/span> &lt;span style="color:#ff7b72">model_zoo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">import&lt;/span> &lt;span style="color:#ff7b72">torch.onnx&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">libs&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> define
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">libs.net&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> Net
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">from&lt;/span> &lt;span style="color:#ff7b72">libs.dataset&lt;/span> &lt;span style="color:#ff7b72">import&lt;/span> ImageDataset
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">import&lt;/span> &lt;span style="color:#ff7b72">os&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>test_data &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> ImageDataset(define&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>testPath,&lt;span style="color:#79c0ff">False&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>test_loader &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>utils&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>data&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>DataLoader( test_data, batch_size&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#a5d6ff">1&lt;/span>, shuffle&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#79c0ff">True&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>device &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>device(&lt;span style="color:#a5d6ff">&amp;#34;cuda&amp;#34;&lt;/span> &lt;span style="color:#ff7b72">if&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>cuda&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>is_available() &lt;span style="color:#ff7b72">else&lt;/span> &lt;span style="color:#a5d6ff">&amp;#34;cpu&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> Net(out_dim&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#a5d6ff">19&lt;/span>)&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>to(device)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>load_state_dict(torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>load( &lt;span style="color:#a5d6ff">&amp;#34;./widget/last.pt&amp;#34;&lt;/span> ))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>model&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>eval()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ff7b72">def&lt;/span> &lt;span style="color:#d2a8ff;font-weight:bold">saveOnnx&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff7b72">for&lt;/span> data, target &lt;span style="color:#ff7b72;font-weight:bold">in&lt;/span> test_loader:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data, target &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> data&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>to(device), target&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>to(device)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> label &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> target&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>long()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> y &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> model(data)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b949e;font-style:italic"># Export the model&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>onnx&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>export(model, &lt;span style="color:#8b949e;font-style:italic"># model being run&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data, &lt;span style="color:#8b949e;font-style:italic"># model input (or a tuple for multiple inputs)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a5d6ff">&amp;#34;./widget/best.onnx&amp;#34;&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># where to save the model (can be a file or file-like object)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> export_params&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#79c0ff">True&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># store the trained parameter weights inside the model file&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> opset_version&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#a5d6ff">10&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># the ONNX version to export the model to&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> do_constant_folding&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>&lt;span style="color:#79c0ff">True&lt;/span>, &lt;span style="color:#8b949e;font-style:italic"># whether to execute constant folding for optimization&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> input_names &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> [&lt;span style="color:#a5d6ff">&amp;#39;input&amp;#39;&lt;/span>], &lt;span style="color:#8b949e;font-style:italic"># the model&amp;#39;s input names&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> output_names &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> [&lt;span style="color:#a5d6ff">&amp;#39;output&amp;#39;&lt;/span>], &lt;span style="color:#8b949e;font-style:italic"># the model&amp;#39;s output names&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dynamic_axes&lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span>{&lt;span style="color:#a5d6ff">&amp;#39;input&amp;#39;&lt;/span> : {&lt;span style="color:#a5d6ff">0&lt;/span> : &lt;span style="color:#a5d6ff">&amp;#39;batch_size&amp;#39;&lt;/span>}, &lt;span style="color:#8b949e;font-style:italic"># variable lenght axes&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a5d6ff">&amp;#39;output&amp;#39;&lt;/span> : {&lt;span style="color:#a5d6ff">0&lt;/span> : &lt;span style="color:#a5d6ff">&amp;#39;batch_size&amp;#39;&lt;/span>}})
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> traced_script_module &lt;span style="color:#ff7b72;font-weight:bold">=&lt;/span> torch&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>jit&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>trace(model, data)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ff7b72">return&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>saveOnnx()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b949e;font-style:italic"># 转换&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>system(&lt;span style="color:#a5d6ff">&amp;#34;python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>system(&lt;span style="color:#a5d6ff">&amp;#34;./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>os&lt;span style="color:#ff7b72;font-weight:bold">.&lt;/span>system(&lt;span style="color:#a5d6ff">&amp;#34;./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>python .&lt;span style="color:#79c0ff">\e&lt;/span>xport.py --weights weights/best.pt --img &lt;span style="color:#a5d6ff">960&lt;/span> --batch &lt;span style="color:#a5d6ff">1&lt;/span> --train
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python -m onnxsim best.onnx best-sim.onnx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.&lt;span style="color:#79c0ff">\o&lt;/span>nnx2ncnn.exe best-sim.onnx best.param best.bin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ncnnoptimize best.param best.bin best-opt.param best-opt.bin &lt;span style="color:#a5d6ff">65536&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="git-clone-ncnn-repo-with-submodule">
+ Git clone ncnn repo with submodule
+ &lt;a class="heading-link" href="#git-clone-ncnn-repo-with-submodule">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;pre tabindex="0">&lt;code>$ git clone https://github.com/Tencent/ncnn.git
+$ cd ncnn
+$ git submodule update --init
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;a href="#build-for-linux" >Build for Linux / NVIDIA Jetson / Raspberry Pi&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-windows-x64-using-visual-studio-community-2017" >Build for Windows x64 using VS2017&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-macos" >Build for macOS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-arm-cortex-a-family-with-cross-compiling" >Build for ARM Cortex-A family with cross-compiling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-hisilicon-platform-with-cross-compiling" >Build for Hisilicon platform with cross-compiling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-android" >Build for Android&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-ios-on-macos-with-xcode" >Build for iOS on macOS with xcode&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-webassembly" >Build for WebAssembly&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-allwinner-d1" >Build for AllWinner D1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#build-for-loongson-2k1000" >Build for Loongson 2K1000&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#Build-for-Termux-on-Android" >Build for Termux on Android&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="build-for-linux">
+ Build for Linux
+ &lt;a class="heading-link" href="#build-for-linux">
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
+ &lt;span class="sr-only">Link to heading&lt;/span>
+ &lt;/a>
+&lt;/h3>
+&lt;p>Install required build dependencies:&lt;/p></description></item><item><title>Arch安装stable-diffusion-webui中遇到的一些坑</title><link>http://www.xgdebug.com/posts/2023/wordpress/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link><pubDate>Tue, 12 Sep 2023 15:21:53 +0000</pubDate><guid>http://www.xgdebug.com/posts/2023/wordpress/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid><description>&lt;p>1. 不要使用清华的源，要用阿里的，因为清华的源不全&lt;br>
+2. 要使用 python launch.py 来安装一些 git 库&lt;br>
+3. 要安装 requirements_versions.txt 带版本的 pip 库&lt;br>
+4. 可以使用 python webui.py &amp;ndash;port=7860 &amp;ndash;server=0.0.0.0 &amp;ndash;medvram 节省显存&lt;/p></description></item></channel></rss>

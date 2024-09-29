@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XgDebug on xgDebug's Blog</title><link>http://www.xgdebug.com/authors/xgdebug/</link><description>Recent content in XgDebug on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 29 Sep 2024 10:08:49 +0800</lastBuildDate><atom:link href="http://www.xgdebug.com/authors/xgdebug/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Deploy Key自动部署hugo博客到github</title><link>http://www.xgdebug.com/posts/2024/linux/deploy-hugo-blog-to-github-pages/</link><pubDate>Sun, 29 Sep 2024 10:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/linux/deploy-hugo-blog-to-github-pages/</guid><description>&lt;h2 id="1生成-ssh-密钥">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>XgDebug on xgDebug's Blog</title><link>http://www.xgdebug.com/authors/xgdebug/</link><description>Recent content in XgDebug on xgDebug's Blog</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 29 Sep 2024 11:01:12 +0800</lastBuildDate><atom:link href="http://www.xgdebug.com/authors/xgdebug/index.xml" rel="self" type="application/rss+xml"/><item><title>尝试开始写日记，记录一直时间是怎么没的</title><link>http://www.xgdebug.com/posts/2024/diary/0929/</link><pubDate>Sun, 29 Sep 2024 11:01:12 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/diary/0929/</guid><description>&lt;ul>
+&lt;li>上午 10 点半才起床，把我的 blog 部署到了 github,改为使用 github action 来部署，感觉比以前两个仓库方便多了&lt;/li>
+&lt;li>上午 11 点开始放视频，所以接下来这一个小时基本上要浪费掉的。&lt;/li>
+&lt;/ul></description></item><item><title>使用 Deploy Key自动部署hugo博客到github</title><link>http://www.xgdebug.com/posts/2024/linux/deploy-hugo-blog-to-github-pages/</link><pubDate>Sun, 29 Sep 2024 10:08:49 +0800</pubDate><guid>http://www.xgdebug.com/posts/2024/linux/deploy-hugo-blog-to-github-pages/</guid><description>&lt;h2 id="1生成-ssh-密钥">
  1：生成 SSH 密钥
  &lt;a class="heading-link" href="#1%e7%94%9f%e6%88%90-ssh-%e5%af%86%e9%92%a5">
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
@@ -20,7 +23,7 @@ id_rsa.pub（公钥）&lt;/p>
 &lt;p>打开你的 GitHub Pages 仓库 xgDebug/xgdebug.github.io。
 进入 Settings -&amp;gt; Deploy keys。
 点击 Add deploy key。
-Title: 取个描述性标题（如 &amp;ldquo;Hugo Blog Deployment Key&amp;rdquo;）。
+title = 取个描述性标题（如 &amp;ldquo;Hugo Blog Deployment Key&amp;rdquo;）。
 Key: 将上一步生成的公钥 id_rsa.pub 的内容复制粘贴进去。
 勾选 Allow write access，因为需要写权限。
 点击 Add key。&lt;/p>
