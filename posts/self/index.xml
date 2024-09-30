@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Self-help on xgDebug&#39;s Blog</title>
+    <link>https://www.xgdebug.com/posts/self/</link>
+    <description>Recent content in Self-help on xgDebug&#39;s Blog</description>
+    <image>
+      <title>xgDebug&#39;s Blog</title>
+      <url>https://www.xgdebug.com/images/avatar.jpg</url>
+      <link>https://www.xgdebug.com/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.135.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Sep 2024 11:01:12 +0800</lastBuildDate>
+    <atom:link href="https://www.xgdebug.com/posts/self/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>尝试开始写日记，记录一直时间是怎么没的</title>
+      <link>https://www.xgdebug.com/posts/self/diary/2024/0929/</link>
+      <pubDate>Sun, 29 Sep 2024 11:01:12 +0800</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/diary/2024/0929/</guid>
+      <description>&lt;h2 id=&#34;2024-09-29&#34;&gt;2024-09-29&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;上午 10 点半才起床，把我的 blog 部署到了 github,改为使用 github action 来部署，感觉比以前两个仓库方便多了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上午 11 点开始放视频，所以接下来这一个小时基本上要浪费掉的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下午给我的 blog 加上了搜索功能，感觉很快时间就过了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;晚上开始阅读了一点 The 48 Law Of Power ,这本书感觉有点暗黑，我不喜欢。 但是我怀疑我这种君子情节是受到了封建礼教的毒害，万一当个小人更加快乐呢？天知道。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一天过完，人生就是这么的快。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-09-30&#34;&gt;2024-09-30&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;上午依然 10 点起床，然后开始了疯狂的一天,整个股市一篇欢腾，开盘 30 分钟成交量破万亿，到下午大盘上涨了 8%。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下午在群里看大家发各种段子，一天时间就这样被浪费掉了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;今天我没有作任何的操作，上午有调整一下仓位的想法，但是很快打消了念头，目前我的持仓很合理。到了下午又想起了看的书。4 根大阳线无法改变我的信仰。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最终我花了一点时间，把今天发生的事写了下来: &lt;a href=&#34;https://www.xgdebug.com/posts/2024/economic/the-largest-signle-day-surge-in-the-history-of-chinas-stock-market/&#34;&gt;写在 A 股历史性的爆涨之日:虚假繁荣还是稳步上行？
+&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>何谓三观不合</title>
+      <link>https://www.xgdebug.com/posts/self/%E4%BD%95%E8%B0%93%E4%B8%89%E8%A7%82%E4%B8%8D%E5%90%88/</link>
+      <pubDate>Tue, 12 Sep 2023 15:24:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E4%BD%95%E8%B0%93%E4%B8%89%E8%A7%82%E4%B8%8D%E5%90%88/</guid>
+      <description>&lt;p&gt;你敬畏天理，他崇拜权威，&lt;br&gt;
+这是世界观不同；&lt;/p&gt;
+&lt;p&gt;你站在良知一边，他站在强者一边，&lt;br&gt;
+这是价值观不同；&lt;/p&gt;
+&lt;p&gt;你努力是为理想的生活，&lt;br&gt;
+他努力是做人上人，&lt;br&gt;
+这是人生观不同。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Atomic Habits</title>
+      <link>https://www.xgdebug.com/posts/self/atomic-habits/</link>
+      <pubDate>Sat, 26 Aug 2023 06:38:11 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/atomic-habits/</guid>
+      <description>&lt;p&gt;Habits are the compound interest of self-improvement. The same way that money multiplies through compound interest, the effects of your habits multiply as you repeat them. They seem to make little difference on any given day and yet the impact they deliver over the months and years can be enormous.&lt;/p&gt;
+&lt;p&gt;Highlight(yellow) - 1: The Surprising Power of Atomic Habits &amp;gt; Location 313&lt;/p&gt;
+&lt;p&gt;。人们做了一些小的改变，没有看到切实的结果，并决定停止。你会想，“我已经连续一个月每天都跑步了，为什么我的身体没有任何变化？一旦这种想法占据了上风，就很容易让好习惯被抛在一边。但为了产生有意义的改变，习惯需要持续足够长的时间才能突破这个高原——我称之为潜在潜力高原。 People make a few small changes, fail to see a tangible result, and decide to stop. You think, “I’ve been running every day for a month, so why can’t I see any change in my body?” Once this kind of thinking takes over, it’s easy to let good habits fall by the wayside. But in order to make a meaningful difference, habits need to persist long enough to break through this plateau—what I call the Plateau of Latent Potential.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>改正一道粗心大意的错题只是临时解决了问题，培养仔细审题的习惯才能永久解决问题</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%94%B9%E6%AD%A3%E4%B8%80%E9%81%93%E7%B2%97%E5%BF%83%E5%A4%A7%E6%84%8F%E7%9A%84%E9%94%99%E9%A2%98%E5%8F%AA%E6%98%AF%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E4%BA%86%E9%97%AE%E9%A2%98%E5%9F%B9/</link>
+      <pubDate>Wed, 23 Aug 2023 14:52:00 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%94%B9%E6%AD%A3%E4%B8%80%E9%81%93%E7%B2%97%E5%BF%83%E5%A4%A7%E6%84%8F%E7%9A%84%E9%94%99%E9%A2%98%E5%8F%AA%E6%98%AF%E4%B8%B4%E6%97%B6%E8%A7%A3%E5%86%B3%E4%BA%86%E9%97%AE%E9%A2%98%E5%9F%B9/</guid>
+      <description>&lt;p&gt;当你在结果层面解决问题时，你只会暂时解决它们。为了取得良好的进步，你需要在系统层面解决问题。修复输入，输出将自行修复。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Become a People Magnet</title>
+      <link>https://www.xgdebug.com/posts/self/how-to-become-a-people-magnet/</link>
+      <pubDate>Mon, 21 Aug 2023 01:07:51 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/how-to-become-a-people-magnet/</guid>
+      <description>&lt;p&gt;1 - Understanding human nature&lt;/p&gt;
+&lt;p&gt;People are, above all, interested in themselves. Yup. Sorry. No matter who you are people will always be a thousand times more interested in themselves than in you. No judgment here.&lt;/p&gt;
+&lt;p&gt;People’s actions are governed by self-interest.&lt;/p&gt;
+&lt;p&gt;In every human relationship, your counterpart will always think or ask themselves “what’s in it for me?” Remember this question “What’s in it for me?” By the way, you’re asking this question in all your interactions too, consciously or subconsciously.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Money Master The Game</title>
+      <link>https://www.xgdebug.com/posts/self/money-master-the-game/</link>
+      <pubDate>Wed, 09 Aug 2023 06:44:42 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/money-master-the-game/</guid>
+      <description>&lt;p&gt;The largest financial institutions are set up to make a profit for themselves, not their clients.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What do I really want? (Vision.) 2. What is important about it? (Values.) 3. How will I get it? (Methods.) 4. What is preventing me from having it? (Obstacles.) 5. How will I know I am successful? (Measurements.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Money is certainly one of the ways we can turn the dreams we have into the reality we live.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2023个人认为获取幸福感的最佳方式</title>
+      <link>https://www.xgdebug.com/posts/self/%E4%B8%AA%E4%BA%BA%E8%AE%A4%E4%B8%BA%E8%8E%B7%E5%8F%96%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Wed, 02 Aug 2023 15:55:23 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E4%B8%AA%E4%BA%BA%E8%AE%A4%E4%B8%BA%E8%8E%B7%E5%8F%96%E5%B9%B8%E7%A6%8F%E6%84%9F%E7%9A%84%E6%9C%80%E4%BD%B3%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;p&gt;个人觉得获得幸福的最佳方法是把生活从网络游戏变成单机游戏。网络游戏比如吃鸡或者王者农药，你需要比别人技术好，装备比别人牛，连皮肤都要比一比。强中自有强中手，你失意是大概率事件。但是如果我们把生活换成单机游戏呢？比如塞尔达，你只要和自己比就可以了。每一步都幸福感满满。投射到现实就是，身材要比别人好，房子要比别人大，车子要比别人豪。 天天想着当人上人，要压过别人，注定很难幸福。个人认为正确的方法是：买了房不用老搬家了，开心。 买了车不用挤地铁了，开心。买了洗碗机不用洗碗了，开心&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>一定要注意身体。</title>
+      <link>https://www.xgdebug.com/posts/self/%E4%B8%80%E5%AE%9A%E8%A6%81%E6%B3%A8%E6%84%8F%E8%BA%AB%E4%BD%93/</link>
+      <pubDate>Sat, 22 Jul 2023 09:05:28 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E4%B8%80%E5%AE%9A%E8%A6%81%E6%B3%A8%E6%84%8F%E8%BA%AB%E4%BD%93/</guid>
+      <description>&lt;p&gt;人在不健康的状态，不仅严重影响生活，还会变得脆弱。很多困难平时咬咬牙扛过去了，身体不健康人的心理就很容易崩溃。年轻时没人把身体当回事，等透支出问题了，才追悔莫及。&lt;br&gt;
+身体有小毛病，定期体检，积极治疗。失去了健康，活着就是一种折磨。不健康，你拥有再多也意义不大。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>浪费时间是最大的痛苦</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%B5%AA%E8%B4%B9%E6%97%B6%E9%97%B4%E6%98%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E7%97%9B%E8%8B%A6/</link>
+      <pubDate>Wed, 19 Jul 2023 09:13:20 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%B5%AA%E8%B4%B9%E6%97%B6%E9%97%B4%E6%98%AF%E6%9C%80%E5%A4%A7%E7%9A%84%E7%97%9B%E8%8B%A6/</guid>
+      <description>&lt;p&gt;Time-Related Pains Most productivity-related issues cause temporal pain: people feel like they’re wasting time. These pains are caused by suboptimal processes and friction between tasks. If tedious work takes a lot of time, it keeps you from doing important and useful things instead. That leads to time mismanagement and relevant actions not being taken. By solving the time-related problem, productive tasks can be accomplished faster and sooner. When people complain about inefficiencies, tedium, or pointless work, you’re looking at a time-related problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reputation What parts of your skill set do you need to</title>
+      <link>https://www.xgdebug.com/posts/self/reputation-what-parts-of-your-skill-set-do-you-need-to/</link>
+      <pubDate>Wed, 19 Jul 2023 09:13:17 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/reputation-what-parts-of-your-skill-set-do-you-need-to/</guid>
+      <description>&lt;p&gt;Efficiency What keeps you from being more efficient at work? Why can’t you do more of what you do? Which tasks feel like they are a drag?&lt;br&gt;
+Effectiveness What limits you from doing your job the right way? Which tasks are the most pointless? What annoys you about working with competitive products? What is your experience like with each of them?&lt;br&gt;
+Financials Where are you spending too much on tools? Where are you spending too much on consulting? What is your budget for software tools? What is your budget for outsourcing work?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>从一个目标中，你通常可以推断出一个阻碍他成功之路的问题</title>
+      <link>https://www.xgdebug.com/posts/self/%E4%BB%8E%E4%B8%80%E4%B8%AA%E7%9B%AE%E6%A0%87%E4%B8%AD%E4%BD%A0%E9%80%9A%E5%B8%B8%E5%8F%AF%E4%BB%A5%E6%8E%A8%E6%96%AD%E5%87%BA%E4%B8%80%E4%B8%AA%E9%98%BB%E7%A2%8D%E4%BB%96%E6%88%90%E5%8A%9F/</link>
+      <pubDate>Tue, 18 Jul 2023 08:27:22 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E4%BB%8E%E4%B8%80%E4%B8%AA%E7%9B%AE%E6%A0%87%E4%B8%AD%E4%BD%A0%E9%80%9A%E5%B8%B8%E5%8F%AF%E4%BB%A5%E6%8E%A8%E6%96%AD%E5%87%BA%E4%B8%80%E4%B8%AA%E9%98%BB%E7%A2%8D%E4%BB%96%E6%88%90%E5%8A%9F/</guid>
+      <description>&lt;p&gt;From a goal, you can usually infer a problem that is in the way of your customers&amp;rsquo; path to success. Solve that problem, and you can help everyone in the niche reach their goals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The better you define your niche market, the more confident you can be in your numbers.</title>
+      <link>https://www.xgdebug.com/posts/self/the-better-you-define-your-niche-market-the-more-confident-you-can-be-in-your-numbers/</link>
+      <pubDate>Tue, 18 Jul 2023 08:27:20 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-better-you-define-your-niche-market-the-more-confident-you-can-be-in-your-numbers/</guid>
+      <description>&lt;p&gt;Shared interests will allow you to speak to the needs of your niche audience directly. Creating content that has a lot of impact and will be read by a lot of people will be easier, as there is less competition for your audience’s attention.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>选择正确的方向会更轻松</title>
+      <link>https://www.xgdebug.com/posts/self/%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%96%B9%E5%90%91%E4%BC%9A%E6%9B%B4%E8%BD%BB%E6%9D%BE/</link>
+      <pubDate>Tue, 18 Jul 2023 08:27:03 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%96%B9%E5%90%91%E4%BC%9A%E6%9B%B4%E8%BD%BB%E6%9D%BE/</guid>
+      <description>&lt;p&gt;A bootstrapped business works best when it starts out in a niche. Most companies will do really well by just staying there. Some expand into other markets. But that initial audience is one of the most important things to carefully select when you start a business.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>总被领导派去做杂活怎么办？</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%80%BB%E8%A2%AB%E9%A2%86%E5%AF%BC%E6%B4%BE%E5%8E%BB%E5%81%9A%E6%9D%82%E6%B4%BB%E6%80%8E%E4%B9%88%E5%8A%9E/</link>
+      <pubDate>Mon, 17 Jul 2023 01:33:41 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%80%BB%E8%A2%AB%E9%A2%86%E5%AF%BC%E6%B4%BE%E5%8E%BB%E5%81%9A%E6%9D%82%E6%B4%BB%E6%80%8E%E4%B9%88%E5%8A%9E/</guid>
+      <description>&lt;p&gt;先做个分类，核心 KPI 占用时间精力至少 60%以上。如果其他的杂活占用高于这个，就和领导沟通一下。不要抱怨活多，而是和领导说，担心影响核心 KPI 的完成度与质量。&lt;br&gt;
+通常领导有临时的杂活给你，多半不会考虑到你的工作量，可能就是随手指派的，或者他觉得交给你还 OK，不能惯。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>给自己的一些建议</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BB%BA%E8%AE%AE/</link>
+      <pubDate>Sun, 16 Jul 2023 14:46:48 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BB%BA%E8%AE%AE/</guid>
+      <description>&lt;p&gt;关于读书：养成一个读书习惯比读什么书更重要。我主要在 Kindle 上买书，用 iPad 阅读。目前在重读一些物理、历史、哲学相关的书。&lt;/p&gt;
+&lt;p&gt;关于习惯：早上健身 30 分钟是我最重要的习惯。另外习惯有冥想、阅读、减少饮酒和咖啡。&lt;/p&gt;
+&lt;p&gt;关于幸福：虽然幸福对每个人来说不同。但我认为幸福是一种没有痛苦和欲望的状态。认为外在环境和物质会带来幸福，这是最大的误区。&lt;/p&gt;
+&lt;p&gt;关于自由：我以前的定义是做任何想做的事情。现在定义是「免于反应的自由」，如免于愤怒的自由，免于悲伤的自由。&lt;/p&gt;
+&lt;p&gt;关于经济学：不再相信宏观经济学，因为无法证伪，数据太多，人们只会选我们相信的叙事。微观经济学和博弈论才是构成经济社会的基础。商业上的成功依赖对供需、劳动力与资本、博弈论等问题的理解。&lt;/p&gt;
+&lt;p&gt;如何成为好的创始人：考虑长期；享受过程（短期没法保证结果）；有执行力&lt;/p&gt;
+&lt;p&gt;关于生命的意义：生命意义是个人的，需要自己找；生命没有意义，需要自己创造；也许生命有意义，从热力学第二定律看，熵只会增加，作为生命系统，创建复杂系统，加速宇宙热寂可能是一种意义。这虽然不是一个令人满意的目标。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自由思考比畅所欲言更重要。</title>
+      <link>https://www.xgdebug.com/posts/self/%E8%87%AA%E7%94%B1%E6%80%9D%E8%80%83%E6%AF%94%E7%95%85%E6%89%80%E6%AC%B2%E8%A8%80%E6%9B%B4%E9%87%8D%E8%A6%81/</link>
+      <pubDate>Fri, 14 Jul 2023 10:16:17 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E8%87%AA%E7%94%B1%E6%80%9D%E8%80%83%E6%AF%94%E7%95%85%E6%89%80%E6%AC%B2%E8%A8%80%E6%9B%B4%E9%87%8D%E8%A6%81/</guid>
+      <description>&lt;p&gt;在思想和言论之间划一条明确的界线。在心里无所不想，但是不一定要说出来。我就鼓励自己在心里默默思考那些最无法无天的想法。你的思想是一个地下组织，绝不要把那里发生的事情一股脑说给外人听。“格斗俱乐部”的第一条规则，就是不要提到格斗俱乐部&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如果别人告诉你应该相信什么，你就真的相信了，那么你就会和别人一样犯下同样的错误。</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A6%82%E6%9E%9C%E5%88%AB%E4%BA%BA%E5%91%8A%E8%AF%89%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9B%B8%E4%BF%A1%E4%BB%80%E4%B9%88%E4%BD%A0%E5%B0%B1%E7%9C%9F%E7%9A%84%E7%9B%B8%E4%BF%A1%E4%BA%86/</link>
+      <pubDate>Fri, 14 Jul 2023 09:17:06 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A6%82%E6%9E%9C%E5%88%AB%E4%BA%BA%E5%91%8A%E8%AF%89%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9B%B8%E4%BF%A1%E4%BB%80%E4%B9%88%E4%BD%A0%E5%B0%B1%E7%9C%9F%E7%9A%84%E7%9B%B8%E4%BF%A1%E4%BA%86/</guid>
+      <description>&lt;p&gt;也许事情并没有这么巧合，你的观点就是从别人那里听来的，别人告诉你什么，你就相信了什么，你把别人灌输的观点当作了自己的观点。&lt;/p&gt;
+&lt;p&gt;有时候，别人会对你说：“要根据社会需要，改造自己的思想 (well-adjusted) 。”这种说法隐含的意思似乎是，如果你不认同社会，那么肯定是你自己的问题。你同意这种说法吗？事实上，它不仅不对，而且会让历史倒退。如果你真的相信了它，凡是不认同社会之处，你连想都不敢想，马上就放弃自己的观点，那才会真正出问题。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Five Parts of Every Business</title>
+      <link>https://www.xgdebug.com/posts/self/the-five-parts-of-every-business/</link>
+      <pubDate>Thu, 13 Jul 2023 09:54:53 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-five-parts-of-every-business/</guid>
+      <description>&lt;p&gt;1. Creates and delivers something of value . .&lt;br&gt;
+2. That other people want or need . . .&lt;br&gt;
+3. At a price they’re willing to pay . . .&lt;br&gt;
+4. In a way that satisfies the customer’s needs and expectations . . .&lt;br&gt;
+5. So that the business brings in enough profit to make it worthwhile for the owners to continue operation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>If you find something broken that you can fix for a lot of people, you’ve found a gold mine.</title>
+      <link>https://www.xgdebug.com/posts/self/if-you-find-something-broken-that-you-can-fix-for-a-lot-of-people-youve-found-a-gold-mine/</link>
+      <pubDate>Thu, 13 Jul 2023 09:31:44 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/if-you-find-something-broken-that-you-can-fix-for-a-lot-of-people-youve-found-a-gold-mine/</guid>
+      <description>&lt;p&gt;Every successful business creates something of value. The world is full of opportunities to make other people’s lives better in some way, and your job as a businessperson is to identify things that people don’t have enough of, then find a way to provide them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>凛冬已至，一点建议</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%87%9B%E5%86%AC%E5%B7%B2%E8%87%B3%E4%B8%80%E7%82%B9%E5%BB%BA%E8%AE%AE/</link>
+      <pubDate>Thu, 13 Jul 2023 09:30:16 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%87%9B%E5%86%AC%E5%B7%B2%E8%87%B3%E4%B8%80%E7%82%B9%E5%BB%BA%E8%AE%AE/</guid>
+      <description>&lt;p&gt;1. 没饿饭的情况下，没有什么是绝对的钢需。&lt;br&gt;
+2.绝对不要想着抄底，-18 层下面可能还有车库，这钱不是你能赚的。&lt;br&gt;
+3. 不做固定资产投资，重资产持有成本很高。&lt;br&gt;
+4. 不要创业，摆个地摊可以，千万不要注册公司。&lt;br&gt;
+5. 不要玩虚拟经济与虚拟币。&lt;br&gt;
+5. 存点应急资金。不能全是 RMB&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>put all your eggs in one basket and watch the basket very carefully.</title>
+      <link>https://www.xgdebug.com/posts/self/put-all-your-eggs-in-one-basket-and-watch-the-basket-very-carefully/</link>
+      <pubDate>Thu, 13 Jul 2023 09:29:56 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/put-all-your-eggs-in-one-basket-and-watch-the-basket-very-carefully/</guid>
+      <description>&lt;p&gt;The mistake 98% of money managers and individuals make is they feel like they have got to be playing with a bunch of of stuff. And if you really see it, put all your eggs in one basket and watch the basket very carefully.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The less he spoke, the more he heard,</title>
+      <link>https://www.xgdebug.com/posts/self/the-less-he-spoke-the-more-he-heard/</link>
+      <pubDate>Thu, 13 Jul 2023 09:29:55 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-less-he-spoke-the-more-he-heard/</guid>
+      <description>&lt;p&gt;When you accept how true that statement is, you realize that aligning money towards a life that lets you do what you want, when you want, with who you want, where you want, for as long as you want, has incredible return.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>水滴筹带给我的一点感悟</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%B0%B4%E6%BB%B4%E7%AD%B9%E5%B8%A6%E7%BB%99%E6%88%91%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%82%9F/</link>
+      <pubDate>Sat, 08 Jul 2023 04:56:43 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%B0%B4%E6%BB%B4%E7%AD%B9%E5%B8%A6%E7%BB%99%E6%88%91%E7%9A%84%E4%B8%80%E7%82%B9%E6%84%9F%E6%82%9F/</guid>
+      <description>&lt;p&gt;国内号称帮贫苦人家筹集救命钱的公司水滴筹在美国上市了。&lt;br&gt;
+招股书在这里https://www.sec.gov/Archives/edgar/data/1823986/000119312521154899/d95574d424b4.htm#rom95574_23&lt;br&gt;
+核心内容&lt;br&gt;
+1. 这么一家占领道德至高点的公司，光 2020 年就赚了 144 亿，平均在每个病人身上赚 7300 块&lt;br&gt;
+2. 截至 2020 年 12 月 31 日，已有超过 3.4 亿人通过水滴医疗众筹向超过 170 万名患者捐款累计超过 370 亿元人民币，平均每人捐款金额为 100RMB，平均每名患者是 2.1 万，但是很明显患者不可能拿到这么多，因为公司还要赚钱。&lt;br&gt;
+3. 腾讯目前实益拥有水滴筹 22.1%的股份&lt;br&gt;
+4. 2020 年腾讯通过支付手续费与广告营销费等，共在水滴筹上赚了 2.1 亿&lt;/p&gt;
+&lt;p&gt;个人的一点感悟：任何公司都是以赚钱的目的的。无论他们打着多么高尚的旗号。世界本身就是及其残酷的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>每一句话都是无数踩过的坑</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%AF%8F%E4%B8%80%E5%8F%A5%E8%AF%9D%E9%83%BD%E6%98%AF%E6%97%A0%E6%95%B0%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/</link>
+      <pubDate>Mon, 03 Jul 2023 08:11:15 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%AF%8F%E4%B8%80%E5%8F%A5%E8%AF%9D%E9%83%BD%E6%98%AF%E6%97%A0%E6%95%B0%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91/</guid>
+      <description>&lt;p&gt;1、很多人的正确决定都无疾而终：去问一个只 骑过自行车的人，理想汽车值不值得买？问一 个从来没从股权投资中获益的人，要不要做梅 花 LP？……做错的决定和错过的决定很多时候 都因为你去咨询的人不对。有一种出馊主意的 方式是：我是为你好。遇到不如你的人，要坚定自己的想法。遇到和你差不多的人，要怀疑自己的想法。遇到比你优秀的人，要否定自己的想法。&lt;/p&gt;
+&lt;p&gt;2、人唯一真正的资产是时间。唯一重要的战 略，是如何使用自己的时问。有价值的事情不要在乎价格，没价值的事情不要浪费时间，决策是价格思维还是价值思维，结果相差悬殊。 创业就像拼乐高，时间不是花在看图纸上，时 间往往花在找零件上。创始人始终重要的三件事：找人，找钱，找方向。&lt;/p&gt;
+&lt;p&gt;3、如果一个创业者不从一个教训中彻底反省， 那么这个教训将会一再重复，直到你彻底学会 为止。人教人，百遍不会，事教人，一遍就会。能说服一个人的，不是说教，而是南墙。&lt;/p&gt;
+&lt;p&gt;4、穷人翻身的机会就是下重注。没有筹码数量就要有倍数，均匀下注不可能翻身成功。你的 重注包括金钱、时问、精力、忠诚。所谓第一 桶金就是让你上一个台阶的金额。这个社会又现实又残酷，钱都流向了那些不缺钱的人，苦都留给了能吃苦的人。&lt;/p&gt;
+&lt;p&gt;5、很多人生活比以前更好，但是也没有想象中 变得更快乐。人的快乐第一层由感官决定，第 二层由多巴胺决定，第三层由内啡肽决定，第一层绝大部分人都有，第三层绝大部分人都没有，真正区分人的快乐程度是由第二层多巴胺分泌多少决定的，从多巴胺的角度来讲，拥有存量是无趣的，只有获得增量才会有趣，不要吃老本，要立新功，有增量才有多巴胺，才会拥有更多的快乐。投资人跨界脱口秀也是增量。&lt;/p&gt;
+&lt;p&gt;6、惯蛋是一种：“如果水平相当就比谁少犯错” 的游戏。同样，创业是一种如果战略、战术 清晰就比谁更精益、谁更抠的游戏。在造车新势力中，理想在同样的事情犯错最少，这就赢了一大半。&lt;/p&gt;
+&lt;p&gt;7、创业者进化就要离开舒适区，进入自适区。谁痛苦谁改变，谁改变谁适应，谁适应谁受益。离开舒适区最有效的方式，是拿别人当一面镜子，来照出自己的问题。普通人喜欢听好听的话，如同小孩喜欢吃糖，甜而无益。高手喜欢听难听的话，如同大人喜欢喝茶，苦而排毒。&lt;/p&gt;
+&lt;p&gt;8、不要拉人上路创业，而是在创业同行路上吸引需要的人。拉人创业，你就要承诺，承诺就给人确定性，确定性就引发懒惰和作恶。&lt;/p&gt;
+&lt;p&gt;9、聪明的人找傻子做对手，找高手做朋友， 这是反人性的，但符合常理的。笨的人找高手做对手，找傻子做朋友，这是合乎人性，但违背常理。&lt;/p&gt;
+&lt;p&gt;10、人有三次生命：一次出生，一次心力涌 现，一次认知觉醒。心力、认知就是创业者的 任督二脉，只有打通之，才能真正无往而不胜。没有心力、认知成长的成功比失败更可怕，因为最终时间会把撞大运式的成功打回原形。阶层爬升很困难，跌落只需要很短时间。&lt;/p&gt;
+&lt;p&gt;11、人天生都是双标动物，理解别人的双标，克服自己的双标，这是一生的修炼，这是很痛苦的修心，也是区分一个人能否真正客观、诚实、有同理心的。&lt;/p&gt;
+&lt;p&gt;12、查理芒格认为获得幸福生活的 5 项清单：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不要过度消费，不要超出承受能力&lt;/li&gt;
+&lt;li&gt;进行精明的投资&lt;/li&gt;
+&lt;li&gt;远离有毒的人和有毒的活动&lt;/li&gt;
+&lt;li&gt;保持终身学习&lt;/li&gt;
+&lt;li&gt;多做延迟满足的事情&lt;br&gt;
+否则，你就需要拥有非常好非常好的运气！大师认为稀松平常的事情，里面每一点都不简单。大部分人最终都期待自己有非常非常好的运气，不惜花时间烧香拜佛，在进化和进公司选择了进庙。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;13、融来的钱都不经花，只有能从市场上赚到的钱才经花。一流的企业家永远是赚钱能力远大于融钱能力。95% 的创始人花钱能力都需要很惨痛的代价才能锻炼出来，不会花的时候抠门就很重要。很多创始人都把钱花在刀背上，甚至刀把上，就是没有花在刀刃上。&lt;/p&gt;
+&lt;p&gt;14、人就是这样，哪怕勉强，但只要某方面能 领先对手一丢丢，状态就会出来，甚至能够发 挥出 120%、150% 的力量。要咬紧牙关坚持领先，充分发挥“大树原理”：在森林里，越高的树，越能得到太阳光照，树木在光合作用下， 成长的越快。&lt;/p&gt;
+&lt;p&gt;15、企业里任何时候骑墙派、墙头草都是占大多数的，在你不行的时候、犯错的时候他们骑墙观望很正常，如果你用单一、绝对忠诚的价值观就会把他们推向你的对手方。&lt;/p&gt;
+&lt;p&gt;16、创业社交的潜规则，只筛选，不教育。改变别人是一种极大的内耗，改变自己则是一种成长。顺境和逆境是都是内心的映照，如果你执着了，心动了，对你来说就是逆境；如果你放下了，心不动，一切都是顺境。&lt;/p&gt;
+&lt;p&gt;17、人往高处走，是往更高维走，是为了获取更多的信息，而不仅仅是能力。你在更高的维度里，掌握信息的速度、密度、精确度，是完全不一样的，它会变成你的认知厚度。有了认知的厚度，去降维，去兼容，去服务你能服务的用户，这就是赚钱的逻辑。&lt;/p&gt;
+&lt;p&gt;18、“真正的光明绝不是没有黑暗的时问，只是永不被黑暗所掩蔽罢了。真正的英雄绝不是永没有卑下的情操，只是永不被卑下的情操所屈服罢了。”一一我非常欣赏的一段话。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>If you can’t decide, the answer is no.</title>
+      <link>https://www.xgdebug.com/posts/self/if-you-cant-decide-the-answer-is-no/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:43 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/if-you-cant-decide-the-answer-is-no/</guid>
+      <description>&lt;p&gt;Should I marry this person?&lt;br&gt;
+Should I take this job?&lt;br&gt;
+Should I buy this house?&lt;br&gt;
+Should I move to this city?&lt;br&gt;
+Should I go into business with this person?&lt;br&gt;
+If you cannot decide, the answer is no. And the reason is, modern society is full of options. There are tons and tons of options.&lt;br&gt;
+We live on a planet of seven billion people, and we are connected to everybody on the internet. There are hundreds of thousands of careers available to you. There are so many choices.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Read what you love until you love to read.</title>
+      <link>https://www.xgdebug.com/posts/self/read-what-you-love-until-you-love-to-read/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:43 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/read-what-you-love-until-you-love-to-read/</guid>
+      <description>&lt;p&gt;You almost have to read the stuff you’re reading, because you’re into it. You don’t need any other reason. There’s no mission here to accomplish. Just read because you enjoy it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Principal-Agent Problem</title>
+      <link>https://www.xgdebug.com/posts/self/principal-agent-problem/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:42 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/principal-agent-problem/</guid>
+      <description>&lt;p&gt;只有确保利益绑定，才能从根本上降低代理人问题，最大限度的保护我们自己的利益。&lt;br&gt;
+To me, the principal-agent problem is the single most fundamental problem in microeconomics. If you do not understand the principal-agent problem, you will not know how to navigate your way through the world. It is important if you want to build a successful company or be successful in your dealings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>问别人一个问题，就是给别人一个讲话的机会</title>
+      <link>https://www.xgdebug.com/posts/self/%E9%97%AE%E5%88%AB%E4%BA%BA%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E5%B0%B1%E6%98%AF%E7%BB%99%E5%88%AB%E4%BA%BA%E4%B8%80%E4%B8%AA%E8%AE%B2%E8%AF%9D%E7%9A%84%E6%9C%BA%E4%BC%9A/</link>
+      <pubDate>Mon, 03 Jul 2023 08:08:24 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E9%97%AE%E5%88%AB%E4%BA%BA%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E5%B0%B1%E6%98%AF%E7%BB%99%E5%88%AB%E4%BA%BA%E4%B8%80%E4%B8%AA%E8%AE%B2%E8%AF%9D%E7%9A%84%E6%9C%BA%E4%BC%9A/</guid>
+      <description>&lt;p&gt;当某人拒绝我们做某事的时候，我们的第一反应是向他解释为什么他要接受我们的提议。而一旦他没有选择让步，我们就会继续解释，或者提出更多的论据。我们想通过自己的解释强迫别人接受，而对方却和我们做着同样的事。这就如同两个聋人之间进行对话：‘不是的，因为 ……’ ，‘是的，因为 ……’ ，‘不是的，因为 ……’ ，‘是的，因为 ……’ 没完没了。但其实一个简单的词就可以扭转局面 —— 为什么，一个十分简单但是威力无穷的词语。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>This is what it is</title>
+      <link>https://www.xgdebug.com/posts/self/this-is-what-it-is/</link>
+      <pubDate>Wed, 28 Jun 2023 04:14:15 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/this-is-what-it-is/</guid>
+      <description>&lt;p&gt;I never ask if “I like it” or “I don’t like it.” I think “this is what it is” or “this is what it isn’t.”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clear thinkers appeal to their own authority.</title>
+      <link>https://www.xgdebug.com/posts/self/clear-thinkers-appeal-to-their-own-authority/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:17 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/clear-thinkers-appeal-to-their-own-authority/</guid>
+      <description>&lt;p&gt;Part of making effective decisions boils down to dealing with reality. How do you make sure you’re dealing with reality when you’re making decisions?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How do you make sure you’re dealing with reality when you’re making decisions?</title>
+      <link>https://www.xgdebug.com/posts/self/how-do-you-make-sure-youre-dealing-with-reality-when-youre-making-decisions/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:16 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/how-do-you-make-sure-youre-dealing-with-reality-when-youre-making-decisions/</guid>
+      <description>&lt;p&gt;By not having a strong sense of self or judgments or mind presence. The “monkey mind” will always respond with this regurgitated emotional response to what it thinks the world should be. Those desires will cloud your reality. This happens a lot of times when people are mixing politics and business.&lt;br&gt;
+The number one thing clouding us from being able to see reality is we have preconceived notions of the way it should be.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The hard thing is seeing the truth.</title>
+      <link>https://www.xgdebug.com/posts/self/the-hard-thing-is-seeing-the-truth/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:15 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-hard-thing-is-seeing-the-truth/</guid>
+      <description>&lt;p&gt;To see the truth, you have to get your ego out of the way because your ego doesn’t want to face the truth. The smaller you can make your ego, the less conditioned you can make your reactions, the less desires you can have about the outcome you want, the easier it will be to see the reality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The more desire I have for something to work out a certain way, the less likely I am to see the truth.</title>
+      <link>https://www.xgdebug.com/posts/self/the-more-desire-i-have-for-something-to-work-out-a-certain-way-the-less-likely-i-am-to-see-the-truth/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:14 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-more-desire-i-have-for-something-to-work-out-a-certain-way-the-less-likely-i-am-to-see-the-truth/</guid>
+      <description>&lt;p&gt;The problem is their desire is colliding with reality and preventing them from seeing the truth, no matter how much you say it. The same thing happens when I make decisions. The more desire I have for something to work out a certain way, the less likely I am to see the truth. Especially in business, if something isn’t going well, I try to acknowledge it publicly and I try to acknowledge it publicly in front of my co-founders and friends and co-workers. Then, I’m not hiding it from anybody else. If I’m not hiding it from anybody, I’m not going to delude myself from what’s actually going on.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tension is who you think you should be. Relaxation is who you are.</title>
+      <link>https://www.xgdebug.com/posts/self/tension-is-who-you-think-you-should-be-relaxation-is-who-you-are/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:13 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/tension-is-who-you-think-you-should-be-relaxation-is-who-you-are/</guid>
+      <description>&lt;p&gt;Almost all biases are time-saving heuristics. For important decisions, discard memory and identity, and focus on the problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Play stupid games, win stupid prizes.</title>
+      <link>https://www.xgdebug.com/posts/self/play-stupid-games-win-stupid-prizes/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:26 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/play-stupid-games-win-stupid-prizes/</guid>
+      <description>&lt;p&gt;Don’t play zero-sum games .&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Find Work That Feels Like Play</title>
+      <link>https://www.xgdebug.com/posts/self/find-work-that-feels-like-play/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:25 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/find-work-that-feels-like-play/</guid>
+      <description>&lt;p&gt;Any end goal will just lead to another goal, lead to another goal. We just play games in life. When you grow up, you’re playing the school game, or you’re playing the social game. Then you’re playing the money game, and then you’re playing the status game. These games just have longer and longer and longer-lived horizons. At some point, at least I believe, these are all just games. These are games where the outcome really stops mattering once you see through the game.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apply specific knowledge with leverage and eventually, you will get what you deserve.</title>
+      <link>https://www.xgdebug.com/posts/self/apply-specific-knowledge-with-leverage-and-eventually-you-will-get-what-you-deserve/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:23 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/apply-specific-knowledge-with-leverage-and-eventually-you-will-get-what-you-deserve/</guid>
+      <description>&lt;p&gt;It takes time—even once you have all of these pieces in place, there is an indeterminate amount of time you have to put in. If you’re counting, you’ll run out of patience before success actually arrives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Don’t keep count.</title>
+      <link>https://www.xgdebug.com/posts/self/dont-keep-count/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:23 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/dont-keep-count/</guid>
+      <description>&lt;p&gt;This is not to say it’s easy. It’s not easy. It’s actually really freaking hard. It is the hardest thing you will do. But it’s also rewarding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>One correct decision can win everything</title>
+      <link>https://www.xgdebug.com/posts/self/one-correct-decision-can-win-everything/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:22 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/one-correct-decision-can-win-everything/</guid>
+      <description>&lt;p&gt;You don’t get rich by spending your time to save money. You get rich by saving your time to make money.&lt;br&gt;
+In an age of leverage, one correct decision can win everything. Without hard work, you’ll develop neither judgment nor leverage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The direction you’re heading in matters more than how fast you move</title>
+      <link>https://www.xgdebug.com/posts/self/the-direction-youre-heading-in-matters-more-than-how-fast-you-move/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:20 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-direction-youre-heading-in-matters-more-than-how-fast-you-move/</guid>
+      <description>&lt;p&gt;You have to put in the time, but the judgment is more important. The direction you’re heading in matters more than how fast you move, especially with leverage. Picking the direction you’re heading in for every decision is far, far more important than how much force you apply. Just pick the right direction to start walking in, and start walking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>遇到事了，就只能无助的哭泣，仿佛一只巨婴</title>
+      <link>https://www.xgdebug.com/posts/self/%E9%81%87%E5%88%B0%E4%BA%8B%E4%BA%86%E5%B0%B1%E5%8F%AA%E8%83%BD%E6%97%A0%E5%8A%A9%E7%9A%84%E5%93%AD%E6%B3%A3%E4%BB%BF%E4%BD%9B%E4%B8%80%E5%8F%AA%E5%B7%A8%E5%A9%B4/</link>
+      <pubDate>Tue, 27 Jun 2023 03:54:37 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E9%81%87%E5%88%B0%E4%BA%8B%E4%BA%86%E5%B0%B1%E5%8F%AA%E8%83%BD%E6%97%A0%E5%8A%A9%E7%9A%84%E5%93%AD%E6%B3%A3%E4%BB%BF%E4%BD%9B%E4%B8%80%E5%8F%AA%E5%B7%A8%E5%A9%B4/</guid>
+      <description>&lt;p&gt;读书是一种可以确保活在及格线以上的稳妥方法，即不至于变的过分的庸俗，低级，和自以为是，有中上水平的思考和内省能力。&lt;br&gt;
+达到这个及格线以后，想更进一步变的更厉害，其实也非常简单，去实践。把在书里看到的东西，实践起来。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>要把脑力用在重要的事情上</title>
+      <link>https://www.xgdebug.com/posts/self/%E8%A6%81%E6%8A%8A%E8%84%91%E5%8A%9B%E7%94%A8%E5%9C%A8%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E4%B8%8A/</link>
+      <pubDate>Tue, 27 Jun 2023 02:19:31 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E8%A6%81%E6%8A%8A%E8%84%91%E5%8A%9B%E7%94%A8%E5%9C%A8%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E4%B8%8A/</guid>
+      <description>&lt;p&gt;大脑是个耗能极高的器官，它以 2%左右的身体重量，消耗了身体总消耗的 20%-30%的能量。 人每天大脑运行的产出是有限的，要把脑力用在重要的事情上。不要白白浪费你的生命。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Earn with your mind, not your time.</title>
+      <link>https://www.xgdebug.com/posts/self/earn-with-your-mind-not-your-time/</link>
+      <pubDate>Mon, 26 Jun 2023 08:50:13 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/earn-with-your-mind-not-your-time/</guid>
+      <description>&lt;p&gt;The one thing you have to avoid is the risk of ruin. Avoiding ruin means stay out of jail. So, don’t do anything illegal. It’s never worth it to wear an orange jumpsuit. Stay out of total catastrophic loss. Avoiding ruin could also mean you stay out of things that could be physically dangerous or hurt your body. You have to watch your health .Stay out of things that could cause you to lose all of your capital, all of your savings. Don’t gamble everything on one go. Instead, take rationally optimistic bets with big upsides. [&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Get Paid for Your Judgment</title>
+      <link>https://www.xgdebug.com/posts/self/get-paid-for-your-judgment/</link>
+      <pubDate>Mon, 26 Jun 2023 08:50:12 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/get-paid-for-your-judgment/</guid>
+      <description>&lt;p&gt;Choosing what kinds of jobs, careers, or fields you get into and what sort of deals you’re willing to take from your employer will give you much more free time. Then, you don’t have to worry as much about time management. I would love to be paid purely for my judgment, not for any work. I want a robot, capital, or computer to do the work, but I want to be paid for my judgment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prioritize and Focus</title>
+      <link>https://www.xgdebug.com/posts/self/prioritize-and-focus/</link>
+      <pubDate>Mon, 26 Jun 2023 08:50:11 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/prioritize-and-focus/</guid>
+      <description>&lt;p&gt;Value your time at an hourly rate, and ruthlessly spend to save time at that rate. You will never be worth more than you think you’re worth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>If they can train you to do it, then eventually they will train a computer to do it.</title>
+      <link>https://www.xgdebug.com/posts/self/if-they-can-train-you-to-do-it-then-eventually-they-will-train-a-computer-to-do-it/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:06 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/if-they-can-train-you-to-do-it-then-eventually-they-will-train-a-computer-to-do-it/</guid>
+      <description>&lt;p&gt;If someone can train other people how to do something, then they can replace you. If they can replace you, then they don’t have to pay you a lot. You want to know how to do something other people don’t know how to do at the time period when those skills are in demand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>There are three broad classes of leverage</title>
+      <link>https://www.xgdebug.com/posts/self/there-are-three-broad-classes-of-leverage/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:04 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/there-are-three-broad-classes-of-leverage/</guid>
+      <description>&lt;p&gt;One form of leverage is labor—other humans working for you. It is the oldest form of leverage, and actually not a great one in the modern world. [1] I would argue this is the worst form of leverage that you could possibly use. Managing other people is incredibly messy. It requires tremendous leadership skills. You’re one short hop from a mutiny or getting eaten or torn apart by the mob. [78] Money is good as a form of leverage. It means every time you make a decision, you multiply it with money. [1] Capital is a trickier form of leverage to use. It’s more modern. It’s the one that people have used to get fabulously wealthy in the last century. It’s probably been the dominant form of leverage in the last century. You can see this by looking for the richest people. It’s bankers, politicians in corrupt countries who print money, essentially people who move large amounts of money around. If you look at the top of very large companies, outside of technology companies, in many, many large old companies, the CEO job is really a financial job. It scales very, very well. If you get good at managing capital, you can manage more and more capital much more easily than you can manage more and more people. The final form of leverage is brand new—the most democratic form. It is: “products with no marginal cost of replication.” This includes books, media, movies, and code. Code is probably the most powerful form of permissionless leverage. All you need is a computer—you don’t need anyone’s permission.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The leverage for ordinary people</title>
+      <link>https://www.xgdebug.com/posts/self/the-leverage-for-ordinary-people/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:03 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-leverage-for-ordinary-people/</guid>
+      <description>&lt;p&gt;Probably the most interesting thing to keep in mind about new forms of leverage is they are permissionless. They don’t require somebody else’s permission for you to use them or succeed. For labor leverage, somebody has to decide to follow you. For capital leverage, somebody has to give you money to invest or to turn into a product.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>If you’re looking toward the long-term goal of getting wealthy, you should ask yourself,</title>
+      <link>https://www.xgdebug.com/posts/self/if-youre-looking-toward-the-long-term-goal-of-getting-wealthy-you-should-ask-yourself/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:32 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/if-youre-looking-toward-the-long-term-goal-of-getting-wealthy-you-should-ask-yourself/</guid>
+      <description>&lt;p&gt;“Is this authentic to me? Is it myself that I am projecting?” And then, “Am I productizing it? Am I scaling it? Am I scaling with labor or with capital or with code or with media?” So it’s a very handy, simple mnemonic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Play Long-Term Games with Long-Term People</title>
+      <link>https://www.xgdebug.com/posts/self/play-long-term-games-with-long-term-people/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:30 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/play-long-term-games-with-long-term-people/</guid>
+      <description>&lt;p&gt;Compound interest is a very powerful concept. Compound interest applies to more than just compounding capital. Compounding capital is just the beginning.&lt;br&gt;
+Compound interest also happens in your reputation.&lt;br&gt;
+If you have a sterling reputation and you keep building it for decades upon decades, people will notice.&lt;br&gt;
+Your reputation will literally end up being thousands or tens of thousands of times more valuable than somebody else who was very talented but is not keeping the compound interest in reputation going.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I’m not saying don’t do the 99 percent</title>
+      <link>https://www.xgdebug.com/posts/self/im-not-saying-dont-do-the-99-percent/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:28 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/im-not-saying-dont-do-the-99-percent/</guid>
+      <description>&lt;p&gt;because it’s very hard to identify what the 1 percent is. What I’m saying is: when you find the 1 percent of your discipline which will not be wasted, which you’ll be able to invest in for the rest of your life and has meaning toyou—go all-in and forget about the rest.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Take on Accountability</title>
+      <link>https://www.xgdebug.com/posts/self/take-on-accountability/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:28 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/take-on-accountability/</guid>
+      <description>&lt;p&gt;Embrace accountability and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clear accountability is important.</title>
+      <link>https://www.xgdebug.com/posts/self/clear-accountability-is-important/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:26 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/clear-accountability-is-important/</guid>
+      <description>&lt;p&gt;Clear accountability is important. Without accountability, you don’t have incentives. Without accountability, you can’t build credibility.&lt;br&gt;
+But you take risks. You risk failure.&lt;br&gt;
+You risk humiliation.&lt;br&gt;
+You risk failure under your own name.&lt;br&gt;
+如果你说同学们帮我擦黑板，那么就不会有人擦&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Realize that in modern society, the downside risk is not that large.</title>
+      <link>https://www.xgdebug.com/posts/self/realize-that-in-modern-society-the-downside-risk-is-not-that-large/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:26 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/realize-that-in-modern-society-the-downside-risk-is-not-that-large/</guid>
+      <description>&lt;p&gt;There’s not really that much to fear in terms of failure, and so people should take on a lot more accountability than they do.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>the real wealth is created by starting your own companies or even by investing.</title>
+      <link>https://www.xgdebug.com/posts/self/the-real-wealth-is-created-by-starting-your-own-companies-or-even-by-investing/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:24 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-real-wealth-is-created-by-starting-your-own-companies-or-even-by-investing/</guid>
+      <description>&lt;p&gt;In an investment firm, they’re buying equity. These are the routes to wealth. It doesn’t come through the hours.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Find a Position of Leverage</title>
+      <link>https://www.xgdebug.com/posts/self/find-a-position-of-leverage/</link>
+      <pubDate>Fri, 23 Jun 2023 16:33:23 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/find-a-position-of-leverage/</guid>
+      <description>&lt;p&gt;I only really want to do things for their own sake. That is one definition of art. Whether it’s business, exercise, romance, friendship, whatever, I think the meaning of life is to do things for their own sake. Ironically, when you do things for their own sake, you create your best work. Even if you’re just trying to make money, you will actually be the most successful.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The limits of my language are the limits of my world.</title>
+      <link>https://www.xgdebug.com/posts/self/the-limits-of-my-language-are-the-limits-of-my-world/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:30 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/the-limits-of-my-language-are-the-limits-of-my-world/</guid>
+      <description>&lt;p&gt;Mental models are concepts that represent your understanding of how something in the world works. Think of driving a car: What do you expect when you press down on the right-side pedal? If the car slows down, you’ll be surprised—that pedal is supposed to be the accelerator. The accuracy of your model of the world determines your expectations, decisions, behavior, and—in the long run—your results.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Should You Go to Business School?</title>
+      <link>https://www.xgdebug.com/posts/self/should-you-go-to-business-school/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:20 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/should-you-go-to-business-school/</guid>
+      <description>&lt;p&gt;There is a difference between&lt;br&gt;
+(A) what an MBA does to help you prove your abilities to others .&lt;br&gt;
+(B) what getting an MBA actually does to improve your abilities. They are two different things.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>绝不要用短期的解决方案来应对长期问题。</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%BB%9D%E4%B8%8D%E8%A6%81%E7%94%A8%E7%9F%AD%E6%9C%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9D%A5%E5%BA%94%E5%AF%B9%E9%95%BF%E6%9C%9F%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 21 Jun 2023 16:12:26 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%BB%9D%E4%B8%8D%E8%A6%81%E7%94%A8%E7%9F%AD%E6%9C%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%9D%A5%E5%BA%94%E5%AF%B9%E9%95%BF%E6%9C%9F%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;我绝不能让别人认为我很吝啬。于是我经常邀请朋友去餐厅吃饭；我还需要一辆大轿车来展现身份；此外，我还必须支付一些其他费用 —— 税收。最终，我只得求助于这一伟大的发明：信用卡。有了信用卡，我就不用自己付钱了，信用卡公司的人会帮我付款，至少我暂时先不用付钱了 …… 之后我就听到有人说：“他真是个人生赢家，他过的是头等生活。”我过起了头等生活：不喝气泡酒 —— 只喝香槟酒；不吃牛排 —— 只吃上等里脊。我想像一个富人一样，生活在未来世界。而很快，过去以账单、催债信和高贷款利率等方式不断地打扰我。作为一个业绩优异、收入颇丰的销售人员，我总是能够获得新的信用卡。于是我开始进行交替还款，也就是说，我得到一张新的信用卡，然后用新信用卡去还旧信用卡的账单。就这样，我将自己卷入了一个螺旋式下降的财务状态中。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>整天工作的人，没有时间来赚钱。</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%95%B4%E5%A4%A9%E5%B7%A5%E4%BD%9C%E7%9A%84%E4%BA%BA%E6%B2%A1%E6%9C%89%E6%97%B6%E9%97%B4%E6%9D%A5%E8%B5%9A%E9%92%B1/</link>
+      <pubDate>Wed, 21 Jun 2023 16:12:25 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%95%B4%E5%A4%A9%E5%B7%A5%E4%BD%9C%E7%9A%84%E4%BA%BA%E6%B2%A1%E6%9C%89%E6%97%B6%E9%97%B4%E6%9D%A5%E8%B5%9A%E9%92%B1/</guid>
+      <description>&lt;p&gt;你越努力工作，你老板换豪车豪宅的机会越大。&lt;br&gt;
+你今天的收入就是你昨天所做之决定的结果，如果不理解这一点，你就不能说：“现在我要另做选择。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>永远不要让别人替你承担责任的情况出现。</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E8%AE%A9%E5%88%AB%E4%BA%BA%E6%9B%BF%E4%BD%A0%E6%89%BF%E6%8B%85%E8%B4%A3%E4%BB%BB%E7%9A%84%E6%83%85%E5%86%B5%E5%87%BA%E7%8E%B0/</link>
+      <pubDate>Wed, 21 Jun 2023 05:16:43 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E8%AE%A9%E5%88%AB%E4%BA%BA%E6%9B%BF%E4%BD%A0%E6%89%BF%E6%8B%85%E8%B4%A3%E4%BB%BB%E7%9A%84%E6%83%85%E5%86%B5%E5%87%BA%E7%8E%B0/</guid>
+      <description>&lt;p&gt;•“ 将来我也会为现在拥有的一切感到满足。”&lt;br&gt;
+•“ 假如我能全力以赴，我就会成为最优秀的。”&lt;br&gt;
+这两句话的背后，通常都隐藏着自我欺骗、恐惧和缺乏自我价值感。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>没有哪个奇迹的发生不需要冒险</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%B2%A1%E6%9C%89%E5%93%AA%E4%B8%AA%E5%A5%87%E8%BF%B9%E7%9A%84%E5%8F%91%E7%94%9F%E4%B8%8D%E9%9C%80%E8%A6%81%E5%86%92%E9%99%A9/</link>
+      <pubDate>Wed, 21 Jun 2023 05:16:42 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%B2%A1%E6%9C%89%E5%93%AA%E4%B8%AA%E5%A5%87%E8%BF%B9%E7%9A%84%E5%8F%91%E7%94%9F%E4%B8%8D%E9%9C%80%E8%A6%81%E5%86%92%E9%99%A9/</guid>
+      <description>&lt;p&gt;• 我们常常忘记，顺着我们目前为止走过的道路继续前行，同样有风险。这条路给我们一种熟悉感，但也不会更安全。&lt;br&gt;
+• 生活就是一场比赛。不去冒险的人不可能获得成功。&lt;br&gt;
+• 在这个星球上，没有“必胜”，只有“机会”。&lt;br&gt;
+• 立即采取行动！因为你永远不能为成功做好完美的准备。&lt;br&gt;
+•世上唯一从来不犯错的人，是从来不做任何事的人。（西奥多 · 罗斯福）&lt;br&gt;
+• 不确定性带来的痛苦，比确定的痛苦要强烈得多。&lt;br&gt;
+• 每一次行动计划都有风险，都需要付出&lt;br&gt;
+代价。但比起无所事事的舒适，它们的长期风险和付出的代价要小得多。（约翰 · 费茨杰拉德 · 肯尼迪）&lt;br&gt;
+• 如果你害怕失去，你永远都不会获得。&lt;br&gt;
+• 去冒险吧，你不可能从地面摔下去的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>给你责任的人同时也给你了权力。</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%BB%99%E4%BD%A0%E8%B4%A3%E4%BB%BB%E7%9A%84%E4%BA%BA%E5%90%8C%E6%97%B6%E4%B9%9F%E7%BB%99%E4%BD%A0%E4%BA%86%E6%9D%83%E5%8A%9B/</link>
+      <pubDate>Wed, 21 Jun 2023 05:16:41 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%BB%99%E4%BD%A0%E8%B4%A3%E4%BB%BB%E7%9A%84%E4%BA%BA%E5%90%8C%E6%97%B6%E4%B9%9F%E7%BB%99%E4%BD%A0%E4%BA%86%E6%9D%83%E5%8A%9B/</guid>
+      <description>&lt;p&gt;大多数人都会推卸责任。当人们不想承担责任时，我们总是听到他们用这 3 个理由来搪塞责任：&lt;br&gt;
+1 ．“是基因的错。”&lt;br&gt;
+2 ．“是父母的错。”&lt;br&gt;
+3 ．“是客观环境的错。”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Life’s tough. It’s tougher if you’re stupid.</title>
+      <link>https://www.xgdebug.com/posts/self/lifes-tough-its-tougher-if-youre-stupid/</link>
+      <pubDate>Wed, 21 Jun 2023 05:10:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/lifes-tough-its-tougher-if-youre-stupid/</guid>
+      <description>&lt;p&gt;everyone has these unfounded fears, and they’re normal. Don’t let them hold you back from pursuing what’s important to you. Businesses are created, operated, and improved by ordinary people just like you; there’s no magic or secret knowledge involved. All you need to do is learn a few simple concepts that will change the way you think about how businesses work and allow you to identify promising opportunities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>No Experience Necessary</title>
+      <link>https://www.xgdebug.com/posts/self/no-experience-necessary/</link>
+      <pubDate>Wed, 21 Jun 2023 05:10:39 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/no-experience-necessary/</guid>
+      <description>&lt;p&gt;This isn’t rocket science—we’ve chosen one of the world’s most simple professions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>他们总是有那么多紧急的事情要做，以至于没有时间来关注重要的事情。</title>
+      <link>https://www.xgdebug.com/posts/self/%E4%BB%96%E4%BB%AC%E6%80%BB%E6%98%AF%E6%9C%89%E9%82%A3%E4%B9%88%E5%A4%9A%E7%B4%A7%E6%80%A5%E7%9A%84%E4%BA%8B%E6%83%85%E8%A6%81%E5%81%9A/</link>
+      <pubDate>Mon, 19 Jun 2023 15:18:19 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E4%BB%96%E4%BB%AC%E6%80%BB%E6%98%AF%E6%9C%89%E9%82%A3%E4%B9%88%E5%A4%9A%E7%B4%A7%E6%80%A5%E7%9A%84%E4%BA%8B%E6%83%85%E8%A6%81%E5%81%9A/</guid>
+      <description>&lt;p&gt;困难总是在不断地出现。尽管如此，你每天还是要不间断地去做对你的未来意义重大的事情。你为此花费的时间不会超过 10 分钟，但是就是这 10 分钟会让一切变得不同。大多数人总是在现有的水平上停滞不前，就是因为他们没有拿出这 10 分钟。他们总是期望情况能向有利于自己的方向转变，但是他们忽视了一点，那就是他们首先必须改变自己。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>第一份工作的建议</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%BB%BA%E8%AE%AE/</link>
+      <pubDate>Mon, 19 Jun 2023 15:18:19 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%BB%BA%E8%AE%AE/</guid>
+      <description>&lt;p&gt;第一，无论在什么时候都不能把希望只寄托在一份工作上，它持续的时间不会像你设想的那么长，所以你要立即寻找另一份替代的工作。&lt;br&gt;
+第二，你肯定会遇到一些困难，这些困难是你现在还难以预料的。到那时候就能看出来&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>知道如何去实现并不是目前最重要的事情</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%9F%A5%E9%81%93%E5%A6%82%E4%BD%95%E5%8E%BB%E5%AE%9E%E7%8E%B0%E5%B9%B6%E4%B8%8D%E6%98%AF%E7%9B%AE%E5%89%8D%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/</link>
+      <pubDate>Mon, 19 Jun 2023 14:20:39 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%9F%A5%E9%81%93%E5%A6%82%E4%BD%95%E5%8E%BB%E5%AE%9E%E7%8E%B0%E5%B9%B6%E4%B8%8D%E6%98%AF%E7%9B%AE%E5%89%8D%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85/</guid>
+      <description>&lt;p&gt;最重要的是，你真的有这样的愿望，否则你一遇到困难就会放弃了。我总是往事情的消极面去想，我一定要改掉这个习惯。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>大多数人并不清楚自己想要的是什么，他们只知道，自己想得到更多的东西</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E5%B9%B6%E4%B8%8D%E6%B8%85%E6%A5%9A%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E4%BB%96%E4%BB%AC%E5%8F%AA%E7%9F%A5%E9%81%93/</link>
+      <pubDate>Mon, 19 Jun 2023 05:14:08 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BA%BA%E5%B9%B6%E4%B8%8D%E6%B8%85%E6%A5%9A%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%E4%BB%96%E4%BB%AC%E5%8F%AA%E7%9F%A5%E9%81%93/</guid>
+      <description>&lt;p&gt;你可以把自己的生活想象成一家很大的邮购公司。如果你给一家邮购公司写信说‘请给我寄一些好东西来’，你肯定什么都得不到。我们的愿望也是一样。我们必须确切地知道自己心里渴望的是什么才行。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>人生而孤独</title>
+      <link>https://www.xgdebug.com/posts/self/%E4%BA%BA%E7%94%9F%E8%80%8C%E5%AD%A4%E7%8B%AC/</link>
+      <pubDate>Fri, 16 Jun 2023 04:54:58 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E4%BA%BA%E7%94%9F%E8%80%8C%E5%AD%A4%E7%8B%AC/</guid>
+      <description>&lt;p&gt;而现实是，生活就是一场单人游戏。人独自出生，独自死亡，独自解读人世间的一切。你的记忆只属于你一个人。你出生前无人在意，你离开人世后也无人在意，你存在于人世间只是短短几十年，人生就是一场单人游戏。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>If you stay away from risks, you will also stay away from the benefits.</title>
+      <link>https://www.xgdebug.com/posts/self/if-you-stay-away-from-risks-you-will-also-stay-away-from-the-benefits/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:52 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/if-you-stay-away-from-risks-you-will-also-stay-away-from-the-benefits/</guid>
+      <description>&lt;p&gt;I took a risk. Same with crypto. Early on, I took a risk. But when you put your name out there, you take a risk with certain things. You also get to reap the rewards. You get the benefits.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>玩世不恭很容易，随波逐流也很容易。</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%8E%A9%E4%B8%96%E4%B8%8D%E6%81%AD%E5%BE%88%E5%AE%B9%E6%98%93%E9%9A%8F%E6%B3%A2%E9%80%90%E6%B5%81%E4%B9%9F%E5%BE%88%E5%AE%B9%E6%98%93/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:52 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%8E%A9%E4%B8%96%E4%B8%8D%E6%81%AD%E5%BE%88%E5%AE%B9%E6%98%93%E9%9A%8F%E6%B3%A2%E9%80%90%E6%B5%81%E4%B9%9F%E5%BE%88%E5%AE%B9%E6%98%93/</guid>
+      <description>&lt;p&gt;非常聪明的人往往都是特立独行的，他们坚持独立思考、亲力亲为，以厘清事情的来龙去脉。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>People seem to think you can create wealth—make money through work. It’s probably not going to work.</title>
+      <link>https://www.xgdebug.com/posts/self/people-seem-to-think-you-can-create-wealth-make-money-through-work-its-probably-not-going-to-work/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:51 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/people-seem-to-think-you-can-create-wealth-make-money-through-work-its-probably-not-going-to-work/</guid>
+      <description>&lt;p&gt;Without ownership, your inputs are very closely tied to your outputs. In almost any salaried job, even one paying a lot per hour like a lawyer or a doctor, you’re still putting in the hours, and every hour you get paid.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Let’s go to the stock market!</title>
+      <link>https://www.xgdebug.com/posts/self/lets-go-to-the-stock-market/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:50 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/lets-go-to-the-stock-market/</guid>
+      <description>&lt;p&gt;Owning equity in a company basically means you own the upside. When you own debt, you own guaranteed revenue streams and you own the downside. You want to own equity. If you don’t own equity in a business, your odds of making money are very slim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Don&#39;t work for the boss. You must be your own boss.</title>
+      <link>https://www.xgdebug.com/posts/self/dont-work-for-the-boss-you-must-be-your-own-boss/</link>
+      <pubDate>Wed, 14 Jun 2023 10:55:54 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/dont-work-for-the-boss-you-must-be-your-own-boss/</guid>
+      <description>&lt;p&gt;Essentially, you’re working for somebody else, and that person is taking on the risk and has the accountability, the intellectual property, and the brand. They’re not going to pay you enough. They’re going to pay you the bare minimum they have to, to get you to do their job. That can be a high bare minimum, but it’s still not going to be true wealth where you’re retired but still earning.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>大自然的法则是春播秋收，极少有事情是立竿见影的</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E6%B3%95%E5%88%99%E6%98%AF%E6%98%A5%E6%92%AD%E7%A7%8B%E6%94%B6%E6%9E%81%E5%B0%91%E6%9C%89%E4%BA%8B%E6%83%85%E6%98%AF%E7%AB%8B%E7%AB%BF%E8%A7%81%E5%BD%B1/</link>
+      <pubDate>Wed, 14 Jun 2023 09:25:47 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E6%B3%95%E5%88%99%E6%98%AF%E6%98%A5%E6%92%AD%E7%A7%8B%E6%94%B6%E6%9E%81%E5%B0%91%E6%9C%89%E4%BA%8B%E6%83%85%E6%98%AF%E7%AB%8B%E7%AB%BF%E8%A7%81%E5%BD%B1/</guid>
+      <description>&lt;p&gt;时间的投入是必需的，所以我认为，你需要做的就是拥有专长，有责任感，有影响力，利用杠杆效应，获得独步天下的技能组合，在自己的专业领域做到首屈一指。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Specific knowledge cannot be taught, but it can be learned.</title>
+      <link>https://www.xgdebug.com/posts/self/specific-knowledge-cannot-be-taught-but-it-can-be-learned/</link>
+      <pubDate>Tue, 13 Jun 2023 16:03:26 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/specific-knowledge-cannot-be-taught-but-it-can-be-learned/</guid>
+      <description>&lt;p&gt;You have to do it by yourself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>避免万元陷阱</title>
+      <link>https://www.xgdebug.com/posts/self/%E9%81%BF%E5%85%8D%E4%B8%87%E5%85%83%E9%99%B7%E9%98%B1/</link>
+      <pubDate>Fri, 09 Jun 2023 13:49:44 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E9%81%BF%E5%85%8D%E4%B8%87%E5%85%83%E9%99%B7%E9%98%B1/</guid>
+      <description>&lt;p&gt;不要指望能够以很低的价格买入。（不要指望花 100 买 10000，应该直接出价 9900）&lt;br&gt;
+两个抢劫犯经过一个绞刑架，一个感叹道：如果绞刑架没有该多好啊。另一个说，你傻啊，没有它别人就会来抢我们了。&lt;br&gt;
+尽快传递“势在必得”的信号。（破釜沉舟，告诉别人我就是倾家荡产也要把它拿到）&lt;br&gt;
+只争馒头不争气，没了馒头终断气。（务实，不要意气用事）&lt;br&gt;
+高瞻远瞩,深谋远虑。（三思而后行，要能想到这是一个陷阱）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>太过迫切地想弥补损失，以至于忘记了自己承担的风险。</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A4%AA%E8%BF%87%E8%BF%AB%E5%88%87%E5%9C%B0%E6%83%B3%E5%BC%A5%E8%A1%A5%E6%8D%9F%E5%A4%B1%E4%BB%A5%E8%87%B3%E4%BA%8E%E5%BF%98%E8%AE%B0%E4%BA%86%E8%87%AA%E5%B7%B1%E6%89%BF%E6%8B%85%E7%9A%84/</link>
+      <pubDate>Fri, 09 Jun 2023 13:46:56 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A4%AA%E8%BF%87%E8%BF%AB%E5%88%87%E5%9C%B0%E6%83%B3%E5%BC%A5%E8%A1%A5%E6%8D%9F%E5%A4%B1%E4%BB%A5%E8%87%B3%E4%BA%8E%E5%BF%98%E8%AE%B0%E4%BA%86%E8%87%AA%E5%B7%B1%E6%89%BF%E6%8B%85%E7%9A%84/</guid>
+      <description>&lt;p&gt;某个潜在损失越重要，我们对损失的厌恶也就越强烈。换句话说，所处情境越危险，我们越容易很快作出非理性的决定。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>既然事情已经发生，请坦然面对与接受</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%97%A2%E7%84%B6%E4%BA%8B%E6%83%85%E5%B7%B2%E7%BB%8F%E5%8F%91%E7%94%9F%E8%AF%B7%E5%9D%A6%E7%84%B6%E9%9D%A2%E5%AF%B9%E4%B8%8E%E6%8E%A5%E5%8F%97/</link>
+      <pubDate>Fri, 09 Jun 2023 11:57:17 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%97%A2%E7%84%B6%E4%BA%8B%E6%83%85%E5%B7%B2%E7%BB%8F%E5%8F%91%E7%94%9F%E8%AF%B7%E5%9D%A6%E7%84%B6%E9%9D%A2%E5%AF%B9%E4%B8%8E%E6%8E%A5%E5%8F%97/</guid>
+      <description>&lt;p&gt;每个人都发犯错，重要的是意识到错误并且止损。并且承担后果。&lt;br&gt;
+把注意力放在以后，不要犯同样的错.&lt;/p&gt;
+&lt;p&gt;有沉默成本的地方就会有万元陷阱。&lt;/p&gt;
+&lt;p&gt;Everyone can fail, you have to admit failure and accept it&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学校教的东西只能让你用来出售时间</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%AD%A6%E6%A0%A1%E6%95%99%E7%9A%84%E4%B8%9C%E8%A5%BF%E5%8F%AA%E8%83%BD%E8%AE%A9%E4%BD%A0%E7%94%A8%E6%9D%A5%E5%87%BA%E5%94%AE%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%AD%A6%E6%A0%A1%E6%95%99%E7%9A%84%E4%B8%9C%E8%A5%BF%E5%8F%AA%E8%83%BD%E8%AE%A9%E4%BD%A0%E7%94%A8%E6%9D%A5%E5%87%BA%E5%94%AE%E6%97%B6%E9%97%B4/</guid>
+      <description>&lt;p&gt;大家都能学会的东西是不可能让你致富的。凡是可以批量化培训的技能都是能够被雇佣的技能。只有你自己学到的东西，才是属于你独有的能力，才有可能让你创业成功。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>而要追求自己真正感兴趣的事情</title>
+      <link>https://www.xgdebug.com/posts/self/%E8%80%8C%E8%A6%81%E8%BF%BD%E6%B1%82%E8%87%AA%E5%B7%B1%E7%9C%9F%E6%AD%A3%E6%84%9F%E5%85%B4%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E8%80%8C%E8%A6%81%E8%BF%BD%E6%B1%82%E8%87%AA%E5%B7%B1%E7%9C%9F%E6%AD%A3%E6%84%9F%E5%85%B4%E8%B6%A3%E7%9A%84%E4%BA%8B%E6%83%85/</guid>
+      <description>&lt;p&gt;对一件事情的欲望越小，顾虑就越少，执念就越少，反而越会顺其自然，遵循内心。你会以自己擅长的方式，始终不渝地做下去，工作质量也会因此提高。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>越觉得自己无所不知，规避和处置风险的方法越少。</title>
+      <link>https://www.xgdebug.com/posts/self/%E8%B6%8A%E8%A7%89%E5%BE%97%E8%87%AA%E5%B7%B1%E6%97%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E8%A7%84%E9%81%BF%E5%92%8C%E5%A4%84%E7%BD%AE%E9%A3%8E%E9%99%A9%E7%9A%84%E6%96%B9%E6%B3%95%E8%B6%8A%E5%B0%91/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E8%B6%8A%E8%A7%89%E5%BE%97%E8%87%AA%E5%B7%B1%E6%97%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E8%A7%84%E9%81%BF%E5%92%8C%E5%A4%84%E7%BD%AE%E9%A3%8E%E9%99%A9%E7%9A%84%E6%96%B9%E6%B3%95%E8%B6%8A%E5%B0%91/</guid>
+      <description>&lt;p&gt;决策就是一切。事实上，一个决策正确率为 80% 的人比正确率为 70% 的人在市场上的价值和获得的回报要高出数百倍。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pick an industry where you can play long-term games with long-term people.</title>
+      <link>https://www.xgdebug.com/posts/self/pick-an-industry-where-you-can-play-long-term-games-with-long-term-people/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/pick-an-industry-where-you-can-play-long-term-games-with-long-term-people/</guid>
+      <description>&lt;p&gt;Pick business partners with high intelligence, energy, and, above all, integrity. ↓ Don’t partner with cynics and pessimists. Their beliefs are self-fulfilling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>在前进的过程中，方向比速度更重要，特别是运用了杠杆以后。</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%9C%A8%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%96%B9%E5%90%91%E6%AF%94%E9%80%9F%E5%BA%A6%E6%9B%B4%E9%87%8D%E8%A6%81%E7%89%B9%E5%88%AB%E6%98%AF%E8%BF%90%E7%94%A8/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%9C%A8%E5%89%8D%E8%BF%9B%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD%E6%96%B9%E5%90%91%E6%AF%94%E9%80%9F%E5%BA%A6%E6%9B%B4%E9%87%8D%E8%A6%81%E7%89%B9%E5%88%AB%E6%98%AF%E8%BF%90%E7%94%A8/</guid>
+      <description>&lt;p&gt;如果有人用词花哨，动辄谈论宏大而复杂的概念，那么他们很有可能并不了解自己所谈论的东西。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何确保自己是在直面现实问题？</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A6%82%E4%BD%95%E7%A1%AE%E4%BF%9D%E8%87%AA%E5%B7%B1%E6%98%AF%E5%9C%A8%E7%9B%B4%E9%9D%A2%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A6%82%E4%BD%95%E7%A1%AE%E4%BF%9D%E8%87%AA%E5%B7%B1%E6%98%AF%E5%9C%A8%E7%9B%B4%E9%9D%A2%E7%8E%B0%E5%AE%9E%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;要直面现实，就要放下自我，消除自我意识，忘记自我判断，平复自我情绪。人虽然是高级动物，但情绪化的自我意识的存在会带来反刍式思维，让一些欲望蒙蔽我们的双眼，让我们看不清现实，从而让我们对“世界应该怎样”妄下判断。这种情况经常发生，尤其是在把政治诉求和商业问题搅在一起时。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何确定一个人是否值得信赖？</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A6%82%E4%BD%95%E7%A1%AE%E5%AE%9A%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A6%82%E4%BD%95%E7%A1%AE%E5%AE%9A%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96/</guid>
+      <description>&lt;p&gt;如果一个人大谈特谈自己有多诚实，那么他很可能是不诚实的。这只是我学到的一个小小的警示信号。当一个人不断宣扬自己的价值观，或者自我吹嘘时，那就意味着他在掩饰什么&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何达到退休状态？</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%A6%82%E4%BD%95%E8%BE%BE%E5%88%B0%E9%80%80%E4%BC%91%E7%8A%B6%E6%80%81/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%A6%82%E4%BD%95%E8%BE%BE%E5%88%B0%E9%80%80%E4%BC%91%E7%8A%B6%E6%80%81/</guid>
+      <description>&lt;p&gt;第一种方法是存钱。只要存款够多，被动收入（不用动一根手指）就能满足开销。第二种方法是把开销降为零 —— 出家修行。第三种方法是做自己热爱的事情，完全乐在其中，有钱没钱无所谓。所以，实现退休状态有很多种方法。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>对美好现实的渴求蒙蔽了对真实世界的认知。所谓痛苦，就是无法继续无视事实。</title>
+      <link>https://www.xgdebug.com/posts/self/%E5%AF%B9%E7%BE%8E%E5%A5%BD%E7%8E%B0%E5%AE%9E%E7%9A%84%E6%B8%B4%E6%B1%82%E8%92%99%E8%94%BD%E4%BA%86%E5%AF%B9%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E8%AE%A4%E7%9F%A5%E6%89%80%E8%B0%93/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E5%AF%B9%E7%BE%8E%E5%A5%BD%E7%8E%B0%E5%AE%9E%E7%9A%84%E6%B8%B4%E6%B1%82%E8%92%99%E8%94%BD%E4%BA%86%E5%AF%B9%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E8%AE%A4%E7%9F%A5%E6%89%80%E8%B0%93/</guid>
+      <description>&lt;p&gt;难点在于看清真相。要看清真相，就必须摆脱自我，因为自我不想面对真相。自我越弱小，对自己反应的限制越少，对自己想要的结果的执念越低，就越容易看清现实。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>没有思考，你就不会有出色的商业创意，也不可能做出正确的判断。</title>
+      <link>https://www.xgdebug.com/posts/self/%E6%B2%A1%E6%9C%89%E6%80%9D%E8%80%83%E4%BD%A0%E5%B0%B1%E4%B8%8D%E4%BC%9A%E6%9C%89%E5%87%BA%E8%89%B2%E7%9A%84%E5%95%86%E4%B8%9A%E5%88%9B%E6%84%8F%E4%B9%9F%E4%B8%8D%E5%8F%AF%E8%83%BD/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E6%B2%A1%E6%9C%89%E6%80%9D%E8%80%83%E4%BD%A0%E5%B0%B1%E4%B8%8D%E4%BC%9A%E6%9C%89%E5%87%BA%E8%89%B2%E7%9A%84%E5%95%86%E4%B8%9A%E5%88%9B%E6%84%8F%E4%B9%9F%E4%B8%8D%E5%8F%AF%E8%83%BD/</guid>
+      <description>&lt;p&gt;悠闲的大脑才能产生伟大的创意。一个倍感压力、案牍劳形、四处奔波、焦头烂额的人，是没有办法思考的。所以，一定要为思考挤出时间。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>要做到诚实，就要在发表观点时抛开自己的身份。</title>
+      <link>https://www.xgdebug.com/posts/self/%E8%A6%81%E5%81%9A%E5%88%B0%E8%AF%9A%E5%AE%9E%E5%B0%B1%E8%A6%81%E5%9C%A8%E5%8F%91%E8%A1%A8%E8%A7%82%E7%82%B9%E6%97%B6%E6%8A%9B%E5%BC%80%E8%87%AA%E5%B7%B1%E7%9A%84%E8%BA%AB%E4%BB%BD/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E8%A6%81%E5%81%9A%E5%88%B0%E8%AF%9A%E5%AE%9E%E5%B0%B1%E8%A6%81%E5%9C%A8%E5%8F%91%E8%A1%A8%E8%A7%82%E7%82%B9%E6%97%B6%E6%8A%9B%E5%BC%80%E8%87%AA%E5%B7%B1%E7%9A%84%E8%BA%AB%E4%BB%BD/</guid>
+      <description>&lt;p&gt;我们每个人都有一些离经叛道的信仰，这些信仰不被社会接受。但是，我们的身份和所在的族群越是排斥这样的信仰，它就越有可能是符合现实的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>神书《纳瓦尔宝典：财富和幸福指南》</title>
+      <link>https://www.xgdebug.com/posts/self/%E7%A5%9E%E4%B9%A6%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8%E8%B4%A2%E5%AF%8C%E5%92%8C%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Wed, 07 Jun 2023 12:36:45 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/self/%E7%A5%9E%E4%B9%A6%E7%BA%B3%E7%93%A6%E5%B0%94%E5%AE%9D%E5%85%B8%E8%B4%A2%E5%AF%8C%E5%92%8C%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;1、人应该寻求财富，而不是金钱或地位&lt;/strong&gt; 人不应该通过繁重的工作获得财富。每周花 80 小时在餐馆工作，无法使你变得更富有。 辛勤的劳作是无法避免的，但应该以正确的方式努力。 人应该寻求财富，而不是金钱或地位。 如果你认为财富不重要，财富就会远离你。 财富就是睡觉时仍在赚钱的资产。 没有财富性资产，你睡觉的时候，就没有任何收入；你退休的时候，就不能继续挣钱了。总之，没有财富，你就无法做到非线性赚钱。 一般来说，财富是通过创办自己的公司或者投资来创造的。它们都不是通过投入大量时间来实现的，大富豪和你一样，每天也只有 24 小时。 &lt;strong&gt;2、获得财富的关键&lt;/strong&gt; 要获得财富，可以向社会大众提供有价值的东西——尤其是他们不知道如何获得的。 而且要大规模地供应。 互联网已经极大地拓宽了职业生涯的可能性，多数人对此仍没有清晰的认识。 学会营销，学会创造。如果这两件都会，没有什么可以阻挡你成功。 &lt;strong&gt;3、用特殊知识武装你自己&lt;/strong&gt; 特殊知识是不可以通过培训获得的知识。如果能通过训练获得，那其他人也可以获得，然后取代你。 特殊知识通常是技术含量高和创造性的。不可能被外包或自动化的。（如洞察力） 在真正的好奇心和热情驱使下，将能发现特殊的知识。 创造特殊知识的过程，对你而言，感觉像是在玩，而对别人来说像是工作。 通常，特殊知识在知识的边界，也就是那些现在才弄明白或者真的很难弄明白的东西。 如果你没有百分之百的投入，别人百分之百投入了就会胜过你。并且他们不只是强你一点点，会比你强很多，因为在思想领域的想法，复利会起作用，杠杆也会起作用。 特殊知识可能是以下这些： 销售技巧。 有音乐天赋。 执着的性格：这意味你能用心研究事物。 热爱科幻：这意味你可以快速吸收很多知识。 玩了很多游戏：这会对游戏理论比较了解。 八卦：这可能帮助你成为非常有趣的记者。 特殊知识是这样一种奇怪组合，来自你的 DNA，你独特的成长环境，和你对这些知识的回应。这些几乎是融入你的个性和身份的，然后你可以不断磨练它。 学习微观经济学、博弈论、心理学、洗脑术、伦理学、数学和计算机科学。 &lt;strong&gt;4、用杠杆武装你自己&lt;/strong&gt; 商业杠杆主要有资本、人力、复制成本极低的产品（代码和媒体）。 资本就是指钱。为了融资，就需要用你特殊的知识，配合你的责任感，展示出你良好的判断力。 人力就是指为你干活的人。它是最古老和争夺最激烈的杠杆。人力杠杆会让你父母感到有面子，但不要浪费生命去追求这点。 资本和劳动力是需要获得许可才能使用的杠杆。人人都在追逐资本，但总得有掏钱的人。人人都想要去领导其他人，但总得有人做手下。 代码和媒体是无需许可就能用的杠杆，它是新富豪背后的杠杆。你可以创建软件和媒体，它们能在你睡眠时仍为你干活。一大群机器人供免费使用——为了节约空间和热效能，它们被打包放进数据中心，去使用它们吧！ 运用特殊知识，配合杠杆，最终会得到你应该得到的。 &lt;strong&gt;5、一句话：产品化你自己&lt;/strong&gt; 这是什么意思呢？“产品化”和“你自己”。 “你自己”有特殊性，“产品化”有杠杆性。 “我在产品化它吗？我可以规模化它？我可以通过人力杠杆、或资本、或代码、或媒体放大它？”所以，这种说法非常方便记忆。 如果你想更富有，你要弄清楚你可以为社会提供哪一样东西，社会还不知道如何得到的，但又是社会想要的，对你来说提供这样东西是自然而然的，它在你的技能范围内，在你的能力范围内。 接着，就是想办法扩大规模，因为只生产一个是远远不够的。你可能需要生产数千份，或者数万份，或者数百万份，或者数十亿份，这样每个人都可以拥有一个。 史蒂夫·乔布斯（当然包括他的团队）想清楚了社会需要智能手机。这种智能手机拥有当时手机的所有功能，同时也有更多其它的新功能，并且更容易使用。因而，他们想出了怎么制造智能手机，再接着就是想清楚怎么大规模生产智能手机。 你要成为能规模化提供这些产品或服务的人。这才是如何赚钱的真正难题。 &lt;strong&gt;6、注意你的人品&lt;/strong&gt; 在我的生活中，认识一些极度成功、非常受欢迎、非常聪明的人。然而，我看到他们做了一两件对其他人不太好的事情。我会说，“嘿，我认为你不应该对别人做这样的事。因为这最后会伤到你自己。” 从内心深处我们都知道自己是谁。你不可能对自己隐藏任何事。你做得对不对，你是很清楚的，如果你有太多的道德瑕疵，你将不会尊重你自己。这个世界最糟糕的结果是没有自尊。如果你都不爱你自己，谁会爱你？ 如果我看到有人做这种事，第一次我会提醒他们，不过通常他们不会改，然后我就和他们保持距离。我把他们从我的生活切割出去。 如果有人总说他们自己是多么的诚实，他们很有可能是不诚实的。这只是一些我学到的有效指标。当有人花很多时间在谈论他们的价值观或谈论他们自己时，意味着他们在掩盖某些事。 我在心里说：“想靠近我的，你的价值观必须要比我更好。” &lt;strong&gt;7、聪明人真的了解一件事&lt;/strong&gt; 如果有人使用很多复杂的词汇和很多大概念，他们很有可能不知道他们自己在谈论什么。 我认为最聪明的人能把事情向小孩子讲明白。如果你无法向小孩子讲明白，那么你并不是真的知道。 真正聪明的思考者是思维清晰的思考者，他们理解非常非常基本的基础知识。 &lt;strong&gt;8、跳出自己看真相&lt;/strong&gt; 想象我的某位朋友正在经历某些困难的事，如分手、事业、生意失败或健康问题，当他需要我的建议时，往往只需几分钟，我就能准确告诉他，“噢，那个女孩，忘掉她吧，反正她对你不好。你将会更快乐。相信我。你将来会找到更合适的。” 但他自己就很难看明白这点。因为他正处于痛苦和折磨中，他的愿望与现实是有冲突的，从而阻止了他看清真相。 同样的事会发生在我们做决定的时候。 为了看清真相，你必须要放下自我，因为自我并不想面对真相。 &lt;strong&gt;9、真正重要的是闲暇时间&lt;/strong&gt; 只有在你感到无聊之后，才会有伟大的想法。好的想法从不会在你充满压力、忙碌、四处奔波或仓促的时候出现。 如果你的日程表每周没有一两天是不用一直开会、不用一直在忙的，你就无法去思考。你也不会有和你生意相关的好想法。你也不可能做出好的判断。 我鼓励每周至少拿出一天（更好的是有两天，因为预备两天的话，你肯定能抽出一天），这样你就有时间去思考了。 珍惜你的时间，它是你的全部。它比你的金钱更重要。它比你的朋友更重要。它比任何东西都重要。你的时间就是你的一切。不要浪费你的时间。 &lt;strong&gt;10、读书能让你成功&lt;/strong&gt; 每天花一小时阅读科学、数学和哲学，很有可能在七年内让你登上人类成功的高层梯队。 我花了很多时间看书。我唯一真正的朋友是书。书是伟大的朋友，因为过去几千年来最好的思想家会告诉你他们的智慧。 任何一本能存活两千多年的书，都是经过很多人筛选的，也更有可能是正确的，我想重新读这些书。 事实是，我读书不是为了自我提升。我阅读是出于好奇和兴趣。 最好的书就是你会着迷的那本。 &lt;strong&gt;11、为自己的目标做事&lt;/strong&gt; 我只是真正想为自己的目标而做事。 无论是生意、健身、恋爱、友谊，还是其它的，我认为生命的意义是为自己的目标而做事。当你为自己而做事时，你能创造出你最好的作品。即使你做这些是为了赚钱，但实际上你也将会是最成功的。 追随你真正的好奇心，而不是时下的热点事物。如果你的好奇心把你带到一个社会最终也会去的地方，你将会获得丰厚的报酬。 当你约会的时候，有某个瞬间认识到这段关系不会通往婚姻时，你或许应该继续前行了。当你在学习某些东西时，例如地理或历史课，你意识到你永远也不会用到这些信息，就放弃这门课程。这是在浪费时间。这是在浪费脑力。 &lt;strong&gt;12、成为一个整体上更好的决策者&lt;/strong&gt; 成为一个整体上更好的决策者。决策是一切。 是的。决策是一切。事实上，有人在 80%的时间而不是 70%的时间都能够做出正确的决策，他在市场中的价值和报酬将高出数百倍。 我认为人们很难去理解杠杆的一个基本事实。如果我掌管着 10 亿美元，且我经常比其他人多 10%的正确率，我的决策能在一次判断上带来一亿美元的价值。拥有现代技术和庞大的劳动力以及资本，我们的决策能被杠杆放大的倍率越来越高。 如果我面对一个困难的选择，像下面这些问题： 我应该和这个人结婚吗？ 我应该做这个工作吗？ 我应该买这间房子吗？ 我应该搬到这个城市吗？ 我应该和这个人合伙做生意吗？ 如果你无法下决定，就回答否。原因是，现代社会充满了选择。有非常多的选择。我们生活在一个有 70 亿人的星球，我们可以通过互联网联系到每个人。有数十万种职业供你选择。有如此多的选择。 当你选择某些事物时，你会被锁定一段很长的时间。创业可能需要花费 10 年。你开始一段感情可能需要 5 年或者更多。你搬到一个城市可能会待上 10 到 20 年。这些都是有非常非常长期影响的决定。 只有在我们十分确定的时候才会说”是“。你从不可能做到绝对确定，但你要做到非常肯定。 如果你有两个选择，并且是相对均等的选择，那么就选择在短期内更困难和更痛苦的那条路。 实际情况是，其中一条路要承受短期的痛苦。另一条路是在未来在更远的地方才会感到痛苦。然而，你的大脑想要避免冲突而试图去避开短期的痛苦。 按照定义，如果两个选择是差不多的，其中一个有短期痛苦，那么这个选择就和长期收益有关。根据复利法则，长期收益是你想要得到的。你的大脑过于看重短期的幸福，而试图去避免短期的痛苦。 咖啡因是另外一种用长期后果换取短期利益的东西。本质上，你必须透过你的生活，用好的习惯去替换你不经意养成的坏习惯，承诺成为一个更快乐的人。 &lt;strong&gt;13、关于幸福&lt;/strong&gt; 孔子说，人有两次生命，第二次生命始于你意识到生命只有一次之时。那你第二次生命是在什么时候、怎样开始的呢？（孔子说：我没有说过这样的话。） 我读过布莱斯·帕斯卡（Blaise Pascal）的一句话。大概意思是：“人类的全部不幸是因为他们不能安静地待在他们的房间里。”如果你坐上 30 分钟并感觉到快乐，你就是成功的。这是非常强的境界，不过很少人能做到。 你要学习的核心技能是，在大多数情况下做到随遇而安、顺势而为。 你可以从生活中得到几乎任何你想要的东西，只要它是你最想得到的东西。 处理冲突的第一规则是：不要和那些经常发生冲突的人在一起。 我对不能持久或难以持续的事物不感兴趣，包括问题多多的关系。 &lt;strong&gt;14、人生的头等大事&lt;/strong&gt; 我人生的头等大事，高于我的幸福，高于我的家庭，高于我的工作，就是我自己的健康。首先是我的身体健康。第二，是我的心理健康。第三，是我的精神健康。然后，是我家人的健康。然后，是我家庭的幸福。在那之后，我就可以去世界其它地方做任何我需要做的事情了。 基本上，每当你把好习惯推荐给别人时，他们都会为自己找一个借口，通常最普遍的借口就是“我没有时间”。你听到这个，就知道他是在说“这不是高优先级事项”。 如果某些事是你的头等大事，你就会去做。这就是生活运转的方式。如果你有 10 到 15 个优先级很含糊而又不着急的事项，你最终不会做它们之中的任何一个。 我所做的就是决定我人生中的头等大事，高于我的幸福，高于我的家庭，高于我的工作，那就是我的健康。 我的身体健康成为了我的头等大事，那样我就永远也不能说我没有时间。早晨，我锻炼身体，不管需要多长时间，我都会坚持锻炼。未锻炼完，我不会开始一天的工作。我不在乎世界是否正在崩溃和融化，它可以再等 30 分钟，直到我锻炼完。 就像生活中的其它事情一样，如果你愿意做出短期的牺牲，你就会有长期的好处。 “容易的选择，艰难的生活。艰难的选择，轻松的生活。” &lt;strong&gt;15、不和自己的想法斗争&lt;/strong&gt; 不要把自己看得太重。你只是一只有计划的猴子而已。 不做任何决定，不下任何判断，只是接受一切。如果我一边走一边这样做十到十五分钟，我会进入一种非常平静、感恩的状态。无选择的意识对我很有用。 我学到的另一个方法是，坐在那里，闭上眼睛，每天至少一个小时。你向任何发生的事情屈服——不做任何努力。你不为做某些事情而努力，也不为反对某些事情而努力。如果有想法在你的脑海流动，你就随这些想法流动。 “如果想法来了，想法来了。我不和它们做斗争。我也不会去拥抱它们。我不会去想它们。我不会去拒绝它们。我就只是闭着眼睛在那里坐上一个小时，什么也不做。” 这是一种快乐、幸福和平静的状态。一旦你拥有它，你就不想放弃它。如果你每天早上只需坐着闭上眼睛，就能获得一个小时幸福的自由时光，那是超值的。它将改变你的生活。 你所要做的就是坐在那里，什么也不要做。就只是坐下来。闭上你的眼睛说：“我只是想让自己休息一个小时。这是我远离生活的一个小时，这个小时我什么也不做。” &lt;strong&gt;16、让意识和心灵协调相处&lt;/strong&gt; 佛教徒谈论意识与自我，他们真的是把你的大脑当做一个多层次的机制：内核级的操作系统在运行，然后，还有一些应用程序在上面运行。 我正在回到我意识层的操作系统，它总是平静的，总是平和的，通常是快乐和满足的。我试着保持在这样的状态下，而不是激活猴心（指意识层面之下的难以控制的心灵）。猴心总是担心、害怕和焦虑，它有不可思议的作用，但我尽量不激活它，直到我需要它。如果我 24 个小时不间断地运行它，我就会浪费能量，而猴心就会成了我，我比我的猴心更重要。 心灵本身就是一种肌肉——它可以被训练和调节，但它已经被社会胡乱地调教成了我们无法控制的样子。如果你带着意识和意图去审视你的心智，我想你可以把自己的思想、情绪、思想和反应都提取出来，然后你就可以开始重新设置了。你可以按照自己的意愿来重写这个程序。 &lt;strong&gt;17、如何定义智慧？&lt;/strong&gt; 一个人理解他所作所为的的长期后果。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
