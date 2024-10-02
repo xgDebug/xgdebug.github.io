@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.xgdebug.com/posts/economics/</loc>
-    <lastmod>2024-10-01T11:33:50+08:00</lastmod>
-  </url><url>
     <loc>https://www.xgdebug.com/posts/</loc>
-    <lastmod>2024-10-01T11:33:50+08:00</lastmod>
+    <lastmod>2024-10-02T22:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/posts/self/</loc>
+    <lastmod>2024-10-02T22:38:01+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/</loc>
-    <lastmod>2024-10-01T11:33:50+08:00</lastmod>
+    <lastmod>2024-10-02T22:38:01+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/</loc>
-    <lastmod>2024-10-01T11:33:50+08:00</lastmod>
+    <lastmod>2024-10-02T22:38:01+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <lastmod>2024-10-02T22:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/posts/self/diary/2024/1002/</loc>
+    <lastmod>2024-10-02T22:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/posts/economics/</loc>
     <lastmod>2024-10-01T11:33:50+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/%E7%BB%8F%E6%B5%8E/</loc>
@@ -61,9 +67,6 @@
   </url><url>
     <loc>https://www.xgdebug.com/posts/economics/the-biggest-implements-stimulus/</loc>
     <lastmod>2024-09-29T16:48:16+08:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/posts/self/</loc>
-    <lastmod>2024-09-29T11:01:12+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/self/diary/2024/0929/</loc>
     <lastmod>2024-09-29T11:01:12+08:00</lastmod>
