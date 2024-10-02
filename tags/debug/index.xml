@@ -50,5 +50,42 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
+    <item>
+      <title>Debugging native applications with LLDV on Android 11</title>
+      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
+      <pubDate>Fri, 11 Aug 2023 01:14:06 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
+      <description>&lt;h2 id=&#34;mobile&#34;&gt;Mobile&lt;/h2&gt;
+&lt;h2 id=&#34;push-debug-server-to-mobile&#34;&gt;PUSH debug server to mobile&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb push lldb-server /data/local/tmp
+chmod 755 /data/local/tmp/lldb-server
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-the-debugger-service&#34;&gt;Start the debugger service&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/data/local/tmp/lldb-server platform --listen &amp;#34;*:8888&amp;#34; --server
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;+++&lt;/p&gt;
+&lt;h2 id=&#34;computer-side&#34;&gt;Computer side&lt;/h2&gt;
+&lt;h2 id=&#34;port-forwarding&#34;&gt;Port forwarding&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb forward tcp:8888 tcp:8888
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-lldb&#34;&gt;Start LLDB&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;. \lldb.exe
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-supported-platforms&#34;&gt;View supported platforms&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform list
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;select-android-platform&#34;&gt;Select ANDROID platform&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform select remote-android
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;connect-to-the-phone-phone-serial-number-9643e0ec0604-to-change-to-the-current-debugging-phone-use-adb-devices-to-check-the-serial-number&#34;&gt;Connect to the phone Phone serial number: &lt;strong&gt;9643e0ec0604&lt;/strong&gt; To change to the current debugging phone, use adb devices to check the serial number&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform connect connect://9643e0ec0604:8888
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-the-currently-running-process&#34;&gt;View the currently running process&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform process list
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;attach-to&#34;&gt;Attach to&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;attach 9053
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;breakpoint&#34;&gt;Breakpoint&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;b send
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;run-up&#34;&gt;Run up&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;c
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-the-list-of-threads&#34;&gt;View the list of threads&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;thread list
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-the-call-stack&#34;&gt;View the call stack&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bt
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
   </channel>
 </rss>
