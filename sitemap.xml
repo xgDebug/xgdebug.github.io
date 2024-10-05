@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.xgdebug.com/posts/philosophy/animal-farm/</loc>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/posts/philosophy/</loc>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
+  </url><url>
     <loc>https://www.xgdebug.com/posts/</loc>
-    <lastmod>2024-10-04T16:08:14+08:00</lastmod>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/tags/</loc>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/</loc>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/tags/%E5%93%B2%E5%AD%A6/</loc>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
+  </url><url>
+    <loc>https://www.xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</loc>
+    <lastmod>2024-10-05T10:38:01+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/self/</loc>
     <lastmod>2024-10-04T16:08:14+08:00</lastmod>
   </url><url>
-    <loc>https://www.xgdebug.com/tags/</loc>
-    <lastmod>2024-10-04T16:08:14+08:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/</loc>
-    <lastmod>2024-10-04T16:08:14+08:00</lastmod>
-  </url><url>
     <loc>https://www.xgdebug.com/posts/self/life/why_didnt_they_teach_me_this_in_school/</loc>
-    <lastmod>2024-10-04T16:08:14+08:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</loc>
     <lastmod>2024-10-04T16:08:14+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/investment/</loc>
@@ -60,9 +69,6 @@
     <lastmod>2024-09-29T21:57:35+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/categories/insights/</loc>
-    <lastmod>2024-09-29T21:57:35+08:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/posts/philosophy/</loc>
     <lastmod>2024-09-29T21:57:35+08:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/series/</loc>
@@ -123,9 +129,6 @@
     <lastmod>2023-09-12T15:24:40+00:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/posts/self/%E4%BD%95%E8%B0%93%E4%B8%89%E8%A7%82%E4%B8%8D%E5%90%88/</loc>
-    <lastmod>2023-09-12T15:24:40+00:00</lastmod>
-  </url><url>
-    <loc>https://www.xgdebug.com/tags/%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2023-09-12T15:24:40+00:00</lastmod>
   </url><url>
     <loc>https://www.xgdebug.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
