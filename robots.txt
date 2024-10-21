@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.xgdebug.com/sitemap.xml
