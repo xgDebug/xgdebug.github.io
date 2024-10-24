@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Debug on xgDebug&#39;s Blog</title>
+    <link>https://www.xgdebug.com/tags/debug/</link>
+    <description>Recent content in Debug on xgDebug&#39;s Blog</description>
+    <image>
+      <title>xgDebug&#39;s Blog</title>
+      <url>https://www.xgdebug.com/images/avatar.png</url>
+      <link>https://www.xgdebug.com/images/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.136.4</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 28 Sep 2024 12:32:12 +0800</lastBuildDate>
+    <atom:link href="https://www.xgdebug.com/tags/debug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在Android 11 上使用 LLDV 调试原生程序</title>
+      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</link>
+      <pubDate>Sat, 28 Sep 2024 12:32:12 +0800</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</guid>
+      <description>&lt;h1 id=&#34;手机端&#34;&gt;手机端&lt;/h1&gt;
+&lt;h2 id=&#34;push-调试服务器到手机&#34;&gt;PUSH 调试服务器到手机&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb push lldb-server /data/local/tmp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod &lt;span class=&#34;m&#34;&gt;755&lt;/span&gt; /data/local/tmp/lldb-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;启动调试器服务&#34;&gt;启动调试器服务&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/data/local/tmp/lldb-server platform --listen &lt;span class=&#34;s2&#34;&gt;&amp;#34;*:8888&amp;#34;&lt;/span&gt; --server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;电脑端&#34;&gt;电脑端&lt;/h1&gt;
+&lt;h2 id=&#34;端口转发&#34;&gt;端口转发&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb forward tcp:8888 tcp:8888
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;启动-lldb&#34;&gt;启动 LLDB&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.&lt;span class=&#34;se&#34;&gt;\l&lt;/span&gt;ldb.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;查看支持平台&#34;&gt;查看支持平台&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;platform list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;选-android-平台&#34;&gt;选 ANDROID 平台&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;platform &lt;span class=&#34;k&#34;&gt;select&lt;/span&gt; remote-android
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;连接到手机-手机序列号-9643e0ec0604-要换成当前调试的手机使用-adb-devices-查看序列号&#34;&gt;连接到手机 手机序列号: &lt;strong&gt;9643e0ec0604&lt;/strong&gt; 要换成当前调试的手机,使用 adb devices 查看序列号&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;platform connect connect://9643e0ec0604:8888
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;查看当前正在运行的进程&#34;&gt;查看当前正在运行的进程&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;platform process list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;附加上去&#34;&gt;附加上去&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;attach &lt;span class=&#34;m&#34;&gt;9053&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;下断点&#34;&gt;下断点&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;b send
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;跑起来&#34;&gt;跑起来&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;查看线程列表&#34;&gt;查看线程列表&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;thread list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;查看调用栈&#34;&gt;查看调用栈&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <content:encoded><![CDATA[<h1 id="手机端">手机端</h1>
+<h2 id="push-调试服务器到手机">PUSH 调试服务器到手机</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">adb push lldb-server /data/local/tmp
+</span></span><span class="line"><span class="cl">chmod <span class="m">755</span> /data/local/tmp/lldb-server
+</span></span></code></pre></div><h2 id="启动调试器服务">启动调试器服务</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/data/local/tmp/lldb-server platform --listen <span class="s2">&#34;*:8888&#34;</span> --server
+</span></span></code></pre></div><hr>
+<h1 id="电脑端">电脑端</h1>
+<h2 id="端口转发">端口转发</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">adb forward tcp:8888 tcp:8888
+</span></span></code></pre></div><h2 id="启动-lldb">启动 LLDB</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.<span class="se">\l</span>ldb.exe
+</span></span></code></pre></div><h2 id="查看支持平台">查看支持平台</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform list
+</span></span></code></pre></div><h2 id="选-android-平台">选 ANDROID 平台</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform <span class="k">select</span> remote-android
+</span></span></code></pre></div><h2 id="连接到手机-手机序列号-9643e0ec0604-要换成当前调试的手机使用-adb-devices-查看序列号">连接到手机 手机序列号: <strong>9643e0ec0604</strong> 要换成当前调试的手机,使用 adb devices 查看序列号</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform connect connect://9643e0ec0604:8888
+</span></span></code></pre></div><h2 id="查看当前正在运行的进程">查看当前正在运行的进程</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform process list
+</span></span></code></pre></div><h2 id="附加上去">附加上去</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">attach <span class="m">9053</span>
+</span></span></code></pre></div><h2 id="下断点">下断点</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">b send
+</span></span></code></pre></div><h2 id="跑起来">跑起来</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">c
+</span></span></code></pre></div><h2 id="查看线程列表">查看线程列表</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">thread list
+</span></span></code></pre></div><h2 id="查看调用栈">查看调用栈</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">bt
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Debugging native applications with LLDV on Android 11</title>
+      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
+      <pubDate>Fri, 11 Aug 2023 01:14:06 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
+      <description>&lt;h2 id=&#34;mobile&#34;&gt;Mobile&lt;/h2&gt;
+&lt;h2 id=&#34;push-debug-server-to-mobile&#34;&gt;PUSH debug server to mobile&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb push lldb-server /data/local/tmp
+chmod 755 /data/local/tmp/lldb-server
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-the-debugger-service&#34;&gt;Start the debugger service&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/data/local/tmp/lldb-server platform --listen &amp;#34;*:8888&amp;#34; --server
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;+++&lt;/p&gt;
+&lt;h2 id=&#34;computer-side&#34;&gt;Computer side&lt;/h2&gt;
+&lt;h2 id=&#34;port-forwarding&#34;&gt;Port forwarding&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb forward tcp:8888 tcp:8888
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;start-lldb&#34;&gt;Start LLDB&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;. \lldb.exe
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-supported-platforms&#34;&gt;View supported platforms&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform list
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;select-android-platform&#34;&gt;Select ANDROID platform&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform select remote-android
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;connect-to-the-phone-phone-serial-number-9643e0ec0604-to-change-to-the-current-debugging-phone-use-adb-devices-to-check-the-serial-number&#34;&gt;Connect to the phone Phone serial number: &lt;strong&gt;9643e0ec0604&lt;/strong&gt; To change to the current debugging phone, use adb devices to check the serial number&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform connect connect://9643e0ec0604:8888
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-the-currently-running-process&#34;&gt;View the currently running process&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;platform process list
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;attach-to&#34;&gt;Attach to&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;attach 9053
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;breakpoint&#34;&gt;Breakpoint&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;b send
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;run-up&#34;&gt;Run up&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;c
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-the-list-of-threads&#34;&gt;View the list of threads&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;thread list
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;view-the-call-stack&#34;&gt;View the call stack&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bt
+&lt;/code&gt;&lt;/pre&gt;</description>
+      <content:encoded><![CDATA[<h2 id="mobile">Mobile</h2>
+<h2 id="push-debug-server-to-mobile">PUSH debug server to mobile</h2>
+<pre tabindex="0"><code>adb push lldb-server /data/local/tmp
+chmod 755 /data/local/tmp/lldb-server
+</code></pre><h2 id="start-the-debugger-service">Start the debugger service</h2>
+<pre tabindex="0"><code>/data/local/tmp/lldb-server platform --listen &#34;*:8888&#34; --server
+</code></pre><p>+++</p>
+<h2 id="computer-side">Computer side</h2>
+<h2 id="port-forwarding">Port forwarding</h2>
+<pre tabindex="0"><code>adb forward tcp:8888 tcp:8888
+</code></pre><h2 id="start-lldb">Start LLDB</h2>
+<pre tabindex="0"><code>. \lldb.exe
+</code></pre><h2 id="view-supported-platforms">View supported platforms</h2>
+<pre tabindex="0"><code>platform list
+</code></pre><h2 id="select-android-platform">Select ANDROID platform</h2>
+<pre tabindex="0"><code>platform select remote-android
+</code></pre><h2 id="connect-to-the-phone-phone-serial-number-9643e0ec0604-to-change-to-the-current-debugging-phone-use-adb-devices-to-check-the-serial-number">Connect to the phone Phone serial number: <strong>9643e0ec0604</strong> To change to the current debugging phone, use adb devices to check the serial number</h2>
+<pre tabindex="0"><code>platform connect connect://9643e0ec0604:8888
+</code></pre><h2 id="view-the-currently-running-process">View the currently running process</h2>
+<pre tabindex="0"><code>platform process list
+</code></pre><h2 id="attach-to">Attach to</h2>
+<pre tabindex="0"><code>attach 9053
+</code></pre><h2 id="breakpoint">Breakpoint</h2>
+<pre tabindex="0"><code>b send
+</code></pre><h2 id="run-up">Run up</h2>
+<pre tabindex="0"><code>c
+</code></pre><h2 id="view-the-list-of-threads">View the list of threads</h2>
+<pre tabindex="0"><code>thread list
+</code></pre><h2 id="view-the-call-stack">View the call stack</h2>
+<pre tabindex="0"><code>bt
+</code></pre>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

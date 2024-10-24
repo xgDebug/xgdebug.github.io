@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on xgDebug&#39;s Blog</title>
+    <link>https://www.xgdebug.com/tags/linux/</link>
+    <description>Recent content in Linux on xgDebug&#39;s Blog</description>
+    <image>
+      <title>xgDebug&#39;s Blog</title>
+      <url>https://www.xgdebug.com/images/avatar.png</url>
+      <link>https://www.xgdebug.com/images/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.136.4</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 29 Sep 2024 10:08:49 +0800</lastBuildDate>
+    <atom:link href="https://www.xgdebug.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Deploy Key自动部署hugo博客到github</title>
+      <link>https://www.xgdebug.com/posts/tech/linux/deploy-hugo-blog-to-github-pages/</link>
+      <pubDate>Sun, 29 Sep 2024 10:08:49 +0800</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/linux/deploy-hugo-blog-to-github-pages/</guid>
+      <description>&lt;h2 id=&#34;1生成-ssh-密钥&#34;&gt;1：生成 SSH 密钥&lt;/h2&gt;
+&lt;p&gt;在本地终端生成一个新的 SSH 密钥对：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -b &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; -C &lt;span class=&#34;s2&#34;&gt;&amp;#34;your_email@example.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;执行后，它会要求你指定文件名，按回车即可使用默认路径（~/.ssh/id_rsa），然后你会得到两个文件：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="1生成-ssh-密钥">1：生成 SSH 密钥</h2>
+<p>在本地终端生成一个新的 SSH 密钥对：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;your_email@example.com&#34;</span>
+</span></span></code></pre></div><p>执行后，它会要求你指定文件名，按回车即可使用默认路径（~/.ssh/id_rsa），然后你会得到两个文件：</p>
+<p>id_rsa（私钥）
+id_rsa.pub（公钥）</p>
+<h2 id="2在-github-pages-仓库中添加-deploy-key">2：在 GitHub Pages 仓库中添加 Deploy Key</h2>
+<p>打开你的 GitHub Pages 仓库 xgDebug/xgdebug.github.io。
+进入 Settings -&gt; Deploy keys。
+点击 Add deploy key。
+title = 取个描述性标题（如 &ldquo;Hugo Blog Deployment Key&rdquo;）。
+Key: 将上一步生成的公钥 id_rsa.pub 的内容复制粘贴进去。
+勾选 Allow write access，因为需要写权限。
+点击 Add key。</p>
+<h2 id="3将私钥添加到-github-secrets">3：将私钥添加到 GitHub Secrets</h2>
+<p>在你的 Hugo 仓库 xgDebug/xgDebug_blog 中，进入 Settings -&gt; Secrets -&gt; Actions。
+点击 New repository secret，创建新的密钥：
+Name: DEPLOY_KEY
+Value: 将生成的私钥 id_rsa 的内容粘贴进去。</p>
+<h2 id="4更新-github-actions-配置">4：更新 GitHub Actions 配置</h2>
+<p>在 .github/workflows/gh-pages.yml 中使用 DEPLOY_KEY 进行身份验证：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy Hugo Site to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span>- <span class="l">master</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">steps: - name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout repository</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set up Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-hugo@v2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">hugo-version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;latest&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Hugo themes</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">git submodule update --init --recursive</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build Hugo site</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">hugo --minify</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">deploy_key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.DEPLOY_KEY }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">external_repository</span><span class="p">:</span><span class="w"> </span><span class="l">xgDebug/xgdebug.github.io</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">gh-pages</span><span class="w">
+</span></span></span></code></pre></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>使用ncnn布署pytorch模型到Android手机</title>
+      <link>https://www.xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</link>
+      <pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</guid>
+      <description>pytorch on Android 11</description>
+      <content:encoded><![CDATA[<h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">使用 ncnn 布署 pytorch 模型到 Android 手机</h2>
+<ol>
+<li>编译 NCNN 时要打开显卡支持 vulkan 是针对 gpu 的 -DNCNN_VULKAN=ON</li>
+<li>MobileNetV3</li>
+</ol>
+<h2 id="編譯成-mt-時要打開-cmake-0091-特性">編譯成 MT 時要打開 CMAKE 0091 特性</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmake" data-lang="cmake"><span class="line"><span class="cl"><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.20.0</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">cmake_policy</span><span class="p">(</span><span class="s">SET</span> <span class="s">CMP0091</span> <span class="s">NEW</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_MSVC_RUNTIME_LIBRARY</span> <span class="s2">&#34;MultiThreaded$&lt;$&lt;CONFIG:Debug&gt;:Debug&gt;&#34;</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">project</span><span class="p">(</span><span class="s2">&#34;client-project&#34;</span><span class="p">)</span><span class="err">
+</span></span></span></code></pre></div><h3 id="训练-yolo">训练 YOLO</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="se">\E</span>nvs<span class="se">\t</span>orch<span class="se">\S</span>cripts<span class="se">\a</span>ctivate.ps1
+</span></span><span class="line"><span class="cl">python train.py --batch <span class="m">6</span> --workers <span class="m">2</span> --imgsz <span class="m">960</span> --epochs <span class="m">300</span> --data <span class="s2">&#34;\Core\yaml\data.yaml&#34;</span> --cfg <span class="s2">&#34;\Core\yaml\cfg.yaml&#34;</span> --weights <span class="se">\C</span>ore<span class="se">\w</span>eights<span class="se">\b</span>est.pt --device <span class="m">0</span>
+</span></span></code></pre></div><h4 id="转换模型">转换模型</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.utils.model_zoo</span> <span class="k">as</span> <span class="nn">model_zoo</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.onnx</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">libs</span> <span class="kn">import</span> <span class="n">define</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">libs.net</span> <span class="kn">import</span> <span class="n">Net</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">libs.dataset</span> <span class="kn">import</span> <span class="n">ImageDataset</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">test_data</span> <span class="o">=</span> <span class="n">ImageDataset</span><span class="p">(</span><span class="n">define</span><span class="o">.</span><span class="n">testPath</span><span class="p">,</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">test_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span> <span class="n">test_data</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&#34;cuda&#34;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&#34;cpu&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">Net</span><span class="p">(</span><span class="n">out_dim</span><span class="o">=</span><span class="mi">19</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="s2">&#34;./widget/last.pt&#34;</span> <span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">saveOnnx</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">test_loader</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">),</span> <span class="n">target</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">label</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="n">long</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Export the model</span>
+</span></span><span class="line"><span class="cl">        <span class="n">torch</span><span class="o">.</span><span class="n">onnx</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="n">model</span><span class="p">,</span>                   <span class="c1"># model being run</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">data</span><span class="p">,</span>                      <span class="c1"># model input (or a tuple for multiple inputs)</span>
+</span></span><span class="line"><span class="cl">                        <span class="s2">&#34;./widget/best.onnx&#34;</span><span class="p">,</span>            <span class="c1"># where to save the model (can be a file or file-like object)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">export_params</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>        <span class="c1"># store the trained parameter weights inside the model file</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">opset_version</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>          <span class="c1"># the ONNX version to export the model to</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">do_constant_folding</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>  <span class="c1"># whether to execute constant folding for optimization</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">input_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;input&#39;</span><span class="p">],</span>   <span class="c1"># the model&#39;s input names</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">output_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;output&#39;</span><span class="p">],</span>  <span class="c1"># the model&#39;s output names</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">dynamic_axes</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;input&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="s1">&#39;batch_size&#39;</span><span class="p">},</span>    <span class="c1"># variable lenght axes</span>
+</span></span><span class="line"><span class="cl">                                        <span class="s1">&#39;output&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="s1">&#39;batch_size&#39;</span><span class="p">}})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">traced_script_module</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">jit</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">saveOnnx</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 转换</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python .<span class="se">\e</span>xport.py --weights weights/best.pt --img <span class="m">960</span> --batch <span class="m">1</span> --train
+</span></span><span class="line"><span class="cl">python -m onnxsim best.onnx best-sim.onnx
+</span></span><span class="line"><span class="cl">.<span class="se">\o</span>nnx2ncnn.exe best-sim.onnx best.param best.bin
+</span></span><span class="line"><span class="cl">ncnnoptimize best.param best.bin best-opt.param best-opt.bin <span class="m">65536</span>
+</span></span></code></pre></div><h3 id="git-clone-ncnn-repo-with-submodule">Git clone ncnn repo with submodule</h3>
+<pre tabindex="0"><code>$ git clone https://github.com/Tencent/ncnn.git
+$ cd ncnn
+$ git submodule update --init
+</code></pre><ul>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-linux">Build for Linux / NVIDIA Jetson / Raspberry Pi</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-windows-x64-using-visual-studio-community-2017">Build for Windows x64 using VS2017</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-macos">Build for macOS</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-arm-cortex-a-family-with-cross-compiling">Build for ARM Cortex-A family with cross-compiling</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-hisilicon-platform-with-cross-compiling">Build for Hisilicon platform with cross-compiling</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-android">Build for Android</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-ios-on-macos-with-xcode">Build for iOS on macOS with xcode</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-webassembly">Build for WebAssembly</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-allwinner-d1">Build for AllWinner D1</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#build-for-loongson-2k1000">Build for Loongson 2K1000</a></li>
+<li><a href="/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/#Build-for-Termux-on-Android">Build for Termux on Android</a></li>
+</ul>
+<hr>
+<h3 id="build-for-linux">Build for Linux</h3>
+<p>Install required build dependencies:</p>
+<ul>
+<li>git</li>
+<li>g++</li>
+<li>cmake</li>
+<li>protocol buffer (protobuf) headers files and protobuf compiler</li>
+<li>vulkan header files and loader library</li>
+<li>glslang</li>
+<li>(optional) opencv # For building examples</li>
+</ul>
+<p>Generally if you have Intel, AMD or Nvidia GPU from last 10 years, Vulkan can be easily used.</p>
+<p>On some systems there are no Vulkan drivers easily available at the moment (October 2020), so you might need to disable use of Vulkan on them. This applies to Raspberry Pi 3 (but there is experimental open source Vulkan driver in the works, which is not ready yet). Nvidia Tegra series devices (like Nvidia Jetson) should support Vulkan. Ensure you have most recent software installed for best expirience.</p>
+<p>On Debian, Ubuntu or Raspberry Pi OS, you can install all required dependencies using:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install build-essential git cmake libprotobuf-dev protobuf-compiler libvulkan-dev vulkan-utils libopencv-dev
+</span></span></code></pre></div><p>To use Vulkan backend install Vulkan header files, a vulkan driver loader, GLSL to SPIR-V compiler and vulkaninfo tool. Preferably from your distribution repositories. Alternatively download and install full Vulkan SDK (about 200MB in size; it contains all header files, documentation and prebuilt loader, as well some extra tools and source code of everything) from <a href="https://vulkan.lunarg.com/sdk/home">https://vulkan.lunarg.com/sdk/home</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://sdk.lunarg.com/sdk/download/1.2.189.0/linux/vulkansdk-linux-x86_64-1.2.189.0.tar.gz?Human<span class="o">=</span><span class="nb">true</span> -O vulkansdk-linux-x86_64-1.2.189.0.tar.gz
+</span></span><span class="line"><span class="cl">tar -xf vulkansdk-linux-x86_64-1.2.189.0.tar.gz
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">VULKAN_SDK</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/1.2.189.0/x86_64
+</span></span></code></pre></div><p>To use Vulkan after building ncnn later, you will also need to have Vulkan driver for your GPU. For AMD and Intel GPUs these can be found in Mesa graphics driver, which usually is installed by default on all distros (i.e. <code>sudo apt install mesa-vulkan-drivers</code> on Debian/Ubuntu). For Nvidia GPUs the proprietary Nvidia driver must be downloaded and installed (some distros will allow easier installation in some way). After installing Vulkan driver, confirm Vulkan libraries and driver are working, by using <code>vulkaninfo</code> or <code>vulkaninfo | grep deviceType</code>, it should list GPU device type. If there are more than one GPU installed (including the case of integrated GPU and discrete GPU, commonly found in laptops), you might need to note the order of devices to use later on.</p>
+<p>Nvidia Jetson devices the Vulkan support should be present in Nvidia provided SDK (Jetpack) or prebuild OS images.</p>
+<p>Raspberry Pi Vulkan drivers do exists, but are not mature. You are free to experiment at your own discretion, and report results and performance.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ncnn
+</span></span><span class="line"><span class="cl">mkdir -p build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_SYSTEM_GLSLANG<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span></code></pre></div><p>You can add <code>-GNinja</code> to <code>cmake</code> above to use Ninja build system (invoke build using <code>ninja</code> or <code>cmake --build .</code>).</p>
+<p>For Nvidia Jetson devices, add <code>-DCMAKE_TOOLCHAIN_FILE=../toolchains/jetson.toolchain.cmake</code> to cmake.</p>
+<p>For Rasberry Pi 3, add <code>-DCMAKE_TOOLCHAIN_FILE=../toolchains/pi3.toolchain.cmake -DPI3=ON</code> to cmake. You can also consider disabling Vulkan support as the Vulkan drivers for Rasberry Pi are still not mature, but it doesn&rsquo;t hurt to build the support in, but not use it.</p>
+<p>Verify build by running some examples:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ../examples
+</span></span><span class="line"><span class="cl">../build/examples/squeezenet ../images/256-ncnn.png
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="m">0</span> AMD RADV FIJI <span class="o">(</span>LLVM 10.0.1<span class="o">)]</span>  <span class="nv">queueC</span><span class="o">=</span>1<span class="o">[</span>4<span class="o">]</span>  <span class="nv">queueG</span><span class="o">=</span>0<span class="o">[</span>1<span class="o">]</span>  <span class="nv">queueT</span><span class="o">=</span>0<span class="o">[</span>1<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="m">0</span> AMD RADV FIJI <span class="o">(</span>LLVM 10.0.1<span class="o">)]</span>  <span class="nv">bugsbn1</span><span class="o">=</span><span class="m">0</span>  <span class="nv">buglbia</span><span class="o">=</span><span class="m">0</span>  <span class="nv">bugcopc</span><span class="o">=</span><span class="m">0</span>  <span class="nv">bugihfa</span><span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="m">0</span> AMD RADV FIJI <span class="o">(</span>LLVM 10.0.1<span class="o">)]</span>  <span class="nv">fp16p</span><span class="o">=</span><span class="m">1</span>  <span class="nv">fp16s</span><span class="o">=</span><span class="m">1</span>  <span class="nv">fp16a</span><span class="o">=</span><span class="m">0</span>  <span class="nv">int8s</span><span class="o">=</span><span class="m">1</span>  <span class="nv">int8a</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">532</span> <span class="o">=</span> 0.163452
+</span></span><span class="line"><span class="cl"><span class="nv">920</span> <span class="o">=</span> 0.093140
+</span></span><span class="line"><span class="cl"><span class="nv">716</span> <span class="o">=</span> 0.061584
+</span></span></code></pre></div><p>You can also run benchmarks (the 4th argument is a GPU device index to use, refer to <code>vulkaninfo</code>, if you have more than one GPU):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ../benchmark
+</span></span><span class="line"><span class="cl">../build/benchmark/benchncnn <span class="m">10</span> <span class="k">$(</span>nproc<span class="k">)</span> <span class="m">0</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="m">0</span> AMD RADV FIJI <span class="o">(</span>LLVM 10.0.1<span class="o">)]</span>  <span class="nv">queueC</span><span class="o">=</span>1<span class="o">[</span>4<span class="o">]</span>  <span class="nv">queueG</span><span class="o">=</span>0<span class="o">[</span>1<span class="o">]</span>  <span class="nv">queueT</span><span class="o">=</span>0<span class="o">[</span>1<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="m">0</span> AMD RADV FIJI <span class="o">(</span>LLVM 10.0.1<span class="o">)]</span>  <span class="nv">bugsbn1</span><span class="o">=</span><span class="m">0</span>  <span class="nv">buglbia</span><span class="o">=</span><span class="m">0</span>  <span class="nv">bugcopc</span><span class="o">=</span><span class="m">0</span>  <span class="nv">bugihfa</span><span class="o">=</span><span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="m">0</span> AMD RADV FIJI <span class="o">(</span>LLVM 10.0.1<span class="o">)]</span>  <span class="nv">fp16p</span><span class="o">=</span><span class="m">1</span>  <span class="nv">fp16s</span><span class="o">=</span><span class="m">1</span>  <span class="nv">fp16a</span><span class="o">=</span><span class="m">0</span>  <span class="nv">int8s</span><span class="o">=</span><span class="m">1</span>  <span class="nv">int8a</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">num_threads</span> <span class="o">=</span> <span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="nv">powersave</span> <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">gpu_device</span> <span class="o">=</span> <span class="m">0</span>
+</span></span><span class="line"><span class="cl"><span class="nv">cooling_down</span> <span class="o">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">          squeezenet  <span class="nv">min</span> <span class="o">=</span>    4.68  <span class="nv">max</span> <span class="o">=</span>    4.99  <span class="nv">avg</span> <span class="o">=</span>    4.85
+</span></span><span class="line"><span class="cl">     squeezenet_int8  <span class="nv">min</span> <span class="o">=</span>   38.52  <span class="nv">max</span> <span class="o">=</span>   66.90  <span class="nv">avg</span> <span class="o">=</span>   48.52
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></div><p>To run benchmarks on a CPU, set the 5th argument to <code>-1</code>.</p>
+<hr>
+<h3 id="build-for-windows-x64-using-visual-studio-community-2017">Build for Windows x64 using Visual Studio Community 2017</h3>
+<p>Download and Install Visual Studio Community 2017 from <a href="https://visualstudio.microsoft.com/vs/community/">https://visualstudio.microsoft.com/vs/community/</a></p>
+<p>Start the command prompt: <code>Start → Programs → Visual Studio 2017 → Visual Studio Tools → x64 Native Tools Command Prompt for VS 2017</code></p>
+<p>Download protobuf-3.4.0 from <a href="https://github.com/google/protobuf/archive/v3.4.0.zip">https://github.com/google/protobuf/archive/v3.4.0.zip</a></p>
+<p>Build protobuf library:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;protobuf-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">cmake -G<span class="s2">&#34;NMake Makefiles&#34;</span> -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>%cd%/install -Dprotobuf_BUILD_TESTS<span class="o">=</span>OFF -Dprotobuf_MSVC_STATIC_RUNTIME<span class="o">=</span>OFF ../cmake
+</span></span><span class="line"><span class="cl">nmake
+</span></span><span class="line"><span class="cl">nmake install
+</span></span></code></pre></div><p>(optional) Download and install Vulkan SDK from <a href="https://vulkan.lunarg.com/sdk/home">https://vulkan.lunarg.com/sdk/home</a></p>
+<p>Build ncnn library (replace <!-- raw HTML omitted --> with a proper path):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">cmake -G<span class="s2">&#34;NMake Makefiles&#34;</span> -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>%cd%/install -DProtobuf_INCLUDE_DIR<span class="o">=</span>&lt;protobuf-root-dir&gt;/build/install/include -DProtobuf_LIBRARIES<span class="o">=</span>&lt;protobuf-root-dir&gt;/build/install/lib/libprotobuf.lib -DProtobuf_PROTOC_EXECUTABLE<span class="o">=</span>&lt;protobuf-root-dir&gt;/build/install/bin/protoc.exe -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">nmake
+</span></span><span class="line"><span class="cl">nmake install
+</span></span></code></pre></div><p>Note: To speed up compilation process on multi core machines, configuring <code>cmake</code> to use <code>jom</code> or <code>ninja</code> using <code>-G</code> flag is recommended.</p>
+<hr>
+<h3 id="build-for-macos">Build for macOS</h3>
+<p>First install Xcode or Xcode Command Line Tools according to your needs.</p>
+<p>Then install <code>protobuf</code> and <code>libomp</code> via homebrew</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">brew install protobuf libomp
+</span></span></code></pre></div><p>Download and install Vulkan SDK from <a href="https://vulkan.lunarg.com/sdk/home">https://vulkan.lunarg.com/sdk/home</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human<span class="o">=</span><span class="nb">true</span> -O vulkansdk-macos-1.2.189.0.dmg
+</span></span><span class="line"><span class="cl">hdiutil attach vulkansdk-macos-1.2.189.0.dmg
+</span></span><span class="line"><span class="cl">sudo /Volumes/vulkansdk-macos-1.2.189.0/InstallVulkan.app/Contents/MacOS/InstallVulkan --root <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/vulkansdk-macos-1.2.189.0 --accept-licenses --default-answer --confirm-command install
+</span></span><span class="line"><span class="cl">hdiutil detach /Volumes/vulkansdk-macos-1.2.189.0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># setup env</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">VULKAN_SDK</span><span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/vulkansdk-macos-1.2.189.0/macOS
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_OSX_ARCHITECTURES<span class="o">=</span><span class="s2">&#34;x86_64;arm64&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p><em>Note: If you encounter <code>libomp</code> related errors during installation, you can also check our GitHub Actions at <a href="https://github.com/Tencent/ncnn/blob/d91cccf/.github/workflows/macos-x64-gpu.yml#L50-L68">here</a> to install and use <code>openmp</code>.</em></p>
+<hr>
+<h3 id="build-for-arm-cortex-a-family-with-cross-compiling">Build for ARM Cortex-A family with cross-compiling</h3>
+<p>Download ARM toolchain from <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-a/downloads">https://developer.arm.com/open-source/gnu-toolchain/gnu-a/downloads</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;&lt;your-toolchain-compiler-path&gt;:</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>Alternatively install a cross-compiler provided by the distribution (i.e. on Debian / Ubuntu, you can do <code>sudo apt install g++-arm-linux-gnueabi g++-arm-linux-gnueabihf g++-aarch64-linux-gnu</code>).</p>
+<p>Depending on your needs build one or more of the below targets.</p>
+<p>AArch32 target with soft float (arm-linux-gnueabi)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-arm-linux-gnueabi
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-arm-linux-gnueabi
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/arm-linux-gnueabi.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span></code></pre></div><p>AArch32 target with hard float (arm-linux-gnueabihf)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-arm-linux-gnueabihf
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-arm-linux-gnueabihf
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/arm-linux-gnueabihf.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span></code></pre></div><p>AArch64 GNU/Linux target (aarch64-linux-gnu)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-aarch64-linux-gnu
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-aarch64-linux-gnu
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/aarch64-linux-gnu.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span></code></pre></div><hr>
+<h3 id="build-for-hisilicon-platform-with-cross-compiling">Build for Hisilicon platform with cross-compiling</h3>
+<p>Download and install Hisilicon SDK. The toolchain should be in <code>/opt/hisi-linux/x86-arm</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Choose one cmake toolchain file depends on your target platform</span>
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/hisiv300.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/hisiv500.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/himix100.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/himix200.toolchain.cmake ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span><span class="line"><span class="cl">make install
+</span></span></code></pre></div><hr>
+<h3 id="build-for-android">Build for Android</h3>
+<p>You can use the pre-build ncnn-android-lib.zip from <a href="https://github.com/Tencent/ncnn/releases">https://github.com/Tencent/ncnn/releases</a></p>
+<p>Download Android NDK from <a href="http://developer.android.com/ndk/downloads/index.html">http://developer.android.com/ndk/downloads/index.html</a> and install it, for example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">unzip android-ndk-r21d-linux-x86_64.zip
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">ANDROID_NDK</span><span class="o">=</span>&lt;your-ndk-root-path&gt;
+</span></span></code></pre></div><p>(optional) remove the hardcoded debug flag in Android NDK <a href="https://github.com/android-ndk/ndk/issues/243">android-ndk issue</a></p>
+<pre tabindex="0"><code># open $ANDROID_NDK/build/cmake/android.toolchain.cmake
+# delete &#34;-g&#34; line
+list(APPEND ANDROID_COMPILER_FLAGS
+  -g
+  -DANDROID
+</code></pre><p>Build armv7 library</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-android-armv7
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-android-armv7
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DANDROID_PLATFORM<span class="o">=</span>android-14 ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span><span class="line"><span class="cl">make install
+</span></span></code></pre></div><p>Pick <code>build-android-armv7/install</code> folder for further JNI usage.</p>
+<p>Build aarch64 library:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-android-aarch64
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-android-aarch64
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_PLATFORM<span class="o">=</span>android-21 ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span><span class="line"><span class="cl">make install
+</span></span></code></pre></div><p>Pick <code>build-android-aarch64/install</code> folder for further JNI usage.</p>
+<hr>
+<h3 id="build-for-ios-on-macos-with-xcode">Build for iOS on macOS with xcode</h3>
+<p>You can use the pre-build ncnn.framework glslang.framework and openmp.framework from <a href="https://github.com/Tencent/ncnn/releases">https://github.com/Tencent/ncnn/releases</a></p>
+<p>Install xcode</p>
+<p>You can replace <code>-DENABLE_BITCODE=0</code> to <code>-DENABLE_BITCODE=1</code> in the following cmake arguments if you want to build bitcode enabled libraries.</p>
+<p>Download and install openmp for multithreading inference feature on iPhoneOS</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/openmp-11.0.0.src.tar.xz
+</span></span><span class="line"><span class="cl">tar -xf openmp-11.0.0.src.tar.xz
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> openmp-11.0.0.src
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># apply some compilation fix</span>
+</span></span><span class="line"><span class="cl">sed -i<span class="s1">&#39;&#39;</span> -e <span class="s1">&#39;/.size __kmp_unnamed_critical_addr/d&#39;</span> runtime/src/z_Linux_asm.S
+</span></span><span class="line"><span class="cl">sed -i<span class="s1">&#39;&#39;</span> -e <span class="s1">&#39;s/__kmp_unnamed_critical_addr/___kmp_unnamed_critical_addr/g&#39;</span> runtime/src/z_Linux_asm.S
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p build-ios
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>install <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DIOS_PLATFORM<span class="o">=</span>OS -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;armv7;arm64;arm64e&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DPERL_EXECUTABLE<span class="o">=</span>/usr/local/bin/perl <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DLIBOMP_ENABLE_SHARED<span class="o">=</span>OFF -DLIBOMP_OMPT_SUPPORT<span class="o">=</span>OFF -DLIBOMP_USE_HWLOC<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># copy openmp library and header files to xcode toolchain sysroot</span>
+</span></span><span class="line"><span class="cl">sudo cp install/include/* /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include
+</span></span><span class="line"><span class="cl">sudo cp install/lib/libomp.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib
+</span></span></code></pre></div><p>Download and install openmp for multithreading inference feature on iPhoneSimulator</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/openmp-11.0.0.src.tar.xz
+</span></span><span class="line"><span class="cl">tar -xf openmp-11.0.0.src.tar.xz
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> openmp-11.0.0.src
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># apply some compilation fix</span>
+</span></span><span class="line"><span class="cl">sed -i<span class="s1">&#39;&#39;</span> -e <span class="s1">&#39;/.size __kmp_unnamed_critical_addr/d&#39;</span> runtime/src/z_Linux_asm.S
+</span></span><span class="line"><span class="cl">sed -i<span class="s1">&#39;&#39;</span> -e <span class="s1">&#39;s/__kmp_unnamed_critical_addr/___kmp_unnamed_critical_addr/g&#39;</span> runtime/src/z_Linux_asm.S
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p build-ios-sim
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios-sim
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>install <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DIOS_PLATFORM<span class="o">=</span>SIMULATOR -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;i386;x86_64&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DPERL_EXECUTABLE<span class="o">=</span>/usr/local/bin/perl <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DLIBOMP_ENABLE_SHARED<span class="o">=</span>OFF -DLIBOMP_OMPT_SUPPORT<span class="o">=</span>OFF -DLIBOMP_USE_HWLOC<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># copy openmp library and header files to xcode toolchain sysroot</span>
+</span></span><span class="line"><span class="cl">sudo cp install/include/* /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include
+</span></span><span class="line"><span class="cl">sudo cp install/lib/libomp.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib
+</span></span></code></pre></div><p>Package openmp framework:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;openmp-root-dir&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p openmp.framework/Versions/A/Headers
+</span></span><span class="line"><span class="cl">mkdir -p openmp.framework/Versions/A/Resources
+</span></span><span class="line"><span class="cl">ln -s A openmp.framework/Versions/Current
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/Headers openmp.framework/Headers
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/Resources openmp.framework/Resources
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/openmp openmp.framework/openmp
+</span></span><span class="line"><span class="cl">lipo -create build-ios/install/lib/libomp.a build-ios-sim/install/lib/libomp.a -o openmp.framework/Versions/A/openmp
+</span></span><span class="line"><span class="cl">cp -r build-ios/install/include/* openmp.framework/Versions/A/Headers/
+</span></span><span class="line"><span class="cl">sed -e <span class="s1">&#39;s/__NAME__/openmp/g&#39;</span> -e <span class="s1">&#39;s/__IDENTIFIER__/org.llvm.openmp/g&#39;</span> -e <span class="s1">&#39;s/__VERSION__/11.0/g&#39;</span> Info.plist &gt; openmp.framework/Versions/A/Resources/Info.plist
+</span></span></code></pre></div><p>Download and install Vulkan SDK from <a href="https://vulkan.lunarg.com/sdk/home">https://vulkan.lunarg.com/sdk/home</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human<span class="o">=</span><span class="nb">true</span> -O vulkansdk-macos-1.2.189.0.dmg
+</span></span><span class="line"><span class="cl">hdiutil attach vulkansdk-macos-1.2.189.0.dmg
+</span></span><span class="line"><span class="cl">sudo /Volumes/vulkansdk-macos-1.2.189.0/InstallVulkan.app/Contents/MacOS/InstallVulkan --root <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/vulkansdk-macos-1.2.189.0 --accept-licenses --default-answer --confirm-command install
+</span></span><span class="line"><span class="cl">hdiutil detach /Volumes/vulkansdk-macos-1.2.189.0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># setup env</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">VULKAN_SDK</span><span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/vulkansdk-macos-1.2.189.0/macOS
+</span></span></code></pre></div><p>Build library for iPhoneOS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-ios
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DIOS_PLATFORM<span class="o">=</span>OS -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;armv7;arm64;arm64e&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># vulkan is only available on arm64 devices</span>
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DIOS_PLATFORM<span class="o">=</span>OS64 -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;arm64;arm64e&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/iOS/libMoltenVK.dylib <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Build library for iPhoneSimulator:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">mkdir -p build-ios-sim
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios-sim
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DIOS_PLATFORM<span class="o">=</span>SIMULATOR -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;i386;x86_64&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Package glslang framework:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p glslang.framework/Versions/A/Headers
+</span></span><span class="line"><span class="cl">mkdir -p glslang.framework/Versions/A/Resources
+</span></span><span class="line"><span class="cl">ln -s A glslang.framework/Versions/Current
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/Headers glslang.framework/Headers
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/Resources glslang.framework/Resources
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/glslang glslang.framework/glslang
+</span></span><span class="line"><span class="cl">libtool -static build-ios/install/lib/libglslang.a build-ios/install/lib/libSPIRV.a build-ios/install/lib/libOGLCompiler.a build-ios/install/lib/libOSDependent.a -o build-ios/install/lib/libglslang_combined.a
+</span></span><span class="line"><span class="cl">libtool -static build-ios-sim/install/lib/libglslang.a build-ios-sim/install/lib/libSPIRV.a build-ios-sim/install/lib/libOGLCompiler.a build-ios-sim/install/lib/libOSDependent.a -o build-ios-sim/install/lib/libglslang_combined.a
+</span></span><span class="line"><span class="cl">lipo -create build-ios/install/lib/libglslang_combined.a build-ios-sim/install/lib/libglslang_combined.a -o glslang.framework/Versions/A/glslang
+</span></span><span class="line"><span class="cl">cp -r build/install/include/glslang glslang.framework/Versions/A/Headers/
+</span></span><span class="line"><span class="cl">sed -e <span class="s1">&#39;s/__NAME__/glslang/g&#39;</span> -e <span class="s1">&#39;s/__IDENTIFIER__/org.khronos.glslang/g&#39;</span> -e <span class="s1">&#39;s/__VERSION__/1.0/g&#39;</span> Info.plist &gt; glslang.framework/Versions/A/Resources/Info.plist
+</span></span></code></pre></div><p>Package ncnn framework:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> &lt;ncnn-root-dir&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p ncnn.framework/Versions/A/Headers
+</span></span><span class="line"><span class="cl">mkdir -p ncnn.framework/Versions/A/Resources
+</span></span><span class="line"><span class="cl">ln -s A ncnn.framework/Versions/Current
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/Headers ncnn.framework/Headers
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/Resources ncnn.framework/Resources
+</span></span><span class="line"><span class="cl">ln -s Versions/Current/ncnn ncnn.framework/ncnn
+</span></span><span class="line"><span class="cl">lipo -create build-ios/install/lib/libncnn.a build-ios-sim/install/lib/libncnn.a -o ncnn.framework/Versions/A/ncnn
+</span></span><span class="line"><span class="cl">cp -r build-ios/install/include/* ncnn.framework/Versions/A/Headers/
+</span></span><span class="line"><span class="cl">sed -e <span class="s1">&#39;s/__NAME__/ncnn/g&#39;</span> -e <span class="s1">&#39;s/__IDENTIFIER__/com.tencent.ncnn/g&#39;</span> -e <span class="s1">&#39;s/__VERSION__/1.0/g&#39;</span> Info.plist &gt; ncnn.framework/Versions/A/Resources/Info.plist
+</span></span></code></pre></div><p>Pick <code>ncnn.framework</code> <code>glslang.framework</code> and <code>openmp.framework</code> folder for app development.</p>
+<hr>
+<h3 id="build-for-webassembly">Build for WebAssembly</h3>
+<p>Install Emscripten</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/emscripten-core/emsdk.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> emsdk
+</span></span><span class="line"><span class="cl">./emsdk install 2.0.8
+</span></span><span class="line"><span class="cl">./emsdk activate 2.0.8
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> emsdk/emsdk_env.sh
+</span></span></code></pre></div><p>Build without any extension for general compatibility:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_SIMPLEOMP<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>OFF -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Build with WASM SIMD extension:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-simd
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-simd
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_SIMPLEOMP<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>ON -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Build with WASM Thread extension:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-threads
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-threads
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>ON -DNCNN_OPENMP<span class="o">=</span>ON -DNCNN_SIMPLEOMP<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>OFF -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Build with WASM SIMD and Thread extension:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-simd-threads
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-simd-threads
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>ON -DNCNN_OPENMP<span class="o">=</span>ON -DNCNN_SIMPLEOMP<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>ON -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Pick <code>build-XYZ/install</code> folder for further usage.</p>
+<hr>
+<h3 id="build-for-allwinner-d1">Build for AllWinner D1</h3>
+<p>Download c906 toolchain package from <a href="https://occ.t-head.cn/community/download?id=3913221581316624384">https://occ.t-head.cn/community/download?id=3913221581316624384</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">tar -xf riscv64-linux-x86_64-20210512.tar.gz
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">RISCV_ROOT_PATH</span><span class="o">=</span>/home/nihui/osd/riscv64-linux-x86_64-20210512
+</span></span></code></pre></div><p>Build ncnn with riscv-v vector and simpleocv enabled:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-c906
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-c906
+</span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/c906.toolchain.cmake <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DCMAKE_BUILD_TYPE<span class="o">=</span>relwithdebinfo -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_RVV<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_SIMPLEOCV<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Pick <code>build-c906/install</code> folder for further usage.</p>
+<p>You can upload binary inside <code>build-c906/examples</code> folder and run on D1 board for testing.</p>
+<hr>
+<h3 id="build-for-loongson-2k1000">Build for Loongson 2K1000</h3>
+<p>For gcc version &lt; 8.5, you need to fix msa.h header for workaround msa fmadd bug.</p>
+<p>Open <code>/usr/lib/gcc/mips64el-linux-gnuabi64/8/include/msa.h</code>, find <code>__msa_fmadd_w</code> and apply changes as the following</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// #define __msa_fmadd_w __builtin_msa_fmadd_w
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define __msa_fmadd_w(a, b, c) __builtin_msa_fmadd_w(c, b, a)
+</span></span></span></code></pre></div><p>Build ncnn with mips msa and simpleocv enabled:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">cmake -DNCNN_DISABLE_RTTI<span class="o">=</span>ON -DNCNN_DISABLE_EXCEPTION<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_MSA<span class="o">=</span>ON -DNCNN_MMI<span class="o">=</span>ON -DNCNN_SIMPLEOCV<span class="o">=</span>ON ..
+</span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">2</span>
+</span></span><span class="line"><span class="cl">cmake --build . --target install
+</span></span></code></pre></div><p>Pick <code>build/install</code> folder for further usage.</p>
+<p>You can run binary inside <code>build/examples</code> folder for testing.</p>
+<hr>
+<h3 id="build-for-termux-on-android">Build for Termux on Android</h3>
+<p>Install app Termux on your phone,and install Ubuntu in Termux.</p>
+<p>If you want use ssh, just install openssh in Termux</p>
+<pre tabindex="0"><code>pkg install proot-distro
+proot-distro install ubuntu
+</code></pre><p>or you can see what system can be installed using <code>proot-distro list</code></p>
+<p>while you install ubuntu successfully, using <code>proot-distro login ubuntu</code> to login Ubuntu.</p>
+<p>Then make ncnn,no need to install any other dependencies.</p>
+<pre tabindex="0"><code>git clone https://github.com/Tencent/ncnn.git
+cd ncnn
+git submodule update --init
+mkdir -p build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_EXAMPLES=ON -DNCNN_PLATFORM_API=OFF -DNCNN_SIMPLEOCV=ON ..
+make -j$(nproc)
+</code></pre><p>Then you can run a test</p>
+<blockquote>
+<p>on my Pixel 3 XL using Qualcomm 845,cant load <code>256-ncnn.png</code></p>
+</blockquote>
+<pre tabindex="0"><code>cd ../examples
+../build/examples/squeezenet ../images/128-ncnn.png
+</code></pre>]]></content:encoded>
+    </item>
+    <item>
+      <title>Arch安装stable-diffusion-webui中遇到的一些坑</title>
+      <link>https://www.xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <pubDate>Tue, 12 Sep 2023 15:21:53 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <description>&lt;p&gt;1. 不要使用清华的源，要用阿里的，因为清华的源不全&lt;br&gt;
+2. 要使用 python launch.py 来安装一些 git 库&lt;br&gt;
+3. 要安装 requirements_versions.txt 带版本的 pip 库&lt;br&gt;
+4. 可以使用 python webui.py &amp;ndash;port=7860 &amp;ndash;server=0.0.0.0 &amp;ndash;medvram 节省显存&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>1. 不要使用清华的源，要用阿里的，因为清华的源不全<br>
+2. 要使用 python launch.py 来安装一些 git 库<br>
+3. 要安装 requirements_versions.txt 带版本的 pip 库<br>
+4. 可以使用 python webui.py &ndash;port=7860 &ndash;server=0.0.0.0 &ndash;medvram 节省显存</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

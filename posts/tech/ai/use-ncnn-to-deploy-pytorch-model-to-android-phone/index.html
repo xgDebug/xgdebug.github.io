@@ -1,0 +1,827 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Use ncnn to deploy pytorch model to Android phone | xgDebug's Blog</title>
+<meta name=keywords content="AI,Android"><meta name=description content='Use ncnn to deploy pytorch model to Android phone
+
+Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON
+MobileNetV3
+
+Open CMAKE 0091 feature when compiling into MT
+cmake_minimum_required(VERSION 3.20.0)
+cmake_policy(SET CMP0091 NEW)
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+project("client-project")
+Train YOLO
+\Envs\torch\Scripts\activate.ps1
+python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data "\Core\yaml\data.yaml" --cfg "\Core\yaml\cfg.yaml" --weights \ Core\weights\best.pt --device 0
+Conversion model
+from torch import nn
+import torch.utils.model_zoo as model_zoo
+import torch.onnx
+from libs import define
+from libs.net import Net
+from libs.dataset import ImageDataset
+import os
+
+test_data = ImageDataset(define.testPath,False)
+test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True)
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = Net(out_dim=19).to(device)
+model.load_state_dict(torch.load( "./widget/last.pt" ))
+model.eval()
+
+def saveOnnx():
+    for data, target in test_loader:
+        data, target = data.to(device), target.to(device)
+        label = target.long()
+        y = model(data)
+        # Export the model
+        torch.onnx.export(model, # model being run
+                        data, # model input (or a tuple for multiple inputs)
+                        "./widget/best.onnx", # where to save the model (can be a file or file-like object)
+                        export_params=True, # store the trained parameter weights inside the model file
+                        opset_version=10, # the ONNX version to export the model to
+                        do_constant_folding=True, # whether to execute constant folding for optimization
+                        input_names = [&#39;input&#39;], # the model&#39;s input names
+                        output_names = [&#39;output&#39;], # the model&#39;s output names
+                        dynamic_axes={&#39;input&#39;: {0:&#39;batch_size&#39;}, # variable lenght axes
+                                        &#39;output&#39;: {0:&#39;batch_size&#39;}})
+
+        traced_script_module = torch.jit.trace(model, data)
+        return
+
+saveOnnx()
+# Conversion
+os.system("python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx")
+os.system("./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin")
+os.system("./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536")
+python .\export.py &ndash;weights weights/best.pt &ndash;img 960 &ndash;batch 1 &ndash;train
+python -m onnxsim best.onnx best-sim.onnx
+.\onnx2ncnn.exe best-sim.onnx best.param best.bin
+ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536'><meta name=author content="xgDebug"><link rel=canonical href=https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/><meta name=google-site-verification content="3znWIRCQLH2QvpG-N9V0L0MB3oWUvjwCy4pOtRBhnrQ"><meta name=yandex-verification content="75149014e640c868"><meta name=msvalidate.01 content="452C24BC8E4B77F84D7DECCB8D52E6D4"><link crossorigin=anonymous href=/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as=style><link rel=icon href=https://www.xgdebug.com/images/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://www.xgdebug.com/images/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://www.xgdebug.com/images/favicon-32x32.png><link rel=apple-touch-icon href=https://www.xgdebug.com/images/apple-touch-icon.png><link rel=mask-icon href=https://www.xgdebug.com><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="Use ncnn to deploy pytorch model to Android phone"><meta property="og:description" content='Use ncnn to deploy pytorch model to Android phone
+
+Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON
+MobileNetV3
+
+Open CMAKE 0091 feature when compiling into MT
+cmake_minimum_required(VERSION 3.20.0)
+cmake_policy(SET CMP0091 NEW)
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+project("client-project")
+Train YOLO
+\Envs\torch\Scripts\activate.ps1
+python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data "\Core\yaml\data.yaml" --cfg "\Core\yaml\cfg.yaml" --weights \ Core\weights\best.pt --device 0
+Conversion model
+from torch import nn
+import torch.utils.model_zoo as model_zoo
+import torch.onnx
+from libs import define
+from libs.net import Net
+from libs.dataset import ImageDataset
+import os
+
+test_data = ImageDataset(define.testPath,False)
+test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True)
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = Net(out_dim=19).to(device)
+model.load_state_dict(torch.load( "./widget/last.pt" ))
+model.eval()
+
+def saveOnnx():
+    for data, target in test_loader:
+        data, target = data.to(device), target.to(device)
+        label = target.long()
+        y = model(data)
+        # Export the model
+        torch.onnx.export(model, # model being run
+                        data, # model input (or a tuple for multiple inputs)
+                        "./widget/best.onnx", # where to save the model (can be a file or file-like object)
+                        export_params=True, # store the trained parameter weights inside the model file
+                        opset_version=10, # the ONNX version to export the model to
+                        do_constant_folding=True, # whether to execute constant folding for optimization
+                        input_names = [&#39;input&#39;], # the model&#39;s input names
+                        output_names = [&#39;output&#39;], # the model&#39;s output names
+                        dynamic_axes={&#39;input&#39;: {0:&#39;batch_size&#39;}, # variable lenght axes
+                                        &#39;output&#39;: {0:&#39;batch_size&#39;}})
+
+        traced_script_module = torch.jit.trace(model, data)
+        return
+
+saveOnnx()
+# Conversion
+os.system("python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx")
+os.system("./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin")
+os.system("./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536")
+python .\export.py &ndash;weights weights/best.pt &ndash;img 960 &ndash;batch 1 &ndash;train
+python -m onnxsim best.onnx best-sim.onnx
+.\onnx2ncnn.exe best-sim.onnx best.param best.bin
+ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536'><meta property="og:type" content="article"><meta property="og:url" content="https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/"><meta property="og:image" content="https://www.xgdebug.com/images/avatar.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-08-11T01:18:11+00:00"><meta property="article:modified_time" content="2023-08-11T01:18:11+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://www.xgdebug.com/images/avatar.png"><meta name=twitter:title content="Use ncnn to deploy pytorch model to Android phone"><meta name=twitter:description content='Use ncnn to deploy pytorch model to Android phone
+
+Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON
+MobileNetV3
+
+Open CMAKE 0091 feature when compiling into MT
+cmake_minimum_required(VERSION 3.20.0)
+cmake_policy(SET CMP0091 NEW)
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+project("client-project")
+Train YOLO
+\Envs\torch\Scripts\activate.ps1
+python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data "\Core\yaml\data.yaml" --cfg "\Core\yaml\cfg.yaml" --weights \ Core\weights\best.pt --device 0
+Conversion model
+from torch import nn
+import torch.utils.model_zoo as model_zoo
+import torch.onnx
+from libs import define
+from libs.net import Net
+from libs.dataset import ImageDataset
+import os
+
+test_data = ImageDataset(define.testPath,False)
+test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True)
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = Net(out_dim=19).to(device)
+model.load_state_dict(torch.load( "./widget/last.pt" ))
+model.eval()
+
+def saveOnnx():
+    for data, target in test_loader:
+        data, target = data.to(device), target.to(device)
+        label = target.long()
+        y = model(data)
+        # Export the model
+        torch.onnx.export(model, # model being run
+                        data, # model input (or a tuple for multiple inputs)
+                        "./widget/best.onnx", # where to save the model (can be a file or file-like object)
+                        export_params=True, # store the trained parameter weights inside the model file
+                        opset_version=10, # the ONNX version to export the model to
+                        do_constant_folding=True, # whether to execute constant folding for optimization
+                        input_names = [&#39;input&#39;], # the model&#39;s input names
+                        output_names = [&#39;output&#39;], # the model&#39;s output names
+                        dynamic_axes={&#39;input&#39;: {0:&#39;batch_size&#39;}, # variable lenght axes
+                                        &#39;output&#39;: {0:&#39;batch_size&#39;}})
+
+        traced_script_module = torch.jit.trace(model, data)
+        return
+
+saveOnnx()
+# Conversion
+os.system("python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx")
+os.system("./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin")
+os.system("./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536")
+python .\export.py &ndash;weights weights/best.pt &ndash;img 960 &ndash;batch 1 &ndash;train
+python -m onnxsim best.onnx best-sim.onnx
+.\onnx2ncnn.exe best-sim.onnx best.param best.bin
+ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536'><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Categories","item":"https://www.xgdebug.com/posts/"},{"@type":"ListItem","position":2,"name":"Tech","item":"https://www.xgdebug.com/posts/tech/"},{"@type":"ListItem","position":3,"name":"Use ncnn to deploy pytorch model to Android phone","item":"https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Use ncnn to deploy pytorch model to Android phone","name":"Use ncnn to deploy pytorch model to Android phone","description":"Use ncnn to deploy pytorch model to Android phone Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON MobileNetV3 Open CMAKE 0091 feature when compiling into MT cmake_minimum_required(VERSION 3.20.0) cmake_policy(SET CMP0091 NEW) set(CMAKE_MSVC_RUNTIME_LIBRARY \u0026#34;MultiThreaded$\u0026lt;$\u0026lt;CONFIG:Debug\u0026gt;:Debug\u0026gt;\u0026#34;) project(\u0026#34;client-project\u0026#34;) Train YOLO \\Envs\\torch\\Scripts\\activate.ps1 python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data \u0026#34;\\Core\\yaml\\data.yaml\u0026#34; --cfg \u0026#34;\\Core\\yaml\\cfg.yaml\u0026#34; --weights \\ Core\\weights\\best.pt --device 0 Conversion model from torch import nn import torch.utils.model_zoo as model_zoo import torch.onnx from libs import define from libs.net import Net from libs.dataset import ImageDataset import os test_data = ImageDataset(define.testPath,False) test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True) device = torch.device(\u0026#34;cuda\u0026#34; if torch.cuda.is_available() else \u0026#34;cpu\u0026#34;) model = Net(out_dim=19).to(device) model.load_state_dict(torch.load( \u0026#34;./widget/last.pt\u0026#34; )) model.eval() def saveOnnx(): for data, target in test_loader: data, target = data.to(device), target.to(device) label = target.long() y = model(data) # Export the model torch.onnx.export(model, # model being run data, # model input (or a tuple for multiple inputs) \u0026#34;./widget/best.onnx\u0026#34;, # where to save the model (can be a file or file-like object) export_params=True, # store the trained parameter weights inside the model file opset_version=10, # the ONNX version to export the model to do_constant_folding=True, # whether to execute constant folding for optimization input_names = [\u0026#39;input\u0026#39;], # the model\u0026#39;s input names output_names = [\u0026#39;output\u0026#39;], # the model\u0026#39;s output names dynamic_axes={\u0026#39;input\u0026#39;: {0:\u0026#39;batch_size\u0026#39;}, # variable lenght axes \u0026#39;output\u0026#39;: {0:\u0026#39;batch_size\u0026#39;}}) traced_script_module = torch.jit.trace(model, data) return saveOnnx() # Conversion os.system(\u0026#34;python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx\u0026#34;) os.system(\u0026#34;./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin\u0026#34;) os.system(\u0026#34;./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536\u0026#34;) python .\\export.py \u0026ndash;weights weights/best.pt \u0026ndash;img 960 \u0026ndash;batch 1 \u0026ndash;train python -m onnxsim best.onnx best-sim.onnx .\\onnx2ncnn.exe best-sim.onnx best.param best.bin ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536\n","keywords":["AI","Android"],"articleBody":"Use ncnn to deploy pytorch model to Android phone Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON MobileNetV3 Open CMAKE 0091 feature when compiling into MT cmake_minimum_required(VERSION 3.20.0) cmake_policy(SET CMP0091 NEW) set(CMAKE_MSVC_RUNTIME_LIBRARY \"MultiThreaded$\u003c$:Debug\u003e\") project(\"client-project\") Train YOLO \\Envs\\torch\\Scripts\\activate.ps1 python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data \"\\Core\\yaml\\data.yaml\" --cfg \"\\Core\\yaml\\cfg.yaml\" --weights \\ Core\\weights\\best.pt --device 0 Conversion model from torch import nn import torch.utils.model_zoo as model_zoo import torch.onnx from libs import define from libs.net import Net from libs.dataset import ImageDataset import os test_data = ImageDataset(define.testPath,False) test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True) device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\") model = Net(out_dim=19).to(device) model.load_state_dict(torch.load( \"./widget/last.pt\" )) model.eval() def saveOnnx(): for data, target in test_loader: data, target = data.to(device), target.to(device) label = target.long() y = model(data) # Export the model torch.onnx.export(model, # model being run data, # model input (or a tuple for multiple inputs) \"./widget/best.onnx\", # where to save the model (can be a file or file-like object) export_params=True, # store the trained parameter weights inside the model file opset_version=10, # the ONNX version to export the model to do_constant_folding=True, # whether to execute constant folding for optimization input_names = ['input'], # the model's input names output_names = ['output'], # the model's output names dynamic_axes={'input': {0:'batch_size'}, # variable lenght axes 'output': {0:'batch_size'}}) traced_script_module = torch.jit.trace(model, data) return saveOnnx() # Conversion os.system(\"python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx\") os.system(\"./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin\") os.system(\"./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536\") python .\\export.py –weights weights/best.pt –img 960 –batch 1 –train python -m onnxsim best.onnx best-sim.onnx .\\onnx2ncnn.exe best-sim.onnx best.param best.bin ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536\n### Git clone ncnn repo with submodule $ git clone https://github.com/Tencent/ncnn.git $ cd ncnn $ git submodule update –init\n* [Build for Linux / NVIDIA Jetson / Raspberry Pi](#build-for-linux) * [Build for Windows x64 using VS2017](#build-for-windows-x64-using-visual-studio-community-2017) * [Build for macOS](#build-for-macos) * [Build for ARM Cortex-A family with cross-compiling](#build-for-arm-cortex-a-family-with-cross-compiling) * [Build for Hisilicon platform with cross-compiling](#build-for-hisilicon-platform-with-cross-compiling) * [Build for Android](#build-for-android) * [Build for iOS on macOS with xcode](#build-for-ios-on-macos-with-xcode) * [Build for WebAssembly](#build-for-webassembly) * [Build for AllWinner D1](#build-for-allwinner-d1) * [Build for Loongson 2K1000](#build-for-loongson-2k1000) * [Build for Termux on Android](#Build-for-Termux-on-Android) * * * ### Build for Linux Install required build dependencies: * git * g++ * cmake * protocol buffer (protobuf) headers files and protobuf compiler * vulkan header files and loader library * glslang * (optional) opencv # For building examples Generally if you have Intel, AMD or Nvidia GPU from last 10 years, Vulkan can be easily used. On some systems there are no Vulkan drivers easily available at the moment (October 2020), so you might need to disable use of Vulkan on them. This applies to Raspberry Pi 3 (but there is experimental open source Vulkan driver in the works, which is not ready yet). Nvidia Tegra series devices (like Nvidia Jetson) should support Vulkan. Ensure you have most recent software installed for best expirience. On Debian, Ubuntu or Raspberry Pi OS, you can install all required dependencies using: sudo apt install build-essential git cmake libprotobuf-dev protobuf-compiler libvulkan-dev vulkan-utils libopencv-dev\nTo use Vulkan backend install Vulkan header files, a vulkan driver loader, GLSL to SPIR-V compiler and vulkaninfo tool. Preferably from your distribution repositories. Alternatively download and install full Vulkan SDK (about 200MB in size; it contains all header files, documentation and prebuilt loader, as well some extra tools and source code of everything) from https://vulkan.lunarg.com/sdk/home wget https://sdk.lunarg.com/sdk/download/1.2.189.0/linux/vulkansdk-linux-x86_64-1.2.189.0.tar.gz?Human=true -O vulkansdk-linux-x86_64-1.2.189.0.tar.gz tar -xf vulkansdk-linux-x86_64-1.2.189.0.tar.gz export VULKAN_SDK=$(pwd)/1.2.189.0/x86_64\nTo use Vulkan after building ncnn later, you will also need to have Vulkan driver for your GPU. For AMD and Intel GPUs these can be found in Mesa graphics driver, which usually is installed by default on all distros (i.e. `sudo apt install mesa-vulkan-drivers` on Debian/Ubuntu). For Nvidia GPUs the proprietary Nvidia driver must be downloaded and installed (some distros will allow easier installation in some way). After installing Vulkan driver, confirm Vulkan libraries and driver are working, by using `vulkaninfo` or `vulkaninfo | grep deviceType`, it should list GPU device type. If there are more than one GPU installed (including the case of integrated GPU and discrete GPU, commonly found in laptops), you might need to note the order of devices to use later on. Nvidia Jetson devices the Vulkan support should be present in Nvidia provided SDK (Jetpack) or prebuild OS images. Raspberry Pi Vulkan drivers do exists, but are not mature. You are free to experiment at your own discretion, and report results and performance. cd ncnn mkdir -p build cd build cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=ON -DNCNN_SYSTEM_GLSLANG=ON -DNCNN_BUILD_EXAMPLES=ON .. make -j$(nproc)\nYou can add `-GNinja` to `cmake` above to use Ninja build system (invoke build using `ninja` or `cmake --build .`). For Nvidia Jetson devices, add `-DCMAKE_TOOLCHAIN_FILE=../toolchains/jetson.toolchain.cmake` to cmake. For Rasberry Pi 3, add `-DCMAKE_TOOLCHAIN_FILE=../toolchains/pi3.toolchain.cmake -DPI3=ON` to cmake. You can also consider disabling Vulkan support as the Vulkan drivers for Rasberry Pi are still not mature, but it doesn’t hurt to build the support in, but not use it. Verify build by running some examples: cd ../examples ../build/examples/squeezenet ../images/256-ncnn.png [0 AMD RADV FIJI (LLVM 10.0.1)] queueC=1[4] queueG=0[1] queueT=0[1] [0 AMD RADV FIJI (LLVM 10.0.1)] bugsbn1=0 buglbia=0 bugcopc=0 bugihfa=0 [0 AMD RADV FIJI (LLVM 10.0.1)] fp16p=1 fp16s=1 fp16a=0 int8s=1 int8a=1 532 = 0.163452 920 = 0.093140 716 = 0.061584\nYou can also run benchmarks (the 4th argument is a GPU device index to use, refer to `vulkaninfo`, if you have more than one GPU): cd ../benchmark ../build/benchmark/benchncnn 10 $(nproc) 0 0 [0 AMD RADV FIJI (LLVM 10.0.1)] queueC=1[4] queueG=0[1] queueT=0[1] [0 AMD RADV FIJI (LLVM 10.0.1)] bugsbn1=0 buglbia=0 bugcopc=0 bugihfa=0 [0 AMD RADV FIJI (LLVM 10.0.1)] fp16p=1 fp16s=1 fp16a=0 int8s=1 int8a=1 num_threads = 4 powersave = 0 gpu_device = 0 cooling_down = 1 squeezenet min = 4.68 max = 4.99 avg = 4.85 squeezenet_int8 min = 38.52 max = 66.90 avg = 48.52 …\nTo run benchmarks on a CPU, set the 5th argument to `-1`. * * * ### Build for Windows x64 using Visual Studio Community 2017 Download and Install Visual Studio Community 2017 from https://visualstudio.microsoft.com/vs/community/ Start the command prompt: `Start → Programs → Visual Studio 2017 → Visual Studio Tools → x64 Native Tools Command Prompt for VS 2017` Download protobuf-3.4.0 from https://github.com/google/protobuf/archive/v3.4.0.zip Build protobuf library: cd mkdir build cd build cmake -G\"NMake Makefiles\" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%cd%/install -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ../cmake nmake nmake install\n(optional) Download and install Vulkan SDK from https://vulkan.lunarg.com/sdk/home Build ncnn library (replace with a proper path): cd mkdir -p build cd build cmake -G\"NMake Makefiles\" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%cd%/install -DProtobuf_INCLUDE_DIR=/build/install/include -DProtobuf_LIBRARIES=/build/install/lib/libprotobuf.lib -DProtobuf_PROTOC_EXECUTABLE=/build/install/bin/protoc.exe -DNCNN_VULKAN=ON .. nmake nmake install\nNote: To speed up compilation process on multi core machines, configuring `cmake` to use `jom` or `ninja` using `-G` flag is recommended. * * * ### Build for macOS First install Xcode or Xcode Command Line Tools according to your needs. Then install `protobuf` and `libomp` via homebrew brew install protobuf libomp\nDownload and install Vulkan SDK from https://vulkan.lunarg.com/sdk/home wget https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human=true -O vulkansdk-macos-1.2.189.0.dmg hdiutil attach vulkansdk-macos-1.2.189.0.dmg sudo /Volumes/vulkansdk-macos-1.2.189.0/InstallVulkan.app/Contents/MacOS/InstallVulkan –root pwd/vulkansdk-macos-1.2.189.0 –accept-licenses –default-answer –confirm-command install hdiutil detach /Volumes/vulkansdk-macos-1.2.189.0\nsetup env export VULKAN_SDK=pwd/vulkansdk-macos-1.2.189.0/macOS\ncd mkdir -p build cd build cmake -DCMAKE_OSX_ARCHITECTURES=\"x86_64;arm64\" \\ -DVulkan_INCLUDE_DIR=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/include \\ -DVulkan_LIBRARY=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib \\ -DNCNN_VULKAN=ON -DNCNN_BUILD_EXAMPLES=ON .. cmake --build . -j 4 cmake --build . --target install ``` _Note: If you encounter `libomp` related errors during installation, you can also check our GitHub Actions at [here](https://github.com/Tencent/ncnn/blob/d91cccf/.github/workflows/macos-x64-gpu.yml#L50-L68) to install and use `openmp`._ * * * ### Build for ARM Cortex-A family with cross-compiling Download ARM toolchain from https://developer.arm.com/open-source/gnu-toolchain/gnu-a/downloads ``` export PATH=\":${PATH}\" ``` Alternatively install a cross-compiler provided by the distribution (i.e. on Debian / Ubuntu, you can do `sudo apt install g++-arm-linux-gnueabi g++-arm-linux-gnueabihf g++-aarch64-linux-gnu`). Depending on your needs build one or more of the below targets. AArch32 target with soft float (arm-linux-gnueabi) ``` cd mkdir -p build-arm-linux-gnueabi cd build-arm-linux-gnueabi cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/arm-linux-gnueabi.toolchain.cmake .. make -j$(nproc) ``` AArch32 target with hard float (arm-linux-gnueabihf) ``` cd mkdir -p build-arm-linux-gnueabihf cd build-arm-linux-gnueabihf cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/arm-linux-gnueabihf.toolchain.cmake .. make -j$(nproc) ``` AArch64 GNU/Linux target (aarch64-linux-gnu) ``` cd mkdir -p build-aarch64-linux-gnu cd build-aarch64-linux-gnu cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake .. make -j$(nproc) ``` * * * ### Build for Hisilicon platform with cross-compiling Download and install Hisilicon SDK. The toolchain should be in `/opt/hisi-linux/x86-arm` ``` cd mkdir -p build cd build # Choose one cmake toolchain file depends on your target platform cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/hisiv300.toolchain.cmake .. cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/hisiv500.toolchain.cmake .. cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/himix100.toolchain.cmake .. cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/himix200.toolchain.cmake .. make -j$(nproc) make install ``` * * * ### Build for Android You can use the pre-build ncnn-android-lib.zip from https://github.com/Tencent/ncnn/releases Download Android NDK from http://developer.android.com/ndk/downloads/index.html and install it, for example: ``` unzip android-ndk-r21d-linux-x86_64.zip export ANDROID_NDK= ``` (optional) remove the hardcoded debug flag in Android NDK [android-ndk issue](https://github.com/android-ndk/ndk/issues/243) ``` # open $ANDROID_NDK/build/cmake/android.toolchain.cmake # delete \"-g\" line list(APPEND ANDROID_COMPILER_FLAGS -g -DANDROID ``` Build armv7 library ``` cd mkdir -p build-android-armv7 cd build-android-armv7 cmake -DCMAKE_TOOLCHAIN_FILE=\"$ANDROID_NDK/build/cmake/android.toolchain.cmake\" \\ -DANDROID_ABI=\"armeabi-v7a\" -DANDROID_ARM_NEON=ON \\ -DANDROID_PLATFORM=android-14 .. # If you want to enable Vulkan, platform api version \u003e= android-24 is needed cmake -DCMAKE_TOOLCHAIN_FILE=\"$ANDROID_NDK/build/cmake/android.toolchain.cmake\" \\ -DANDROID_ABI=\"armeabi-v7a\" -DANDROID_ARM_NEON=ON \\ -DANDROID_PLATFORM=android-24 -DNCNN_VULKAN=ON .. make -j$(nproc) make install ``` Pick `build-android-armv7/install` folder for further JNI usage. Build aarch64 library: ``` cd mkdir -p build-android-aarch64 cd build-android-aarch64 cmake -DCMAKE_TOOLCHAIN_FILE=\"$ANDROID_NDK/build/cmake/android.toolchain.cmake\"\\ -DANDROID_ABI=\"arm64-v8a\" \\ -DANDROID_PLATFORM=android-21 .. # If you want to enable Vulkan, platform api version \u003e= android-24 is needed cmake -DCMAKE_TOOLCHAIN_FILE=\"$ANDROID_NDK/build/cmake/android.toolchain.cmake\" \\ -DANDROID_ABI=\"arm64-v8a\" \\ -DANDROID_PLATFORM=android-24 -DNCNN_VULKAN=ON .. make -j$(nproc) make install ``` Pick `build-android-aarch64/install` folder for further JNI usage. * * * ### Build for iOS on macOS with xcode You can use the pre-build ncnn.framework glslang.framework and openmp.framework from https://github.com/Tencent/ncnn/releases Install xcode You can replace `-DENABLE_BITCODE=0` to `-DENABLE_BITCODE=1` in the following cmake arguments if you want to build bitcode enabled libraries. Download and install openmp for multithreading inference feature on iPhoneOS ``` wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/openmp-11.0.0.src.tar.xz tar -xf openmp-11.0.0.src.tar.xz cd openmp-11.0.0.src # apply some compilation fix sed -i'' -e '/.size __kmp_unnamed_critical_addr/d' runtime/src/z_Linux_asm.S sed -i'' -e 's/__kmp_unnamed_critical_addr/___kmp_unnamed_critical_addr/g' runtime/src/z_Linux_asm.S mkdir -p build-ios cd build-ios cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install \\ -DIOS_PLATFORM=OS -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 -DIOS_ARCH=\"armv7;arm64;arm64e\" \\ -DPERL_EXECUTABLE=/usr/local/bin/perl \\ -DLIBOMP_ENABLE_SHARED=OFF -DLIBOMP_OMPT_SUPPORT=OFF -DLIBOMP_USE_HWLOC=OFF .. cmake --build . -j 4 cmake --build . --target install # copy openmp library and header files to xcode toolchain sysroot sudo cp install/include/* /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include sudo cp install/lib/libomp.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib ``` Download and install openmp for multithreading inference feature on iPhoneSimulator ``` wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/openmp-11.0.0.src.tar.xz tar -xf openmp-11.0.0.src.tar.xz cd openmp-11.0.0.src # apply some compilation fix sed -i'' -e '/.size __kmp_unnamed_critical_addr/d' runtime/src/z_Linux_asm.S sed -i'' -e 's/__kmp_unnamed_critical_addr/___kmp_unnamed_critical_addr/g' runtime/src/z_Linux_asm.S mkdir -p build-ios-sim cd build-ios-sim cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install \\ -DIOS_PLATFORM=SIMULATOR -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 -DIOS_ARCH=\"i386;x86_64\" \\ -DPERL_EXECUTABLE=/usr/local/bin/perl \\ -DLIBOMP_ENABLE_SHARED=OFF -DLIBOMP_OMPT_SUPPORT=OFF -DLIBOMP_USE_HWLOC=OFF .. cmake --build . -j 4 cmake --build . --target install # copy openmp library and header files to xcode toolchain sysroot sudo cp install/include/* /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include sudo cp install/lib/libomp.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib ``` Package openmp framework: ``` cd mkdir -p openmp.framework/Versions/A/Headers mkdir -p openmp.framework/Versions/A/Resources ln -s A openmp.framework/Versions/Current ln -s Versions/Current/Headers openmp.framework/Headers ln -s Versions/Current/Resources openmp.framework/Resources ln -s Versions/Current/openmp openmp.framework/openmp lipo -create build-ios/install/lib/libomp.a build-ios-sim/install/lib/libomp.a -o openmp.framework/Versions/A/openmp cp -r build-ios/install/include/* openmp.framework/Versions/A/Headers/ sed -e 's/__NAME__/openmp/g' -e 's/__IDENTIFIER__/org.llvm.openmp/g' -e 's/__VERSION__/11.0/g' Info.plist \u003e openmp.framework/Versions/A/Resources/Info.plist ``` Download and install Vulkan SDK from https://vulkan.lunarg.com/sdk/home ``` wget https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human=true -O vulkansdk-macos-1.2.189.0.dmg hdiutil attach vulkansdk-macos-1.2.189.0.dmg sudo /Volumes/vulkansdk-macos-1.2.189.0/InstallVulkan.app/Contents/MacOS/InstallVulkan --root `pwd`/vulkansdk-macos-1.2.189.0 --accept-licenses --default-answer --confirm-command install hdiutil detach /Volumes/vulkansdk-macos-1.2.189.0 # setup env export VULKAN_SDK=`pwd`/vulkansdk-macos-1.2.189.0/macOS ``` Build library for iPhoneOS: ``` cd mkdir -p build-ios cd build-ios cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DIOS_PLATFORM=OS -DIOS_ARCH=\"armv7;arm64;arm64e\" \\ -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 \\ -DOpenMP_C_FLAGS=\"-Xclang -fopenmp\" -DOpenMP_CXX_FLAGS=\"-Xclang -fopenmp\" \\ -DOpenMP_C_LIB_NAMES=\"libomp\" -DOpenMP_CXX_LIB_NAMES=\"libomp\" \\ -DOpenMP_libomp_LIBRARY=\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a\" \\ -DNCNN_BUILD_BENCHMARK=OFF .. # vulkan is only available on arm64 devices cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DIOS_PLATFORM=OS64 -DIOS_ARCH=\"arm64;arm64e\" \\ -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 \\ -DOpenMP_C_FLAGS=\"-Xclang -fopenmp\" -DOpenMP_CXX_FLAGS=\"-Xclang -fopenmp\" \\ -DOpenMP_C_LIB_NAMES=\"libomp\" -DOpenMP_CXX_LIB_NAMES=\"libomp\" \\ -DOpenMP_libomp_LIBRARY=\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a\" \\ -DVulkan_INCLUDE_DIR=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/include \\ -DVulkan_LIBRARY=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/iOS/libMoltenVK.dylib \\ -DNCNN_VULKAN=ON -DNCNN_BUILD_BENCHMARK=OFF .. cmake --build . -j 4 cmake --build . --target install ``` Build library for iPhoneSimulator: ``` cd mkdir -p build-ios-sim cd build-ios-sim cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DIOS_PLATFORM=SIMULATOR -DIOS_ARCH=\"i386;x86_64\" \\ -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 \\ -DOpenMP_C_FLAGS=\"-Xclang -fopenmp\" -DOpenMP_CXX_FLAGS=\"-Xclang -fopenmp\" \\ -DOpenMP_C_LIB_NAMES=\"libomp\" -DOpenMP_CXX_LIB_NAMES=\"libomp\" \\ -DOpenMP_libomp_LIBRARY=\"/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libomp.a\" \\ -DNCNN_BUILD_BENCHMARK=OFF .. cmake --build . -j 4 cmake --build . --target install ``` Package glslang framework: ``` cd mkdir -p glslang.framework/Versions/A/Headers mkdir -p glslang.framework/Versions/A/Resources ln -s A glslang.framework/Versions/Current ln -s Versions/Current/Headers glslang.framework/Headers ln -s Versions/Current/Resources glslang.framework/Resources ln -s Versions/Current/glslang glslang.framework/glslang libtool -static build-ios/install/lib/libglslang.a build-ios/install/lib/libSPIRV.a build-ios/install/lib/libOGLCompiler.a build-ios/install/lib/libOSDependent.a -o build-ios/install/lib/libglslang_combined.a libtool -static build-ios-sim/install/lib/libglslang.a build-ios-sim/install/lib/libSPIRV.a build-ios-sim/install/lib/libOGLCompiler.a build-ios-sim/install/lib/libOSDependent.a -o build-ios-sim/install/lib/libglslang_combined.a lipo -create build-ios/install/lib/libglslang_combined.a build-ios-sim/install/lib/libglslang_combined.a -o glslang.framework/Versions/A/glslang cp -r build/install/include/glslang glslang.framework/Versions/A/Headers/ sed -e 's/__NAME__/glslang/g' -e 's/__IDENTIFIER__/org.khronos.glslang/g' -e 's/__VERSION__/1.0/g' Info.plist \u003e glslang.framework/Versions/A/Resources/Info.plist ``` Package ncnn framework: ``` cd mkdir -p ncnn.framework/Versions/A/Headers mkdir -p ncnn.framework/Versions/A/Resources ln -s A ncnn.framework/Versions/Current ln -s Versions/Current/Headers ncnn.framework/Headers ln -s Versions/Current/Resources ncnn.framework/Resources ln -s Versions/Current/ncnn ncnn.framework/ncnn lipo -create build-ios/install/lib/libncnn.a build-ios-sim/install/lib/libncnn.a -o ncnn.framework/Versions/A/ncnn cp -r build-ios/install/include/* ncnn.framework/Versions/A/Headers/ sed -e 's/__NAME__/ncnn/g' -e 's/__IDENTIFIER__/com.tencent.ncnn/g' -e 's/__VERSION__/1.0/g' Info.plist \u003e ncnn.framework/Versions/A/Resources/Info.plist ``` Pick `ncnn.framework` `glslang.framework` and `openmp.framework` folder for app development. * * * ### Build for WebAssembly Install Emscripten ``` git clone https://github.com/emscripten-core/emsdk.git cd emsdk ./emsdk install 2.0.8 ./emsdk activate 2.0.8 source emsdk/emsdk_env.sh ``` Build without any extension for general compatibility: ``` mkdir -p build cd build cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \\ -DNCNN_THREADS=OFF -DNCNN_OPENMP=OFF -DNCNN_SIMPLEOMP=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=OFF -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \\ -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF .. cmake --build . -j 4 cmake --build . --target install ``` Build with WASM SIMD extension: ``` mkdir -p build-simd cd build-simd cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \\ -DNCNN_THREADS=OFF -DNCNN_OPENMP=OFF -DNCNN_SIMPLEOMP=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=ON -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \\ -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF .. cmake --build . -j 4 cmake --build . --target install ``` Build with WASM Thread extension: ``` mkdir -p build-threads cd build-threads cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \\ -DNCNN_THREADS=ON -DNCNN_OPENMP=ON -DNCNN_SIMPLEOMP=ON -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=OFF -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \\ -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF .. cmake --build . -j 4 cmake --build . --target install ``` Build with WASM SIMD and Thread extension: ``` mkdir -p build-simd-threads cd build-simd-threads cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \\ -DNCNN_THREADS=ON -DNCNN_OPENMP=ON -DNCNN_SIMPLEOMP=ON -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=ON -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \\ -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF .. cmake --build . -j 4 cmake --build . --target install ``` Pick `build-XYZ/install` folder for further usage. * * * ### Build for AllWinner D1 Download c906 toolchain package from https://occ.t-head.cn/community/download?id=3913221581316624384 ``` tar -xf riscv64-linux-x86_64-20210512.tar.gz export RISCV_ROOT_PATH=/home/nihui/osd/riscv64-linux-x86_64-20210512 ``` Build ncnn with riscv-v vector and simpleocv enabled: ``` mkdir -p build-c906 cd build-c906 cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/c906.toolchain.cmake \\ -DCMAKE_BUILD_TYPE=relwithdebinfo -DNCNN_OPENMP=OFF -DNCNN_THREADS=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_RVV=ON \\ -DNCNN_SIMPLEOCV=ON -DNCNN_BUILD_EXAMPLES=ON .. cmake --build . -j 4 cmake --build . --target install ``` Pick `build-c906/install` folder for further usage. You can upload binary inside `build-c906/examples` folder and run on D1 board for testing. * * * ### Build for Loongson 2K1000 For gcc version \u003c 8.5, you need to fix msa.h header for workaround msa fmadd bug. Open `/usr/lib/gcc/mips64el-linux-gnuabi64/8/include/msa.h`, find `__msa_fmadd_w` and apply changes as the following ``` // #define __msa_fmadd_w __builtin_msa_fmadd_w #define __msa_fmadd_w(a, b, c) __builtin_msa_fmadd_w(c, b, a) ``` Build ncnn with mips msa and simpleocv enabled: ``` mkdir -p build cd build cmake -DNCNN_DISABLE_RTTI=ON -DNCNN_DISABLE_EXCEPTION=ON -DNCNN_RUNTIME_CPU=OFF -DNCNN_MSA=ON -DNCNN_MMI=ON -DNCNN_SIMPLEOCV=ON .. cmake --build . -j 2 cmake --build . --target install ``` Pick `build/install` folder for further usage. You can run binary inside `build/examples` folder for testing. * * * ### Build for Termux on Android Install app Termux on your phone,and install Ubuntu in Termux. If you want use ssh, just install openssh in Termux ``` pkg install proot-distro proot-distro install ubuntu ``` or you can see what system can be installed using `proot-distro list` while you install ubuntu successfully, using `proot-distro login ubuntu` to login Ubuntu. Then make ncnn,no need to install any other dependencies. ``` git clone https://github.com/Tencent/ncnn.git cd ncnn git submodule update --init mkdir -p build cd build cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_EXAMPLES=ON -DNCNN_PLATFORM_API=OFF -DNCNN_SIMPLEOCV=ON .. make -j$(nproc) ``` Then you can run a test \u003e on my Pixel 3 XL using Qualcomm 845,cant load `256-ncnn.png` ``` cd ../examples ../build/examples/squeezenet ../images/128-ncnn.png ``` ","wordCount":"2553","inLanguage":"en","image":"https://www.xgdebug.com/images/avatar.png","datePublished":"2023-08-11T01:18:11Z","dateModified":"2023-08-11T01:18:11Z","author":{"@type":"Person","name":"xgDebug"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/"},"publisher":{"@type":"Organization","name":"xgDebug's Blog","logo":{"@type":"ImageObject","url":"https://www.xgdebug.com/images/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://www.xgdebug.com/ accesskey=h title="xgDebug's Blog (Alt + H)"><img src=https://www.xgdebug.com/images/apple-touch-icon.png alt aria-label=logo height=35>xgDebug's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://www.xgdebug.com/posts/ title=Categories><span>Categories</span></a></li><li><a href=https://www.xgdebug.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://www.xgdebug.com/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://www.xgdebug.com/series/ title=Series><span>Series</span></a></li><li><a href=https://www.xgdebug.com/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://www.xgdebug.com/>Home</a>&nbsp;»&nbsp;<a href=https://www.xgdebug.com/posts/>Categories</a>&nbsp;»&nbsp;<a href=https://www.xgdebug.com/posts/tech/>Tech</a></div><h1 class="post-title entry-hint-parent">Use ncnn to deploy pytorch model to Android phone</h1><div class=post-meta><span title='2023-08-11 01:18:11 +0000 UTC'>August 11, 2023</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;xgDebug</div></header><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><nav id=TableOfContents><ul><li><a href=#use-ncnn-to-deploy-pytorch-model-to-android-phone>Use ncnn to deploy pytorch model to Android phone</a></li><li><a href=#open-cmake-0091-feature-when-compiling-into-mt>Open CMAKE 0091 feature when compiling into MT</a><ul><li><a href=#train-yolo>Train YOLO</a></li></ul></li></ul></nav></div></details></div><div class=post-content><h2 id=use-ncnn-to-deploy-pytorch-model-to-android-phone>Use ncnn to deploy pytorch model to Android phone<a hidden class=anchor aria-hidden=true href=#use-ncnn-to-deploy-pytorch-model-to-android-phone>#</a></h2><ol><li>Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON</li><li>MobileNetV3</li></ol><h2 id=open-cmake-0091-feature-when-compiling-into-mt>Open CMAKE 0091 feature when compiling into MT<a hidden class=anchor aria-hidden=true href=#open-cmake-0091-feature-when-compiling-into-mt>#</a></h2><pre tabindex=0><code>cmake_minimum_required(VERSION 3.20.0)
+cmake_policy(SET CMP0091 NEW)
+set(CMAKE_MSVC_RUNTIME_LIBRARY &#34;MultiThreaded$&lt;$&lt;CONFIG:Debug&gt;:Debug&gt;&#34;)
+project(&#34;client-project&#34;)
+</code></pre><h3 id=train-yolo>Train YOLO<a hidden class=anchor aria-hidden=true href=#train-yolo>#</a></h3><pre tabindex=0><code>\Envs\torch\Scripts\activate.ps1
+python train.py --batch 6 --workers 2 --imgsz 960 --epochs 300 --data &#34;\Core\yaml\data.yaml&#34; --cfg &#34;\Core\yaml\cfg.yaml&#34; --weights \ Core\weights\best.pt --device 0
+</code></pre><h4 id=conversion-model>Conversion model<a hidden class=anchor aria-hidden=true href=#conversion-model>#</a></h4><pre tabindex=0><code>from torch import nn
+import torch.utils.model_zoo as model_zoo
+import torch.onnx
+from libs import define
+from libs.net import Net
+from libs.dataset import ImageDataset
+import os
+
+test_data = ImageDataset(define.testPath,False)
+test_loader = torch.utils.data.DataLoader( test_data, batch_size=1, shuffle=True)
+
+device = torch.device(&#34;cuda&#34; if torch.cuda.is_available() else &#34;cpu&#34;)
+model = Net(out_dim=19).to(device)
+model.load_state_dict(torch.load( &#34;./widget/last.pt&#34; ))
+model.eval()
+
+def saveOnnx():
+    for data, target in test_loader:
+        data, target = data.to(device), target.to(device)
+        label = target.long()
+        y = model(data)
+        # Export the model
+        torch.onnx.export(model, # model being run
+                        data, # model input (or a tuple for multiple inputs)
+                        &#34;./widget/best.onnx&#34;, # where to save the model (can be a file or file-like object)
+                        export_params=True, # store the trained parameter weights inside the model file
+                        opset_version=10, # the ONNX version to export the model to
+                        do_constant_folding=True, # whether to execute constant folding for optimization
+                        input_names = [&#39;input&#39;], # the model&#39;s input names
+                        output_names = [&#39;output&#39;], # the model&#39;s output names
+                        dynamic_axes={&#39;input&#39;: {0:&#39;batch_size&#39;}, # variable lenght axes
+                                        &#39;output&#39;: {0:&#39;batch_size&#39;}})
+
+        traced_script_module = torch.jit.trace(model, data)
+        return
+
+saveOnnx()
+# Conversion
+os.system(&#34;python -m onnxsim ./widget/best.onnx ./widgetbest-sim.onnx&#34;)
+os.system(&#34;./bin/onnx2ncnn.exe ./widget/best-sim.onnx ./widget/best.param ./widget/best.bin&#34;)
+os.system(&#34;./bin/ncnnoptimize.exe ./widget/best.param ./widget/best.bin ./widget/best-opt.param ./widget/best-opt.bin 65536&#34;)
+</code></pre><p>python .\export.py &ndash;weights weights/best.pt &ndash;img 960 &ndash;batch 1 &ndash;train
+python -m onnxsim best.onnx best-sim.onnx
+.\onnx2ncnn.exe best-sim.onnx best.param best.bin
+ncnnoptimize best.param best.bin best-opt.param best-opt.bin 65536</p><pre tabindex=0><code>
+### Git clone ncnn repo with submodule
+</code></pre><p>$ git clone <a href=https://github.com/Tencent/ncnn.git>https://github.com/Tencent/ncnn.git</a>
+$ cd ncnn
+$ git submodule update &ndash;init</p><pre tabindex=0><code>
+*   [Build for Linux / NVIDIA Jetson / Raspberry Pi](#build-for-linux)
+*   [Build for Windows x64 using VS2017](#build-for-windows-x64-using-visual-studio-community-2017)
+*   [Build for macOS](#build-for-macos)
+*   [Build for ARM Cortex-A family with cross-compiling](#build-for-arm-cortex-a-family-with-cross-compiling)
+*   [Build for Hisilicon platform with cross-compiling](#build-for-hisilicon-platform-with-cross-compiling)
+*   [Build for Android](#build-for-android)
+*   [Build for iOS on macOS with xcode](#build-for-ios-on-macos-with-xcode)
+*   [Build for WebAssembly](#build-for-webassembly)
+*   [Build for AllWinner D1](#build-for-allwinner-d1)
+*   [Build for Loongson 2K1000](#build-for-loongson-2k1000)
+*   [Build for Termux on Android](#Build-for-Termux-on-Android)
+
+* * *
+
+### Build for Linux
+
+Install required build dependencies:
+
+*   git
+*   g++
+*   cmake
+*   protocol buffer (protobuf) headers files and protobuf compiler
+*   vulkan header files and loader library
+*   glslang
+*   (optional) opencv # For building examples
+
+Generally if you have Intel, AMD or Nvidia GPU from last 10 years, Vulkan can be easily used.
+
+On some systems there are no Vulkan drivers easily available at the moment (October 2020), so you might need to disable use of Vulkan on them. This applies to Raspberry Pi 3 (but there is experimental open source Vulkan driver in the works, which is not ready yet). Nvidia Tegra series devices (like Nvidia Jetson) should support Vulkan. Ensure you have most recent software installed for best expirience.
+
+On Debian, Ubuntu or Raspberry Pi OS, you can install all required dependencies using:
+</code></pre><p>sudo apt install build-essential git cmake libprotobuf-dev protobuf-compiler libvulkan-dev vulkan-utils libopencv-dev</p><pre tabindex=0><code>
+To use Vulkan backend install Vulkan header files, a vulkan driver loader, GLSL to SPIR-V compiler and vulkaninfo tool. Preferably from your distribution repositories. Alternatively download and install full Vulkan SDK (about 200MB in size; it contains all header files, documentation and prebuilt loader, as well some extra tools and source code of everything) from https://vulkan.lunarg.com/sdk/home
+</code></pre><p>wget <a href="https://sdk.lunarg.com/sdk/download/1.2.189.0/linux/vulkansdk-linux-x86_64-1.2.189.0.tar.gz?Human=true">https://sdk.lunarg.com/sdk/download/1.2.189.0/linux/vulkansdk-linux-x86_64-1.2.189.0.tar.gz?Human=true</a> -O vulkansdk-linux-x86_64-1.2.189.0.tar.gz
+tar -xf vulkansdk-linux-x86_64-1.2.189.0.tar.gz
+export VULKAN_SDK=$(pwd)/1.2.189.0/x86_64</p><pre tabindex=0><code>
+To use Vulkan after building ncnn later, you will also need to have Vulkan driver for your GPU. For AMD and Intel GPUs these can be found in Mesa graphics driver, which usually is installed by default on all distros (i.e. `sudo apt install mesa-vulkan-drivers` on Debian/Ubuntu). For Nvidia GPUs the proprietary Nvidia driver must be downloaded and installed (some distros will allow easier installation in some way). After installing Vulkan driver, confirm Vulkan libraries and driver are working, by using `vulkaninfo` or `vulkaninfo | grep deviceType`, it should list GPU device type. If there are more than one GPU installed (including the case of integrated GPU and discrete GPU, commonly found in laptops), you might need to note the order of devices to use later on.
+
+Nvidia Jetson devices the Vulkan support should be present in Nvidia provided SDK (Jetpack) or prebuild OS images.
+
+Raspberry Pi Vulkan drivers do exists, but are not mature. You are free to experiment at your own discretion, and report results and performance.
+</code></pre><p>cd ncnn
+mkdir -p build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=ON -DNCNN_SYSTEM_GLSLANG=ON -DNCNN_BUILD_EXAMPLES=ON ..
+make -j$(nproc)</p><pre tabindex=0><code>
+You can add `-GNinja` to `cmake` above to use Ninja build system (invoke build using `ninja` or `cmake --build .`).
+
+For Nvidia Jetson devices, add `-DCMAKE_TOOLCHAIN_FILE=../toolchains/jetson.toolchain.cmake` to cmake.
+
+For Rasberry Pi 3, add `-DCMAKE_TOOLCHAIN_FILE=../toolchains/pi3.toolchain.cmake -DPI3=ON` to cmake. You can also consider disabling Vulkan support as the Vulkan drivers for Rasberry Pi are still not mature, but it doesn’t hurt to build the support in, but not use it.
+
+Verify build by running some examples:
+</code></pre><p>cd ../examples
+../build/examples/squeezenet ../images/256-ncnn.png
+[0 AMD RADV FIJI (LLVM 10.0.1)] queueC=1[4] queueG=0[1] queueT=0[1]
+[0 AMD RADV FIJI (LLVM 10.0.1)] bugsbn1=0 buglbia=0 bugcopc=0 bugihfa=0
+[0 AMD RADV FIJI (LLVM 10.0.1)] fp16p=1 fp16s=1 fp16a=0 int8s=1 int8a=1
+532 = 0.163452
+920 = 0.093140
+716 = 0.061584</p><pre tabindex=0><code>
+You can also run benchmarks (the 4th argument is a GPU device index to use, refer to `vulkaninfo`, if you have more than one GPU):
+</code></pre><p>cd ../benchmark
+../build/benchmark/benchncnn 10 $(nproc) 0 0
+[0 AMD RADV FIJI (LLVM 10.0.1)] queueC=1[4] queueG=0[1] queueT=0[1]
+[0 AMD RADV FIJI (LLVM 10.0.1)] bugsbn1=0 buglbia=0 bugcopc=0 bugihfa=0
+[0 AMD RADV FIJI (LLVM 10.0.1)] fp16p=1 fp16s=1 fp16a=0 int8s=1 int8a=1
+num_threads = 4
+powersave = 0
+gpu_device = 0
+cooling_down = 1
+squeezenet min = 4.68 max = 4.99 avg = 4.85
+squeezenet_int8 min = 38.52 max = 66.90 avg = 48.52
+&mldr;</p><pre tabindex=0><code>
+To run benchmarks on a CPU, set the 5th argument to `-1`.
+
+* * *
+
+### Build for Windows x64 using Visual Studio Community 2017
+
+Download and Install Visual Studio Community 2017 from https://visualstudio.microsoft.com/vs/community/
+
+Start the command prompt: `Start → Programs → Visual Studio 2017 → Visual Studio Tools → x64 Native Tools Command Prompt for VS 2017`
+
+Download protobuf-3.4.0 from https://github.com/google/protobuf/archive/v3.4.0.zip
+
+Build protobuf library:
+</code></pre><p>cd mkdir build
+cd build
+cmake -G"NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%cd%/install -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ../cmake
+nmake
+nmake install</p><pre tabindex=0><code>
+(optional) Download and install Vulkan SDK from https://vulkan.lunarg.com/sdk/home
+
+Build ncnn library (replace &lt;protobuf-root-dir&gt; with a proper path):
+</code></pre><p>cd mkdir -p build
+cd build
+cmake -G"NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=%cd%/install -DProtobuf_INCLUDE_DIR=/build/install/include -DProtobuf_LIBRARIES=/build/install/lib/libprotobuf.lib -DProtobuf_PROTOC_EXECUTABLE=/build/install/bin/protoc.exe -DNCNN_VULKAN=ON ..
+nmake
+nmake install</p><pre tabindex=0><code>
+Note: To speed up compilation process on multi core machines, configuring `cmake` to use `jom` or `ninja` using `-G` flag is recommended.
+
+* * *
+
+### Build for macOS
+
+First install Xcode or Xcode Command Line Tools according to your needs.
+
+Then install `protobuf` and `libomp` via homebrew
+</code></pre><p>brew install protobuf libomp</p><pre tabindex=0><code>
+Download and install Vulkan SDK from https://vulkan.lunarg.com/sdk/home
+</code></pre><p>wget <a href="https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human=true">https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human=true</a> -O vulkansdk-macos-1.2.189.0.dmg
+hdiutil attach vulkansdk-macos-1.2.189.0.dmg
+sudo /Volumes/vulkansdk-macos-1.2.189.0/InstallVulkan.app/Contents/MacOS/InstallVulkan &ndash;root <code>pwd</code>/vulkansdk-macos-1.2.189.0 &ndash;accept-licenses &ndash;default-answer &ndash;confirm-command install
+hdiutil detach /Volumes/vulkansdk-macos-1.2.189.0</p><h1 id=setup-env>setup env<a hidden class=anchor aria-hidden=true href=#setup-env>#</a></h1><p>export VULKAN_SDK=<code>pwd</code>/vulkansdk-macos-1.2.189.0/macOS</p><pre tabindex=0><code>cd &lt;ncnn-root-dir&gt;
+mkdir -p build
+cd build
+
+cmake -DCMAKE_OSX_ARCHITECTURES=&#34;x86_64;arm64&#34; \
+    -DVulkan_INCLUDE_DIR=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/include \
+    -DVulkan_LIBRARY=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib \
+    -DNCNN_VULKAN=ON -DNCNN_BUILD_EXAMPLES=ON ..
+
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+_Note: If you encounter `libomp` related errors during installation, you can also check our GitHub Actions at [here](https://github.com/Tencent/ncnn/blob/d91cccf/.github/workflows/macos-x64-gpu.yml#L50-L68) to install and use `openmp`._
+
+* * *
+
+### Build for ARM Cortex-A family with cross-compiling
+
+Download ARM toolchain from https://developer.arm.com/open-source/gnu-toolchain/gnu-a/downloads
+
+```
+export PATH=&#34;&lt;your-toolchain-compiler-path&gt;:${PATH}&#34;
+```
+
+Alternatively install a cross-compiler provided by the distribution (i.e. on Debian / Ubuntu, you can do `sudo apt install g++-arm-linux-gnueabi g++-arm-linux-gnueabihf g++-aarch64-linux-gnu`).
+
+Depending on your needs build one or more of the below targets.
+
+AArch32 target with soft float (arm-linux-gnueabi)
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-arm-linux-gnueabi
+cd build-arm-linux-gnueabi
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/arm-linux-gnueabi.toolchain.cmake ..
+make -j$(nproc)
+```
+
+AArch32 target with hard float (arm-linux-gnueabihf)
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-arm-linux-gnueabihf
+cd build-arm-linux-gnueabihf
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/arm-linux-gnueabihf.toolchain.cmake ..
+make -j$(nproc)
+```
+
+AArch64 GNU/Linux target (aarch64-linux-gnu)
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-aarch64-linux-gnu
+cd build-aarch64-linux-gnu
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-gnu.toolchain.cmake ..
+make -j$(nproc)
+```
+
+* * *
+
+### Build for Hisilicon platform with cross-compiling
+
+Download and install Hisilicon SDK. The toolchain should be in `/opt/hisi-linux/x86-arm`
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build
+cd build
+
+# Choose one cmake toolchain file depends on your target platform
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/hisiv300.toolchain.cmake ..
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/hisiv500.toolchain.cmake ..
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/himix100.toolchain.cmake ..
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/himix200.toolchain.cmake ..
+
+make -j$(nproc)
+make install
+```
+
+* * *
+
+### Build for Android
+
+You can use the pre-build ncnn-android-lib.zip from https://github.com/Tencent/ncnn/releases
+
+Download Android NDK from http://developer.android.com/ndk/downloads/index.html and install it, for example:
+
+```
+unzip android-ndk-r21d-linux-x86_64.zip
+export ANDROID_NDK=&lt;your-ndk-root-path&gt;
+```
+
+(optional) remove the hardcoded debug flag in Android NDK [android-ndk issue](https://github.com/android-ndk/ndk/issues/243)
+
+```
+# open $ANDROID_NDK/build/cmake/android.toolchain.cmake
+# delete &#34;-g&#34; line
+list(APPEND ANDROID_COMPILER_FLAGS
+  -g
+  -DANDROID
+```
+
+Build armv7 library
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-android-armv7
+cd build-android-armv7
+
+cmake -DCMAKE_TOOLCHAIN_FILE=&#34;$ANDROID_NDK/build/cmake/android.toolchain.cmake&#34; \
+    -DANDROID_ABI=&#34;armeabi-v7a&#34; -DANDROID_ARM_NEON=ON \
+    -DANDROID_PLATFORM=android-14 ..
+
+# If you want to enable Vulkan, platform api version &gt;= android-24 is needed
+cmake -DCMAKE_TOOLCHAIN_FILE=&#34;$ANDROID_NDK/build/cmake/android.toolchain.cmake&#34; \
+  -DANDROID_ABI=&#34;armeabi-v7a&#34; -DANDROID_ARM_NEON=ON \
+  -DANDROID_PLATFORM=android-24 -DNCNN_VULKAN=ON ..
+
+make -j$(nproc)
+make install
+```
+
+Pick `build-android-armv7/install` folder for further JNI usage.
+
+Build aarch64 library:
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-android-aarch64
+cd build-android-aarch64
+
+cmake -DCMAKE_TOOLCHAIN_FILE=&#34;$ANDROID_NDK/build/cmake/android.toolchain.cmake&#34;\
+  -DANDROID_ABI=&#34;arm64-v8a&#34; \
+  -DANDROID_PLATFORM=android-21 ..
+
+# If you want to enable Vulkan, platform api version &gt;= android-24 is needed
+cmake -DCMAKE_TOOLCHAIN_FILE=&#34;$ANDROID_NDK/build/cmake/android.toolchain.cmake&#34; \
+  -DANDROID_ABI=&#34;arm64-v8a&#34; \
+  -DANDROID_PLATFORM=android-24 -DNCNN_VULKAN=ON ..
+
+make -j$(nproc)
+make install
+```
+
+Pick `build-android-aarch64/install` folder for further JNI usage.
+
+* * *
+
+### Build for iOS on macOS with xcode
+
+You can use the pre-build ncnn.framework glslang.framework and openmp.framework from https://github.com/Tencent/ncnn/releases
+
+Install xcode
+
+You can replace `-DENABLE_BITCODE=0` to `-DENABLE_BITCODE=1` in the following cmake arguments if you want to build bitcode enabled libraries.
+
+Download and install openmp for multithreading inference feature on iPhoneOS
+
+```
+wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/openmp-11.0.0.src.tar.xz
+tar -xf openmp-11.0.0.src.tar.xz
+cd openmp-11.0.0.src
+
+# apply some compilation fix
+sed -i&#39;&#39; -e &#39;/.size __kmp_unnamed_critical_addr/d&#39; runtime/src/z_Linux_asm.S
+sed -i&#39;&#39; -e &#39;s/__kmp_unnamed_critical_addr/___kmp_unnamed_critical_addr/g&#39; runtime/src/z_Linux_asm.S
+
+mkdir -p build-ios
+cd build-ios
+
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install \
+    -DIOS_PLATFORM=OS -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 -DIOS_ARCH=&#34;armv7;arm64;arm64e&#34; \
+    -DPERL_EXECUTABLE=/usr/local/bin/perl \
+    -DLIBOMP_ENABLE_SHARED=OFF -DLIBOMP_OMPT_SUPPORT=OFF -DLIBOMP_USE_HWLOC=OFF ..
+
+cmake --build . -j 4
+cmake --build . --target install
+
+# copy openmp library and header files to xcode toolchain sysroot
+sudo cp install/include/* /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include
+sudo cp install/lib/libomp.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib
+```
+
+Download and install openmp for multithreading inference feature on iPhoneSimulator
+
+```
+wget https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/openmp-11.0.0.src.tar.xz
+tar -xf openmp-11.0.0.src.tar.xz
+cd openmp-11.0.0.src
+
+# apply some compilation fix
+sed -i&#39;&#39; -e &#39;/.size __kmp_unnamed_critical_addr/d&#39; runtime/src/z_Linux_asm.S
+sed -i&#39;&#39; -e &#39;s/__kmp_unnamed_critical_addr/___kmp_unnamed_critical_addr/g&#39; runtime/src/z_Linux_asm.S
+
+mkdir -p build-ios-sim
+cd build-ios-sim
+
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install \
+    -DIOS_PLATFORM=SIMULATOR -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 -DIOS_ARCH=&#34;i386;x86_64&#34; \
+    -DPERL_EXECUTABLE=/usr/local/bin/perl \
+    -DLIBOMP_ENABLE_SHARED=OFF -DLIBOMP_OMPT_SUPPORT=OFF -DLIBOMP_USE_HWLOC=OFF ..
+
+cmake --build . -j 4
+cmake --build . --target install
+
+# copy openmp library and header files to xcode toolchain sysroot
+sudo cp install/include/* /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include
+sudo cp install/lib/libomp.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib
+```
+
+Package openmp framework:
+
+```
+cd &lt;openmp-root-dir&gt;
+
+mkdir -p openmp.framework/Versions/A/Headers
+mkdir -p openmp.framework/Versions/A/Resources
+ln -s A openmp.framework/Versions/Current
+ln -s Versions/Current/Headers openmp.framework/Headers
+ln -s Versions/Current/Resources openmp.framework/Resources
+ln -s Versions/Current/openmp openmp.framework/openmp
+lipo -create build-ios/install/lib/libomp.a build-ios-sim/install/lib/libomp.a -o openmp.framework/Versions/A/openmp
+cp -r build-ios/install/include/* openmp.framework/Versions/A/Headers/
+sed -e &#39;s/__NAME__/openmp/g&#39; -e &#39;s/__IDENTIFIER__/org.llvm.openmp/g&#39; -e &#39;s/__VERSION__/11.0/g&#39; Info.plist &gt; openmp.framework/Versions/A/Resources/Info.plist
+```
+
+Download and install Vulkan SDK from https://vulkan.lunarg.com/sdk/home
+
+```
+wget https://sdk.lunarg.com/sdk/download/1.2.189.0/mac/vulkansdk-macos-1.2.189.0.dmg?Human=true -O vulkansdk-macos-1.2.189.0.dmg
+hdiutil attach vulkansdk-macos-1.2.189.0.dmg
+sudo /Volumes/vulkansdk-macos-1.2.189.0/InstallVulkan.app/Contents/MacOS/InstallVulkan --root `pwd`/vulkansdk-macos-1.2.189.0 --accept-licenses --default-answer --confirm-command install
+hdiutil detach /Volumes/vulkansdk-macos-1.2.189.0
+
+# setup env
+export VULKAN_SDK=`pwd`/vulkansdk-macos-1.2.189.0/macOS
+```
+
+Build library for iPhoneOS:
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-ios
+cd build-ios
+
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DIOS_PLATFORM=OS -DIOS_ARCH=&#34;armv7;arm64;arm64e&#34; \
+    -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 \
+    -DOpenMP_C_FLAGS=&#34;-Xclang -fopenmp&#34; -DOpenMP_CXX_FLAGS=&#34;-Xclang -fopenmp&#34; \
+    -DOpenMP_C_LIB_NAMES=&#34;libomp&#34; -DOpenMP_CXX_LIB_NAMES=&#34;libomp&#34; \
+    -DOpenMP_libomp_LIBRARY=&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34; \
+    -DNCNN_BUILD_BENCHMARK=OFF ..
+
+# vulkan is only available on arm64 devices
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DIOS_PLATFORM=OS64 -DIOS_ARCH=&#34;arm64;arm64e&#34; \
+    -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 \
+    -DOpenMP_C_FLAGS=&#34;-Xclang -fopenmp&#34; -DOpenMP_CXX_FLAGS=&#34;-Xclang -fopenmp&#34; \
+    -DOpenMP_C_LIB_NAMES=&#34;libomp&#34; -DOpenMP_CXX_LIB_NAMES=&#34;libomp&#34; \
+    -DOpenMP_libomp_LIBRARY=&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34; \
+    -DVulkan_INCLUDE_DIR=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/include \
+    -DVulkan_LIBRARY=`pwd`/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/iOS/libMoltenVK.dylib \
+    -DNCNN_VULKAN=ON -DNCNN_BUILD_BENCHMARK=OFF ..
+
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Build library for iPhoneSimulator:
+
+```
+cd &lt;ncnn-root-dir&gt;
+mkdir -p build-ios-sim
+cd build-ios-sim
+
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/ios.toolchain.cmake -DIOS_PLATFORM=SIMULATOR -DIOS_ARCH=&#34;i386;x86_64&#34; \
+    -DENABLE_BITCODE=0 -DENABLE_ARC=0 -DENABLE_VISIBILITY=0 \
+    -DOpenMP_C_FLAGS=&#34;-Xclang -fopenmp&#34; -DOpenMP_CXX_FLAGS=&#34;-Xclang -fopenmp&#34; \
+    -DOpenMP_C_LIB_NAMES=&#34;libomp&#34; -DOpenMP_CXX_LIB_NAMES=&#34;libomp&#34; \
+    -DOpenMP_libomp_LIBRARY=&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libomp.a&#34; \
+    -DNCNN_BUILD_BENCHMARK=OFF ..
+
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Package glslang framework:
+
+```
+cd &lt;ncnn-root-dir&gt;
+
+mkdir -p glslang.framework/Versions/A/Headers
+mkdir -p glslang.framework/Versions/A/Resources
+ln -s A glslang.framework/Versions/Current
+ln -s Versions/Current/Headers glslang.framework/Headers
+ln -s Versions/Current/Resources glslang.framework/Resources
+ln -s Versions/Current/glslang glslang.framework/glslang
+libtool -static build-ios/install/lib/libglslang.a build-ios/install/lib/libSPIRV.a build-ios/install/lib/libOGLCompiler.a build-ios/install/lib/libOSDependent.a -o build-ios/install/lib/libglslang_combined.a
+libtool -static build-ios-sim/install/lib/libglslang.a build-ios-sim/install/lib/libSPIRV.a build-ios-sim/install/lib/libOGLCompiler.a build-ios-sim/install/lib/libOSDependent.a -o build-ios-sim/install/lib/libglslang_combined.a
+lipo -create build-ios/install/lib/libglslang_combined.a build-ios-sim/install/lib/libglslang_combined.a -o glslang.framework/Versions/A/glslang
+cp -r build/install/include/glslang glslang.framework/Versions/A/Headers/
+sed -e &#39;s/__NAME__/glslang/g&#39; -e &#39;s/__IDENTIFIER__/org.khronos.glslang/g&#39; -e &#39;s/__VERSION__/1.0/g&#39; Info.plist &gt; glslang.framework/Versions/A/Resources/Info.plist
+```
+
+Package ncnn framework:
+
+```
+cd &lt;ncnn-root-dir&gt;
+
+mkdir -p ncnn.framework/Versions/A/Headers
+mkdir -p ncnn.framework/Versions/A/Resources
+ln -s A ncnn.framework/Versions/Current
+ln -s Versions/Current/Headers ncnn.framework/Headers
+ln -s Versions/Current/Resources ncnn.framework/Resources
+ln -s Versions/Current/ncnn ncnn.framework/ncnn
+lipo -create build-ios/install/lib/libncnn.a build-ios-sim/install/lib/libncnn.a -o ncnn.framework/Versions/A/ncnn
+cp -r build-ios/install/include/* ncnn.framework/Versions/A/Headers/
+sed -e &#39;s/__NAME__/ncnn/g&#39; -e &#39;s/__IDENTIFIER__/com.tencent.ncnn/g&#39; -e &#39;s/__VERSION__/1.0/g&#39; Info.plist &gt; ncnn.framework/Versions/A/Resources/Info.plist
+```
+
+Pick `ncnn.framework` `glslang.framework` and `openmp.framework` folder for app development.
+
+* * *
+
+### Build for WebAssembly
+
+Install Emscripten
+
+```
+git clone https://github.com/emscripten-core/emsdk.git
+cd emsdk
+./emsdk install 2.0.8
+./emsdk activate 2.0.8
+
+source emsdk/emsdk_env.sh
+```
+
+Build without any extension for general compatibility:
+
+```
+mkdir -p build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+    -DNCNN_THREADS=OFF -DNCNN_OPENMP=OFF -DNCNN_SIMPLEOMP=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=OFF -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \
+    -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF ..
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Build with WASM SIMD extension:
+
+```
+mkdir -p build-simd
+cd build-simd
+cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+    -DNCNN_THREADS=OFF -DNCNN_OPENMP=OFF -DNCNN_SIMPLEOMP=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=ON -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \
+    -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF ..
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Build with WASM Thread extension:
+
+```
+mkdir -p build-threads
+cd build-threads
+cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+    -DNCNN_THREADS=ON -DNCNN_OPENMP=ON -DNCNN_SIMPLEOMP=ON -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=OFF -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \
+    -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF ..
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Build with WASM SIMD and Thread extension:
+
+```
+mkdir -p build-simd-threads
+cd build-simd-threads
+cmake -DCMAKE_TOOLCHAIN_FILE=../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+    -DNCNN_THREADS=ON -DNCNN_OPENMP=ON -DNCNN_SIMPLEOMP=ON -DNCNN_RUNTIME_CPU=OFF -DNCNN_SSE2=ON -DNCNN_AVX2=OFF -DNCNN_AVX=OFF \
+    -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF -DNCNN_BUILD_BENCHMARK=OFF ..
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Pick `build-XYZ/install` folder for further usage.
+
+* * *
+
+### Build for AllWinner D1
+
+Download c906 toolchain package from https://occ.t-head.cn/community/download?id=3913221581316624384
+
+```
+tar -xf riscv64-linux-x86_64-20210512.tar.gz
+export RISCV_ROOT_PATH=/home/nihui/osd/riscv64-linux-x86_64-20210512
+```
+
+Build ncnn with riscv-v vector and simpleocv enabled:
+
+```
+mkdir -p build-c906
+cd build-c906
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/c906.toolchain.cmake \
+    -DCMAKE_BUILD_TYPE=relwithdebinfo -DNCNN_OPENMP=OFF -DNCNN_THREADS=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_RVV=ON \
+    -DNCNN_SIMPLEOCV=ON -DNCNN_BUILD_EXAMPLES=ON ..
+cmake --build . -j 4
+cmake --build . --target install
+```
+
+Pick `build-c906/install` folder for further usage.
+
+You can upload binary inside `build-c906/examples` folder and run on D1 board for testing.
+
+* * *
+
+### Build for Loongson 2K1000
+
+For gcc version &lt; 8.5, you need to fix msa.h header for workaround msa fmadd bug.
+
+Open `/usr/lib/gcc/mips64el-linux-gnuabi64/8/include/msa.h`, find `__msa_fmadd_w` and apply changes as the following
+
+```
+// #define __msa_fmadd_w __builtin_msa_fmadd_w
+#define __msa_fmadd_w(a, b, c) __builtin_msa_fmadd_w(c, b, a)
+```
+
+Build ncnn with mips msa and simpleocv enabled:
+
+```
+mkdir -p build
+cd build
+cmake -DNCNN_DISABLE_RTTI=ON -DNCNN_DISABLE_EXCEPTION=ON -DNCNN_RUNTIME_CPU=OFF -DNCNN_MSA=ON -DNCNN_MMI=ON -DNCNN_SIMPLEOCV=ON ..
+cmake --build . -j 2
+cmake --build . --target install
+```
+
+Pick `build/install` folder for further usage.
+
+You can run binary inside `build/examples` folder for testing.
+
+* * *
+
+### Build for Termux on Android
+
+Install app Termux on your phone,and install Ubuntu in Termux.
+
+If you want use ssh, just install openssh in Termux
+
+```
+pkg install proot-distro
+proot-distro install ubuntu
+```
+
+or you can see what system can be installed using `proot-distro list`
+
+while you install ubuntu successfully, using `proot-distro login ubuntu` to login Ubuntu.
+
+Then make ncnn,no need to install any other dependencies.
+
+```
+git clone https://github.com/Tencent/ncnn.git
+cd ncnn
+git submodule update --init
+mkdir -p build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_EXAMPLES=ON -DNCNN_PLATFORM_API=OFF -DNCNN_SIMPLEOCV=ON ..
+make -j$(nproc)
+```
+
+Then you can run a test
+
+&gt; on my Pixel 3 XL using Qualcomm 845,cant load `256-ncnn.png`
+
+```
+cd ../examples
+../build/examples/squeezenet ../images/128-ncnn.png
+```
+</code></pre></div><footer class=post-footer><ul class=post-tags><li><a href=https://www.xgdebug.com/tags/ai/>AI</a></li><li><a href=https://www.xgdebug.com/tags/android/>Android</a></li></ul><nav class=paginav><a class=prev href=https://www.xgdebug.com/posts/philosophy/%E6%9D%83%E5%8A%9B%E7%9A%8448%E6%9D%A1%E6%B3%95%E5%88%99/><span class=title>« Prev</span><br><span>权力的48条法则</span>
+</a><a class=next href=https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/><span class=title>Next »</span><br><span>Debugging native applications with LLDV on Android 11</span></a></nav><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on x" href="https://x.com/intent/tweet/?text=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone&amp;url=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f&amp;hashtags=AI%2cAndroid"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f&amp;title=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone&amp;summary=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone&amp;source=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f&title=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on whatsapp" href="https://api.whatsapp.com/send?text=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone%20-%20https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on telegram" href="https://telegram.me/share/url?text=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone&amp;url=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Use ncnn to deploy pytorch model to Android phone on ycombinator" href="https://news.ycombinator.com/submitlink?t=Use%20ncnn%20to%20deploy%20pytorch%20model%20to%20Android%20phone&u=https%3a%2f%2fwww.xgdebug.com%2fposts%2ftech%2fai%2fuse-ncnn-to-deploy-pytorch-model-to-android-phone%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentcolor" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><footer class=footer><span>&copy; 2024 <a href=https://www.xgdebug.com/>xgDebug's Blog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

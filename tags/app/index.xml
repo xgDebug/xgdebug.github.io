@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>APP on xgDebug&#39;s Blog</title>
+    <link>https://www.xgdebug.com/tags/app/</link>
+    <description>Recent content in APP on xgDebug&#39;s Blog</description>
+    <image>
+      <title>xgDebug&#39;s Blog</title>
+      <url>https://www.xgdebug.com/images/avatar.png</url>
+      <link>https://www.xgdebug.com/images/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.136.4</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 23 Oct 2024 00:49:15 +0800</lastBuildDate>
+    <atom:link href="https://www.xgdebug.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo移动端项目分析</title>
+      <link>https://www.xgdebug.com/posts/business/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
+      <pubDate>Wed, 23 Oct 2024 00:49:15 +0800</pubDate>
+      <guid>https://www.xgdebug.com/posts/business/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
+      <description>&lt;h2 id=&#34;痛点&#34;&gt;痛点&lt;/h2&gt;
+&lt;p&gt;Hugo 是一款很好用的静态网站生成框架,很多人用它来写 Blog,并且部署在 github pages 上，但是这个方案只能在电脑上使用，每次要写文章都需要打开电脑。 我强烈的需要一个时刻都能记录自己思考的方案,在思绪飞扬时打开手机就能马上把它记录下来。所以也就需要一款能在手机上操作的 APP。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="痛点">痛点</h2>
+<p>Hugo 是一款很好用的静态网站生成框架,很多人用它来写 Blog,并且部署在 github pages 上，但是这个方案只能在电脑上使用，每次要写文章都需要打开电脑。 我强烈的需要一个时刻都能记录自己思考的方案,在思绪飞扬时打开手机就能马上把它记录下来。所以也就需要一款能在手机上操作的 APP。</p>
+<h2 id="市场调查">市场调查</h2>
+<p>在动手之前先进行项目评估调查，看用户付费意愿。
+Fake it till you make it .</p>
+<h2 id="实现方法">实现方法</h2>
+<ol>
+<li>移动端带上 git 与 openssl 直接本地操作</li>
+<li>服务器 git clone 仓库，使用 hugo 解析，提供 API 调用。包括目录，分类，Tags 等</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>在搞清楚用户的问题之前就动手开发，这是我多次犯过的大忌。</title>
+      <link>https://www.xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link>
+      <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</guid>
+      <description>&lt;p&gt;1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p&gt;
+&lt;p&gt;2. If there was a solution, would they buy it?&lt;/p&gt;
+&lt;p&gt;3. Would they buy it from us?&lt;/p&gt;
+&lt;p&gt;4. Can we build a solution for that problem?” The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>1. Do consumers recognize that they have the problem you are trying to solve?</p>
+<p>2. If there was a solution, would they buy it?</p>
+<p>3. Would they buy it from us?</p>
+<p>4. Can we build a solution for that problem?” The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Zero to Sold</title>
+      <link>https://www.xgdebug.com/posts/business/zero-to-sold/</link>
+      <pubDate>Mon, 24 Jul 2023 07:30:19 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/business/zero-to-sold/</guid>
+      <description>&lt;p&gt;We found out that many other teachers did the same when they started talking about their self-built solutions in their online communities. Teachers began to share their templates through Google sheets. It was clear that this was a shared problem in a very tight-knit community.&lt;/p&gt;
+&lt;p&gt;Note - Location 252&lt;/p&gt;
+&lt;p&gt;发现了一个群体的集体痛点&lt;/p&gt;
+&lt;p&gt;Highlight(pink) - Location 252&lt;/p&gt;
+&lt;p&gt;even though it helped, was clunky and overwhelming. I looked into it, and it seemed quite possible to build a web-based application that would do this work faster and more reliably.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>We found out that many other teachers did the same when they started talking about their self-built solutions in their online communities. Teachers began to share their templates through Google sheets. It was clear that this was a shared problem in a very tight-knit community.</p>
+<p>Note - Location 252</p>
+<p>发现了一个群体的集体痛点</p>
+<p>Highlight(pink) - Location 252</p>
+<p>even though it helped, was clunky and overwhelming. I looked into it, and it seemed quite possible to build a web-based application that would do this work faster and more reliably.</p>
+<p>Note - Location 254</p>
+<p>发现了一个更好的解决方案</p>
+<p>Highlight(pink) - Location 254</p>
+<p>There was a sizeable market with an apparent, shared, and critical problem. The problem was solvable, but no one had yet built anything to make it noticeably easier.</p>
+<p>Note - Location 255</p>
+<p>商机的定义。</p>
+<p>Highlight(yellow) - Location 262</p>
+<p>So, we released it to the public, built a landing page, and waited. Nothing happened. One or two people signed up for the free trial, but there was not much else. We hadn&rsquo;t done any marketing, and we hadn&rsquo;t made any sales. The service just sat there, idling.</p>
+<p>Note - Location 264</p>
+<p>市场需要冷启动</p>
+<p>Highlight(blue) - Location 264</p>
+<p>And then, one day, everything changed. In a comment to a Facebook post about how teachers dealt with feedback, Danielle dropped the link to our product with an explanation of how she used it. Teachers started to respond, asking for more details, they checked out the program, and came back to share their newly found discovery on social media.</p>
+<p>Note - Location 266</p>
+<p>在知乎上也经常有类似操作</p>
+<p>Highlight(blue) - Location 267</p>
+<p>that fueled the growth of our business from its first few users to thousands of customers a couple of months later. It was surreal, but we had tapped into a highly active tribe. Once we understood that, we didn&rsquo;t need to do much when it came to marketing our product: our users would do most of that for us.</p>
+<p>Note - Location 269</p>
+<p>社区一条帖子就完成了冷启动：一个好东西被大家看到了。</p>
+<p>Highlight(yellow) - Location 278</p>
+<p>Every day, new teachers would sign up, and since we provided a service that solved their problems well, we had incredibly high retention and conversion rates.</p>
+<p>Note - Location 279</p>
+<p>确实解决问题并且高频使用</p>
+<p>Highlight(yellow) - Location 279</p>
+<p>For many of our customers, teaching from home was a side hustle. Using our product enabled many of them to turn this into a full-time source of income. We priced our service to be affordable and easily justified. We even increased our prices by 50% a year into running the business, and it continued growing nevertheless.</p>
+<p>Note - Location 281</p>
+<p>价值被真正的创造了出来</p>
+<p>Highlight(yellow) - Location 303</p>
+<p>business from nothing, without any outside funding or assistance. Bootstrapping is about accomplishing the</p>
+<p>Highlight(yellow) - Location 331</p>
+<p>In the Preparation Stage, the focus will be on finding an audience, their biggest problem, and a solution that solves that problem in a way to make people pay for it. You will find out how to price your product initially and start selling.</p>
+<p>Note - Location 333</p>
+<p>第一阶段最大的问题是种子用户与定价让他们付钱</p>
+<p>Highlight(yellow) - Location 334</p>
+<p>In the Survival Stage, the focus will be on finding a repeatable way to make money. You will learn how to work on the product, listen to your early customers, and start building out processes and automation to stay on top of your business.</p>
+<p>Highlight(yellow) - Location 352</p>
+<p>Find your niche audience. Find and validate their critical problem. Invent and validate a solution to their problem. Build a product to implement that solution. Build a business that can repeatedly sell that product to your audience.</p>
+<p>Note - Location 354</p>
+<p>价值创造一般过程</p>
+<p>Highlight(yellow) - Location 362</p>
+<p>Tech founders—and I count myself as one—focus on products because that is what we use to solve our problems. After all, when you run into a challenging task, what do you look for first? An in-depth scientific explanation for the epistemological essence of the task? Or a tool that will do the job for you seconds after you install it?</p>
+<p>Note - Location 365</p>
+<p>作为一个技术宅,万不可太沉迷于技术,应该关注产品。解决问题而不是研究科学。能用就行</p>
+<p>Highlight(yellow) - Location 368</p>
+<p>Successful businesses are built by solving critical problems for an audience that will pay for a solution to their issues. The Preparation Stage is when you make these foundational choices. Once in motion, a business has certain inertia that makes these decisions hard to change. Even though pivoting your business into new markets is sometimes the right choice, it’s extra effort. That’s why it’s a good idea to spend considerable time on getting it right in the first place.</p>
+<p>Note - Location 371</p>
+<p>为特定群体解决一个关键的问题,这个问值得他们花钱解决。</p>
+<p>Highlight(yellow) - Location 378</p>
+<p>They fail because there were not enough customers. They fail because the product solved the wrong problem. They fail because the product solved the problem the wrong way. And sometimes, they fail even though the product solved the customers&rsquo; problems.</p>
+<p>Note - Location 380</p>
+<p>一句话总结就是产品必须要真的有价值</p>
+<p>Highlight(yellow) - Location 385</p>
+<p>Many successful bootstrapped businesses start with an audience, a specific niche. They find their customers&rsquo; critical problems and provide valuable solutions that people gladly pay for. Their product is centered around continuously providing value to new and existing customers. Audience, problem, solution, and product can be looked at individually.</p>
+<p>Note - Location 387</p>
+<p>Fake it until you make it . Who why how what</p>
+<p>Highlight(blue) - Location 390</p>
+<p>Who am I helping? You will discover how to find the perfect niche and make sure it can support your business in Step One: Your Audience. Why do they need help? Learn how to find and validate their critical problem in Step Two: Their Problem. How can I help them with that? Find a good solution and make sure it fits into your prospective customers&rsquo; workflow in Step Three: Your Solution. What can I create to help them that way? You&rsquo;ll learn how to create an easy-to-maintain and reliable product in Step Four: Your Product.</p>
+<p>Highlight(blue) - Location 400</p>
+<p>A business would be nothing without customers. You can have the best product in the world, but you won’t be able to build any meaningful business if there is no one to pay for what you offer.</p>
+<p>Note - Location 401</p>
+<p>换句话说，没有客户的产品一文不值</p>
+<p>Highlight(pink) - Location 402</p>
+<p>where do you find those paying customers? The first step to building a business is answering that question, and for bootstrapped founders, there is one critical component: finding the perfect niche.</p>
+<p>Note - Location 403</p>
+<p>需要回答的第一个问题</p>
+<p>Highlight(pink) - Location 406</p>
+<p>For a bootstrapped business, the choice of your target audience has a few significant limitations: you will have to be careful to find a market that sits in the Goldilocks Zone between too small and too big, and, at best, it should grow in a certain way. You will discover how to find the numbers and figures to make informed choices about your audience.</p>
+<p>Note - Location 408</p>
+<p>市场规模太大会有巨头，太小无法支撑成本</p>
+<p>Highlight(yellow) - Location 417</p>
+<p>So, what makes a niche interesting for a bootstrapper? What is it about niche customers that you can leverage to create a sustainable business? How deep a niche do you need to find a good audience?</p>
+<p>Note - Location 419</p>
+<p>为什么种子用户对你的东西感兴趣，你如何利用这些种子用户作为杠杆来撬动车轮转起来。</p>
+<p>Highlight(blue) - Location 422</p>
+<p>sometimes we look for immutable things like age or gender niches. Other times the specifics we’re interested in are fluid things like preferences or experience levels. Some niches can be large enough to contain millions of people, and others might just consist of a handful of individuals.</p>
+<p>Note - Location 423</p>
+<p>细分市场的一些共性</p>
+<p>Highlight(orange) - Location 424</p>
+<p>What unites all niches is that they are inclusive of some and exclusive of others. The members of the in-group will be reasonably similar, depending on the specificity of the niche. That’s why niches work so well for bootstrapped businesses: if you can provide a tool that solves a niche problem very well, you can be sure that everyone in the niche will be interested in it.</p>
+<p>Highlight(orange) - Location 427</p>
+<p>InBev, the makers of Bud Light, spend more than $1.5 billion every year. They do that because they need to be present in the mind of every single shopper when they think of getting a beer.</p>
+<p>Note - Location 429</p>
+<p>大企业的玩法是烧钱直接给客户洗脑</p>
+<p>Highlight(orange) - Location 431</p>
+<p>A craft beer company might put up flyers in a local pub that is serving lots of craft beers, or allocate a budget to exhibiting at beer festivals. A niche business will market to its niche and no one else.</p>
+<p>Note - Location 432</p>
+<p>Niche 的营销绝应当精细化面对小众人群</p>
+<p>Highlight(orange) - Location 436</p>
+<p>If you filter a large group of people by several specific properties, you will end up with an audience that shares those properties. As a result, these people will also share many other things that can make building products and selling them very convenient.</p>
+<p>Note - Location 438</p>
+<p>Niche 有一些共性</p>
+<p>Highlight(blue) - Location 438</p>
+<p>People in your niche will likely have the same problems. If they love fantasy football, they all need to keep track of their teams. If they enjoy fly-fishing, they all need to find information on where to fish and how the weather will impact their chances of a catch. If you spend enough time investigating the problems of your niche, you will sooner or later surface their critical problems. These are the things that are common roadblocks for everyone in the niche. Solving that problem with a dedicated product will allow you to have a high chance of success with your bootstrapped business.</p>
+<p>Note - Location 442</p>
+<p>同一个 Niche 人群一定是有一些共同的问题，如果你花时间找到这些问题并解决，那你就能启动一个生意了</p>
+<p>Highlight(pink) - Location 445</p>
+<p>From a goal, you can usually infer a problem that is in the way of your customers&rsquo; path to success. Solve that problem, and you can help everyone in the niche reach their goals.</p>
+<p>Note - Location 446</p>
+<p>从一个目标中，你通常可以推断出一个阻碍客户成功之路的问题。</p>
+<p>Highlight(yellow) - Location 454</p>
+<p>“a group of people connected to one another, connected to a leader, and connected to an idea.”</p>
+<p>Note - Location 455</p>
+<p>部落</p>
+<p>Highlight(yellow) - Location 457</p>
+<p>you can become a tribe leader yourself. There is room for a lot of leaders in most niche tribes. In such a position, you are regarded as an expert who also offers a product specifically designed for members of the tribe.</p>
+<p>Note - Location 458</p>
+<p>有人的地方就分左中右,位置足够,你总能在一个区域里当老大</p>
+<p>Highlight(yellow) - Location 460</p>
+<p>People derive their identity from belonging to a tribe. If you can place your business in a way that makes your product a thing that “people in our tribe use,” then you will have a guaranteed sales funnel for as long as your niche exists.</p>
+<p>Note - Location 461</p>
+<p>部落认同感的人都会想要融入，成为部落标配是个极好的营销</p>
+<p>Highlight(yellow) - Location 469</p>
+<p>The better you define your niche market, the more confident you can be in your numbers.</p>
+<p>Highlight(yellow) - Location 481</p>
+<p>Shared interests will allow you to speak to the needs of your niche audience directly. Creating content that has a lot of impact and will be read by a lot of people will be easier, as there is less competition for your audience’s attention.</p>
+<p>Note - Location 483</p>
+<p>部落聚集便于宣传</p>
+<p>Highlight(yellow) - Location 488</p>
+<p>Partnerships in niches become a much more lucrative endeavor. Additional exposure and reach results in quick win-win situations, where both partners can significantly boost both their customer base and their reputation as an expert in the niche. Partnering up with other players in the niche allows you to reach customers at different stages of “niche proficiency,” increasing the breadth of your sales funnel.</p>
+<p>Note - Location 491</p>
+<p>与其他产品合作</p>
+<p>Highlight(yellow) - Location 491</p>
+<p>If you lead a tribe, it will eventually do the marketing for you. A large following will amplify your messages with a lot of reach, giving you credibility and encouraging newcomers to become customers so they can belong to the tribe.</p>
+<p>Note - Location 493</p>
+<p>哪怕是个群主,也会有额外的公信力</p>
+<p>Highlight(yellow) - Location 494</p>
+<p>She became an advocate for the needs of these teachers, and they followed her actively on social media, engaging in conversations, spreading the word, and, best of all, even defending the company and the product against people who dismissed or publicly disliked it. That’s the power of a tribe.</p>
+<p>Note - Location 494</p>
+<p>网络部落的力量</p>
+<p>Highlight(pink) - Location 496</p>
+<p>If you give people the opportunities to share your content and messages with other tribe members, they will. The interconnected nature of tribes facilitates this rapid exchange of information, and if you leverage those channels, your product will sell itself. At FeedbackPanda, it took one well-placed social media comment to start an avalanche of word-of-mouth referrals that lasted for years.</p>
+<p>Note - Location 499</p>
+<p>口碑是把双</p>
+<p>Highlight(yellow) - Location 505</p>
+<p>If your product is shareable, spend time on creating a referral system early in the life of your business. If it’s not shareable, defer this kind of system until you have exhausted better, more effective marketing techniques.</p>
+<p>Note - Location 506</p>
+<p>喜欢炫耀是人的天性,要善加利用</p>
+<p>Highlight(yellow) - Location 511</p>
+<p>Luckily, these influencers are also much cheaper to partner with than the prominent super-influencers. Often, they are not even aware of their influence, or they don’t necessarily see it as a monetizable activity. While I recommend you still offer them reasonable compensation, you can approach niche influencers as potential partners instead of just seeing them as a marketing channel.</p>
+<p>Note - Location 513</p>
+<p>与意见领袖合作是个不错的推广方法</p>
+<p>Highlight(yellow) - Location 517</p>
+<p>Analyze your competitors for what they do well and what they don’t when you do your market research. If you’ve done your problem validation right, you will see gaps in the market that are not yet served. Build your products around those gaps, and look into partnering with your competitors to expand each other’s customer base.</p>
+<p>Note - Location 519</p>
+<p>分析竞品，准备差异化竞争</p>
+<p>Highlight(blue) - Location 519</p>
+<p>Look out for non-competitor competitive alternatives: the things people use instead of using an actual product. This can be Post-It notes, an Excel spreadsheet that does not involve numbers, anything that is a general tool applied to a specific problem. These types of makeshift solutions are where you can find your critical problems—and that is where you can best serve your niche.</p>
+<p>Note - Location 522</p>
+<p>你可以把一些凑合的草台方案做成一个产品</p>
+<p>Highlight(pink) - Location 524</p>
+<p>Like in machine learning, you run the risk of “overfitting” your niche; you might get too specific. There could be a few hundred “Star Trek fans that live in the New Orleans area and love to eat Quinoa,” but that won’t sustain a bootstrapped business.</p>
+<p>Note - Location 526</p>
+<p>市场规模过小，无法维持一个生意</p>
+<p>Highlight(orange) - Location 530</p>
+<p>In the best case, this will be the critical problem of everyone in the niche, and your product will ideally solve it well enough for your customers to tell everyone they know, and allow your product to sell itself.</p>
+<p>Highlight(pink) - Location 534</p>
+<p>A bootstrapped business works best when it starts out in a niche. Most companies will do really well by just staying there. Some expand into other markets. But that initial audience is one of the most important things to carefully select when you start a business.</p>
+<p>Note - Location 536</p>
+<p>选择正确的方向会更轻松</p>
+<p>Highlight(yellow) - Location 537</p>
+<p>A problem we experienced for ourselves. So we solved it for ourselves. We then saw that other teachers, just like Danielle, could benefit from our solution. They had the exact same problem. We knew our first version already solved the problem well. That’s why we knew other teachers would pay for it.</p>
+<p>Note - Location 539</p>
+<p>当你的产品解决了一个实际的问题，就有人会愿意付钱</p>
+<p>Highlight(yellow) - Location 542</p>
+<p>Is the Audience Large Enough? Your audience will have to be big enough to sustain your business. It will likely also have to support competitors, as any successful business will attract competition.</p>
+<p>Highlight(blue) - Location 549</p>
+<p>Is the Audience Small Enough? Contrary to popular belief, I think that for a bootstrapped company, in particular, some markets can be too big. Some audiences are too generic, some industries too vast for a great niche to exist. At least, in the beginning, you should have a clearly defined niche. As a bootstrapped entrepreneur, you will reach out to customers and be in direct contact.</p>
+<p>Highlight(blue) - Location 557</p>
+<p>Can They Pay? Will They Pay? Sometimes, you will be serving companies that have a budget for what you offer. Other times, you could help a currently underserved segment of a low-wage industry. The capacity and willingness to pay will be very different between those two.</p>
+<p>Note - Location 559</p>
+<p>部落人群的支付意愿与支付能力也非常重要，同时也要考虑对方是否愿意更换服务商，而说服白嫖党付钱也很难</p>
+<p>Highlight(blue) - Location 569</p>
+<p>If you have found a painful problem, a niche audience that is both small and big enough for your business, and you have made sure your audience is willing to pay for your solution, you have found your niche. From here you can build out your product and marketing strategies for that market.</p>
+<p>Note - Location 571</p>
+<p>发现小众痛点，就发现了目标市场</p>
+<p>Highlight(yellow) - Location 583</p>
+<p>Knowing if you need to focus more on sales or on marketing is very important. Some markets require you to reach out to buyers individually. For others, a good and well-targeted marketing strategy could mean you will never have to talk to a single customer before they subscribe or purchase. Being aware of how this will develop over time is essential in order to decide where to focus your attention.</p>
+<p>Note - Location 585</p>
+<p>不要去把自己的产品搞到需要一对一推销,这很重要</p>
+<p>Highlight(yellow) - Location 586</p>
+<p>What Are Good Markets for Bootstrapped SaaS? If you see that significant forces are terraforming a market, creating an opportunity where there was none before, that is a good sign. Whenever a new kind of technology or process gets traction in a field that has not seen much change before, it will create little points of friction. Some of them will be critical. These will be the ones that warrant creating a SaaS business.</p>
+<p>Highlight(yellow) - Location 593</p>
+<p>Some markets, where a lot of small deciders with their own budgets make decisions, are very lucrative. These people can be convinced without needing to deploy corporate diplomacy. You can show them a product, and they will try it out, as they have no one telling them not to. Small businesses and freelancers are great audiences for a bootstrapped SaaS, as they have budgets. Small budgets, maybe, but if there is a painful problem, there will be money to fix it.</p>
+<p>Note - Location 596</p>
+<p>有些小众市场本就有些拥有预算来解决问题的客户</p>
+<p>Highlight(yellow) - Location 599</p>
+<p>What Are Bad Markets for Bootstrapped SaaS?</p>
+<p>Highlight(yellow) - Location 601</p>
+<p>Enterprise markets are hard to sell into for a small company, although it’s not impossible. Purchasing decisions take a long time, there are a lot of requirements even to be considered, and contracts tend to be custom and require a lot of work. Many enterprise customers won’t buy from small companies out of fear they will vanish within a few years, and that fear is not unfounded. In fact, even for your own bootstrapped business, I would recommend against using services offered by companies smaller than yourself. You will be better off looking for a market that is comprised of small to medium-sized businesses and self-employed freelancers.</p>
+<p>Note - Location 606</p>
+<p>To B 业务是基本不可能的,因为大企业怕你突然不干了,大企业需要稳定</p>
+<p>Highlight(yellow) - Location 608</p>
+<p>Monopoly markets with just a few big players will severely limit your options.</p>
+<p>Note - Location 609</p>
+<p>巨头垄断的市场就别去了,没机会的</p>
+<p>Highlight(yellow) - Location 611</p>
+<p>Markets where years of ruthless competition have created a large number of bottom feeders are hazardous.</p>
+<p>Note - Location 611</p>
+<p>充分竞争的市场也没戏,你打不过那些老家伙</p>
+<p>Highlight(yellow) - Location 618</p>
+<p>usually are full of very similar competitors, fighting it out over price and marginal differences. This saturation makes it hard to enter a market, and even the businesses that are already in that market suffer.</p>
+<p>Note - Location 619</p>
+<p>同质化竞争开始时,市场就不再是原来的市场了。</p>
+<p>Highlight(yellow) - Location 621</p>
+<p>When markets shrink, that is often a sign of deterioration. Whenever the number of agents and purchasers in a market decreases, business growth stalls. People cut costs and unnecessary expenses get reduced. All businesses in that market will suffer.</p>
+<p>Note - Location 623</p>
+<p>市场开始萎缩的时候,基本就应该考虑退出了</p>
+<p>Highlight(yellow) - Location 637</p>
+<p>When you’re starting a bootstrapped SaaS business, you have to find a painful problem to solve. For that, you have to find an audience first. But how do you figure out if the audience is big enough to support your business today and five years from now?</p>
+<p>Note - Location 639</p>
+<p>为谁解决一次个什么问题,这个谁的规模有多大呢?</p>
+<p>Highlight(yellow) - Location 731</p>
+<p>Identifying a Critical Problem: Working on the Right Thing Once you have found a suitable audience, you can start looking for problems. The great thing about niche markets is that the issues in them are specific and shared by the people in the niche. Solving a common problem will help a lot of people. You already have the right people. Now you just need the right problem.</p>
+<p>Note - Location 734</p>
+<p>当你找到了目标人群，下一步就需要找出他们正在需要解决的痛点</p>
+<p>Highlight(blue) - Location 735</p>
+<p>You are looking for painful problems, and you want to solve the most painful of them all. You also need to validate that this is an actual problem that people need to have addressed. Sometimes, we just want to complain, but we don’t want to change our ways. You will need to find a problem so painful that we just have to deal with it.</p>
+<p>Note - Location 737</p>
+<p>寻找真正的痛点，有时候人人吐槽的，并不一定是真正的想要有所改变</p>
+<p>Highlight(blue) - Location 740</p>
+<p>I believe that many bootstrapped businesses only do half the work. They solve a problem, but they don’t address the most critical problem.</p>
+<p>Note - Location 741</p>
+<p>没有解决核心问题的产品，几乎没有价值</p>
+<p>Highlight(yellow) - Location 747</p>
+<p>why they think their company didn’t make it. The reasons expressed range from “Bad Business Model” to “Poor Product.”</p>
+<p>Highlight(yellow) - Location 750</p>
+<p>You built a solution for customers who think they have that problem under control. You solved the wrong problem. You developed a solution that helps only at the margins. You solved the wrong problem. You built something, but your customers have bigger fish to fry. You solved the wrong problem.</p>
+<p>Note - Location 752</p>
+<p>一些常见的错误痛点</p>
+<p>Highlight(yellow) - Location 753</p>
+<p>You want to build a “need-to-have” instead of a “nice-to-have.” You want to develop a painkiller instead of a vitamin. You want to be their aspirin. How can this be done? By finding their most important problem: the one issue that is critical to their success.</p>
+<p>Note - Location 756</p>
+<p>你需要解决的是妨碍他们的核心问题</p>
+<p>Highlight(yellow) - Location 759</p>
+<p>The most crucial problem a customer faces is on their minds most often. It’s the most important because it’s coming up frequently and is never easy to solve. It has the most impact on their lives, but it’s not always the obvious choice. If you can help a customer with their most critical problem, they will benefit the most.</p>
+<p>Note - Location 760</p>
+<p>什么样的问题算核心问题?</p>
+<p>Highlight(yellow) - Location 762</p>
+<p>diligence.</p>
+<p>Note - Location 762</p>
+<p>勤勤恳恳</p>
+<p>Highlight(yellow) - Location 771</p>
+<p>A Critical Problem Is Painful Problems can be a nuisance. They come up, and you either deal with them or ignore them. We can’t ignore critical problems. They persistently make the lives of those who have them harder until they are resolved. They can’t be just ignored, because they consistently reduce the quality of life.</p>
+<p>Note - Location 773</p>
+<p>关键痛点是非常痛苦且你无法逃避,必须面对的问题</p>
+<p>Highlight(yellow) - Location 776</p>
+<p>Find the critical problem where ignoring something causes a lower quality of life.</p>
+<p>Note - Location 776</p>
+<p>关键痛点让生活品质下降</p>
+<p>Note - Location 782</p>
+<p>关键痛点往往又是浪费生命或者浪费金钱的,比如写日报</p>
+<p>Highlight(yellow) - Location 784</p>
+<p>Find the critical problem at the intersection of something mandatory and something wasteful.</p>
+<p>Note - Location 785</p>
+<p>关键问题总是位于强制与浪费的交叉点</p>
+<p>Highlight(yellow) - Location 786</p>
+<p>A Critical Problem Is Not Optional Some things can be ignored or delegated, but a critical problem can’t be. If it’s critical, people will have to deal with the problem every time it occurs. They can’t just opt out of it. Solving the problem is essential to making any kind of progress in the work.</p>
+<p>Highlight(yellow) - Location 791</p>
+<p>Find the critical problem where people would love to opt out, but can’t.</p>
+<p>Note - Location 791</p>
+<p>关键痛的点往往是不想干又不得不干的问题</p>
+<p>Highlight(yellow) - Location 793</p>
+<p>A Critical Problem Occurs Frequently and Repeatedly The reason why critical problems are always on the minds of your customers is that the problems happen so often. Every day, every week, every month, the critical problems repeatedly occur. For your customers, it’s always the most urgent thing at that time. The issue needs to be solved there and then, every single time. If it’s not frequent, it is likely not a critical problem. If it occurs repeatedly and isn’t easily solved, it is likely to be a critical problem.</p>
+<p>Highlight(yellow) - Location 799</p>
+<p>Find the critical problem where people need to do the same thing over and over again.</p>
+<p>Note - Location 800</p>
+<p>关键痛点会一次又一次的刺痛你,永无止境</p>
+<p>Highlight(yellow) - Location 801</p>
+<p>A Critical Problem Takes up Too Much Time If a problem can be solved quickly, people either solve it the moment it appears or they set aside some time to do the work in a batch later, without feeling like it’s a waste of time. If that is the case, the problem is not really critical. Only when you need to spend considerable time and effort each time you solve the problem will it be impossible to “just” deal with it. “Doing it later” also turns into a chore, as it may take hours or days to deal with a long queue of deferred problems. A critical problem will feel like an unwelcome chore: important, yet tiresome.</p>
+<p>Highlight(yellow) - Location 808</p>
+<p>Find the critical problem where solving a problem takes a long time every time the problem occurs.</p>
+<p>Note - Location 809</p>
+<p>关键痛点每一次都消耗你不少时间</p>
+<p>Highlight(yellow) - Location 810</p>
+<p>A Critical Problem Forces People to Solve It Using Their Own System There is the joke that every SaaS is an Excel sheet transformed into business logic. The moment someone uses generic tools like word processors or spreadsheets to solve a problem, it’s an indicator that the problem is valuable enough to build tools. Most problems don’t have high complexity, and they can be solved on the spot. But a critical issue will be complicated enough to start developing a system. If your customers have a pile of Post-its or a chaotic assortment of Word and Excel files to solve a problem, you may have found a critical problem.</p>
+<p>Note - Location 815</p>
+<p>关键痛点往往都正在用土办法解决</p>
+<p>Highlight(yellow) - Location 819</p>
+<p>Find the critical problem where people are solution-aware and have already created their own simple systems to solve the problem.</p>
+<p>Highlight(yellow) - Location 832</p>
+<p>They’ll be willing to pay: if the solution saves them time if the solution saves them money if the solution makes them money</p>
+<p>Note - Location 833</p>
+<p>当你为他们提供这些服务,他们乐于掏钱</p>
+<p>Highlight(blue) - Location 838</p>
+<p>They Have No Interest in Paying With non-critical problems, customers often find alternative ways of solving the problem because they want to save money. It’s not worthwhile for them to look for and pay for a solution that they value less than alternative solutions.</p>
+<p>Note - Location 840</p>
+<p>可以不愿意花钱解决的问题不是关键痛点</p>
+<p>Highlight(blue) - Location 853</p>
+<p>Finding the Critical Problem So, how can you learn about which is the most critical problem your customers have? It’s quite straightforward: talk to them. Ask them what annoys them most. Find out where they want to be. Ask them what keeps them from being the best at what they are doing.</p>
+<p>Note - Location 856</p>
+<p>发现痛点最直接的方式就是和他们聊聊</p>
+<p>Highlight(blue) - Location 859</p>
+<p>Focus on what you can help them accomplish. Ask what customers want and which state they want to be in when the work is done. Don’t focus too much on the “how it’s done.” That is usually more based on tradition than on an optimized process.</p>
+<p>Note - Location 861</p>
+<p>直接询问客户想要什么产品是不行的，你需要知道他们在用过你的产品后会达到什么状态来判断</p>
+<p>Highlight(yellow) - Location 867</p>
+<p>If you find something that will obviously make them significantly more money or save them a lot of time, then you have something to go on. Customers should really want to pay for it, almost have a burning desire to open their wallets. When they ask you if that is possible and you tell them it is, their mouth should drop to the floor.</p>
+<p>Note - Location 870</p>
+<p>如果你能帮他们多赚钱，或者能帮他们节约时间，他们会愿意打开钱包</p>
+<p>Highlight(yellow) - Location 886</p>
+<p>Time-Related Pains Most productivity-related issues cause temporal pain: people feel like they’re wasting time. These pains are caused by suboptimal processes and friction between tasks. If tedious work takes a lot of time, it keeps you from doing important and useful things instead. That leads to time mismanagement and relevant actions not being taken. By solving the time-related problem, productive tasks can be accomplished faster and sooner. When people complain about inefficiencies, tedium, or pointless work, you’re looking at a time-related problem.</p>
+<p>Note - Location 890</p>
+<p>浪费时间是最大的痛苦</p>
+<p>Highlight(yellow) - Location 896</p>
+<p>If you hear people complaining about a waste of money, prohibitive costs, compliance, or the wrong people working on the wrong things, you’ve found a resource-related problem.</p>
+<p>Note - Location 897</p>
+<p>浪费钱也是一种痛苦</p>
+<p>Highlight(yellow) - Location 898</p>
+<p>Self-Related Pains This group of problems is often overlooked. Everyone wants to be notable somewhere. This can mean holding a position in a company or being regarded as a supportive co-worker or friend. When people struggle with achieving these things, they feel self-related pains. The four essential concepts to look out for here are Reputation, Accomplishment, Advancement, and Empowerment.</p>
+<p>Note - Location 901</p>
+<p>个人焦虑也是痛点，罗振宇做的便是这个生意</p>
+<p>Highlight(pink) - Location 933</p>
+<p>Do They Know? The Problem with Problem Awareness When you’re conducting interviews with customers, you will hear them talk a lot about the problems that bother them. These are the known knowns. But your prospects will never be able to tell you about the issues they don’t realize they have.</p>
+<p>Note - Location 935</p>
+<p>有时候客户已经习以为常，需要我们来教客户偷懒</p>
+<p>Highlight(blue) - Location 991</p>
+<p>Efficiency What keeps you from being more efficient at work? Why can’t you do more of what you do? Which tasks feel like they are a drag?</p>
+<p>Highlight(blue) - Location 993</p>
+<p>Effectiveness What limits you from doing your job the right way? Which tasks are the most pointless? What annoys you about working with competitive products? What is your experience like with each of them?</p>
+<p>Highlight(blue) - Location 996</p>
+<p>Financials Where are you spending too much on tools? Where are you spending too much on consulting? What is your budget for software tools? What is your budget for outsourcing work?</p>
+<p>Highlight(blue) - Location 998</p>
+<p>Reputation What parts of your skill set do you need to</p>
+<p>Highlight(blue) - Location 999</p>
+<p>work on? Which parts of your job do you hesitate to start? How do you show your colleagues that you’re an expert? Empowerment How can you help other people succeed? Do you share success? Is lifting up people something you are expected to do? Accomplishment How do you celebrate your victories? How much do others see of your work? What’s in the way of your next big success? Advancement What would it need for you to climb the career ladder one more step? Where do you want to be professionally? How can you reach financial security and stability? Where do you see yourself growing toward? What challenges did you have in your professional career so far? What challenges do you have in your professional career at this point?</p>
+<p>Highlight(blue) - Location 1009</p>
+<p>What part of your job do you loathe? What tasks do you delegate the most? What tasks should not be part of your work? Is there anything that seems utterly needless in your day-to-day work? If you wanted to shock the whole industry, what would you change about it?</p>
+<p>Highlight(blue) - Location 1077</p>
+<p>Avoid People Who Are Trying to Please You Compliments are a problem. They don’t help you. If compliments happen, ignore them. If the customer continues to compliment everything you do, the data will not help you. You can salvage these types of conversations. Dive deep into problems and their implications. Completely ignore any of their opinions about your product, your ideas, or your plans. Focus exclusively on their day-to-day operations, and redirect all talk of your product toward their experiences.</p>
+<p>Note - Location 1080</p>
+<p>忽略那些给你好评的人，他们的夸奖对于你改进产品没有价值</p>
+<p>Highlight(yellow) - Location 1095</p>
+<p>Avoid People Who Only Tell You Their Ideas You are validating a problem, not your customer’s assumption. If they are barraging you with their ideas, you will be limited to the outcomes of their perception, not the reality of their problems. Customers have a hard time understanding what they truly value, so their solutions are limited to what they know. Experts can be blinded by years of routine, overvaluing the status quo, and undervaluing even paradigm-shifting improvements.</p>
+<p>Note - Location 1099</p>
+<p>不要相信有很多想法的客户，他们并不懂自己真正想要的是什么</p>
+<p>Highlight(yellow) - Location 1139</p>
+<p>Entrepreneurs are good at coming up with ideas. We envision solutions to the problems that trouble the audience we have chosen to help. We think deeply about a problem, mentally shape a product, and see how much it would benefit the quality of life. Then we get to work and build the prototype, eager to release it as soon as possible.</p>
+<p>Note - Location 1141</p>
+<p>解决方案不是凭空冒出来的，要在实践中获得</p>
+<p>Highlight(yellow) - Location 1161</p>
+<p>A good question here is, &ldquo;At what stage of your workflow will you be using this solution?&rdquo;</p>
+<p>Highlight(yellow) - Location 1223</p>
+<p>Throughout your solution validation conversations, you want to project a clear interest in solving your customer&rsquo;s problems without causing new ones. If you communicate this clearly in each call, you will create goal alignment between you and your prospect: you both want a great solution that makes things easier for the customer.</p>
+<p>Note - Location 1225</p>
+<p>解决痛点的目的是让客户更加轻松</p>
+<p>Highlight(orange) - Location 1226</p>
+<p>Asking the Right Questions: Focus on Problems not Solutions When you talk to your customers or prospects, you will find that there are questions that always produce meaningful results: where they are now? Where do they want to be? What stands in the way of getting there? Essentially, this is applying the jobs-to-be-done framework to your communication strategy, trying to find their realistic and aspirational states, and then building a solution that allows them to go from one state to the other.</p>
+<p>Note - Location 1231</p>
+<p>问出正确的问题，关注问题本身而不是解决方案</p>
+<p>Highlight(orange) - Location 1246</p>
+<p>So, what should you ask about? Ask about where progress is hindered. Progress is a clear indicator of jobs-to-be-done. After all, you have to move from what is to what ought to be in some way. Progress is that transition. Ask people where they perceive it. Ask about tension and friction during value creation. Where are things harder to accomplish than they ought to be? That is why your customers want to use your product. Once you have found hindered progress, tension, or friction, discover the underlying needs and desired outcomes of the processes involved. Ask about the context of the job-to-be-done: who is involved, who holds the stakes, and who is ultimately responsible for the job-to-be-done?</p>
+<p>Highlight(orange) - Location 1264</p>
+<p>the MVP, the Minimum Viable Product.</p>
+<p>Highlight(yellow) - Location 1269</p>
+<p>a few general guidelines that will make sure you can create a product that stands a chance: Your product will never be finished—treat it as an ongoing concern at all times. Allow for quick and safe releases, release early, and release often. The less exciting your tech choices, the better. The fewer things you have to build yourself, the better.</p>
+<p>Note - Location 1272</p>
+<p>关注的是产品，而不是技术与完成度。敏捷迭代</p>
+<p>Highlight(yellow) - Location 1274</p>
+<p>“If you&rsquo;re not embarrassed by the first version of your product, you have launched too late.”</p>
+<p>Highlight(pink) - Location 1426</p>
+<p>While you will likely be adding and changing features more than removing them in the early stages of your business, prepare that eventually, you will need to remove features. Avoid becoming too attached. You may be reluctant to remove something you spent a lot of time on. However, you&rsquo;d rather have a slim and focused product than a behemoth that does a thousand things, but none of them well.</p>
+<p>Note - Location 1428</p>
+<p>你的产品应当小而强，并非大而全，核心功能强就好</p>
+<p>Highlight(pink) - Location 1436</p>
+<p>&ldquo;Art is never finished, only abandoned.&rdquo;</p>
+<p>Highlight(orange) - Location 1439</p>
+<p>If software can never be truly finished, any stage of it is your best guess at what it should be at the time it&rsquo;s created. As the MVP is the first version of your product that your audience will be exposed to, it is crucial to get it &ldquo;right enough&rdquo; while being okay with it not being &ldquo;perfectly right&rdquo; at the same time. The MVP is your first real contact with your customers. It has two main functions: to allow your early adopters to gauge the value of your service, and to enable you to charge them money to gauge their sincerity. The MVP is the first handshake between you and your customers. To have your MVP leave a great first impression, you will need to scope it sufficiently and time it well.</p>
+<p>Note - Location 1444</p>
+<p>软件不会被完成，只会被放弃，所以从 MVP 开始就应该收费</p>
+<p>Highlight(yellow) - Location 1447</p>
+<p>What&rsquo;s a minimal product? It&rsquo;s the core functionality only, a simple tool without any fancy additions. What&rsquo;s a viable product? It&rsquo;s the essence of the solution to your audience&rsquo;s problem, a tool that does exactly what it promises to do, and nothing more.</p>
+<p>Highlight(pink) - Location 1451</p>
+<p>A minimum viable product should contain a few structural components to make it usable by your audience: your users should be able to sign up and log in, solve their problem, and be able to pay for your product. Anything else is cruft, at least for your MVP.</p>
+<p>Note - Location 1452</p>
+<p>什么是最小可用产品呢？</p>
+<p>Highlight(orange) - Location 1473</p>
+<p>Timing Your MVP It&rsquo;s incredibly hard to time when your MVP is done. Here&rsquo;s the problem: you&rsquo;re much too invested. You have the grand vision of what your product could be. And here you are, looking at a version that is slimmed down to the extent of being unrecognizable. It will always feel like it&rsquo;s not good enough yet.</p>
+<p>Highlight(yellow) - Location 1479</p>
+<p>The happy path for any customer is to ship the MVP as soon as humanly possible. You need your customers to interact with your product at the earliest possible moment. Only then can you find out what works and what doesn&rsquo;t. You need the MVP to become part of their daily workflow.</p>
+<p>Highlight(orange) - Location 1488</p>
+<p>If you want it to measure customer commitment, add a rudimentary payment system from the beginning. Give liberal amounts of free trial time, but set an end to it. An indefinite trial period could keep people around, but it won&rsquo;t allow you to determine if your product produces enough value to warrant paying for it.</p>
+<p>Note - Location 1490</p>
+<p>让第一批用户永久免费</p>
+<p>Highlight(yellow) - Location 1882</p>
+<p>As technical founders, we&rsquo;re supposed to choose the technology that works best for us and our business. But we often let the cargo-culting around the newest, hottest tech stack get to us. Many technical founders see a new startup as an opportunity to figure out a modern tech stack. That is a dangerous move. Not only do you have to deal with the inherently hazardous nature of creating a new business, but now there is also the chance that the new and mostly untested tech stack may not be able to solve the problem you&rsquo;re trying to solve.</p>
+<p>Note - Location 1886</p>
+<p>创业本就是冒险,别为你的冒险添加额外的技术风险。</p>
+<p>Highlight(yellow) - Location 1976</p>
+<p>A business is more than a landing page, a product, and a bank account. A business is a complex system of processes. Building a product may come easy to you if you&rsquo;re technically inclined, but turning it into a value-generating machine is a whole different kind of challenge. Others may have trouble coming up with the product but thrive on building the structures needed to sell it over and over again.</p>
+<p>Note - Location 1979</p>
+<p>创业不是简单的一个产品加一个银行帐号</p>
+<p>Highlight(yellow) - Location 1983</p>
+<p>a sellable business is a well-structured business. Nobody wants to buy a business that isn&rsquo;t easy to run. But you don&rsquo;t actually ever need to sell your sellable business. You can enjoy the benefits of an easy-to-operate company and keep it for yourself.</p>
+<p>Note - Location 1985</p>
+<p>流程标准化的好处</p>
+<p>Highlight(yellow) - Location 1989</p>
+<p>Forget Goals, Create Systems: Foundations of a Sustainable Business</p>
+<p>Bookmark - Location 2102</p>
+<p>Highlight(yellow) - Location 2332</p>
+<p>“I want to provide value to my customers that makes their lives easier.”</p>
+<p>Highlight(yellow) - Location 2350</p>
+<p>“I can start with something that works.”</p>
+<p>Highlight(yellow) - Location 2361</p>
+<p>“I need to know enough to help.”</p>
+<p>Highlight(yellow) - Location 2379</p>
+<p>“I can get people to join my cause when I am overwhelmed.”</p>
+<p>Highlight(yellow) - Location 3562</p>
+<p>Building a product is not enough. No matter how good your product is, if nobody knows where to find it, you don&rsquo;t have a business. Spreading the word is an essential part of running a business, and so is convincing potential customers to try the product and eventually purchase it.</p>
+<p>Note - Location 3564</p>
+<p>无论你的产品又多好,你都需要渠道</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>How to start an app business with no money?</title>
+      <link>https://www.xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</link>
+      <pubDate>Wed, 19 Jul 2023 03:57:24 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Use free or low-cost tools. For example, you can build cross-platform apps with frameworks like React Native which don&amp;rsquo;t require paying for multiple native platforms. Use free graphics tools like GIMP instead of Photoshop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validate your app idea first.&lt;/strong&gt; Get feedback from target users before investing time and money into full development. Create mockups or prototypes to gauge interest.&lt;/li&gt;
+&lt;li&gt;Consider freelancers instead of full-time staff. Hire affordable freelancers to help with things like graphics, marketing, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Leverage app marketplaces&lt;/strong&gt; like App Store and Google Play. They make distribution easy without needing your own marketing budget.&lt;/li&gt;
+&lt;li&gt;Use free promotion channels. Promote your app on social media, forums, blogs relevant to your niche. Reach out to influencers and the press.&lt;/li&gt;
+&lt;li&gt;Monetize with ads. Mobile ads through networks like AdMob can provide revenue even for free apps.&lt;/li&gt;
+&lt;li&gt;Build up over time and reinvest revenue. Start lean, prove the concept, then grow organically by reinvesting any profits.&lt;/li&gt;
+&lt;li&gt;Consider crowdfunding. Run a Kickstarter campaign to fund development costs and assess demand.&lt;/li&gt;
+&lt;li&gt;Look for startup grants and investments. Apply to app startup funding programs and pitch to angel investors once you have traction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key is to &lt;strong&gt;start small, validate demand, leverage free/low-cost&lt;/strong&gt; tools and use creativity instead of big capital initially when bootstrapping your app busine&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<ul>
+<li>Use free or low-cost tools. For example, you can build cross-platform apps with frameworks like React Native which don&rsquo;t require paying for multiple native platforms. Use free graphics tools like GIMP instead of Photoshop.</li>
+<li><strong>Validate your app idea first.</strong> Get feedback from target users before investing time and money into full development. Create mockups or prototypes to gauge interest.</li>
+<li>Consider freelancers instead of full-time staff. Hire affordable freelancers to help with things like graphics, marketing, etc.</li>
+<li><strong>Leverage app marketplaces</strong> like App Store and Google Play. They make distribution easy without needing your own marketing budget.</li>
+<li>Use free promotion channels. Promote your app on social media, forums, blogs relevant to your niche. Reach out to influencers and the press.</li>
+<li>Monetize with ads. Mobile ads through networks like AdMob can provide revenue even for free apps.</li>
+<li>Build up over time and reinvest revenue. Start lean, prove the concept, then grow organically by reinvesting any profits.</li>
+<li>Consider crowdfunding. Run a Kickstarter campaign to fund development costs and assess demand.</li>
+<li>Look for startup grants and investments. Apply to app startup funding programs and pitch to angel investors once you have traction.</li>
+</ul>
+<p>The key is to <strong>start small, validate demand, leverage free/low-cost</strong> tools and use creativity instead of big capital initially when bootstrapping your app busine</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>一个现代化APP的开发通常会涉及以下几个步骤和工具</title>
+      <link>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</link>
+      <pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</guid>
+      <description>&lt;h2 id=&#34;需求分析&#34;&gt;需求分析&lt;/h2&gt;
+&lt;p&gt;分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。&lt;br&gt;
+信息架构和交互设计
+根据需求和用户研究,设计 APP 的信息架构,确定界面流程和交互逻辑。常用的设计工具有 Axure、Sketch 等。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="需求分析">需求分析</h2>
+<p>分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。<br>
+信息架构和交互设计
+根据需求和用户研究,设计 APP 的信息架构,确定界面流程和交互逻辑。常用的设计工具有 Axure、Sketch 等。</p>
+<h2 id="视觉设计">视觉设计</h2>
+<p>进行 APP 的视觉设计,包括界面样式、图标、颜色、字体等。常用工具有 Photoshop、Illustrator 等。</p>
+<h2 id="前端开发">前端开发</h2>
+<p>使用前端开发框架开发 APP 界面,比如 React Native、Flutter 等。需要对 JavaScript、Dart 等语言熟练。</p>
+<h2 id="后端开发">后端开发</h2>
+<p>开发 APP 后端业务逻辑,提供接口和数据支持。使用 PHP、Java、Python 等服务器语言,以及 MySQL、MongoDB 等数据库。</p>
+<h2 id="测试">测试</h2>
+<p>在开发过程中进行功能测试、界面测试、性能测试、安全测试等,确保 APP 质量。使用工具如 Appium、JMeter 等。</p>
+<h2 id="发布和运维">发布和运维</h2>
+<p>将 APP 发布到 App Store 和 Google Play,并进行持续监控和后期优化升级。使用平台如 Firebase。</p>
+<p>所以现代 APP 开发需要多学科协作,也需要掌握各种专业工具,才能开发出用户喜欢的产品。这个过程需要设计、开发和测试人员通力合作。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>一个现代的APP是如何诞生的？</title>
+      <link>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</link>
+      <pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate>
+      <guid>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</guid>
+      <description>&lt;p&gt;一个现代的 APP 是如何诞生的？&lt;/p&gt;
+&lt;p&gt;从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;创意&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;产品经理：负责制定产品的目标、功能和用户体验。&lt;/li&gt;
+&lt;li&gt;设计师：负责设计产品的界面和交互。&lt;/li&gt;
+&lt;li&gt;开发人员：负责开发产品的代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;开发&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;开发人员：负责开发产品的代码。&lt;/li&gt;
+&lt;li&gt;测试人员：负责测试产品的功能和性能。&lt;/li&gt;
+&lt;li&gt;质量保证工程师：负责确保产品达到质量标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;上线&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;产品经理：负责制定产品上线的策略。&lt;/li&gt;
+&lt;li&gt;运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;运营&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。&lt;/li&gt;
+&lt;li&gt;数据分析师：负责分析产品的用户数据，并根据数据做出改进。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下是一些常用的工具：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>一个现代的 APP 是如何诞生的？</p>
+<p>从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：</p>
+<ol>
+<li><strong>创意</strong></li>
+</ol>
+<ul>
+<li>产品经理：负责制定产品的目标、功能和用户体验。</li>
+<li>设计师：负责设计产品的界面和交互。</li>
+<li>开发人员：负责开发产品的代码。</li>
+</ul>
+<ol start="2">
+<li><strong>开发</strong></li>
+</ol>
+<ul>
+<li>开发人员：负责开发产品的代码。</li>
+<li>测试人员：负责测试产品的功能和性能。</li>
+<li>质量保证工程师：负责确保产品达到质量标准。</li>
+</ul>
+<ol start="3">
+<li><strong>上线</strong></li>
+</ol>
+<ul>
+<li>产品经理：负责制定产品上线的策略。</li>
+<li>运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。</li>
+</ul>
+<ol start="4">
+<li><strong>运营</strong></li>
+</ol>
+<ul>
+<li>运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。</li>
+<li>数据分析师：负责分析产品的用户数据，并根据数据做出改进。</li>
+</ul>
+<p>以下是一些常用的工具：</p>
+<ul>
+<li>产品管理工具：Jira、Asana、Trello</li>
+<li>设计工具：Sketch、Figma、Adobe XD</li>
+<li>开发工具：Xcode、Android Studio、Visual Studio</li>
+<li>测试工具：JUnit、Selenium、Xcode UI Testing</li>
+<li>质量保证工具：SonarQube、Codeship、Travis CI</li>
+<li>营销工具：Google Ads、Facebook Ads、Twitter Ads</li>
+<li>客服工具：Zendesk、Intercom、HubSpot</li>
+</ul>
+<p><strong>注意</strong>：以上只是一个概述，具体的步骤和工作岗位可能会有所不同，具体情况要根据产品的不同而定。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

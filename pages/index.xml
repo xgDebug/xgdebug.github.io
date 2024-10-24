@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pages on xgDebug&#39;s Blog</title>
+    <link>https://www.xgdebug.com/pages/</link>
+    <description>Recent content in Pages on xgDebug&#39;s Blog</description>
+    <image>
+      <title>xgDebug&#39;s Blog</title>
+      <url>https://www.xgdebug.com/images/avatar.png</url>
+      <link>https://www.xgdebug.com/images/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.136.4</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 30 Sep 2024 21:20:32 +0800</lastBuildDate>
+    <atom:link href="https://www.xgdebug.com/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一只会做计划的猴子而已</title>
+      <link>https://www.xgdebug.com/pages/about/</link>
+      <pubDate>Mon, 30 Sep 2024 21:20:32 +0800</pubDate>
+      <guid>https://www.xgdebug.com/pages/about/</guid>
+      <description>不是每个人所说的话都值得注意 —— 这是一条极好的原则。</description>
+      <content:encoded><![CDATA[<p>成长中的决定不是与周围的人协商，而是尽可能独立判断。<br>
+商量是基于你身边的人经验判断力都很高，那才有必要。
+如果你缺乏判断力，肯定就认为理所当然去做了。结果就是长期下来慢慢变得和他们一样缺乏胆识和品格。
+这种环境中，你只相信个人判断，反而可能是基于优秀的古人和成功过的思想家的经验。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
