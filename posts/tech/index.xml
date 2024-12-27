@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tech on xgDebug&#39;s Blog</title>
-    <link>https://www.xgdebug.com/posts/tech/</link>
+    <link>https://xgdebug.com/posts/tech/</link>
     <description>Recent content in Tech on xgDebug&#39;s Blog</description>
     <image>
       <title>xgDebug&#39;s Blog</title>
-      <url>https://www.xgdebug.com/images/avatar.png</url>
-      <link>https://www.xgdebug.com/images/avatar.png</link>
+      <url>https://xgdebug.com/images/avatar.png</url>
+      <link>https://xgdebug.com/images/avatar.png</link>
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 24 Nov 2024 23:38:55 +0800</lastBuildDate>
-    <atom:link href="https://www.xgdebug.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xgdebug.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>怎么推广APP呢？</title>
-      <link>https://www.xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</link>
+      <link>https://xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</link>
       <pubDate>Tue, 19 Nov 2024 14:58:38 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</guid>
       <description>&lt;p&gt;这是个比较难搞的问题，目前想到的都有。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;youtube教程下面回帖&lt;/li&gt;
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>Hugo移动端项目分析</title>
-      <link>https://www.xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
+      <link>https://xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
       <pubDate>Sat, 09 Nov 2024 13:05:38 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h2 id=&#34;痛点&#34;&gt;痛点&lt;/h2&gt;
 &lt;p&gt;Hugo 是一款很好用的静态网站生成框架,很多人用它来写 Blog,并且部署在 github pages 上，但是这个方案只能在电脑上使用，每次要写文章都需要打开电脑。 我强烈的需要一个时刻都能记录自己思考的方案,在思绪飞扬时打开手机就能马上把它记录下来。所以也就需要一款能在手机上操作的 APP。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="痛点">痛点</h2>
@@ -126,9 +126,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>使用 Deploy Key自动部署hugo博客到github</title>
-      <link>https://www.xgdebug.com/posts/tech/linux/deploy-hugo-blog-to-github-pages/</link>
+      <link>https://xgdebug.com/posts/tech/linux/deploy-hugo-blog-to-github-pages/</link>
       <pubDate>Sun, 29 Sep 2024 10:08:49 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/linux/deploy-hugo-blog-to-github-pages/</guid>
+      <guid>https://xgdebug.com/posts/tech/linux/deploy-hugo-blog-to-github-pages/</guid>
       <description>&lt;h2 id=&#34;1生成-ssh-密钥&#34;&gt;1：生成 SSH 密钥&lt;/h2&gt;
 &lt;p&gt;在本地终端生成一个新的 SSH 密钥对：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -b &lt;span class=&#34;m&#34;&gt;4096&lt;/span&gt; -C &lt;span class=&#34;s2&#34;&gt;&amp;#34;your_email@example.com&amp;#34;&lt;/span&gt;
@@ -188,9 +188,9 @@ Value: 将生成的私钥 id_rsa 的内容粘贴进去。</p>
     </item>
     <item>
       <title>使用ncnn布署pytorch模型到Android手机</title>
-      <link>https://www.xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</link>
+      <link>https://xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</link>
       <pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</guid>
+      <guid>https://xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</guid>
       <description>pytorch on Android 11</description>
       <content:encoded><![CDATA[<h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">使用 ncnn 布署 pytorch 模型到 Android 手机</h2>
 <ol>
@@ -686,9 +686,9 @@ make -j$(nproc)
     </item>
     <item>
       <title>在Android 11 上使用 LLDV 调试原生程序</title>
-      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</link>
+      <link>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</link>
       <pubDate>Sat, 28 Sep 2024 12:32:12 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</guid>
+      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</guid>
       <description>&lt;h1 id=&#34;手机端&#34;&gt;手机端&lt;/h1&gt;
 &lt;h2 id=&#34;push-调试服务器到手机&#34;&gt;PUSH 调试服务器到手机&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb push lldb-server /data/local/tmp
@@ -754,9 +754,9 @@ make -j$(nproc)
     </item>
     <item>
       <title>Arch安装stable-diffusion-webui中遇到的一些坑</title>
-      <link>https://www.xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
+      <link>https://xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
       <pubDate>Tue, 12 Sep 2023 15:21:53 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
+      <guid>https://xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
       <description>&lt;p&gt;1. 不要使用清华的源，要用阿里的，因为清华的源不全&lt;br&gt;
 2. 要使用 python launch.py 来安装一些 git 库&lt;br&gt;
 3. 要安装 requirements_versions.txt 带版本的 pip 库&lt;br&gt;
@@ -769,9 +769,9 @@ make -j$(nproc)
     </item>
     <item>
       <title>Use ncnn to deploy pytorch model to Android phone</title>
-      <link>https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</link>
+      <link>https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</link>
       <pubDate>Fri, 11 Aug 2023 01:18:11 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</guid>
+      <guid>https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</guid>
       <description>&lt;h2 id=&#34;use-ncnn-to-deploy-pytorch-model-to-android-phone&#34;&gt;Use ncnn to deploy pytorch model to Android phone&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON&lt;/li&gt;
@@ -838,17 +838,17 @@ $ git clone https://github.com/Tencent/ncnn.git
 $ cd ncnn
 $ git submodule update --init
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-linux&#34;&gt;Build for Linux / NVIDIA Jetson / Raspberry Pi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-windows-x64-using-visual-studio-community-2017&#34;&gt;Build for Windows x64 using VS2017&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-macos&#34;&gt;Build for macOS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-arm-cortex-a-family-with-cross-compiling&#34;&gt;Build for ARM Cortex-A family with cross-compiling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-hisilicon-platform-with-cross-compiling&#34;&gt;Build for Hisilicon platform with cross-compiling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-android&#34;&gt;Build for Android&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-ios-on-macos-with-xcode&#34;&gt;Build for iOS on macOS with xcode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-webassembly&#34;&gt;Build for WebAssembly&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-allwinner-d1&#34;&gt;Build for AllWinner D1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-loongson-2k1000&#34;&gt;Build for Loongson 2K1000&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#Build-for-Termux-on-Android&#34;&gt;Build for Termux on Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-linux&#34;&gt;Build for Linux / NVIDIA Jetson / Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-windows-x64-using-visual-studio-community-2017&#34;&gt;Build for Windows x64 using VS2017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-macos&#34;&gt;Build for macOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-arm-cortex-a-family-with-cross-compiling&#34;&gt;Build for ARM Cortex-A family with cross-compiling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-hisilicon-platform-with-cross-compiling&#34;&gt;Build for Hisilicon platform with cross-compiling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-android&#34;&gt;Build for Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-ios-on-macos-with-xcode&#34;&gt;Build for iOS on macOS with xcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-webassembly&#34;&gt;Build for WebAssembly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-allwinner-d1&#34;&gt;Build for AllWinner D1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-loongson-2k1000&#34;&gt;Build for Loongson 2K1000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#Build-for-Termux-on-Android&#34;&gt;Build for Termux on Android&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;build-for-linux&#34;&gt;Build for Linux&lt;/h3&gt;
@@ -1399,9 +1399,9 @@ cd ../examples
     </item>
     <item>
       <title>Debugging native applications with LLDV on Android 11</title>
-      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
+      <link>https://xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
       <pubDate>Fri, 11 Aug 2023 01:14:06 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
+      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
       <description>&lt;h2 id=&#34;mobile&#34;&gt;Mobile&lt;/h2&gt;
 &lt;h2 id=&#34;push-debug-server-to-mobile&#34;&gt;PUSH debug server to mobile&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb push lldb-server /data/local/tmp
@@ -1467,9 +1467,9 @@ chmod 755 /data/local/tmp/lldb-server
     </item>
     <item>
       <title>一个现代化APP的开发通常会涉及以下几个步骤和工具</title>
-      <link>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</link>
+      <link>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</link>
       <pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</guid>
       <description>&lt;h2 id=&#34;需求分析&#34;&gt;需求分析&lt;/h2&gt;
 &lt;p&gt;分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。&lt;br&gt;
 信息架构和交互设计
@@ -1493,9 +1493,9 @@ chmod 755 /data/local/tmp/lldb-server
     </item>
     <item>
       <title>一个现代的APP是如何诞生的？</title>
-      <link>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</link>
+      <link>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</link>
       <pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</guid>
       <description>&lt;p&gt;一个现代的 APP 是如何诞生的？&lt;/p&gt;
 &lt;p&gt;从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：&lt;/p&gt;
 &lt;ol&gt;

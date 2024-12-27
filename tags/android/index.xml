@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Android on xgDebug&#39;s Blog</title>
-    <link>https://www.xgdebug.com/tags/android/</link>
+    <link>https://xgdebug.com/tags/android/</link>
     <description>Recent content in Android on xgDebug&#39;s Blog</description>
     <image>
       <title>xgDebug&#39;s Blog</title>
-      <url>https://www.xgdebug.com/images/avatar.png</url>
-      <link>https://www.xgdebug.com/images/avatar.png</link>
+      <url>https://xgdebug.com/images/avatar.png</url>
+      <link>https://xgdebug.com/images/avatar.png</link>
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 28 Sep 2024 13:08:49 +0800</lastBuildDate>
-    <atom:link href="https://www.xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用ncnn布署pytorch模型到Android手机</title>
-      <link>https://www.xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</link>
+      <link>https://xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</link>
       <pubDate>Sat, 28 Sep 2024 13:08:49 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</guid>
+      <guid>https://xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</guid>
       <description>pytorch on Android 11</description>
       <content:encoded><![CDATA[<h2 id="使用-ncnn-布署-pytorch-模型到-android-手机">使用 ncnn 布署 pytorch 模型到 Android 手机</h2>
 <ol>
@@ -513,9 +513,9 @@ make -j$(nproc)
     </item>
     <item>
       <title>在Android 11 上使用 LLDV 调试原生程序</title>
-      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</link>
+      <link>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</link>
       <pubDate>Sat, 28 Sep 2024 12:32:12 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</guid>
+      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</guid>
       <description>&lt;h1 id=&#34;手机端&#34;&gt;手机端&lt;/h1&gt;
 &lt;h2 id=&#34;push-调试服务器到手机&#34;&gt;PUSH 调试服务器到手机&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb push lldb-server /data/local/tmp
@@ -581,9 +581,9 @@ make -j$(nproc)
     </item>
     <item>
       <title>Use ncnn to deploy pytorch model to Android phone</title>
-      <link>https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</link>
+      <link>https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</link>
       <pubDate>Fri, 11 Aug 2023 01:18:11 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</guid>
+      <guid>https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</guid>
       <description>&lt;h2 id=&#34;use-ncnn-to-deploy-pytorch-model-to-android-phone&#34;&gt;Use ncnn to deploy pytorch model to Android phone&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open graphics card support when compiling NCNN. Vulkan is for gpu -DNCNN_VULKAN=ON&lt;/li&gt;
@@ -650,17 +650,17 @@ $ git clone https://github.com/Tencent/ncnn.git
 $ cd ncnn
 $ git submodule update --init
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-linux&#34;&gt;Build for Linux / NVIDIA Jetson / Raspberry Pi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-windows-x64-using-visual-studio-community-2017&#34;&gt;Build for Windows x64 using VS2017&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-macos&#34;&gt;Build for macOS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-arm-cortex-a-family-with-cross-compiling&#34;&gt;Build for ARM Cortex-A family with cross-compiling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-hisilicon-platform-with-cross-compiling&#34;&gt;Build for Hisilicon platform with cross-compiling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-android&#34;&gt;Build for Android&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-ios-on-macos-with-xcode&#34;&gt;Build for iOS on macOS with xcode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-webassembly&#34;&gt;Build for WebAssembly&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-allwinner-d1&#34;&gt;Build for AllWinner D1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-loongson-2k1000&#34;&gt;Build for Loongson 2K1000&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#Build-for-Termux-on-Android&#34;&gt;Build for Termux on Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-linux&#34;&gt;Build for Linux / NVIDIA Jetson / Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-windows-x64-using-visual-studio-community-2017&#34;&gt;Build for Windows x64 using VS2017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-macos&#34;&gt;Build for macOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-arm-cortex-a-family-with-cross-compiling&#34;&gt;Build for ARM Cortex-A family with cross-compiling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-hisilicon-platform-with-cross-compiling&#34;&gt;Build for Hisilicon platform with cross-compiling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-android&#34;&gt;Build for Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-ios-on-macos-with-xcode&#34;&gt;Build for iOS on macOS with xcode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-webassembly&#34;&gt;Build for WebAssembly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-allwinner-d1&#34;&gt;Build for AllWinner D1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#build-for-loongson-2k1000&#34;&gt;Build for Loongson 2K1000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/#Build-for-Termux-on-Android&#34;&gt;Build for Termux on Android&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;build-for-linux&#34;&gt;Build for Linux&lt;/h3&gt;
@@ -1211,9 +1211,9 @@ cd ../examples
     </item>
     <item>
       <title>Debugging native applications with LLDV on Android 11</title>
-      <link>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
+      <link>https://xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
       <pubDate>Fri, 11 Aug 2023 01:14:06 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
+      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
       <description>&lt;h2 id=&#34;mobile&#34;&gt;Mobile&lt;/h2&gt;
 &lt;h2 id=&#34;push-debug-server-to-mobile&#34;&gt;PUSH debug server to mobile&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb push lldb-server /data/local/tmp

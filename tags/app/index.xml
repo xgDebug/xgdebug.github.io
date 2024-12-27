@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>APP on xgDebug&#39;s Blog</title>
-    <link>https://www.xgdebug.com/tags/app/</link>
+    <link>https://xgdebug.com/tags/app/</link>
     <description>Recent content in APP on xgDebug&#39;s Blog</description>
     <image>
       <title>xgDebug&#39;s Blog</title>
-      <url>https://www.xgdebug.com/images/avatar.png</url>
-      <link>https://www.xgdebug.com/images/avatar.png</link>
+      <url>https://xgdebug.com/images/avatar.png</url>
+      <link>https://xgdebug.com/images/avatar.png</link>
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 24 Nov 2024 23:38:55 +0800</lastBuildDate>
-    <atom:link href="https://www.xgdebug.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xgdebug.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>怎么推广APP呢？</title>
-      <link>https://www.xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</link>
+      <link>https://xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</link>
       <pubDate>Tue, 19 Nov 2024 14:58:38 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/%E6%80%8E%E4%B9%88%E6%8E%A8%E5%B9%BFapp%E5%91%A2/</guid>
       <description>&lt;p&gt;这是个比较难搞的问题，目前想到的都有。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;youtube教程下面回帖&lt;/li&gt;
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>Hugo移动端项目分析</title>
-      <link>https://www.xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
+      <link>https://xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
       <pubDate>Sat, 09 Nov 2024 13:05:38 +0800</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/hugo%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h2 id=&#34;痛点&#34;&gt;痛点&lt;/h2&gt;
 &lt;p&gt;Hugo 是一款很好用的静态网站生成框架,很多人用它来写 Blog,并且部署在 github pages 上，但是这个方案只能在电脑上使用，每次要写文章都需要打开电脑。 我强烈的需要一个时刻都能记录自己思考的方案,在思绪飞扬时打开手机就能马上把它记录下来。所以也就需要一款能在手机上操作的 APP。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="痛点">痛点</h2>
@@ -126,9 +126,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>在搞清楚用户的问题之前就动手开发，这是我多次犯过的大忌。</title>
-      <link>https://www.xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link>
+      <link>https://xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link>
       <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</guid>
+      <guid>https://xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</guid>
       <description>&lt;p&gt;1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p&gt;
 &lt;p&gt;2. If there was a solution, would they buy it?&lt;/p&gt;
 &lt;p&gt;3. Would they buy it from us?&lt;/p&gt;
@@ -141,9 +141,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>Zero to Sold</title>
-      <link>https://www.xgdebug.com/posts/business/zero-to-sold/</link>
+      <link>https://xgdebug.com/posts/business/zero-to-sold/</link>
       <pubDate>Mon, 24 Jul 2023 07:30:19 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/business/zero-to-sold/</guid>
+      <guid>https://xgdebug.com/posts/business/zero-to-sold/</guid>
       <description>&lt;p&gt;We found out that many other teachers did the same when they started talking about their self-built solutions in their online communities. Teachers began to share their templates through Google sheets. It was clear that this was a shared problem in a very tight-knit community.&lt;/p&gt;
 &lt;p&gt;Note - Location 252&lt;/p&gt;
 &lt;p&gt;发现了一个群体的集体痛点&lt;/p&gt;
@@ -567,9 +567,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>How to start an app business with no money?</title>
-      <link>https://www.xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</link>
+      <link>https://xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</link>
       <pubDate>Wed, 19 Jul 2023 03:57:24 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</guid>
+      <guid>https://xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Use free or low-cost tools. For example, you can build cross-platform apps with frameworks like React Native which don&amp;rsquo;t require paying for multiple native platforms. Use free graphics tools like GIMP instead of Photoshop.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Validate your app idea first.&lt;/strong&gt; Get feedback from target users before investing time and money into full development. Create mockups or prototypes to gauge interest.&lt;/li&gt;
@@ -598,9 +598,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>一个现代化APP的开发通常会涉及以下几个步骤和工具</title>
-      <link>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</link>
+      <link>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</link>
       <pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E5%8C%96app%E7%9A%84%E5%BC%80%E5%8F%91%E9%80%9A%E5%B8%B8%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%BB%A5%E4%B8%8B%E5%87%A0%E4%B8%AA%E6%AD%A5%E9%AA%A4%E5%92%8C%E5%B7%A5/</guid>
       <description>&lt;h2 id=&#34;需求分析&#34;&gt;需求分析&lt;/h2&gt;
 &lt;p&gt;分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。&lt;br&gt;
 信息架构和交互设计
@@ -624,9 +624,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>一个现代的APP是如何诞生的？</title>
-      <link>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</link>
+      <link>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</link>
       <pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate>
-      <guid>https://www.xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</guid>
+      <guid>https://xgdebug.com/posts/tech/app/%E4%B8%80%E4%B8%AA%E7%8E%B0%E4%BB%A3%E7%9A%84app%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84/</guid>
       <description>&lt;p&gt;一个现代的 APP 是如何诞生的？&lt;/p&gt;
 &lt;p&gt;从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：&lt;/p&gt;
 &lt;ol&gt;
