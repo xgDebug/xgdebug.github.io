@@ -89,8 +89,8 @@
       <pubDate>Thu, 30 Jan 2025 10:31:52 +0800</pubDate>
       <guid>https://xgdebug.com/posts/tech/debug/hyperdbg/</guid>
       <description>&lt;h2 id=&#34;set-env&#34;&gt;set env&lt;/h2&gt;
-&lt;p&gt;.debug remote namedpipe \.\pipe\HyperDbgPipe
-.debug prepare serial 115200 com1&lt;/p&gt;
+&lt;p&gt;.debug remote namedpipe \.\pipe\HyperDbgPipe&lt;/p&gt;
+&lt;p&gt;.debug prepare serial 115200 com1&lt;/p&gt;
 &lt;p&gt;.sympath SRV&lt;em&gt;c:\Symbols&lt;/em&gt;&lt;a href=&#34;https://msdl.microsoft.com/download/symbols&#34;&gt;https://msdl.microsoft.com/download/symbols&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;.sym download
 .sym reload&lt;/p&gt;
@@ -102,8 +102,8 @@
 g&lt;/p&gt;
 &lt;p&gt;when the debugger stop, the use &lt;code&gt;.process&lt;/code&gt; to check the process&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="set-env">set env</h2>
-<p>.debug remote namedpipe \.\pipe\HyperDbgPipe
-.debug prepare serial 115200 com1</p>
+<p>.debug remote namedpipe \.\pipe\HyperDbgPipe</p>
+<p>.debug prepare serial 115200 com1</p>
 <p>.sympath SRV<em>c:\Symbols</em><a href="https://msdl.microsoft.com/download/symbols">https://msdl.microsoft.com/download/symbols</a></p>
 <p>.sym download
 .sym reload</p>

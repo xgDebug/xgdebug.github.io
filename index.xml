@@ -84,6 +84,15 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>準確估計實質價值</title>
+      <link>https://xgdebug.com/posts/investment/stock/%E6%BA%96%E7%A2%BA%E4%BC%B0%E8%A8%88%E5%AF%A6%E8%B3%AA%E5%83%B9%E5%80%BC/</link>
+      <pubDate>Fri, 07 Feb 2025 20:19:42 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/investment/stock/%E6%BA%96%E7%A2%BA%E4%BC%B0%E8%A8%88%E5%AF%A6%E8%B3%AA%E5%83%B9%E5%80%BC/</guid>
+      <description>&lt;p&gt;對價值投資人來說，「資產」並不是因為有吸引力（或是其他人發現它有吸引力）而短期投資的概念。資產是一個有形的物體，應該有明確的實質價值，如果能用低於實質價值的價格買到，就應該考慮買進。因此，聰明的投資應該建立在對實質價值的估計上，這些估計必須以可用的訊息為基礎，嚴謹地計算出來。 (喬)  〈最重要的事〉（THE MOST IMPORTANT THING）&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>對價值投資人來說，「資產」並不是因為有吸引力（或是其他人發現它有吸引力）而短期投資的概念。資產是一個有形的物體，應該有明確的實質價值，如果能用低於實質價值的價格買到，就應該考慮買進。因此，聰明的投資應該建立在對實質價值的估計上，這些估計必須以可用的訊息為基礎，嚴謹地計算出來。 (喬)  〈最重要的事〉（THE MOST IMPORTANT THING）</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>效率市场与无效市场</title>
       <link>https://xgdebug.com/posts/investment/stock/%E6%95%88%E7%8E%87%E5%B8%82%E5%9C%BA%E4%B8%8E%E6%97%A0%E6%95%88%E5%B8%82%E5%9C%BA/</link>
       <pubDate>Thu, 30 Jan 2025 23:34:53 +0800</pubDate>
@@ -133,8 +142,8 @@
       <pubDate>Thu, 30 Jan 2025 10:31:52 +0800</pubDate>
       <guid>https://xgdebug.com/posts/tech/debug/hyperdbg/</guid>
       <description>&lt;h2 id=&#34;set-env&#34;&gt;set env&lt;/h2&gt;
-&lt;p&gt;.debug remote namedpipe \.\pipe\HyperDbgPipe
-.debug prepare serial 115200 com1&lt;/p&gt;
+&lt;p&gt;.debug remote namedpipe \.\pipe\HyperDbgPipe&lt;/p&gt;
+&lt;p&gt;.debug prepare serial 115200 com1&lt;/p&gt;
 &lt;p&gt;.sympath SRV&lt;em&gt;c:\Symbols&lt;/em&gt;&lt;a href=&#34;https://msdl.microsoft.com/download/symbols&#34;&gt;https://msdl.microsoft.com/download/symbols&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;.sym download
 .sym reload&lt;/p&gt;
@@ -146,8 +155,8 @@
 g&lt;/p&gt;
 &lt;p&gt;when the debugger stop, the use &lt;code&gt;.process&lt;/code&gt; to check the process&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="set-env">set env</h2>
-<p>.debug remote namedpipe \.\pipe\HyperDbgPipe
-.debug prepare serial 115200 com1</p>
+<p>.debug remote namedpipe \.\pipe\HyperDbgPipe</p>
+<p>.debug prepare serial 115200 com1</p>
 <p>.sympath SRV<em>c:\Symbols</em><a href="https://msdl.microsoft.com/download/symbols">https://msdl.microsoft.com/download/symbols</a></p>
 <p>.sym download
 .sym reload</p>
