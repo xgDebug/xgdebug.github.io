@@ -11,8 +11,173 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 05 Mar 2025 23:48:45 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 16:26:54 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/investment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>股市操作前检查单</title>
+      <link>https://xgdebug.com/posts/investment/stock/%E8%82%A1%E5%B8%82%E6%93%8D%E4%BD%9C%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/</link>
+      <pubDate>Sun, 09 Mar 2025 16:26:54 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/investment/stock/%E8%82%A1%E5%B8%82%E6%93%8D%E4%BD%9C%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/</guid>
+      <description>&lt;h1 id=&#34;股市操作前检查单&#34;&gt;股市操作前检查单&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;一通用原则每次操作前必读&#34;&gt;&lt;strong&gt;一、通用原则（每次操作前必读）&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;目的确认&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;我的操作是否服务于长期投资目标？&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;是否因短期市场波动、情绪或他人建议而冲动操作？&lt;/strong&gt; （若“是”，请暂停并冷静复盘）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;成本意识&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;交易费用（佣金、印花税、管理费）是否显著影响收益？&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;是否因频繁交易导致“摩擦成本”累积？&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;纪律性&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="股市操作前检查单">股市操作前检查单</h1>
+<hr>
+<h3 id="一通用原则每次操作前必读"><strong>一、通用原则（每次操作前必读）</strong></h3>
+<ol>
+<li>
+<p><strong>目的确认</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>我的操作是否服务于长期投资目标？</strong></li>
+<li><input disabled="" type="checkbox"> <strong>是否因短期市场波动、情绪或他人建议而冲动操作？</strong> （若“是”，请暂停并冷静复盘）</li>
+</ul>
+</li>
+<li>
+<p><strong>成本意识</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>交易费用（佣金、印花税、管理费）是否显著影响收益？</strong></li>
+<li><input disabled="" type="checkbox"> <strong>是否因频繁交易导致“摩擦成本”累积？</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>纪律性</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>操作是否符合预先制定的策略（如定投计划、再平衡规则）？</strong></li>
+<li><input disabled="" type="checkbox"> <strong>是否存在“后悔药心态”（如因未及时操作而懊恼）？</strong></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="二买入-etf-前检查清单"><strong>二、买入 ETF 前检查清单</strong></h3>
+<h4 id="1-基础条件"><strong>1. 基础条件</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>长期持有时间是否 ≥3-5 年？</strong> （短期交易与被动投资理念冲突）</li>
+<li><input disabled="" type="checkbox"> <strong>ETF 跟踪的指数是否清晰（如标普 500、沪深 300）且流动性充足？</strong> （避免小众或复杂衍生品）</li>
+<li><input disabled="" type="checkbox"> <strong>费率是否合理（如年费 ≤0.3%）？</strong> （低成本是被动投资的核心优势）</li>
+</ul>
+<h4 id="2-市场与估值"><strong>2. 市场与估值</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>当前市场是否处于极端高估状态？</strong> （参考 PE/PB 分位数：如美股标普 500 PE 超 25 分位以上需谨慎）</li>
+<li><input disabled="" type="checkbox"> <strong>是否因近期上涨而盲目跟风？</strong> （警惕“这次不同”的思维陷阱）</li>
+</ul>
+<h4 id="3-风险管理"><strong>3. 风险管理</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>组合是否已过度集中于单一行业或区域？</strong> （如科技股占比超 40%，需分散）</li>
+<li><input disabled="" type="checkbox"> <strong>是否预留了足够现金应对黑天鹅事件？</strong> （如紧急备用金不足，暂缓加仓）</li>
+</ul>
+<h4 id="4-情绪测试"><strong>4. 情绪测试</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>买入理由是否基于理性分析，而非“害怕错过”（FOMO）？</strong></li>
+<li><input disabled="" type="checkbox"> <strong>是否因恐慌性抛售而低价抄底？</strong> （市场暴跌时需冷静评估，而非盲目抄底）</li>
+</ul>
+<hr>
+<h3 id="三卖出-etf-前检查清单"><strong>三、卖出 ETF 前检查清单</strong></h3>
+<h4 id="1-核心原则"><strong>1. 核心原则</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> 是否存在 <strong>非卖不可</strong> <strong>的明确理由？</strong> （被动投资以“持有”为主，卖出需谨慎）</li>
+<li><input disabled="" type="checkbox"> <strong>是否因短期波动（如 1 年内回撤 20%）而恐慌卖出？</strong> （历史数据显示短期回撤通常会修复）</li>
+</ul>
+<h4 id="2-必要性评估"><strong>2. 必要性评估</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>是否因指数成分股大幅偏离目标（如科技 ETF 中某公司权重过高）？</strong></li>
+<li><input disabled="" type="checkbox"> <strong>是否因目标达成（如教育基金已存足所需资金）？</strong></li>
+</ul>
+<h4 id="3-风险与替代方案"><strong>3. 风险与替代方案</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>卖出后资金是否有更高收益的明确去向？</strong> （如转向债券或现金，需评估机会成本）</li>
+<li><input disabled="" type="checkbox"> <strong>是否因市场暴跌而“割肉离场”？</strong> （历史经验表明低位离场易错过复苏）</li>
+</ul>
+<h4 id="4-情绪与纪律"><strong>4. 情绪与纪律</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>是否因媒体报道的恐慌情绪而操作？</strong> （如“末日论”或“牛市结束论”需冷静验证）</li>
+<li><input disabled="" type="checkbox"> <strong>是否违背了预先制定的卖出规则（如止盈线或止损线）？</strong> （无纪律的卖出易破坏长期策略）</li>
+</ul>
+<hr>
+<h3 id="四再平衡操作检查清单"><strong>四、再平衡操作检查清单</strong></h3>
+<h4 id="1-触发条件"><strong>1. 触发条件</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>是否达到预设的时间间隔（如季度/年度）？</strong> （避免过度频繁调整）</li>
+<li><input disabled="" type="checkbox"> <strong>资产配置偏离目标比例超过 ±5%-10%？</strong> （如股票占比应为 60%，但实际升至 70%）</li>
+</ul>
+<h4 id="2-成本与效率"><strong>2. 成本与效率</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>再平衡是否会导致高成本（如频繁交易费、税收）？</strong></li>
+<li><input disabled="" type="checkbox"> <strong>是否优先使用新资金调整而非抛售现有持仓？</strong> （如定投时用新资金补仓低配资产）</li>
+</ul>
+<h4 id="3-市场判断"><strong>3. 市场判断</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>是否因市场极端估值而调整（如科技股高估，转向价值股）？</strong> （需谨慎，避免“市场时机选择”陷阱）</li>
+<li><input disabled="" type="checkbox"> <strong>是否因长期趋势变化（如能源转型）而调整战略配置？</strong> （需结合基本面研究，而非短期波动）</li>
+</ul>
+<h4 id="4-纪律性"><strong>4. 纪律性</strong></h4>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>操作是否符合“低买高卖”的再平衡逻辑？</strong> （如高配资产被高估时卖出，低配资产被低估时买入）</li>
+</ul>
+<hr>
+<h3 id="五操作后记录每次执行后必填"><strong>五、操作后记录（每次执行后必填）</strong></h3>
+<ol>
+<li><strong>操作类型</strong>：买入/卖出/再平衡</li>
+<li><strong>决策依据</strong>：列出检查项中“是”的关键点</li>
+<li><strong>市场环境</strong>：当前 PE/PB、利率、经济周期阶段</li>
+<li><strong>情绪评分</strong>：1-10 分（1=极度恐慌，10=极度贪婪）</li>
+<li><strong>复盘标记</strong>：未来 3 个月回看结果并记录是否符合预期</li>
+</ol>
+<hr>
+<h3 id="六终极问题每次操作前默念"><strong>六、终极问题（每次操作前默念）</strong></h3>
+<blockquote>
+<p><strong>“10 年后，这个决策会让我更富足还是更后悔？”</strong><br>
+<strong>“如果接下来 1 年完全无法交易，我的操作是否依然合理？”</strong> 若一个操作经不起暂停一年的考验，大概率会损害长期收益。</p>
+</blockquote>
+<hr>
+<p>通过这套系统化流程，将减少情绪干扰，避免常见错误（如追涨杀跌、过度交易），最终实现被动投资策略的稳定复利增长。祝您投资顺利！</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>为什么绝对不要做短线？</title>
+      <link>https://xgdebug.com/posts/investment/stock/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%A6%81%E5%81%9A%E7%9F%AD%E7%BA%BF/</link>
+      <pubDate>Sun, 09 Mar 2025 15:38:53 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/investment/stock/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%A6%81%E5%81%9A%E7%9F%AD%E7%BA%BF/</guid>
+      <description>&lt;p&gt;说来说去还是那句名言 &lt;strong&gt;市场短期是投票机，长期是称重机&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://xgdebug.com/posts/investment/stock/%E6%8A%95%E6%9C%BA%E6%98%AF%E4%B8%80%E4%B8%AA0%E5%92%8C%E6%B8%B8%E6%88%8F-%E6%88%91%E7%9A%84%E6%8A%95%E6%9C%BA%E6%95%99%E8%AE%AD/&#34;&gt;投机是一个 0 和游戏-我的投机教训&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://xgdebug.com/posts/investment/%E9%99%8D%E4%BD%8E%E4%BA%A4%E6%98%93%E9%A2%91%E6%AC%A1%E7%9A%84%E6%9C%AC%E8%B4%A8/&#34;&gt;降低交易频次的本质&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://xgdebug.com/posts/investment/finance/enoughtrue_measures_of_money_business_and_life/&#34;&gt;《Enough》投资与投机&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;市场情绪是随机的&#34;&gt;市场情绪是随机的&lt;/h2&gt;
+&lt;p&gt;市场只相当于一个中等智商的人,你可能偶尔猜中市场的情绪，但是你赚钱需要连续猜中两次（买点+卖点）。 而你只要猜错一次你就会亏钱。这是一个很简单的数学问题。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>说来说去还是那句名言 <strong>市场短期是投票机，长期是称重机</strong></p>
+<p><a href="/posts/investment/stock/%E6%8A%95%E6%9C%BA%E6%98%AF%E4%B8%80%E4%B8%AA0%E5%92%8C%E6%B8%B8%E6%88%8F-%E6%88%91%E7%9A%84%E6%8A%95%E6%9C%BA%E6%95%99%E8%AE%AD/">投机是一个 0 和游戏-我的投机教训</a></p>
+<p><a href="/posts/investment/%E9%99%8D%E4%BD%8E%E4%BA%A4%E6%98%93%E9%A2%91%E6%AC%A1%E7%9A%84%E6%9C%AC%E8%B4%A8/">降低交易频次的本质</a></p>
+<p><a href="/posts/investment/finance/enoughtrue_measures_of_money_business_and_life/">《Enough》投资与投机</a></p>
+<h2 id="市场情绪是随机的">市场情绪是随机的</h2>
+<p>市场只相当于一个中等智商的人,你可能偶尔猜中市场的情绪，但是你赚钱需要连续猜中两次（买点+卖点）。 而你只要猜错一次你就会亏钱。这是一个很简单的数学问题。</p>
+<h2 id="有些力量希望你做短线">有些力量希望你做短线</h2>
+<p>总是有一些故事让你想做短线赚快钱，这是和你在新闻上看到中大奖的新闻是一样的，本质是一种广告。 因为证券公司与交易所还有税务局都很喜欢你快速反复交易。他们正在利用你人性中的贪婪引诱你去做这种投机操作。</p>
+<h2 id="永远不要在强烈情绪时做投资决策">永远不要在强烈情绪时做投资决策</h2>
+<p>永远不要在强烈情绪时做投资决策。无论这种情绪是恐惧、兴奋、悲伤，还是贪婪与冲动，它们都像蒙在理性判断上的迷雾。</p>
+<ul>
+<li>当市场暴跌时，肾上腺素激增的恐惧可能让你贱卖优质资产；</li>
+<li>当牛市狂热时，多巴胺驱动的亢奋又容易诱使你高位接盘。
+甚至生活中突发的悲伤事件，也会像隐形滤镜般扭曲你对风险收益比的认知。真正的投资智慧，在于建立隔绝情绪波动的决策机制——用预先设定的交易纪律替代临场判断，以数据支撑的估值模型对冲人性弱点。</li>
+</ul>
+<p><a href="/posts/investment/stock/%E8%82%A1%E5%B8%82%E6%93%8D%E4%BD%9C%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/">股市操作前检查单</a></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>在进攻型与防守型股票之间进行再平衡</title>
       <link>https://xgdebug.com/posts/investment/stock/%E5%9C%A8%E8%BF%9B%E6%94%BB%E5%9E%8B%E4%B8%8E%E9%98%B2%E5%AE%88%E5%9E%8B%E8%82%A1%E7%A5%A8%E4%B9%8B%E9%97%B4%E8%BF%9B%E8%A1%8C%E5%86%8D%E5%B9%B3%E8%A1%A1/</link>
