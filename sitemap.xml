@@ -5,6 +5,12 @@
     <loc>https://xgdebug.com/posts/</loc>
     <lastmod>2025-03-09T08:26:54+00:00</lastmod>
   </url><url>
+    <loc>https://xgdebug.com/tags/communications/</loc>
+    <lastmod>2025-03-09T08:26:54+00:00</lastmod>
+  </url><url>
+    <loc>https://xgdebug.com/tags/debug/</loc>
+    <lastmod>2025-03-09T08:26:54+00:00</lastmod>
+  </url><url>
     <loc>https://xgdebug.com/tags/investment/</loc>
     <lastmod>2025-03-09T08:26:54+00:00</lastmod>
   </url><url>
@@ -127,9 +133,6 @@
   </url><url>
     <loc>https://xgdebug.com/posts/investment/finance/%E8%B4%A2%E5%8A%A1%E8%87%AA%E7%94%B1%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-01-13T21:26:24+08:00</lastmod>
-  </url><url>
-    <loc>https://xgdebug.com/tags/communications/</loc>
-    <lastmod>2025-01-09T14:32:56+08:00</lastmod>
   </url><url>
     <loc>https://xgdebug.com/posts/self/</loc>
     <lastmod>2025-01-09T14:32:56+08:00</lastmod>
@@ -445,9 +448,6 @@
   </url><url>
     <loc>https://xgdebug.com/posts/tech/ai/develop-pytorch-models-to-android-using-ncnn-cn/</loc>
     <lastmod>2024-09-28T13:08:49+08:00</lastmod>
-  </url><url>
-    <loc>https://xgdebug.com/tags/debug/</loc>
-    <lastmod>2024-09-28T12:32:12+08:00</lastmod>
   </url><url>
     <loc>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</loc>
     <lastmod>2024-09-28T12:32:12+08:00</lastmod>
