@@ -11,127 +11,12 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 09 Mar 2025 08:26:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 23:48:45 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>股市操作前检查单</title>
-      <link>https://xgdebug.com/posts/investment/stock/%E8%82%A1%E5%B8%82%E6%93%8D%E4%BD%9C%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/</link>
-      <pubDate>Sun, 09 Mar 2025 08:26:54 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/investment/stock/%E8%82%A1%E5%B8%82%E6%93%8D%E4%BD%9C%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/</guid>
-      <description>一系列的检查清单，每一次操作之前你都必须检查，否则你很容易被情绪控制</description>
-      <content:encoded><![CDATA[<h3 id="一通用原则每次操作前必读"><strong>一、通用原则（每次操作前必读）</strong></h3>
-<ol>
-<li>
-<p><strong>目的确认</strong></p>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>我的操作是否服务于长期投资目标？</strong></li>
-<li><input disabled="" type="checkbox"> <strong>是否因短期市场波动、情绪或他人建议而冲动操作？</strong> （若“是”，请暂停并冷静复盘）</li>
-</ul>
-</li>
-<li>
-<p><strong>成本意识</strong></p>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>交易费用（佣金、印花税、管理费）是否显著影响收益？</strong></li>
-<li><input disabled="" type="checkbox"> <strong>是否因频繁交易导致“摩擦成本”累积？</strong></li>
-</ul>
-</li>
-<li>
-<p><strong>纪律性</strong></p>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>操作是否符合预先制定的策略（如定投计划、再平衡规则）？</strong></li>
-<li><input disabled="" type="checkbox"> <strong>是否存在“后悔药心态”（如因未及时操作而懊恼）？</strong></li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="二买入-etf-前检查清单"><strong>二、买入 ETF 前检查清单</strong></h3>
-<h4 id="1-基础条件"><strong>1. 基础条件</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>长期持有时间是否 ≥3-5 年？</strong> （短期交易与被动投资理念冲突）</li>
-<li><input disabled="" type="checkbox"> <strong>ETF 跟踪的指数是否清晰（如标普 500、沪深 300）且流动性充足？</strong> （避免小众或复杂衍生品）</li>
-<li><input disabled="" type="checkbox"> <strong>费率是否合理（如年费 ≤0.3%）？</strong> （低成本是被动投资的核心优势）</li>
-</ul>
-<h4 id="2-市场与估值"><strong>2. 市场与估值</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>当前市场是否处于极端高估状态？</strong> （参考 PE/PB 分位数：如美股标普 500 PE 超 25 分位以上需谨慎）</li>
-<li><input disabled="" type="checkbox"> <strong>是否因近期上涨而盲目跟风？</strong> （警惕“这次不同”的思维陷阱）</li>
-</ul>
-<h4 id="3-风险管理"><strong>3. 风险管理</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>组合是否已过度集中于单一行业或区域？</strong> （如科技股占比超 40%，需分散）</li>
-<li><input disabled="" type="checkbox"> <strong>是否预留了足够现金应对黑天鹅事件？</strong> （如紧急备用金不足，暂缓加仓）</li>
-</ul>
-<h4 id="4-情绪测试"><strong>4. 情绪测试</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>买入理由是否基于理性分析，而非“害怕错过”（FOMO）？</strong></li>
-<li><input disabled="" type="checkbox"> <strong>是否因恐慌性抛售而低价抄底？</strong> （市场暴跌时需冷静评估，而非盲目抄底）</li>
-</ul>
-<hr>
-<h3 id="三卖出-etf-前检查清单"><strong>三、卖出 ETF 前检查清单</strong></h3>
-<h4 id="1-核心原则"><strong>1. 核心原则</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> 是否存在 <strong>非卖不可</strong> <strong>的明确理由？</strong> （被动投资以“持有”为主，卖出需谨慎）</li>
-<li><input disabled="" type="checkbox"> <strong>是否因短期波动（如 1 年内回撤 20%）而恐慌卖出？</strong> （历史数据显示短期回撤通常会修复）</li>
-</ul>
-<h4 id="2-必要性评估"><strong>2. 必要性评估</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>是否因指数成分股大幅偏离目标（如科技 ETF 中某公司权重过高）？</strong></li>
-<li><input disabled="" type="checkbox"> <strong>是否因目标达成（如教育基金已存足所需资金）？</strong></li>
-</ul>
-<h4 id="3-风险与替代方案"><strong>3. 风险与替代方案</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>卖出后资金是否有更高收益的明确去向？</strong> （如转向债券或现金，需评估机会成本）</li>
-<li><input disabled="" type="checkbox"> <strong>是否因市场暴跌而“割肉离场”？</strong> （历史经验表明低位离场易错过复苏）</li>
-</ul>
-<h4 id="4-情绪与纪律"><strong>4. 情绪与纪律</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>是否因媒体报道的恐慌情绪而操作？</strong> （如“末日论”或“牛市结束论”需冷静验证）</li>
-<li><input disabled="" type="checkbox"> <strong>是否违背了预先制定的卖出规则（如止盈线或止损线）？</strong> （无纪律的卖出易破坏长期策略）</li>
-</ul>
-<hr>
-<h3 id="四再平衡操作检查清单"><strong>四、再平衡操作检查清单</strong></h3>
-<h4 id="1-触发条件"><strong>1. 触发条件</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>是否达到预设的时间间隔（如季度/年度）？</strong> （避免过度频繁调整）</li>
-<li><input disabled="" type="checkbox"> <strong>资产配置偏离目标比例超过 ±5%-10%？</strong> （如股票占比应为 60%，但实际升至 70%）</li>
-</ul>
-<h4 id="2-成本与效率"><strong>2. 成本与效率</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>再平衡是否会导致高成本（如频繁交易费、税收）？</strong></li>
-<li><input disabled="" type="checkbox"> <strong>是否优先使用新资金调整而非抛售现有持仓？</strong> （如定投时用新资金补仓低配资产）</li>
-</ul>
-<h4 id="3-市场判断"><strong>3. 市场判断</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>是否因市场极端估值而调整（如科技股高估，转向价值股）？</strong> （需谨慎，避免“市场时机选择”陷阱）</li>
-<li><input disabled="" type="checkbox"> <strong>是否因长期趋势变化（如能源转型）而调整战略配置？</strong> （需结合基本面研究，而非短期波动）</li>
-</ul>
-<h4 id="4-纪律性"><strong>4. 纪律性</strong></h4>
-<ul>
-<li><input disabled="" type="checkbox"> <strong>操作是否符合“低买高卖”的再平衡逻辑？</strong> （如高配资产被高估时卖出，低配资产被低估时买入）</li>
-</ul>
-<hr>
-<h3 id="五操作后记录每次执行后必填"><strong>五、操作后记录（每次执行后必填）</strong></h3>
-<ol>
-<li><strong>操作类型</strong>：买入/卖出/再平衡</li>
-<li><strong>决策依据</strong>：列出检查项中“是”的关键点</li>
-<li><strong>市场环境</strong>：当前 PE/PB、利率、经济周期阶段</li>
-<li><strong>情绪评分</strong>：1-10 分（1=极度恐慌，10=极度贪婪）</li>
-<li><strong>复盘标记</strong>：未来 3 个月回看结果并记录是否符合预期</li>
-</ol>
-<hr>
-<h3 id="六终极问题每次操作前默念"><strong>六、终极问题（每次操作前默念）</strong></h3>
-<blockquote>
-<p><strong>“10 年后，这个决策会让我更富足还是更后悔？”</strong><br>
-<strong>“如果接下来 1 年完全无法交易，我的操作是否依然合理？”</strong> 若一个操作经不起暂停一年的考验，大概率会损害长期收益。</p>
-</blockquote>
-<hr>
-<p>通过这套系统化流程，将减少情绪干扰，避免常见错误（如追涨杀跌、过度交易），最终实现被动投资策略的稳定复利增长。祝您投资顺利！</p>
-]]></content:encoded>
-    </item>
     <item>
       <title>在进攻型与防守型股票之间进行再平衡</title>
       <link>https://xgdebug.com/posts/investment/stock/%E5%9C%A8%E8%BF%9B%E6%94%BB%E5%9E%8B%E4%B8%8E%E9%98%B2%E5%AE%88%E5%9E%8B%E8%82%A1%E7%A5%A8%E4%B9%8B%E9%97%B4%E8%BF%9B%E8%A1%8C%E5%86%8D%E5%B9%B3%E8%A1%A1/</link>
-      <pubDate>Wed, 05 Mar 2025 15:48:45 +0000</pubDate>
+      <pubDate>Wed, 05 Mar 2025 23:48:45 +0800</pubDate>
       <guid>https://xgdebug.com/posts/investment/stock/%E5%9C%A8%E8%BF%9B%E6%94%BB%E5%9E%8B%E4%B8%8E%E9%98%B2%E5%AE%88%E5%9E%8B%E8%82%A1%E7%A5%A8%E4%B9%8B%E9%97%B4%E8%BF%9B%E8%A1%8C%E5%86%8D%E5%B9%B3%E8%A1%A1/</guid>
       <description>&lt;h3 id=&#34;1-再平衡的基本概念&#34;&gt;1. 再平衡的基本概念&lt;/h3&gt;
 &lt;ul&gt;
@@ -198,6 +83,47 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>对抗情绪带来的负面影响</title>
+      <link>https://xgdebug.com/posts/investment/%E5%AF%B9%E6%8A%97%E6%83%85%E7%BB%AA%E5%B8%A6%E6%9D%A5%E7%9A%84%E8%B4%9F%E9%9D%A2%E5%BD%B1%E5%93%8D/</link>
+      <pubDate>Wed, 19 Feb 2025 11:19:40 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/investment/%E5%AF%B9%E6%8A%97%E6%83%85%E7%BB%AA%E5%B8%A6%E6%9D%A5%E7%9A%84%E8%B4%9F%E9%9D%A2%E5%BD%B1%E5%93%8D/</guid>
+      <description>&lt;p&gt;渴望赚得更多、恐惧错失机会、好与其他人比较的个性、群体的影响和成功投资的梦想，这些因素几乎都普遍存在。因此，他们对大多数投资人和市场都有深远的集体影响，结果就是出现错误，而这些错误频繁、普遍，还会重复发生。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>渴望赚得更多、恐惧错失机会、好与其他人比较的个性、群体的影响和成功投资的梦想，这些因素几乎都普遍存在。因此，他们对大多数投资人和市场都有深远的集体影响，结果就是出现错误，而这些错误频繁、普遍，还会重复发生。</p>
+<h2 id="导致错误决策的七种心态">导致错误决策的七种心态</h2>
+<p>许多人都有足够的才智能够分析资料，但是很少有人能深入观察事物，承受心理面带来的强大影响。换句话说，很多人都会根据自己的分析认知得到相似的结论，但却会因为受到不同的心理影响，根据这些结论而有截然不同的行动。最大的投资偏误并不是来自资讯或分析，而是来自心态。</p>
+<h3 id="贪婪">贪婪</h3>
+<p>贪婪的定义是「<strong>过度或用尽心机，而且通常是应受谴责的占有欲，尤其是在财富或获利上</strong>」。</p>
+<p>贪婪是一股极端强大的力量。它的力量大到能压过常识、风险趋避、小心谨慎、逻辑、过去痛苦教训的记忆、决心、惊恐，以及其他能让投资人避开麻烦的要素。而且贪婪不时会让投资人加入追逐获利的人群中，最后付出代价。</p>
+<h3 id="恐惧">恐惧</h3>
+<p>恐惧就像贪婪一样，有过度的意思。因此，恐惧更像恐慌。恐惧是种过度忧虑，使得投资人在应该采取积极行动时没有作为。</p>
+<h3 id="自欺欺人">自欺欺人</h3>
+<p>**没有什么事比自欺欺人容易，因为每个人只要有愿望，就会相信那是真的。 **
+投资人永远在寻找灵丹妙药，称它为「圣杯」或「免费的午餐」，但每个人都想要一张变成有钱人而且不用承担风险的门票。很少人会质疑这张门票是否存在，或是为什么他们应该要得到。最重要的是，一般人永远抱持着希望。</p>
+<p>是什么因素让人相信有灵丹妙药呢？</p>
+<ol>
+<li>首先，这通常有个事实根源。</li>
+<li>接着会编造一套听起来很明智的理论，让信徒到处宣传，说服其他人。之后，这个理论偶然创造了获利，无论是因为这个理论有点价值，或只是因为新信徒加入购买推高目标资产的价格。最后乍看之下真有一种肯定能获得财富的方法，而且还因此造成一股热潮。</li>
+</ol>
+<h3 id="从众的倾向">从众的倾向</h3>
+<p>**没有坚持己见，即使群众的看法显然是荒谬的。 **
+一次又一次，从众的压力和想要致富的欲望使得大家抛弃独立判断与怀疑精神，压抑与生俱来的风险趋避心态去相信不合理的事。这样的情况如此规律的发生，一定有某个东西在运作，而不是随机发生的影响。</p>
+<h3 id="嫉妒">嫉妒</h3>
+<p>就算贪婪的力量再负面，至少总是会激励别人努力争取更多获利，但拿自己与别人比较的负面影响力量甚至更强。这是我们认为人性中最危险的一个特性。</p>
+<p>在与世隔绝时可能很快乐的人，看到其他人过得更好时，就会觉得很悲惨。在投资界中，会发现大部分的投资人很难坐在一旁，看着其他人比自己赚更多的钱。</p>
+<h3 id="自负">自负</h3>
+<p>面对下列这些实际情况，想要保持客观和精打细算其实是极大的挑战：</p>
+<ol>
+<li>我们评估和比较的是短期的投资绩效。</li>
+<li>在多头行情时，做出增加风险这种不适当、甚至轻率的决定常会带来最好的报酬（而且大多数的时间都是多头行情）。</li>
+<li>最好的报酬会给自己带来最大的奖赏。当事情做对的时候，觉得自己很聪明，而且其他人也同意这点是件很开心的事。</li>
+</ol>
+<p>相较之下，深思熟虑的投资人会埋头苦干，在市场多头时赚取稳定的报酬，在市场空头时比其他人亏得少。他们会避开高风险的行为，因为他们知道不懂的事情还有很多，而且他们会压抑自负的心态。在我看来，这是长期创造财富的最好公式，但这在短期并无法满足自负的心态。强调谦虚、谨慎和控制风险并不是一条光鲜亮丽的路，当然投资不该追求光鲜亮丽，但大家却常常这么认为。</p>
+<h3 id="投降心态">投降心态</h3>
+<p>这是在周期的后期会固定看到的投资行为。投资人会尽可能的坚持自己的信念，但是当无法抗拒经济或心理压力时，他们就会举手投降，跟上流行。
+很多时候，资产价格过高，而且还在进一步上涨，或是价格过低，而且还持续下跌。最终，这些趋势会让投资人的心态、信念和决心动摇。别人因为你拒绝买进的股票获利，你选择买进的股票却每天都在低价盘旋，而且你原本认为不安全、不明智的投资概念，随着价格过高的股票继续上涨，或是价格过低的股票继续下跌，应该更容易去做出正确的事，那就是卖出价格过高的股票，以及买进价格过低的股票，但投资人并不会这样做。自我怀疑的倾向与其他人成功的消息混合形成一股强大的力量，使投资人做出错误的事情，而且当这个趋势持续的时间更长时，力量就会变得更强，这是我们必须对抗的另一种影响因素。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>風險愈高，報酬不確定性愈大</title>
       <link>https://xgdebug.com/posts/investment/%E9%A2%A8%E9%9A%AA%E6%84%88%E9%AB%98%E5%A0%B1%E9%85%AC%E4%B8%8D%E7%A2%BA%E5%AE%9A%E6%80%A7%E6%84%88%E5%A4%A7/</link>
       <pubDate>Wed, 19 Feb 2025 10:54:21 +0800</pubDate>
@@ -217,11 +143,104 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>就算市場否定，也要勇於堅持</title>
+      <link>https://xgdebug.com/posts/investment/stock/%E5%B0%B1%E7%AE%97%E5%B8%82%E5%A0%B4%E5%90%A6%E5%AE%9A%E4%B9%9F%E8%A6%81%E5%8B%87%E6%96%BC%E5%A0%85%E6%8C%81/</link>
+      <pubDate>Wed, 12 Feb 2025 23:21:44 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/investment/stock/%E5%B0%B1%E7%AE%97%E5%B8%82%E5%A0%B4%E5%90%A6%E5%AE%9A%E4%B9%9F%E8%A6%81%E5%8B%87%E6%96%BC%E5%A0%85%E6%8C%81/</guid>
+      <description>&lt;p&gt;我們在個體經濟學的基礎課程上學到，需求曲線會向右下傾斜，隨著價格提高，需求量會減少。換句話說，在高價時，需求量比較少，低價時，需求量比較多。這很合理，這也就是為什麼商店在特價時的業績會比較好。 雖然很多地方都如此運作，但在投資界卻遠遠不是如此。在這裡，很多人會在價格上漲時更愛買進的投資標的，因為他們覺得這證實了他們做的決策；而在價格下跌時，他們會比較不喜歡買進的投資標的，因為他們開始懷疑當初的買進決定。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>我們在個體經濟學的基礎課程上學到，需求曲線會向右下傾斜，隨著價格提高，需求量會減少。換句話說，在高價時，需求量比較少，低價時，需求量比較多。這很合理，這也就是為什麼商店在特價時的業績會比較好。 雖然很多地方都如此運作，但在投資界卻遠遠不是如此。在這裡，很多人會在價格上漲時更愛買進的投資標的，因為他們覺得這證實了他們做的決策；而在價格下跌時，他們會比較不喜歡買進的投資標的，因為他們開始懷疑當初的買進決定。</p>
+<p>沒有人能坦然面對虧損，最後任何人都會懷疑：「也許我不是對的，市場才是對的。」最危險的時候就是當他們開始揣想：「已經跌太多了，我最好在股票變成壁紙前趕快脫手。」這就是導致股票破底的思維……而且會引發瘋狂賣壓。</p>
+<p>在下跌市場中，獲利有兩個基本要素：你必須對實質價值有自己的看法，而且必須堅定不移，即使價格下跌暗示你是錯的，也要勇於買進。喔，對了，還有第三個要素，那就是你的看法必須是正確的。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>饮食计划</title>
+      <link>https://xgdebug.com/posts/life/%E9%A5%AE%E9%A3%9F%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Tue, 11 Feb 2025 15:45:01 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/life/%E9%A5%AE%E9%A3%9F%E8%AE%A1%E5%88%92/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;热量控制&lt;/strong&gt;：每日总摄入约 1500kcal（基础代谢缺口约 300kcal）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;营养配比&lt;/strong&gt;：蛋白质 30%/碳水 40%/脂肪 30%&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;血糖管理&lt;/strong&gt;：选择中低 GI 食材，贝果分次食用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;操作简化&lt;/strong&gt;：每餐准备时间&amp;lt;15 分钟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;每日餐单模板可根据食材灵活替换&#34;&gt;&lt;strong&gt;每日餐单模板&lt;/strong&gt;（可根据食材灵活替换）&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;早餐（400kcal）&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<ol>
+<li><strong>热量控制</strong>：每日总摄入约 1500kcal（基础代谢缺口约 300kcal）</li>
+<li><strong>营养配比</strong>：蛋白质 30%/碳水 40%/脂肪 30%</li>
+<li><strong>血糖管理</strong>：选择中低 GI 食材，贝果分次食用</li>
+<li><strong>操作简化</strong>：每餐准备时间&lt;15 分钟</li>
+</ol>
+<hr>
+<h3 id="每日餐单模板可根据食材灵活替换"><strong>每日餐单模板</strong>（可根据食材灵活替换）</h3>
+<p><strong>早餐（400kcal）</strong></p>
+<ul>
+<li>1/2 蔓越莓贝果（200kcal）</li>
+<li>水煮蛋 ×2（140kcal）</li>
+<li>无糖黑咖啡/绿茶
+<strong>营养重点</strong>：贝果提供快碳开启代谢，鸡蛋蛋白延长饱腹感</li>
+</ul>
+<p><strong>上午加餐（100kcal）</strong></p>
+<ul>
+<li>脱脂牛奶 200ml + 1/2 苹果（切片）</li>
+</ul>
+<p><strong>午餐（500kcal）</strong></p>
+<ul>
+<li>香煎鸡胸肉 150g（180kcal）</li>
+<li>杂粮饭 100g（生重，约 120kcal）</li>
+<li>橄榄油炒时蔬（西蓝花+胡萝卜+香菇）200g（200kcal）
+<strong>烹饪 TIP</strong>：鸡胸肉用料酒+黑胡椒提前腌制，蔬菜切块后大火快炒</li>
+</ul>
+<p><strong>下午加餐（100kcal）</strong></p>
+<ul>
+<li>希腊酸奶 100g + 香蕉 1/2 根</li>
+</ul>
+<p><strong>晚餐（400kcal）</strong></p>
+<ul>
+<li>清炖牛肉 150g（210kcal）</li>
+<li>蒸南瓜 200g（80kcal）</li>
+<li>凉拌菠菜（芝麻油+醋）150g（110kcal）
+<strong>备餐技巧</strong>：用电子压力锅批量炖煮牛肉分装冷冻</li>
+</ul>
+<hr>
+<h3 id="关键执行策略"><strong>关键执行策略</strong></h3>
+<ol>
+<li><strong>贝果优化吃法</strong>：将完整贝果分装冷冻，每次取 1/4 搭配蛋白质（如鸡蛋/奶酪）</li>
+<li><strong>肉类预处理</strong>：周末统一腌制（鸡肉用柠檬汁+迷迭香，牛肉用姜片+八角）分装冷藏</li>
+<li><strong>抗饥饿技巧</strong>：餐前先喝 300ml 温水，进食顺序：蔬菜 → 蛋白质 → 碳水</li>
+<li><strong>代谢增强</strong>：每日饮用 2L 水（可加柠檬片），每周 3 次 20 分钟力量训练（俯卧撑/深蹲）</li>
+</ol>
+<hr>
+<h3 id="常见问题解决方案"><strong>常见问题解决方案</strong></h3>
+<p><strong>Q：遇到加班怎么吃？</strong>
+→ 备应急餐：即食鸡胸肉+番茄+1/4 贝果（总热量&lt;300kcal）</p>
+<p><strong>Q：想吃零食怎么办？</strong>
+→ 用空气炸锅自制牛肉干（150g 生牛肉 →60g 肉干约 180kcal）</p>
+<p><strong>Q：平台期突破</strong>
+→ 每 10 天安排 1 天碳水循环（摄入量提升至 1800kcal）</p>
+<p>执行该方案 4 周后，建议用体脂秤监测变化。程序员久坐群体建议每小时起身做 1 分钟高抬腿运动，促进腹部脂肪代谢。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Hyperdbg</title>
       <link>https://xgdebug.com/posts/tech/debug/hyperdbg/</link>
-      <pubDate>Thu, 30 Jan 2025 02:31:52 +0000</pubDate>
+      <pubDate>Thu, 30 Jan 2025 10:31:52 +0800</pubDate>
       <guid>https://xgdebug.com/posts/tech/debug/hyperdbg/</guid>
-      <description>This article provides a step-by-step guide on setting up and using a debugger, including configuring the debug environment, loading symbols, and navigating through processes and threads.</description>
+      <description>&lt;h2 id=&#34;set-env&#34;&gt;set env&lt;/h2&gt;
+&lt;p&gt;.debug remote namedpipe \.\pipe\HyperDbgPipe&lt;/p&gt;
+&lt;p&gt;.debug prepare serial 115200 com1&lt;/p&gt;
+&lt;p&gt;.sympath SRV&lt;em&gt;c:\Symbols&lt;/em&gt;&lt;a href=&#34;https://msdl.microsoft.com/download/symbols&#34;&gt;https://msdl.microsoft.com/download/symbols&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;.sym download
+.sym reload&lt;/p&gt;
+&lt;p&gt;.process list&lt;/p&gt;
+&lt;p&gt;.thread list process 0000000015e2b000&lt;/p&gt;
+&lt;h2 id=&#34;change-process&#34;&gt;change process&lt;/h2&gt;
+&lt;p&gt;.process list
+.process pid 1394
+g&lt;/p&gt;
+&lt;p&gt;when the debugger stop, the use &lt;code&gt;.process&lt;/code&gt; to check the process&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="set-env">set env</h2>
 <p>.debug remote namedpipe \.\pipe\HyperDbgPipe</p>
 <p>.debug prepare serial 115200 com1</p>
@@ -2868,47 +2887,6 @@ Fake it till you make it .</p>
       <content:encoded><![CDATA[<p>After you stop working your 9 to 5, your money can keep working for you.<br>
 停下你的朝九晚五工作后，你的钱可以继续为你工作。</p>
 <p><img alt="build up financial capital to replace human capital" loading="lazy" src="/posts/investment/etf/just-keep-buying/build-up-financial-capital-to-replace-human-capital.jpg"></p>
-<h2 id="引言">引言</h2>
-<ul>
-<li><strong>持续买入的重要性</strong>：无论市场状况如何，只要坚持买入并持有股票，就能积累财富。关键在于持续购买，而不是时机或金额。（第 9-10 页）</li>
-<li><strong>收入生产性资产</strong>：指的是那些预期未来能为你带来收入的资产，包括股票、债券、房地产等。重点是持续买入而非选择时机和具体标的。（第 10 页）</li>
-</ul>
-<h2 id="第一部分储蓄">第一部分：储蓄</h2>
-<ul>
-<li><strong>储蓄与投资的选择</strong>：根据自己的财务状况，决定是更专注于储蓄还是投资。如果预计储蓄额高于投资收益，则应注重储蓄；反之则应注重投资。若两者相近，则需兼顾。（第 1 章）</li>
-<li><strong>灵活调整储蓄率</strong>：收入和支出不是固定的，因此储蓄率也不应固定。合理储蓄以减轻财务压力。（第 2 章）</li>
-<li><strong>增加收入的重要性</strong>：削减开支有其限度，但提高收入没有。找到提升收入的方法，从小处着手逐步扩大。（第 3 章）</li>
-<li><strong>消除消费内疚感</strong>：通过将同等金额投入收入生产性资产或捐赠给慈善机构，来缓解因自我奖励消费而产生的内疚感。（第 4 章）</li>
-<li><strong>合理分配加薪和奖金</strong>：将至少 50%的加薪和奖金用于储蓄，控制生活方式膨胀。（第 5 章）</li>
-<li><strong>债务的双刃剑效应</strong>：债务在某些情况下是有害的，在其他情况下则可能有益。只有在对财务状况有利时使用债务。（第 6 章）</li>
-<li><strong>购房决策</strong>：购房可能是最大的财务决策之一，应在符合财务状况和当前生活方式时才考虑购房。（第 7 章）</li>
-<li><strong>大额支出用现金</strong>：虽然债券和股票在等待期间可能产生更多收益，但在为婚礼、房屋等大额支出储蓄时，使用现金更为稳妥。（第 8 章）</li>
-</ul>
-<h2 id="第二部分投资">第二部分：投资</h2>
-<ul>
-<li><strong>投资的目的</strong>：为了未来的自己储蓄、抵御通货膨胀以及用金融资本替代人力资本。（第 10 章）</li>
-<li><strong>不同投资工具的特点</strong>：
-<ul>
-<li><strong>股票</strong>：历史平均年复合回报率为 8%-10%，高波动性但易于交易。</li>
-<li><strong>债券</strong>：历史平均年复合回报率为 2%-4%，低波动性但收益率较低。</li>
-<li><strong>房地产</strong>：历史平均年复合回报率为 12%-15%，管理麻烦且难以分散风险。</li>
-<li><strong>REITs</strong>：历史平均年复合回报率为 10%-12%，波动性较大但流动性较差。</li>
-<li><strong>小型企业</strong>：历史平均年复合回报率为 20%-25%，但失败率较高。</li>
-</ul>
-</li>
-<li><strong>避免单个股票投资</strong>：个人选股成功率很低，建议通过指数基金进行投资。（第 12 章）</li>
-<li><strong>尽早投资</strong>：大多数股市多数时间都是上涨的，尽早投资可以避免错过机会。（第 13 章）</li>
-<li><strong>不要试图抄底</strong>：即使上帝也无法打败定期定额投资（DCA），因为市场大幅下跌的机会很少。（第 14 章）</li>
-<li><strong>面对波动保持冷静</strong>：市场波动是正常的，长期来看，股市通常会弥补短期损失。（第 16 章）</li>
-<li><strong>危机中的投资策略</strong>：当市场下跌 50%时，未来年化回报率通常超过 25%，此时是绝佳的投资机会。（第 17 章）</li>
-<li><strong>卖出的时机</strong>：仅在需要再平衡、处理集中持仓或满足财务需求时才考虑卖出。（第 18 章）</li>
-<li><strong>退休不仅仅是金钱问题</strong>：在决定退休前，确保知道自己退休后想做什么。（第 9 章）</li>
-<li><strong>时间是最宝贵的资产</strong>：金钱可以赚取，但时间一旦失去就无法挽回。（第 21 章）</li>
-</ul>
-<h2 id="结论">结论</h2>
-<ul>
-<li><strong>持续买入规则</strong>：本书的核心思想是持续买入，无论市场状况如何，只要坚持这一原则，就能实现财富的增长。同时，作者强调了在储蓄与投资之间做出明智选择的重要性，以及在面临市场波动时保持冷静的态度。</li>
-</ul>
 <h2 id="conclusion-the-just-keep-buying-rules">Conclusion: The Just Keep Buying Rules</h2>
 <p><strong>Highlight(yellow) - Page 281 · Location 4366</strong><br>
 Saving is for the Poor, Investing is for the Rich Find where you are in your financial journey before deciding where to focus your time and energy. If your expected savings are greater than your expected investment income, focus on savings; otherwise focus on investing. If they are similar, focus on both. (Ch. 1)</p>
@@ -5590,40 +5568,6 @@ Note - Location 1960<br>
 ]]></content:encoded>
     </item>
     <item>
-      <title>有钱人的钱为什么比普通人的钱更值钱1?</title>
-      <link>https://xgdebug.com/posts/economics/%E6%9C%89%E9%92%B1%E4%BA%BA%E7%9A%84%E9%92%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E9%92%B1%E6%9B%B4%E5%80%BC%E9%92%B1/</link>
-      <pubDate>Mon, 31 Jul 2023 04:19:59 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/economics/%E6%9C%89%E9%92%B1%E4%BA%BA%E7%9A%84%E9%92%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E9%92%B1%E6%9B%B4%E5%80%BC%E9%92%B1/</guid>
-      <description>&lt;h2 id=&#34;什么难道钱也分三六九等&#34;&gt;什么，难道钱也分三六九等？&lt;/h2&gt;
-&lt;p&gt;有钱人的钱比普通人的钱更值钱吗？为什么会这样呢？是因为有钱人比普通人更会花钱吗？还是因为他们有着某种特殊的投资策略？在本文中，我们将探讨有钱人和普通人的钱的区别，并提供一些实用的建议来帮助普通人实现财富的增长。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="什么难道钱也分三六九等">什么，难道钱也分三六九等？</h2>
-<p>有钱人的钱比普通人的钱更值钱吗？为什么会这样呢？是因为有钱人比普通人更会花钱吗？还是因为他们有着某种特殊的投资策略？在本文中，我们将探讨有钱人和普通人的钱的区别，并提供一些实用的建议来帮助普通人实现财富的增长。</p>
-<h2 id="有钱人的钱有潜在的增长价值">有钱人的钱有潜在的增长价值</h2>
-<p>让我们从一个简单的例子开始。假设有钱人和普通人都有 1 万块钱。对于普通人来说，这 1 万块钱可能会被用于日常开支，如衣服、裤子、包包、房租、房贷等。这些开支虽然必要，但并不会产生任何额外的收入。相比之下，有钱人的 1 万块钱可能会被投资于股票、债券、房地产等。这些投资虽然存在一定的风险，但也可能带来丰厚的回报。</p>
-<p>例如，假设有钱人将 1 万块钱投资于一只股票，其年化收益率为 10%。那么，明年，这 1 万块钱就会变成 1.1 万块钱，后年变成 1.21 万块钱，如此循环。这种潜在的增长价值使得有钱人的钱比普通人的钱更值钱。</p>
-<h2 id="有钱人花钱更谨慎">有钱人花钱更谨慎</h2>
-<p>那么，为什么有钱人在花钱时会更加谨慎呢？这是因为他们需要考虑到花钱的潜在后果，包括对未来的收入的影响。对于有钱人来说，花掉 1 万块钱不仅仅是花掉 1 万块钱，还意味着放弃了潜在的投资回报。因此，他们会更加谨慎地考虑花钱的必要性和潜在的后果。</p>
-<p>例如，假设有钱人需要购买一辆新车。他们可能会考虑到这辆车的价格、燃油效率、维护成本等因素，并将其与其他投资机会进行比较。他们可能会问自己：</p>
-<ul>
-<li>这辆车是否值得花费这么多钱？</li>
-<li>是否有更好的投资机会？</li>
-</ul>
-<p>这种谨慎的态度使得有钱人在花钱时更加理性和谨慎。</p>
-<h2 id="有钱人和普通人的开支占比">有钱人和普通人的开支占比</h2>
-<p>那么，有钱人和普通人的开支占比有什么区别呢？根据研究，普通人的收入往往全部用于开支，而有钱人的开支占比则极低。例如，假设普通人的月收入为 5,000 元，他们可能会将全部的收入用于开支，如房租、房贷、生活费等。相比之下，有钱人的月收入可能为 50,000 元，但他们的开支占比可能只有 1%。这意味着他们有更多的钱可以用于投资和储蓄。</p>
-<h2 id="结论">结论</h2>
-<p>通过探讨有钱人和普通人的钱的区别。我们发现，有钱人的钱比普通人的钱更值钱，因为他们的钱有潜在的增长价值。我们还发现，有钱人在花钱时更加谨慎，因为他们需要考虑到花钱的潜在后果。最后，我们了解到，有钱人和普通人的开支占比有着显著的区别。</p>
-<h2 id="建议">建议</h2>
-<p>那么，普通人如何通过改变自己的花钱习惯和投资策略来实现财富的增长呢？以下是一些实用的建议：</p>
-<ul>
-<li>开始投资：考虑将你的钱用于投资，关于如何投资，这又会是一个严肃的话题。</li>
-<li>减少开支：尝试减少你的开支占比，留出更多的钱用于投资和储蓄。</li>
-<li>谨慎花钱：在花钱时，考虑到花钱的潜在后果，包括对未来的收入的影响。</li>
-</ul>
-<p>通过采取这些措施，普通人可以开始实现财富的增长，并使自己的钱变得更加值钱。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>在搞清楚用户的问题之前就动手开发，这是我多次犯过的大忌。</title>
       <link>https://xgdebug.com/posts/business/%E5%9C%A8%E6%90%9E%E6%B8%85%E6%A5%9A%E7%94%A8%E6%88%B7%E7%9A%84%E9%97%AE%E9%A2%98%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%8A%A8%E6%89%8B%E5%BC%80%E5%8F%91%E8%BF%99%E6%98%AF%E6%88%91%E5%A4%9A%E6%AC%A1/</link>
       <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
@@ -6856,7 +6800,7 @@ Markets where years of ruthless competition have created a large number of botto
       <link>https://xgdebug.com/posts/business/fake-it-until-you-make-it-who-why-how-what/</link>
       <pubDate>Sun, 16 Jul 2023 00:38:13 +0000</pubDate>
       <guid>https://xgdebug.com/posts/business/fake-it-until-you-make-it-who-why-how-what/</guid>
-      <description>This article discusses how successful bootstrapped businesses often begin by identifying a specific niche and addressing the critical problems of their audience, offering valuable solutions that attract paying customers and emphasizing continuous value for both new and existing users.</description>
+      <description>&lt;p&gt;Many successful bootstrapped businesses start with an audience, a specific niche. They find their customers&amp;rsquo; critical problems and provide valuable solutions that people gladly pay for. Their product is centered around continuously providing value to new and existing customers. Audience, problem, solution, and product can be looked at individually.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Many successful bootstrapped businesses start with an audience, a specific niche. They find their customers&rsquo; critical problems and provide valuable solutions that people gladly pay for. Their product is centered around continuously providing value to new and existing customers. Audience, problem, solution, and product can be looked at individually.</p>
 ]]></content:encoded>
     </item>
@@ -9914,6 +9858,40 @@ leverage. Labor leverage will impress your parents, but don’t waste your life 
 你可以按照自己的意愿来重写这个程序。</p>
 <h2 id="17如何定义智慧">17、如何定义智慧？</h2>
 <p>一个人理解他所作所为的的长期后果。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>有钱人的钱为什么比普通人的钱更值钱?</title>
+      <link>https://xgdebug.com/posts/economics/%E6%9C%89%E9%92%B1%E4%BA%BA%E7%9A%84%E9%92%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E9%92%B1%E6%9B%B4%E5%80%BC%E9%92%B1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xgdebug.com/posts/economics/%E6%9C%89%E9%92%B1%E4%BA%BA%E7%9A%84%E9%92%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E6%AF%94%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E9%92%B1%E6%9B%B4%E5%80%BC%E9%92%B1/</guid>
+      <description>&lt;h2 id=&#34;什么难道钱也分三六九等&#34;&gt;什么，难道钱也分三六九等？&lt;/h2&gt;
+&lt;p&gt;有钱人的钱比普通人的钱更值钱吗？为什么会这样呢？是因为有钱人比普通人更会花钱吗？还是因为他们有着某种特殊的投资策略？在本文中，我们将探讨有钱人和普通人的钱的区别，并提供一些实用的建议来帮助普通人实现财富的增长。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="什么难道钱也分三六九等">什么，难道钱也分三六九等？</h2>
+<p>有钱人的钱比普通人的钱更值钱吗？为什么会这样呢？是因为有钱人比普通人更会花钱吗？还是因为他们有着某种特殊的投资策略？在本文中，我们将探讨有钱人和普通人的钱的区别，并提供一些实用的建议来帮助普通人实现财富的增长。</p>
+<h2 id="有钱人的钱有潜在的增长价值">有钱人的钱有潜在的增长价值</h2>
+<p>让我们从一个简单的例子开始。假设有钱人和普通人都有1万块钱。对于普通人来说，这1万块钱可能会被用于日常开支，如衣服、裤子、包包、房租、房贷等。这些开支虽然必要，但并不会产生任何额外的收入。相比之下，有钱人的1万块钱可能会被投资于股票、债券、房地产等。这些投资虽然存在一定的风险，但也可能带来丰厚的回报。</p>
+<p>例如，假设有钱人将1万块钱投资于一只股票，其年化收益率为10%。那么，明年，这1万块钱就会变成1.1万块钱，后年变成1.21万块钱，如此循环。这种潜在的增长价值使得有钱人的钱比普通人的钱更值钱。</p>
+<h2 id="有钱人花钱更谨慎">有钱人花钱更谨慎</h2>
+<p>那么，为什么有钱人在花钱时会更加谨慎呢？这是因为他们需要考虑到花钱的潜在后果，包括对未来的收入的影响。对于有钱人来说，花掉1万块钱不仅仅是花掉1万块钱，还意味着放弃了潜在的投资回报。因此，他们会更加谨慎地考虑花钱的必要性和潜在的后果。</p>
+<p>例如，假设有钱人需要购买一辆新车。他们可能会考虑到这辆车的价格、燃油效率、维护成本等因素，并将其与其他投资机会进行比较。他们可能会问自己：</p>
+<ul>
+<li>这辆车是否值得花费这么多钱？</li>
+<li>是否有更好的投资机会？</li>
+</ul>
+<p>这种谨慎的态度使得有钱人在花钱时更加理性和谨慎。</p>
+<h2 id="有钱人和普通人的开支占比">有钱人和普通人的开支占比</h2>
+<p>那么，有钱人和普通人的开支占比有什么区别呢？根据研究，普通人的收入往往全部用于开支，而有钱人的开支占比则极低。例如，假设普通人的月收入为5,000元，他们可能会将全部的收入用于开支，如房租、房贷、生活费等。相比之下，有钱人的月收入可能为50,000元，但他们的开支占比可能只有1%。这意味着他们有更多的钱可以用于投资和储蓄。</p>
+<h2 id="结论">结论</h2>
+<p>通过探讨有钱人和普通人的钱的区别。我们发现，有钱人的钱比普通人的钱更值钱，因为他们的钱有潜在的增长价值。我们还发现，有钱人在花钱时更加谨慎，因为他们需要考虑到花钱的潜在后果。最后，我们了解到，有钱人和普通人的开支占比有着显著的区别。</p>
+<h2 id="建议">建议</h2>
+<p>那么，普通人如何通过改变自己的花钱习惯和投资策略来实现财富的增长呢？以下是一些实用的建议：</p>
+<ul>
+<li>开始投资：考虑将你的钱用于投资，关于如何投资，这又会是一个严肃的话题。</li>
+<li>减少开支：尝试减少你的开支占比，留出更多的钱用于投资和储蓄。</li>
+<li>谨慎花钱：在花钱时，考虑到花钱的潜在后果，包括对未来的收入的影响。</li>
+</ul>
+<p>通过采取这些措施，普通人可以开始实现财富的增长，并使自己的钱变得更加值钱。</p>
 ]]></content:encoded>
     </item>
   </channel>
