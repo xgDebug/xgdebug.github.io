@@ -44,6 +44,7 @@
 <h2 id="0330">0330</h2>
 <ul>
 <li>添加了个登录</li>
+<li>用户退出登录之后直接回到Dashboard</li>
 </ul>
 ]]></content:encoded>
     </item>
