@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 12 Apr 2025 11:49:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Apr 2025 21:52:23 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/posts/self/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数学的雨伞下，读书笔记</title>
+      <link>https://xgdebug.com/posts/self/study/%E6%95%B0%E5%AD%A6%E7%9A%84%E9%9B%A8%E4%BC%9E%E4%B8%8B/</link>
+      <pubDate>Sun, 13 Apr 2025 19:03:51 +0000</pubDate>
+      <guid>https://xgdebug.com/posts/self/study/%E6%95%B0%E5%AD%A6%E7%9A%84%E9%9B%A8%E4%BC%9E%E4%B8%8B/</guid>
+      <description>&lt;h2 id=&#34;日期计算&#34;&gt;日期计算&lt;/h2&gt;
+&lt;p&gt;今天是4月20号，那么14天之后就是34号，那就是34减30——5月4号。因为20加14等于34，所以日期就会是4月34号。而4月34号就等于5月4号，仅此而已（图2.6）。她发明了一个不存在的日期，以便让自己的推导直达目标。而这丝毫没有妨碍她得到正确的结果！复数就是这样不期而至的。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="日期计算">日期计算</h2>
+<p>今天是4月20号，那么14天之后就是34号，那就是34减30——5月4号。因为20加14等于34，所以日期就会是4月34号。而4月34号就等于5月4号，仅此而已（图2.6）。她发明了一个不存在的日期，以便让自己的推导直达目标。而这丝毫没有妨碍她得到正确的结果！复数就是这样不期而至的。</p>
+<h2 id="不惧怕与众不同">不惧怕与众不同</h2>
+<p>不要惧怕与众不同，这就是雨伞的智慧。让我们无所畏惧，既不感到羞耻，也不抱有偏见。一旦接受在头顶撑起抽象的雨伞并进入数学的世界，我们就不会再全然依赖现实。不必让自己陷在无用的限制或令人尴尬的既有观念之中。你想要一个4月34号吗？拿去吧！你想要负数吗？拿去吧！你想要无穷吗？拿去吧！如果所有这些想法不会干扰你组织思维，甚至还有所帮助，那为什么要剥夺它们呢？你是自由的！</p>
+<h2 id="数学与想象">数学与想象</h2>
+<p>研究数学，就是创造想象的世界，在这些世界中，我们的思维可以自由漫步，不必担心现实的妨碍。这种思维方式虽然涵盖的范围要广得多，但和尼普尔人在加法世界中用来简化乘法的思维方式非常相似。当你碰到一个科学问题时，下面这种解决方法往往会很有效：</p>
+<ol>
+<li>创造一个数学世界，你可以在这个世界里把问题模型化；</li>
+<li>在这个数学世界里解决问题；</li>
+<li>把结果转回到现实世界中。</li>
+</ol>
+]]></content:encoded>
+    </item>
     <item>
       <title>2025-4月小本本</title>
       <link>https://xgdebug.com/posts/self/diary/2025/2025-4%E6%9C%88%E5%B0%8F%E6%9C%AC%E6%9C%AC/</link>
