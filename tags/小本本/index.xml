@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 14 Apr 2025 09:20:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Apr 2025 19:14:26 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2025-4月小本本</title>
@@ -61,6 +61,10 @@
 <p>quora 推广
 可以考虑给桌面添加小卡片
 试一下小卡片，好像还有难度</p>
+<h2 id="0415">0415</h2>
+<p>今天真是疯狂的一天，在AI的加持下，把我自己也推到了极限，一天就敲了6000行代码。
+当然主要都是敲的，我负责review。
+一天就实现了相册管理部分</p>
 ]]></content:encoded>
     </item>
     <item>
