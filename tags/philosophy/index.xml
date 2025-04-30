@@ -11,8 +11,158 @@
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 19 Jul 2023 00:31:37 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 17:04:20 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>芒格的100个思维模型</title>
+      <link>https://xgdebug.com/posts/philosophy/investment/%E8%8A%92%E6%A0%BC%E7%9A%84100%E4%B8%AA%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 30 Apr 2025 17:02:25 +0000</pubDate>
+      <guid>https://xgdebug.com/posts/philosophy/investment/%E8%8A%92%E6%A0%BC%E7%9A%84100%E4%B8%AA%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B/</guid>
+      <description>总结查理·芒格推荐的100个思维模型，涵盖数学、经济学、心理学、物理学等领域，用于更有效地解决复杂问题。</description>
+      <content:encoded><![CDATA[<h3 id="一数学与逻辑"><strong>一、数学与逻辑</strong></h3>
+<ol>
+<li>复利原理</li>
+<li>概率论（费马-帕斯卡系统）</li>
+<li>排列组合</li>
+<li>决策树分析</li>
+<li>贝叶斯定理</li>
+<li>期望值计算</li>
+<li>随机漫步理论</li>
+<li>博弈论</li>
+<li>线性回归</li>
+<li>非线性系统</li>
+<li>临界质量（相变点）</li>
+<li>幂律分布（长尾理论）</li>
+<li>帕累托原则（二八法则）</li>
+<li>蝴蝶效应</li>
+<li>分形几何</li>
+</ol>
+<hr>
+<h3 id="二微观经济学与商业"><strong>二、微观经济学与商业</strong></h3>
+<ol start="16">
+<li>机会成本</li>
+<li>规模经济</li>
+<li>护城河（竞争优势）</li>
+<li>沉没成本谬误</li>
+<li>替代效应</li>
+<li>边际效用递减</li>
+<li>供需关系</li>
+<li>价格弹性</li>
+<li>代理成本</li>
+<li>信息不对称</li>
+<li>网络效应</li>
+<li>飞轮效应</li>
+<li>双边市场</li>
+<li>锚定效应</li>
+<li>成本转嫁</li>
+</ol>
+<hr>
+<h3 id="三心理学与行为科学"><strong>三、心理学与行为科学</strong></h3>
+<ol start="31">
+<li>确认偏误</li>
+<li>损失厌恶</li>
+<li>易得性偏差</li>
+<li>过度自信效应</li>
+<li>从众心理</li>
+<li>社会认同</li>
+<li>自我服务偏差</li>
+<li>后见之明偏差</li>
+<li>心理账户</li>
+<li>选择性注意</li>
+<li>情绪劫持</li>
+<li>对比效应</li>
+<li>权威偏见</li>
+<li>恐惧型决策</li>
+<li>快乐痛苦原理</li>
+<li>认知失调</li>
+<li>归因偏差</li>
+<li>控制错觉</li>
+<li>适应性偏好</li>
+<li>决策疲劳</li>
+</ol>
+<hr>
+<h3 id="四物理与工程学"><strong>四、物理与工程学</strong></h3>
+<ol start="51">
+<li>冗余备份系统</li>
+<li>断裂点理论</li>
+<li>能量守恒定律</li>
+<li>热力学第二定律（熵增）</li>
+<li>张力与应力平衡</li>
+<li>反馈循环（正负）</li>
+<li>系统稳定性</li>
+<li>模块化设计</li>
+<li>故障树分析</li>
+<li>安全边际（工程学）</li>
+</ol>
+<hr>
+<h3 id="五生物学与进化论"><strong>五、生物学与进化论</strong></h3>
+<ol start="61">
+<li>适者生存</li>
+<li>基因竞争</li>
+<li>生态位理论</li>
+<li>协同进化</li>
+<li>突变与选择</li>
+<li>群体动力学</li>
+<li>代谢效率</li>
+<li>免疫系统原理</li>
+<li>病毒式传播</li>
+<li>竞争排除原理</li>
+</ol>
+<hr>
+<h3 id="六统计学与数据分析"><strong>六、统计学与数据分析</strong></h3>
+<ol start="71">
+<li>中心极限定理</li>
+<li>大数定律</li>
+<li>回归均值</li>
+<li>样本偏差</li>
+<li>相关性≠因果性</li>
+<li>数据可视化陷阱</li>
+<li>虚假相关性</li>
+<li>显著性检验</li>
+<li>数据过拟合</li>
+<li>混淆变量</li>
+</ol>
+<hr>
+<h3 id="七哲学与认知科学"><strong>七、哲学与认知科学</strong></h3>
+<ol start="81">
+<li>第一性原理</li>
+<li>逆向思维（Inversion）</li>
+<li>奥卡姆剃刀</li>
+<li>黑天鹅理论</li>
+<li>可证伪性（波普尔）</li>
+<li>知识迁移</li>
+<li>元认知</li>
+<li>认知负荷理论</li>
+<li>双系统思维（快慢思考）</li>
+<li>谦逊性假设</li>
+</ol>
+<hr>
+<h3 id="八社会学与历史学"><strong>八、社会学与历史学</strong></h3>
+<ol start="91">
+<li>文化惯性</li>
+<li>制度路径依赖</li>
+<li>革命周期理论</li>
+<li>技术扩散曲线</li>
+<li>历史重演性</li>
+<li>群体极化</li>
+<li>权力集中悖论</li>
+<li>利益集团博弈</li>
+<li>文明兴衰规律</li>
+<li>非意图后果</li>
+</ol>
+<hr>
+<h3 id="使用说明"><strong>使用说明：</strong></h3>
+<ol>
+<li><strong>动态更新</strong>：实际应用中需根据新领域（如AI、量子计算）扩展模型。</li>
+<li><strong>交叉验证</strong>：同一问题需调用多学科模型（如投资决策需结合复利、心理偏差、护城河）。</li>
+<li><strong>权重调整</strong>：不同场景下模型重要性不同（如医疗决策侧重概率，政治谈判侧重博弈论）。</li>
+</ol>
+<p>这些模型并非孤立存在，芒格强调通过 <strong>&ldquo;lollapalooza效应&rdquo;</strong>（多模型叠加产生指数级效果）解决复杂问题。例如：</p>
+<ul>
+<li><strong>特斯拉估值</strong> = 复利增长 + 网络效应 + 行为经济学（社会认同） + 政策驱动（补贴杠杆）。</li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>Completion is more important than perfection; completion comes before perfection.</title>
       <link>https://xgdebug.com/posts/business/%E5%AE%8C%E6%88%90%E6%AF%94%E5%AE%8C%E7%BE%8E%E9%87%8D%E8%A6%81%E5%AE%8C%E6%88%90%E5%85%88%E4%BA%8E%E5%AE%8C%E7%BE%8E/</link>
