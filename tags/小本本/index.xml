@@ -9,10 +9,84 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 12 Jun 2025 14:25:20 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 16:41:37 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人性弱点中的开发者机会</title>
+      <link>https://xgdebug.com/posts/tech/app/%E4%BA%BA%E6%80%A7%E5%BC%B1%E7%82%B9%E4%B8%AD%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85%E6%9C%BA%E4%BC%9A/</link>
+      <pubDate>Sat, 12 Jul 2025 16:41:37 +0800</pubDate>
+      <guid>https://xgdebug.com/posts/tech/app/%E4%BA%BA%E6%80%A7%E5%BC%B1%E7%82%B9%E4%B8%AD%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85%E6%9C%BA%E4%BC%9A/</guid>
+      <description>&lt;h2 id=&#34;个人开发者的黄金法则&#34;&gt;个人开发者的黄金法则：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;切入点要小 (Niche Down): 不要试图做一个平台，而是做一个“插件”、“工具”或“解决方案”。&lt;/li&gt;
+&lt;li&gt;自动化和SaaS优先: 追求可订阅的、能自动运行的软件即服务（SaaS），实现“睡后收入”。&lt;/li&gt;
+&lt;li&gt;轻资产运营: 远离需要重度运营、客服和实体库存的模式。&lt;/li&gt;
+&lt;li&gt;AI赋能: 在2025年的今天，AI是你作为个人开发者最强大的“杠杆”，能让你一个人完成过去一个团队的工作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10条人性密码&#34;&gt;10条人性密码&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;1. 男人好色的钱&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="个人开发者的黄金法则">个人开发者的黄金法则：</h2>
+<ul>
+<li>切入点要小 (Niche Down): 不要试图做一个平台，而是做一个“插件”、“工具”或“解决方案”。</li>
+<li>自动化和SaaS优先: 追求可订阅的、能自动运行的软件即服务（SaaS），实现“睡后收入”。</li>
+<li>轻资产运营: 远离需要重度运营、客服和实体库存的模式。</li>
+<li>AI赋能: 在2025年的今天，AI是你作为个人开发者最强大的“杠杆”，能让你一个人完成过去一个团队的工作。</li>
+</ul>
+<h2 id="10条人性密码">10条人性密码</h2>
+<p><strong>1. 男人好色的钱</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 繁衍本能、对吸引力的追求、社会地位的彰显。</li>
+<li><strong>商业逻辑：</strong> 这不仅限于情色产业，更广泛地体现在社交APP、高端汽车、名牌手表、健身和时尚领域。所有能增强男性魅力和地位象征的商品，都利用了这一原始驱动力。</li>
+</ul>
+<p><strong>2. 女人爱美的钱</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 追求社会认同、提升自我价值、对抗衰老焦虑。</li>
+<li><strong>商业逻辑：</strong> 从护肤美妆、医美整形到时装珠宝，这是一个永不枯竭的市场。它深度绑定了女性的心理满足感，通过制造“更美”的承诺，创造出无限的消费需求。</li>
+</ul>
+<p><strong>3. 穷人暴富的钱</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 对改变命运的极致渴望、对“捷径”的幻想、侥幸心理。</li>
+<li><strong>商业逻辑：</strong> 彩票、赌博、高风险金融衍生品、部分传销模式……它们贩卖的不是商品，而是“一夜暴富”的梦想。这种梦想的诱惑力之大，足以让最理性的人也为之动容。</li>
+</ul>
+<p><strong>4. 富人怕死的钱</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 对生命和健康的终极恐惧，以及对现有财富和地位的守护。</li>
+<li><strong>商业逻辑：</strong> 当财富达到一定量级，生命便成为最宝贵的资产。这催生了天价的医疗服务、生命延续技术、高端保健品和全方位的安保服务。这是一个客户价格不敏感的“无限预算”市场。</li>
+</ul>
+<p><strong>5. 孩子教育的钱</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 父母之爱、阶层跨越的焦虑、未来的不确定性。</li>
+<li><strong>商业逻辑：</strong> “不能让孩子输在起跑线上”这句话，撬动了万亿市场。从学区房、私立学校到各类辅导班和兴趣班，父母愿意为子女的未来付出一切。这是一种混杂着爱与焦虑的、几乎无法拒绝的消费。</li>
+</ul>
+<p><strong>6. 老人健康的钱</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 对生活质量的渴求、对衰老和病痛的恐惧、对生存时间的延长。</li>
+<li><strong>商业逻辑：</strong> 随着全球老龄化，这个市场的潜力日益凸显。保健品、医疗器械、特效药、养老服务……一切能缓解病痛、提升晚年生活质量的产品，都拥有着庞大且刚性的需求。</li>
+</ul>
+<p><strong>7. 懒人想省事的钱 (The Currency of Convenience)</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 追求舒适、规避复杂、用金钱换取时间。</li>
+<li><strong>商业逻辑：</strong> 外卖平台、网约车、预制菜、各种上门服务……现代商业的巨大成功，很大程度上建立在“让用户更懒”之上。通过提供极致的便利，商家可以收取不菲的溢价，并让消费者形成依赖。</li>
+</ul>
+<p><strong>8. 体面人想被认同的钱 (The Currency of Status and Virtue)</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 渴望被尊重、被认同，通过消费来彰显身份、品味和道德立场。</li>
+<li><strong>商业逻辑：</strong> 这分为两个层面。一是通过奢侈品、豪宅名车来展示“我很富有”；二是通过购买环保产品、支持良心品牌来展示“我很善良”。无论是物质的炫耀还是道德的优越感，人们都愿意为其支付高昂的“身份税”。</li>
+</ul>
+<p><strong>9. 无聊人想娱乐的钱 (The Currency of Escapism)</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 对抗平凡、寻求刺激、填补精神空虚。</li>
+<li><strong>商业逻辑：</strong> 游戏、短视频、直播打赏、偶像经济……这些行业精通于设计令人上瘾的“心流”体验和即时反馈机制。它们创造了一个可以逃避现实的虚拟世界，让用户心甘情愿地投入时间和金钱。</li>
+</ul>
+<p><strong>10. 普通人想安心的钱 (The Currency of Security)</strong></p>
+<ul>
+<li><strong>人性密码：</strong> 在充满不确定性的世界里，寻找稳定和可控的感觉。</li>
+<li><strong>商业逻辑：</strong> 从保险、理财产品，到网络安全、数据储存、家庭安防，所有贩卖“安全感”的生意都大行其道。商家通过适度放大潜在风险，再提供所谓的“解决方案”，精准地满足了人们对确定性的渴望。</li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>羊的生存手册</title>
       <link>https://xgdebug.com/posts/life/%E7%BE%8A%E7%9A%84%E7%94%9F%E5%AD%98%E6%89%8B%E5%86%8C/</link>
@@ -259,6 +333,30 @@ Appreciate its beauty and understand their own desire to &ldquo;become better.&r
 <p>今天真是疯狂的一天，在AI的加持下，把我自己也推到了极限，一天就敲了6000行代码。
 当然主要都是敲的，我负责review。
 一天就实现了相册管理部分</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>为什么绝对不要做短线？</title>
+      <link>https://xgdebug.com/posts/investment/stock/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%A6%81%E5%81%9A%E7%9F%AD%E7%BA%BF/</link>
+      <pubDate>Sun, 09 Mar 2025 07:38:53 +0000</pubDate>
+      <guid>https://xgdebug.com/posts/investment/stock/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%9D%E5%AF%B9%E4%B8%8D%E8%A6%81%E5%81%9A%E7%9F%AD%E7%BA%BF/</guid>
+      <description>本文探讨了市场情绪的随机性、短线交易的诱惑以及在投资决策中避免情绪干扰的重要性，强调了建立理性决策机制的必要性。</description>
+      <content:encoded><![CDATA[<p>说来说去还是那句名言 <strong>市场短期是投票机，长期是称重机</strong></p>
+<p><a href="/posts/investment/stock/%E6%8A%95%E6%9C%BA%E6%98%AF%E4%B8%80%E4%B8%AA0%E5%92%8C%E6%B8%B8%E6%88%8F-%E6%88%91%E7%9A%84%E6%8A%95%E6%9C%BA%E6%95%99%E8%AE%AD/">投机是一个 0 和游戏-我的投机教训</a></p>
+<p><a href="/posts/investment/%E9%99%8D%E4%BD%8E%E4%BA%A4%E6%98%93%E9%A2%91%E6%AC%A1%E7%9A%84%E6%9C%AC%E8%B4%A8/">降低交易频次的本质</a></p>
+<p><a href="/posts/investment/finance/enoughtrue_measures_of_money_business_and_life/">《Enough》投资与投机</a></p>
+<h2 id="市场情绪是随机的">市场情绪是随机的</h2>
+<p>市场只相当于一个中等智商的人,你可能偶尔猜中市场的情绪，但是你赚钱需要连续猜中两次（买点+卖点）。 而你只要猜错一次你就会亏钱。这是一个很简单的数学问题。</p>
+<h2 id="有些力量希望你做短线">有些力量希望你做短线</h2>
+<p>总是有一些故事让你想做短线赚快钱，这是和你在新闻上看到中大奖的新闻是一样的，本质是一种广告。 因为证券公司与交易所还有税务局都很喜欢你快速反复交易。他们正在利用你人性中的贪婪引诱你去做这种投机操作。</p>
+<h2 id="永远不要在强烈情绪时做投资决策">永远不要在强烈情绪时做投资决策</h2>
+<p>永远不要在强烈情绪时做投资决策。无论这种情绪是恐惧、兴奋、悲伤，还是贪婪与冲动，它们都像蒙在理性判断上的迷雾。</p>
+<ul>
+<li>当市场暴跌时，肾上腺素激增的恐惧可能让你贱卖优质资产；</li>
+<li>当牛市狂热时，多巴胺驱动的亢奋又容易诱使你高位接盘。
+甚至生活中突发的悲伤事件，也会像隐形滤镜般扭曲你对风险收益比的认知。真正的投资智慧，在于建立隔绝情绪波动的决策机制——用预先设定的交易纪律替代临场判断，以数据支撑的估值模型对冲人性弱点。</li>
+</ul>
+<p><a href="/posts/investment/stock/%E8%82%A1%E5%B8%82%E6%93%8D%E4%BD%9C%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/">股市操作前检查单</a></p>
 ]]></content:encoded>
     </item>
     <item>

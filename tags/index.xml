@@ -9,14 +9,21 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 30 Jun 2025 05:56:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 16:41:37 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小本本</title>
+      <link>https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</link>
+      <pubDate>Sat, 12 Jul 2025 16:41:37 +0800</pubDate>
+      <guid>https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</guid>
+      <description></description>
+    </item>
     <item>
       <title>心理学</title>
       <link>https://xgdebug.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</link>
-      <pubDate>Mon, 30 Jun 2025 05:27:02 +0000</pubDate>
+      <pubDate>Sat, 12 Jul 2025 16:41:37 +0800</pubDate>
       <guid>https://xgdebug.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
       <description></description>
     </item>
@@ -32,13 +39,6 @@
       <link>https://xgdebug.com/tags/%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB/</link>
       <pubDate>Mon, 23 Jun 2025 08:55:39 +0000</pubDate>
       <guid>https://xgdebug.com/tags/%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>小本本</title>
-      <link>https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</link>
-      <pubDate>Thu, 12 Jun 2025 14:25:20 +0800</pubDate>
-      <guid>https://xgdebug.com/tags/%E5%B0%8F%E6%9C%AC%E6%9C%AC/</guid>
       <description></description>
     </item>
     <item>
@@ -109,13 +109,6 @@
       <link>https://xgdebug.com/tags/business/</link>
       <pubDate>Sat, 12 Apr 2025 11:49:44 +0000</pubDate>
       <guid>https://xgdebug.com/tags/business/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>投资</title>
-      <link>https://xgdebug.com/tags/%E6%8A%95%E8%B5%84/</link>
-      <pubDate>Sun, 09 Mar 2025 07:38:53 +0000</pubDate>
-      <guid>https://xgdebug.com/tags/%E6%8A%95%E8%B5%84/</guid>
       <description></description>
     </item>
     <item>
@@ -252,10 +245,10 @@
       <description></description>
     </item>
     <item>
-      <title>Small Businesses</title>
-      <link>https://xgdebug.com/tags/small-businesses/</link>
+      <title>Businesses</title>
+      <link>https://xgdebug.com/tags/businesses/</link>
       <pubDate>Tue, 18 Jul 2023 08:26:59 +0000</pubDate>
-      <guid>https://xgdebug.com/tags/small-businesses/</guid>
+      <guid>https://xgdebug.com/tags/businesses/</guid>
       <description></description>
     </item>
     <item>
@@ -270,13 +263,6 @@
       <link>https://xgdebug.com/tags/%E6%88%91%E5%B0%B1%E6%98%AF%E4%BD%A0%E5%95%8A/</link>
       <pubDate>Mon, 03 Jul 2023 08:08:26 +0000</pubDate>
       <guid>https://xgdebug.com/tags/%E6%88%91%E5%B0%B1%E6%98%AF%E4%BD%A0%E5%95%8A/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ramblings</title>
-      <link>https://xgdebug.com/tags/ramblings/</link>
-      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/tags/ramblings/</guid>
       <description></description>
     </item>
   </channel>
