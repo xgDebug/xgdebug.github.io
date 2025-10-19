@@ -9,7 +9,7 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.151.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 28 Sep 2024 05:08:49 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -505,7 +505,8 @@ cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_EXAMPLES=ON -DNCNN_PLATFORM_API=OF
 make -j$(nproc)
 </code></pre><p>Then you can run a test</p>
 <blockquote>
-<p>on my Pixel 3 XL using Qualcomm 845,cant load <code>256-ncnn.png</code></p></blockquote>
+<p>on my Pixel 3 XL using Qualcomm 845,cant load <code>256-ncnn.png</code></p>
+</blockquote>
 <pre tabindex="0"><code>cd ../examples
 ../build/examples/squeezenet ../images/128-ncnn.png
 </code></pre>]]></content:encoded>
@@ -1171,7 +1172,8 @@ cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_EXAMPLES=ON -DNCNN_PLATFORM_API=OF
 make -j$(nproc)
 </code></pre><p>Then you can run a test</p>
 <blockquote>
-<p>on my Pixel 3 XL using Qualcomm 845,cant load <code>256-ncnn.png</code></p></blockquote>
+<p>on my Pixel 3 XL using Qualcomm 845,cant load <code>256-ncnn.png</code></p>
+</blockquote>
 <pre tabindex="0"><code>
 cd ../examples
 ../build/examples/squeezenet ../images/128-ncnn.png
