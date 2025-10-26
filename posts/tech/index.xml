@@ -9,10 +9,54 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.152.0</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 12 Jul 2025 14:52:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Oct 2025 14:09:23 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWRT配置IPV6中继</title>
+      <link>https://xgdebug.com/posts/tech/openwrt/openwrt%E9%85%8D%E7%BD%AEipv6%E4%B8%AD%E7%BB%A7/</link>
+      <pubDate>Sun, 26 Oct 2025 14:03:45 +0000</pubDate>
+      <guid>https://xgdebug.com/posts/tech/openwrt/openwrt%E9%85%8D%E7%BD%AEipv6%E4%B8%AD%E7%BB%A7/</guid>
+      <description>为了跟进时代，本文介绍了如何在OpenWRT上配置二级路由的IPV6中继模式，使内网设备也能获取IPV6地址。</description>
+      <content:encoded><![CDATA[<p>为了跟进一下时代，尝尝IPV6的鲜，我打算给我的二级内网搞出IPV6来</p>
+<p>因为我是家网络有两级，一级是主路由，他可以获取到由运营商分配的IPV6和IPV6-PD，并且可以给接入他的设备分配一个公网IPV6；还有一级时我书房的，他只能自己获取到一个公网IPV6，给接入设备的却只有一个内网的IPV6</p>
+<p>打开二级路由 OpenWRT设置–&gt;接口–&gt;WAN6&ndash;&gt;DHCP服务器–&gt;IPV6设置</p>
+<p>把路由通告服务、DHCPv6 服务、NDP 代理全部设置为中继模式，并且勾上选项主</p>
+<pre tabindex="0"><code>Designated master 打勾
+
+Set this interface as master for RA and DHCPv6 relaying as well as NDP proxying.
+RA-Service relay mode
+
+Configures the operation mode of the RA service on this interface.
+DHCPv6-Service relay mode
+
+Configures the operation mode of the DHCPv6 service on this interface.
+NDP-Proxy relay mode
+</code></pre><p>然后打开OpenWRT设置–&gt;接口–&gt;LAN-&gt;DHCP服务器–&gt;IPV6设置</p>
+<p>把路由通告服务、DHCPv6 服务、NDP 代理全部设置为中继模式，注意此时不勾 Designated master</p>
+<p>最后全部保存并应用，然后再次测试IPV6，发现IPV6已经可以正常获取到了</p>
+<p>最终 uci</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">root@OpenWRT-MY:~# uci show dhcp.lan
+</span></span><span class="line"><span class="cl">dhcp.lan<span class="o">=</span>dhcp
+</span></span><span class="line"><span class="cl">dhcp.lan.interface<span class="o">=</span><span class="s1">&#39;lan&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.start<span class="o">=</span><span class="s1">&#39;100&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.limit<span class="o">=</span><span class="s1">&#39;150&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.leasetime<span class="o">=</span><span class="s1">&#39;12h&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.dhcpv4<span class="o">=</span><span class="s1">&#39;server&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.ra<span class="o">=</span><span class="s1">&#39;relay&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.dhcpv6<span class="o">=</span><span class="s1">&#39;relay&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.lan.ndp<span class="o">=</span><span class="s1">&#39;relay&#39;</span>
+</span></span><span class="line"><span class="cl">root@OpenWRT-MY:~# uci show dhcp.wan6
+</span></span><span class="line"><span class="cl">dhcp.wan6<span class="o">=</span>dhcp
+</span></span><span class="line"><span class="cl">dhcp.wan6.interface<span class="o">=</span><span class="s1">&#39;wan6&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.wan6.ignore<span class="o">=</span><span class="s1">&#39;1&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.wan6.master<span class="o">=</span><span class="s1">&#39;1&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.wan6.ra<span class="o">=</span><span class="s1">&#39;relay&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.wan6.dhcpv6<span class="o">=</span><span class="s1">&#39;relay&#39;</span>
+</span></span><span class="line"><span class="cl">dhcp.wan6.ndp<span class="o">=</span><span class="s1">&#39;relay&#39;</span>
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
     <item>
       <title>人性弱点中的开发者机会</title>
       <link>https://xgdebug.com/posts/tech/app/%E4%BA%BA%E6%80%A7%E5%BC%B1%E7%82%B9%E4%B8%AD%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85%E6%9C%BA%E4%BC%9A/</link>
