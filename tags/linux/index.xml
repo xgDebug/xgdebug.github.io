@@ -11,8 +11,165 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 26 Oct 2025 14:09:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 11:42:40 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt双路由DHCPv6-PD前缀委派配置教程</title>
+      <link>https://xgdebug.com/posts/tech/openwrt/openwrt%E5%8F%8C%E8%B7%AF%E7%94%B1dhcpv6-pd%E5%89%8D%E7%BC%80%E5%A7%94%E6%B4%BE%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 07 Nov 2025 11:40:50 +0000</pubDate>
+      <guid>https://xgdebug.com/posts/tech/openwrt/openwrt%E5%8F%8C%E8%B7%AF%E7%94%B1dhcpv6-pd%E5%89%8D%E7%BC%80%E5%A7%94%E6%B4%BE%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</guid>
+      <description>详解如何通过DHCPv6-PD在OpenWrt路由器级联环境下获取并分配IPv6公网前缀，包括WAN/LAN接口、RA/DHCPv6服务、防火墙与验证排错。</description>
+      <content:encoded><![CDATA[<h3 id="核心方案配置openwrt_"><strong>核心方案：配置OpenWRT_B通过DHCPv6-PD获取子前缀</strong></h3>
+<h4 id="第一步配置openwrt_"><strong>第一步：配置OpenWRT_B的WAN口（连接OpenWRT_A）</strong></h4>
+<p>进入OpenWRT_B管理界面 → <strong>网络</strong> → <strong>接口</strong></p>
+<ol>
+<li><strong>编辑WAN接口</strong>（物理接口对应连接OpenWRT_A的网口）</li>
+<li><strong>协议</strong>：选择  <strong>&ldquo;DHCPv6客户端&rdquo;</strong>  （如果原来是静态或禁用）</li>
+<li><strong>切换到&quot;高级设置&quot;标签页</strong>：
+<ul>
+<li><strong>&ldquo;请求IPv6前缀&rdquo;</strong>  ：勾选 ✓</li>
+<li><strong>&ldquo;请求的IPv6前缀长度&rdquo;</strong>  ：选择  <strong>&ldquo;自动&rdquo;</strong>  或手动填写  <strong><code>60</code></strong></li>
+</ul>
+</li>
+<li><strong>切换到&quot;物理设置&quot;标签页</strong>：确认接口绑定正确（如eth0.2或lan口）</li>
+<li><strong>保存</strong></li>
+</ol>
+<h4 id="第二步配置openwrt_"><strong>第二步：配置OpenWRT_B的LAN口（连接你的电脑）</strong></h4>
+<p>仍在<strong>网络</strong> → <strong>接口</strong> → <strong>编辑LAN接口</strong></p>
+<ol>
+<li>
+<p><strong>切换到&quot;常规设置&quot;标签页</strong>：</p>
+<ul>
+<li><strong>IPv6分配长度</strong>：选择  <strong><code>64</code></strong>  （关键！）</li>
+</ul>
+</li>
+<li>
+<p><strong>切换到&quot;IPv6设置&quot;标签页</strong>：</p>
+<ul>
+<li><strong>&ldquo;IPv6 assignment hint&rdquo;</strong>  ：填写一个子网ID（如 <strong><code>1</code></strong> 或 <strong><code>2</code></strong>，避免与OpenWRT_A的LAN冲突）</li>
+<li><strong>&ldquo;IPv6后缀&rdquo;</strong>  ：可留空或设置为  <strong><code>::1</code></strong></li>
+<li><strong>RA服务</strong>：选择  <strong>&ldquo;服务器模式&rdquo;</strong></li>
+<li><strong>DHCPv6服务</strong>：选择  <strong>&ldquo;服务器模式&rdquo;</strong></li>
+<li><strong>NDP代理</strong>：选择  <strong>&ldquo;已禁用&rdquo;</strong></li>
+<li><strong>RA管理</strong>：选择  <strong>&ldquo;已启用&rdquo;</strong></li>
+<li><strong>Always announce default router</strong>：勾选 ✓</li>
+</ul>
+</li>
+<li>
+<p><strong>保存并应用</strong></p>
+</li>
+</ol>
+<h4 id="第三步检查dhcpv6服务器配置"><strong>第三步：检查DHCPv6服务器配置</strong></h4>
+<p>进入 <strong>服务</strong> → <strong>DHCP/DNS</strong></p>
+<ol>
+<li><strong>切换到&quot;高级设置&quot;标签页</strong>：
+<ul>
+<li>确保 <strong>&ldquo;禁止解析IPv6 DNS记录&rdquo;</strong>  <strong>未勾选</strong></li>
+</ul>
+</li>
+<li><strong>切换到&quot;IPv6 RA设置&quot;标签页</strong>：
+<ul>
+<li><strong>RA Flags</strong>：勾选 <strong><code>managed</code></strong> 和 <strong><code>other</code></strong></li>
+</ul>
+</li>
+<li><strong>保存并应用</strong></li>
+</ol>
+<h4 id="第四步调整防火墙关键"><strong>第四步：调整防火墙（关键）</strong></h4>
+<p>进入 <strong>网络</strong> → <strong>防火墙</strong></p>
+<ol>
+<li>
+<p><strong>编辑&quot;wan&quot;区域</strong>：</p>
+<ul>
+<li><strong>转发</strong>：选择 <strong>&ldquo;接受&rdquo;</strong> 或确保有规则允许转发到lan区域</li>
+<li><strong>涵盖的网络</strong>：确认包含 <code>wan</code> 和 <code>wan6</code></li>
+</ul>
+</li>
+<li>
+<p><strong>编辑&quot;lan&quot;区域</strong>：</p>
+<ul>
+<li><strong>转发</strong>：选择  <strong>&ldquo;接受&rdquo;</strong></li>
+<li><strong>涵盖的网络</strong>：确认包含 <code>lan</code></li>
+</ul>
+</li>
+<li>
+<p><strong>保存并应用</strong></p>
+</li>
+</ol>
+<h3 id="验证与排错"><strong>验证与排错</strong></h3>
+<h4 id="在openwrt_"><strong>在OpenWRT_B上执行以下命令：</strong></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 检查是否成功获取PD</span>
+</span></span><span class="line"><span class="cl">ifstatus wan6
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看LAN口IPv6地址</span>
+</span></span><span class="line"><span class="cl">ifconfig br-lan <span class="p">|</span> grep inet6
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看路由表</span>
+</span></span><span class="line"><span class="cl">ip -6 route
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看DHCPv6服务器状态</span>
+</span></span><span class="line"><span class="cl">logread <span class="p">|</span> grep dhcp6
+</span></span></code></pre></div><p><strong>成功标志</strong>：</p>
+<ul>
+<li><code>ifstatus wan6</code> 应显示获取的IPv6-PD（如 <code>240e:39c:2bae:7001::/60</code>）</li>
+<li>LAN口应有公网IPv6地址（如 <code>240e:39c:2bae:7001::1/64</code>）</li>
+<li>路由表中有 <code>240e:39c:2bae:7000::/56</code> 的默认路由指向pppoe-wan</li>
+</ul>
+<h4 id="在电脑上验证"><strong>在电脑上验证：</strong></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Windows</span>
+</span></span><span class="line"><span class="cl">ipconfig /all <span class="p">|</span> findstr IPv6
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Linux/macOS</span>
+</span></span><span class="line"><span class="cl">ifconfig <span class="p">|</span> grep inet6
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 测试连通性</span>
+</span></span><span class="line"><span class="cl">ping -6 ipv6.google.com
+</span></span></code></pre></div><h3 id="常见问题与解决"><strong>常见问题与解决</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>问题</th>
+          <th>原因</th>
+          <th>解决方案</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>OpenWRT_B获取不到PD</td>
+          <td>OpenWRT_A未正确分配PD前缀</td>
+          <td>在OpenWRT_A的WAN6接口高级设置中，将&quot;IPv6前缀长度&quot;改为<code>60</code>或<code>56</code></td>
+      </tr>
+      <tr>
+          <td>电脑获取不到地址</td>
+          <td>RA/DHCPv6服务未启用或防火墙阻拦</td>
+          <td>检查LAN口的IPv6设置为&quot;服务器模式&quot;，并确认防火墙允许转发</td>
+      </tr>
+      <tr>
+          <td>能获取地址但无法上网</td>
+          <td>缺少默认路由或DNS</td>
+          <td>确保RA设置中&quot;Always announce default router&quot;已勾选，并检查DNS配置</td>
+      </tr>
+      <tr>
+          <td>IPv6地址冲突</td>
+          <td>子网ID与OpenWRT_A冲突</td>
+          <td>修改OpenWRT_B LAN的&quot;IPv6 assignment hint&quot;为其他值（1,2,3&hellip;）</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="推荐配置总结"><strong>推荐配置总结</strong></h3>
+<p><strong>OpenWRT_A</strong>（确保）：</p>
+<ul>
+<li>WAN6接口 → 高级设置 → IPv6前缀长度：<code>60</code> 或 <code>56</code></li>
+<li>DHCP/DNS → 高级设置 → 勾选&quot;动态DHCP&quot;和&quot;RA&quot;</li>
+</ul>
+<p><strong>OpenWRT_B</strong>（关键）：</p>
+<ul>
+<li>WAN接口：DHCPv6客户端 + 请求IPv6前缀</li>
+<li>LAN接口：IPv6分配长度64 + RA/DHCPv6服务器模式</li>
+<li>防火墙：允许wan到lan的IPv6转发</li>
+</ul>
+<p>配置完成后，重启OpenWRT_B的WAN接口或整个路由器，等待1-2分钟让DHCPv6完成前缀协商，你的电脑应该就能获取到公网IPv6地址了。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>OpenWRT配置IPV6中继</title>
       <link>https://xgdebug.com/posts/tech/openwrt/openwrt%E9%85%8D%E7%BD%AEipv6%E4%B8%AD%E7%BB%A7/</link>
