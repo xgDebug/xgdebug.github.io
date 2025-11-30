@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 26 Nov 2025 06:52:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 01:39:49 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Split Personality in the Stock Market: Why I’m Buffett in a Bull Run and Ready to Quit School in a Crash</title>
@@ -137,8 +137,9 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
       <pubDate>Fri, 07 Nov 2025 11:40:50 +0000</pubDate>
       <guid>https://xgdebug.com/posts/tech/openwrt/openwrt%E5%8F%8C%E8%B7%AF%E7%94%B1dhcpv6-pd%E5%89%8D%E7%BC%80%E5%A7%94%E6%B4%BE%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</guid>
       <description>详解如何通过DHCPv6-PD在OpenWrt路由器级联环境下获取并分配IPv6公网前缀，包括WAN/LAN接口、RA/DHCPv6服务、防火墙与验证排错。</description>
-      <content:encoded><![CDATA[<h3 id="核心方案配置openwrt_"><strong>核心方案：配置OpenWRT_B通过DHCPv6-PD获取子前缀</strong></h3>
-<h4 id="第一步配置openwrt_"><strong>第一步：配置OpenWRT_B的WAN口（连接OpenWRT_A）</strong></h4>
+      <content:encoded><![CDATA[<h1 id="核心方案配置openwrt_"><strong>核心方案：配置OpenWRT_B通过DHCPv6-PD获取子前缀</strong></h1>
+<p><strong>核心关键是要给对应的接口分配一个合适的前缀长度，并确保DHCPv6和RA服务正确启用。,最小也要63,才能给下一级路由器分配64位子网</strong></p>
+<h2 id="第一步配置openwrt_"><strong>第一步：配置OpenWRT_B的WAN口（连接OpenWRT_A）</strong></h2>
 <p>进入OpenWRT_B管理界面 → <strong>网络</strong> → <strong>接口</strong></p>
 <ol>
 <li><strong>编辑WAN接口</strong>（物理接口对应连接OpenWRT_A的网口）</li>
@@ -152,13 +153,13 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
 <li><strong>切换到&quot;物理设置&quot;标签页</strong>：确认接口绑定正确（如eth0.2或lan口）</li>
 <li><strong>保存</strong></li>
 </ol>
-<h4 id="第二步配置openwrt_"><strong>第二步：配置OpenWRT_B的LAN口（连接你的电脑）</strong></h4>
+<h2 id="第二步配置openwrt_"><strong>第二步：配置OpenWRT_B的LAN口（连接你的电脑）</strong></h2>
 <p>仍在<strong>网络</strong> → <strong>接口</strong> → <strong>编辑LAN接口</strong></p>
 <ol>
 <li>
 <p><strong>切换到&quot;常规设置&quot;标签页</strong>：</p>
 <ul>
-<li><strong>IPv6分配长度</strong>：选择  <strong><code>64</code></strong>  （关键！）</li>
+<li><strong>IPv6分配长度</strong>：选择  <strong><code>63</code></strong>  （关键！）</li>
 </ul>
 </li>
 <li>
@@ -177,7 +178,7 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
 <p><strong>保存并应用</strong></p>
 </li>
 </ol>
-<h4 id="第三步检查dhcpv6服务器配置"><strong>第三步：检查DHCPv6服务器配置</strong></h4>
+<h2 id="第三步检查dhcpv6服务器配置"><strong>第三步：检查DHCPv6服务器配置</strong></h2>
 <p>进入 <strong>服务</strong> → <strong>DHCP/DNS</strong></p>
 <ol>
 <li><strong>切换到&quot;高级设置&quot;标签页</strong>：
@@ -192,7 +193,7 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
 </li>
 <li><strong>保存并应用</strong></li>
 </ol>
-<h4 id="第四步调整防火墙关键"><strong>第四步：调整防火墙（关键）</strong></h4>
+<h2 id="第四步调整防火墙关键"><strong>第四步：调整防火墙（关键）</strong></h2>
 <p>进入 <strong>网络</strong> → <strong>防火墙</strong></p>
 <ol>
 <li>
@@ -213,8 +214,8 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
 <p><strong>保存并应用</strong></p>
 </li>
 </ol>
-<h3 id="验证与排错"><strong>验证与排错</strong></h3>
-<h4 id="在openwrt_"><strong>在OpenWRT_B上执行以下命令：</strong></h4>
+<h1 id="验证与排错"><strong>验证与排错</strong></h1>
+<h2 id="在openwrt_"><strong>在OpenWRT_B上执行以下命令：</strong></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 检查是否成功获取PD</span>
 </span></span><span class="line"><span class="cl">ifstatus wan6
 </span></span><span class="line"><span class="cl">
@@ -232,7 +233,7 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
 <li>LAN口应有公网IPv6地址（如 <code>240e:39c:2bae:7001::1/64</code>）</li>
 <li>路由表中有 <code>240e:39c:2bae:7000::/56</code> 的默认路由指向pppoe-wan</li>
 </ul>
-<h4 id="在电脑上验证"><strong>在电脑上验证：</strong></h4>
+<h2 id="在电脑上验证"><strong>在电脑上验证：</strong></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Windows</span>
 </span></span><span class="line"><span class="cl">ipconfig /all <span class="p">|</span> findstr IPv6
 </span></span><span class="line"><span class="cl">
@@ -241,7 +242,7 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 测试连通性</span>
 </span></span><span class="line"><span class="cl">ping -6 ipv6.google.com
-</span></span></code></pre></div><h3 id="常见问题与解决"><strong>常见问题与解决</strong></h3>
+</span></span></code></pre></div><h1 id="常见问题与解决"><strong>常见问题与解决</strong></h1>
 <table>
   <thead>
       <tr>
@@ -273,7 +274,7 @@ is a reminder to look deeper. It’s a call to move beyond the superficial and e
       </tr>
   </tbody>
 </table>
-<h3 id="推荐配置总结"><strong>推荐配置总结</strong></h3>
+<h1 id="推荐配置总结"><strong>推荐配置总结</strong></h1>
 <p><strong>OpenWRT_A</strong>（确保）：</p>
 <ul>
 <li>WAN6接口 → 高级设置 → IPv6前缀长度：<code>60</code> 或 <code>56</code></li>
