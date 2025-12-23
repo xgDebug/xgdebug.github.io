@@ -9,7 +9,7 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.153.2</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 28 Sep 2024 05:08:49 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -26,9 +26,9 @@
 </ol>
 <h2 id="編譯成-mt-時要打開-cmake-0091-特性">編譯成 MT 時要打開 CMAKE 0091 特性</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmake" data-lang="cmake"><span class="line"><span class="cl"><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.20.0</span><span class="p">)</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">cmake_policy</span><span class="p">(</span><span class="s">SET</span> <span class="s">CMP0091</span> <span class="s">NEW</span><span class="p">)</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_MSVC_RUNTIME_LIBRARY</span> <span class="s2">&#34;MultiThreaded$&lt;$&lt;CONFIG:Debug&gt;:Debug&gt;&#34;</span><span class="p">)</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">project</span><span class="p">(</span><span class="s2">&#34;client-project&#34;</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="nb">cmake_policy</span><span class="p">(</span><span class="s">SET</span> <span class="s">CMP0091</span> <span class="s">NEW</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_MSVC_RUNTIME_LIBRARY</span> <span class="s2">&#34;MultiThreaded$&lt;$&lt;CONFIG:Debug&gt;:Debug&gt;&#34;</span><span class="p">)</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="nb">project</span><span class="p">(</span><span class="s2">&#34;client-project&#34;</span><span class="p">)</span><span class="err">
 </span></span></span></code></pre></div><h3 id="训练-yolo">训练 YOLO</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="se">\E</span>nvs<span class="se">\t</span>orch<span class="se">\S</span>cripts<span class="se">\a</span>ctivate.ps1
 </span></span><span class="line"><span class="cl">python train.py --batch <span class="m">6</span> --workers <span class="m">2</span> --imgsz <span class="m">960</span> --epochs <span class="m">300</span> --data <span class="s2">&#34;\Core\yaml\data.yaml&#34;</span> --cfg <span class="s2">&#34;\Core\yaml\cfg.yaml&#34;</span> --weights <span class="se">\C</span>ore<span class="se">\w</span>eights<span class="se">\b</span>est.pt --device <span class="m">0</span>
@@ -188,9 +188,9 @@ $ git submodule update --init
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_OSX_ARCHITECTURES<span class="o">=</span><span class="s2">&#34;x86_64;arm64&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl">    -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
@@ -252,13 +252,13 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-android-armv7
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DANDROID_PLATFORM<span class="o">=</span>android-14 ..
+</span></span></span><span class="line"><span class="cl">    -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DANDROID_PLATFORM<span class="o">=</span>android-14 ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl">  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
 </span></span><span class="line"><span class="cl">make install
@@ -269,13 +269,13 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-android-aarch64
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span><span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_PLATFORM<span class="o">=</span>android-21 ..
+</span></span></span><span class="line"><span class="cl">  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -DANDROID_PLATFORM<span class="o">=</span>android-21 ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl">  -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
 </span></span><span class="line"><span class="cl">make install
@@ -298,9 +298,9 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>install <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DIOS_PLATFORM<span class="o">=</span>OS -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;armv7;arm64;arm64e&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DPERL_EXECUTABLE<span class="o">=</span>/usr/local/bin/perl <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DLIBOMP_ENABLE_SHARED<span class="o">=</span>OFF -DLIBOMP_OMPT_SUPPORT<span class="o">=</span>OFF -DLIBOMP_USE_HWLOC<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DIOS_PLATFORM<span class="o">=</span>OS -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;armv7;arm64;arm64e&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DPERL_EXECUTABLE<span class="o">=</span>/usr/local/bin/perl <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DLIBOMP_ENABLE_SHARED<span class="o">=</span>OFF -DLIBOMP_OMPT_SUPPORT<span class="o">=</span>OFF -DLIBOMP_USE_HWLOC<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
@@ -321,9 +321,9 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios-sim
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release -DCMAKE_INSTALL_PREFIX<span class="o">=</span>install <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DIOS_PLATFORM<span class="o">=</span>SIMULATOR -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;i386;x86_64&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DPERL_EXECUTABLE<span class="o">=</span>/usr/local/bin/perl <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DLIBOMP_ENABLE_SHARED<span class="o">=</span>OFF -DLIBOMP_OMPT_SUPPORT<span class="o">=</span>OFF -DLIBOMP_USE_HWLOC<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DIOS_PLATFORM<span class="o">=</span>SIMULATOR -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;i386;x86_64&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DPERL_EXECUTABLE<span class="o">=</span>/usr/local/bin/perl <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DLIBOMP_ENABLE_SHARED<span class="o">=</span>OFF -DLIBOMP_OMPT_SUPPORT<span class="o">=</span>OFF -DLIBOMP_USE_HWLOC<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
@@ -357,21 +357,21 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DIOS_PLATFORM<span class="o">=</span>OS -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;armv7;arm64;arm64e&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># vulkan is only available on arm64 devices</span>
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DIOS_PLATFORM<span class="o">=</span>OS64 -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;arm64;arm64e&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/iOS/libMoltenVK.dylib <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/iOS/libMoltenVK.dylib <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
@@ -381,11 +381,11 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-ios-sim
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/ios.toolchain.cmake -DIOS_PLATFORM<span class="o">=</span>SIMULATOR -DIOS_ARCH<span class="o">=</span><span class="s2">&#34;i386;x86_64&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DENABLE_BITCODE<span class="o">=</span><span class="m">0</span> -DENABLE_ARC<span class="o">=</span><span class="m">0</span> -DENABLE_VISIBILITY<span class="o">=</span><span class="m">0</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_C_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> -DOpenMP_CXX_FLAGS<span class="o">=</span><span class="s2">&#34;-Xclang -fopenmp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_C_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> -DOpenMP_CXX_LIB_NAMES<span class="o">=</span><span class="s2">&#34;libomp&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DOpenMP_libomp_LIBRARY<span class="o">=</span><span class="s2">&#34;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libomp.a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
@@ -429,32 +429,32 @@ list(APPEND ANDROID_COMPILER_FLAGS
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_SIMPLEOMP<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>OFF -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_SIMPLEOMP<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>OFF -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
 </span></span></code></pre></div><p>Build with WASM SIMD extension:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-simd
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-simd
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_SIMPLEOMP<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>ON -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_SIMPLEOMP<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>ON -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
 </span></span></code></pre></div><p>Build with WASM Thread extension:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-threads
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-threads
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>ON -DNCNN_OPENMP<span class="o">=</span>ON -DNCNN_SIMPLEOMP<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>OFF -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DNCNN_THREADS<span class="o">=</span>ON -DNCNN_OPENMP<span class="o">=</span>ON -DNCNN_SIMPLEOMP<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>OFF -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
 </span></span></code></pre></div><p>Build with WASM SIMD and Thread extension:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-simd-threads
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-simd-threads
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_THREADS<span class="o">=</span>ON -DNCNN_OPENMP<span class="o">=</span>ON -DNCNN_SIMPLEOMP<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>ON -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
+</span></span></span><span class="line"><span class="cl">    -DNCNN_THREADS<span class="o">=</span>ON -DNCNN_OPENMP<span class="o">=</span>ON -DNCNN_SIMPLEOMP<span class="o">=</span>ON -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_SSE2<span class="o">=</span>ON -DNCNN_AVX2<span class="o">=</span>OFF -DNCNN_AVX<span class="o">=</span>OFF <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_BUILD_TOOLS<span class="o">=</span>OFF -DNCNN_BUILD_EXAMPLES<span class="o">=</span>OFF -DNCNN_BUILD_BENCHMARK<span class="o">=</span>OFF ..
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
 </span></span></code></pre></div><p>Pick <code>build-XYZ/install</code> folder for further usage.</p>
@@ -467,8 +467,8 @@ list(APPEND ANDROID_COMPILER_FLAGS
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build-c906
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-c906
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span>../toolchains/c906.toolchain.cmake <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DCMAKE_BUILD_TYPE<span class="o">=</span>relwithdebinfo -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_RVV<span class="o">=</span>ON <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -DNCNN_SIMPLEOCV<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl">    -DCMAKE_BUILD_TYPE<span class="o">=</span>relwithdebinfo -DNCNN_OPENMP<span class="o">=</span>OFF -DNCNN_THREADS<span class="o">=</span>OFF -DNCNN_RUNTIME_CPU<span class="o">=</span>OFF -DNCNN_RVV<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl">    -DNCNN_SIMPLEOCV<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
 </span></span></code></pre></div><p>Pick <code>build-c906/install</code> folder for further usage.</p>
@@ -478,7 +478,7 @@ list(APPEND ANDROID_COMPILER_FLAGS
 <p>For gcc version &lt; 8.5, you need to fix msa.h header for workaround msa fmadd bug.</p>
 <p>Open <code>/usr/lib/gcc/mips64el-linux-gnuabi64/8/include/msa.h</code>, find <code>__msa_fmadd_w</code> and apply changes as the following</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">// #define __msa_fmadd_w __builtin_msa_fmadd_w
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define __msa_fmadd_w(a, b, c) __builtin_msa_fmadd_w(c, b, a)
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define __msa_fmadd_w(a, b, c) __builtin_msa_fmadd_w(c, b, a)
 </span></span></span></code></pre></div><p>Build ncnn with mips msa and simpleocv enabled:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p build
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
@@ -816,9 +816,9 @@ cd ../examples
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_OSX_ARCHITECTURES<span class="o">=</span><span class="s2">&#34;x86_64;arm64&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl"> -DVulkan_INCLUDE_DIR<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class="se">\
+</span></span></span><span class="line"><span class="cl"> -DVulkan_LIBRARY<span class="o">=</span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class="se">\
+</span></span></span><span class="line"><span class="cl"> -DNCNN_VULKAN<span class="o">=</span>ON -DNCNN_BUILD_EXAMPLES<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake --build . -j <span class="m">4</span>
 </span></span><span class="line"><span class="cl">cmake --build . --target install
@@ -891,14 +891,14 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-android-armv7
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_PLATFORM<span class="o">=</span>android-14 ..
+</span></span></span><span class="line"><span class="cl"> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl"> -DANDROID_PLATFORM<span class="o">=</span>android-14 ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl"> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class="o">=</span>ON <span class="se">\
+</span></span></span><span class="line"><span class="cl"> -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
 </span></span><span class="line"><span class="cl">make install
@@ -910,14 +910,14 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> build-android-aarch64
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span><span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_PLATFORM<span class="o">=</span>android-21 ..
+</span></span></span><span class="line"><span class="cl"> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"> -DANDROID_PLATFORM<span class="o">=</span>android-21 ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cmake -DCMAKE_TOOLCHAIN_FILE<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$ANDROID_NDK</span><span class="s2">/build/cmake/android.toolchain.cmake&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
+</span></span></span><span class="line"><span class="cl"> -DANDROID_ABI<span class="o">=</span><span class="s2">&#34;arm64-v8a&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"> -DANDROID_PLATFORM<span class="o">=</span>android-24 -DNCNN_VULKAN<span class="o">=</span>ON ..
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">make -j<span class="k">$(</span>nproc<span class="k">)</span>
 </span></span><span class="line"><span class="cl">make install

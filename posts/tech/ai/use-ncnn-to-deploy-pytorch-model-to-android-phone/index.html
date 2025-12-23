@@ -280,9 +280,9 @@ cd ../examples
 </span></span><span class=line><span class=cl><span class=nb>cd</span> build
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>cmake -DCMAKE_OSX_ARCHITECTURES<span class=o>=</span><span class=s2>&#34;x86_64;arm64&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DVulkan_INCLUDE_DIR<span class=o>=</span><span class=sb>`</span><span class=nb>pwd</span><span class=sb>`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DVulkan_LIBRARY<span class=o>=</span><span class=sb>`</span><span class=nb>pwd</span><span class=sb>`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DNCNN_VULKAN<span class=o>=</span>ON -DNCNN_BUILD_EXAMPLES<span class=o>=</span>ON ..
+</span></span></span><span class=line><span class=cl> -DVulkan_INCLUDE_DIR<span class=o>=</span><span class=sb>`</span><span class=nb>pwd</span><span class=sb>`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/include <span class=se>\
+</span></span></span><span class=line><span class=cl> -DVulkan_LIBRARY<span class=o>=</span><span class=sb>`</span><span class=nb>pwd</span><span class=sb>`</span>/../vulkansdk-macos-1.2.189.0/MoltenVK/dylib/macOS/libMoltenVK.dylib <span class=se>\
+</span></span></span><span class=line><span class=cl> -DNCNN_VULKAN<span class=o>=</span>ON -DNCNN_BUILD_EXAMPLES<span class=o>=</span>ON ..
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>cmake --build . -j <span class=m>4</span>
 </span></span><span class=line><span class=cl>cmake --build . --target install
@@ -337,14 +337,14 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class=line><span class=cl><span class=nb>cd</span> build-android-armv7
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>cmake -DCMAKE_TOOLCHAIN_FILE<span class=o>=</span><span class=s2>&#34;</span><span class=nv>$ANDROID_NDK</span><span class=s2>/build/cmake/android.toolchain.cmake&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class=o>=</span>ON <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_PLATFORM<span class=o>=</span>android-14 ..
+</span></span></span><span class=line><span class=cl> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class=o>=</span>ON <span class=se>\
+</span></span></span><span class=line><span class=cl> -DANDROID_PLATFORM<span class=o>=</span>android-14 ..
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>cmake -DCMAKE_TOOLCHAIN_FILE<span class=o>=</span><span class=s2>&#34;</span><span class=nv>$ANDROID_NDK</span><span class=s2>/build/cmake/android.toolchain.cmake&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class=o>=</span>ON <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_PLATFORM<span class=o>=</span>android-24 -DNCNN_VULKAN<span class=o>=</span>ON ..
+</span></span></span><span class=line><span class=cl> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;armeabi-v7a&#34;</span> -DANDROID_ARM_NEON<span class=o>=</span>ON <span class=se>\
+</span></span></span><span class=line><span class=cl> -DANDROID_PLATFORM<span class=o>=</span>android-24 -DNCNN_VULKAN<span class=o>=</span>ON ..
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>make -j<span class=k>$(</span>nproc<span class=k>)</span>
 </span></span><span class=line><span class=cl>make install
@@ -354,14 +354,14 @@ list(APPEND ANDROID_COMPILER_FLAGS
 </span></span><span class=line><span class=cl><span class=nb>cd</span> build-android-aarch64
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>cmake -DCMAKE_TOOLCHAIN_FILE<span class=o>=</span><span class=s2>&#34;</span><span class=nv>$ANDROID_NDK</span><span class=s2>/build/cmake/android.toolchain.cmake&#34;</span><span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;arm64-v8a&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_PLATFORM<span class=o>=</span>android-21 ..
+</span></span></span><span class=line><span class=cl> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;arm64-v8a&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl> -DANDROID_PLATFORM<span class=o>=</span>android-21 ..
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># If you want to enable Vulkan, platform api version &gt;= android-24 is needed</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>cmake -DCMAKE_TOOLCHAIN_FILE<span class=o>=</span><span class=s2>&#34;</span><span class=nv>$ANDROID_NDK</span><span class=s2>/build/cmake/android.toolchain.cmake&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;arm64-v8a&#34;</span> <span class=se>\
-</span></span></span><span class=line><span class=cl><span class=se></span> -DANDROID_PLATFORM<span class=o>=</span>android-24 -DNCNN_VULKAN<span class=o>=</span>ON ..
+</span></span></span><span class=line><span class=cl> -DANDROID_ABI<span class=o>=</span><span class=s2>&#34;arm64-v8a&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl> -DANDROID_PLATFORM<span class=o>=</span>android-24 -DNCNN_VULKAN<span class=o>=</span>ON ..
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>make -j<span class=k>$(</span>nproc<span class=k>)</span>
 </span></span><span class=line><span class=cl>make install

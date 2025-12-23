@@ -20,15 +20,15 @@ Key: 将上一步生成的公钥 id_rsa.pub 的内容复制粘贴进去。
 Name: DEPLOY_KEY
 Value: 将生成的私钥 id_rsa 的内容粘贴进去。</p><h2 id=4更新-github-actions-配置>4：更新 GitHub Actions 配置<a hidden class=anchor aria-hidden=true href=#4更新-github-actions-配置>#</a></h2><p>在 .github/workflows/gh-pages.yml 中使用 DEPLOY_KEY 进行身份验证：</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Deploy Hugo Site to GitHub Pages</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>push</span><span class=p>:</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>branches</span><span class=p>:</span><span class=w> </span>- <span class=l>master</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>on</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>push</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>branches</span><span class=p>:</span><span class=w> </span>- <span class=l>master</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>jobs</span><span class=p>:</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>deploy</span><span class=p>:</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-latest</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>steps: - name</span><span class=p>:</span><span class=w> </span><span class=l>Checkout repository</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v3</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>jobs</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>deploy</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>runs-on</span><span class=p>:</span><span class=w> </span><span class=l>ubuntu-latest</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>steps: - name</span><span class=p>:</span><span class=w> </span><span class=l>Checkout repository</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>actions/checkout@v3</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Set up Hugo</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>uses</span><span class=p>:</span><span class=w> </span><span class=l>peaceiris/actions-hugo@v2</span><span class=w>
