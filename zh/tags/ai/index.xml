@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on xgDebug的博客</title>
+    <link>https://xgdebug.com/zh/tags/ai/</link>
+    <description>Recent content in AI on xgDebug的博客</description>
+    <image>
+      <title>xgDebug的博客</title>
+      <url>https://xgdebug.com/images/avatar.png</url>
+      <link>https://xgdebug.com/images/avatar.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 12 Sep 2023 15:21:53 +0000</lastBuildDate>
+    <atom:link href="https://xgdebug.com/zh/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch安装stable-diffusion-webui中遇到的一些坑</title>
+      <link>https://xgdebug.com/zh/posts/tech/linux/arch-stable-diffusion-webui-pitfalls/</link>
+      <pubDate>Tue, 12 Sep 2023 15:21:53 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/tech/linux/arch-stable-diffusion-webui-pitfalls/</guid>
+      <description>&lt;p&gt;1. 不要使用清华的源，要用阿里的，因为清华的源不全&lt;br&gt;
+2. 要使用 python launch.py 来安装一些 git 库&lt;br&gt;
+3. 要安装 requirements_versions.txt 带版本的 pip 库&lt;br&gt;
+4. 可以使用 python webui.py &amp;ndash;port=7860 &amp;ndash;server=0.0.0.0 &amp;ndash;medvram 节省显存&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>1. 不要使用清华的源，要用阿里的，因为清华的源不全<br>
+2. 要使用 python launch.py 来安装一些 git 库<br>
+3. 要安装 requirements_versions.txt 带版本的 pip 库<br>
+4. 可以使用 python webui.py &ndash;port=7860 &ndash;server=0.0.0.0 &ndash;medvram 节省显存</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

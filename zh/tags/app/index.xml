@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>APP on xgDebug的博客</title>
+    <link>https://xgdebug.com/zh/tags/app/</link>
+    <description>Recent content in APP on xgDebug的博客</description>
+    <image>
+      <title>xgDebug的博客</title>
+      <url>https://xgdebug.com/images/avatar.png</url>
+      <link>https://xgdebug.com/images/avatar.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 Nov 2024 23:38:55 +0800</lastBuildDate>
+    <atom:link href="https://xgdebug.com/zh/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>怎么推广APP呢？</title>
+      <link>https://xgdebug.com/zh/posts/tech/app/how-to-promote-apps/</link>
+      <pubDate>Tue, 19 Nov 2024 14:58:38 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/posts/tech/app/how-to-promote-apps/</guid>
+      <description>&lt;p&gt;这是个比较难搞的问题，目前想到的都有。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;youtube教程下面回帖&lt;/li&gt;
+&lt;li&gt;blog教程回帖&lt;/li&gt;
+&lt;li&gt;搜索所有相关内容回帖&lt;/li&gt;
+&lt;li&gt;上x发帖&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<p>这是个比较难搞的问题，目前想到的都有。</p>
+<ul>
+<li>youtube教程下面回帖</li>
+<li>blog教程回帖</li>
+<li>搜索所有相关内容回帖</li>
+<li>上x发帖</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Hugo移动端项目分析</title>
+      <link>https://xgdebug.com/zh/posts/tech/app/hugo-mobile-project-analysis/</link>
+      <pubDate>Sat, 09 Nov 2024 13:05:38 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/posts/tech/app/hugo-mobile-project-analysis/</guid>
+      <description>&lt;h2 id=&#34;痛点&#34;&gt;痛点&lt;/h2&gt;
+&lt;p&gt;Hugo 是一款很好用的静态网站生成框架,很多人用它来写 Blog,并且部署在 github pages 上，但是这个方案只能在电脑上使用，每次要写文章都需要打开电脑。 我强烈的需要一个时刻都能记录自己思考的方案,在思绪飞扬时打开手机就能马上把它记录下来。所以也就需要一款能在手机上操作的 APP。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="痛点">痛点</h2>
+<p>Hugo 是一款很好用的静态网站生成框架,很多人用它来写 Blog,并且部署在 github pages 上，但是这个方案只能在电脑上使用，每次要写文章都需要打开电脑。 我强烈的需要一个时刻都能记录自己思考的方案,在思绪飞扬时打开手机就能马上把它记录下来。所以也就需要一款能在手机上操作的 APP。</p>
+<h2 id="市场调查">市场调查</h2>
+<p>在动手之前先进行项目评估调查，看用户付费意愿。
+Fake it till you make it .</p>
+<h2 id="实现方法">实现方法</h2>
+<ol>
+<li>移动端带上 git 与 openssl 直接本地操作</li>
+<li>服务器 git clone 仓库，使用 hugo 解析，提供 API 调用。包括目录，分类，Tags 等</li>
+</ol>
+<h2 id="又犯了相同的错误">又犯了相同的错误</h2>
+<p>没有做任何市场调查，直接开始开发原型，虽然进展很快，但是我知道这其实是一种偷懒。开发对我来说是最简单的事。这次有一点不一样，那就是我有实际的需求，所以至少让我先用上吧，我自己都不会用的产品是不会有人用的。</p>
+<h3 id="2024-10-26">2024-10-26</h3>
+<ul>
+<li>编辑与新建文章搞定了</li>
+<li>优化了一下文章加载太慢的问题，主要是先把控件画出来然后再填内容</li>
+<li>目前还差提交与推送到服务器</li>
+</ul>
+<h3 id="2024-10-27">2024-10-27</h3>
+<ul>
+<li>尝试了一下android编译，当然只成功了dart部分</li>
+<li>搞定了向服务器提交</li>
+<li>最后调通了Linux平台下插件交互</li>
+</ul>
+<h3 id="2024-11-08">2024-11-08</h3>
+<ul>
+<li>感觉可以发布第一个版本了，勉强还不错吧</li>
+<li>后续我觉得还可以加入仓库分析头图加载</li>
+<li>下面需要思考一下如何去宣传了</li>
+</ul>
+<h3 id="2024-11-09">2024-11-09</h3>
+<ul>
+<li>
+<p>计划只显示.md 但是好像无效</p>
+</li>
+<li>
+<p>考虑显示图片</p>
+</li>
+<li>
+<p>上午已经搞定了，上边的两个问题。</p>
+</li>
+<li>
+<p>新bug：分析之后必须重启程序才会有效</p>
+</li>
+<li>
+<p>应该把添加标签放在现有标签的下方</p>
+</li>
+<li>
+<p>完成的第一个版本</p>
+</li>
+<li>
+<p>目前还还差一个landing page</p>
+</li>
+<li>
+<p>接下来需要购买一个域名，为产品本身价做一个Blog</p>
+</li>
+</ul>
+<h3 id="2024-11-11">2024-11-11</h3>
+<p>今天发现了一个很大的坑，就是键盘会遮挡输入框下面的工具栏，这个时候需要在最外层包裹一SingleChildscrollView。然后就会在键盘弹出的时候自动把输入框顶上去了。</p>
+<ul>
+<li>图标被弄丢了</li>
+</ul>
+<h3 id="2024-11-12">2024-11-12</h3>
+<ul>
+<li>今天晚上了好多好多的细节，魔鬼都在细节里</li>
+<li>明天可以把预览的字体搞大一点，我觉得现在预览的字体太小了。</li>
+<li>同步状态也搞出问题来了，明天需要检查一下。主要是同步的时候进度条没有按预想的显示</li>
+</ul>
+<h3 id="2024-11-12-1">2024-11-12</h3>
+<ul>
+<li>今天弄好了多语言</li>
+<li>考虑把URL主题修改小一点</li>
+<li>同步时改变setting的loading状态</li>
+</ul>
+<h3 id="2024-11-13">2024-11-13</h3>
+<p>如果正在同步的时候，那么点击仓库应该直接进入设置的同步页面，而不是进入目录浏览模式。</p>
+<h3 id="2024-11-22">2024-11-22</h3>
+<ul>
+<li>我觉得需要一个最近编辑功能。这样我可以以最快的速度打开最近修改过的文件。</li>
+<li>还需要一个全文搜索，不过我不知道用什么技术栈比较好</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Developing solutions without fully understanding users&#39; problems is something I&#39;ve made many mistakes in.</title>
+      <link>https://xgdebug.com/zh/posts/business/avoid-developing-before-understanding-problems/</link>
+      <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/avoid-developing-before-understanding-problems/</guid>
+      <description>&lt;p&gt;1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p&gt;
+&lt;p&gt;2. If there was a solution, would they buy it?&lt;/p&gt;
+&lt;p&gt;3. Would they buy it from us?&lt;/p&gt;
+&lt;p&gt;4. Can we build a solution for that problem?&amp;quot; The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>1. Do consumers recognize that they have the problem you are trying to solve?</p>
+<p>2. If there was a solution, would they buy it?</p>
+<p>3. Would they buy it from us?</p>
+<p>4. Can we build a solution for that problem?&quot; The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>一个现代化APP的开发通常会涉及以下几个步骤和工具</title>
+      <link>https://xgdebug.com/zh/posts/tech/app/modern-app-development-steps/</link>
+      <pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/tech/app/modern-app-development-steps/</guid>
+      <description>&lt;h2 id=&#34;需求分析&#34;&gt;需求分析&lt;/h2&gt;
+&lt;p&gt;分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。&lt;br&gt;
+信息架构和交互设计
+根据需求和用户研究,设计 APP 的信息架构,确定界面流程和交互逻辑。常用的设计工具有 Axure、Sketch 等。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="需求分析">需求分析</h2>
+<p>分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。<br>
+信息架构和交互设计
+根据需求和用户研究,设计 APP 的信息架构,确定界面流程和交互逻辑。常用的设计工具有 Axure、Sketch 等。</p>
+<h2 id="视觉设计">视觉设计</h2>
+<p>进行 APP 的视觉设计,包括界面样式、图标、颜色、字体等。常用工具有 Photoshop、Illustrator 等。</p>
+<h2 id="前端开发">前端开发</h2>
+<p>使用前端开发框架开发 APP 界面,比如 React Native、Flutter 等。需要对 JavaScript、Dart 等语言熟练。</p>
+<h2 id="后端开发">后端开发</h2>
+<p>开发 APP 后端业务逻辑,提供接口和数据支持。使用 PHP、Java、Python 等服务器语言,以及 MySQL、MongoDB 等数据库。</p>
+<h2 id="测试">测试</h2>
+<p>在开发过程中进行功能测试、界面测试、性能测试、安全测试等,确保 APP 质量。使用工具如 Appium、JMeter 等。</p>
+<h2 id="发布和运维">发布和运维</h2>
+<p>将 APP 发布到 App Store 和 Google Play,并进行持续监控和后期优化升级。使用平台如 Firebase。</p>
+<p>所以现代 APP 开发需要多学科协作,也需要掌握各种专业工具,才能开发出用户喜欢的产品。这个过程需要设计、开发和测试人员通力合作。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>一个现代的APP是如何诞生的？</title>
+      <link>https://xgdebug.com/zh/posts/tech/app/birth-of-a-modern-app/</link>
+      <pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/tech/app/birth-of-a-modern-app/</guid>
+      <description>&lt;p&gt;一个现代的 APP 是如何诞生的？&lt;/p&gt;
+&lt;p&gt;从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;创意&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;产品经理：负责制定产品的目标、功能和用户体验。&lt;/li&gt;
+&lt;li&gt;设计师：负责设计产品的界面和交互。&lt;/li&gt;
+&lt;li&gt;开发人员：负责开发产品的代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;开发&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;开发人员：负责开发产品的代码。&lt;/li&gt;
+&lt;li&gt;测试人员：负责测试产品的功能和性能。&lt;/li&gt;
+&lt;li&gt;质量保证工程师：负责确保产品达到质量标准。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;上线&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;产品经理：负责制定产品上线的策略。&lt;/li&gt;
+&lt;li&gt;运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;运营&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。&lt;/li&gt;
+&lt;li&gt;数据分析师：负责分析产品的用户数据，并根据数据做出改进。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下是一些常用的工具：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>一个现代的 APP 是如何诞生的？</p>
+<p>从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：</p>
+<ol>
+<li><strong>创意</strong></li>
+</ol>
+<ul>
+<li>产品经理：负责制定产品的目标、功能和用户体验。</li>
+<li>设计师：负责设计产品的界面和交互。</li>
+<li>开发人员：负责开发产品的代码。</li>
+</ul>
+<ol start="2">
+<li><strong>开发</strong></li>
+</ol>
+<ul>
+<li>开发人员：负责开发产品的代码。</li>
+<li>测试人员：负责测试产品的功能和性能。</li>
+<li>质量保证工程师：负责确保产品达到质量标准。</li>
+</ul>
+<ol start="3">
+<li><strong>上线</strong></li>
+</ol>
+<ul>
+<li>产品经理：负责制定产品上线的策略。</li>
+<li>运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。</li>
+</ul>
+<ol start="4">
+<li><strong>运营</strong></li>
+</ol>
+<ul>
+<li>运营人员：负责产品上线后的运营工作，包括推广、营销、客服等。</li>
+<li>数据分析师：负责分析产品的用户数据，并根据数据做出改进。</li>
+</ul>
+<p>以下是一些常用的工具：</p>
+<ul>
+<li>产品管理工具：Jira、Asana、Trello</li>
+<li>设计工具：Sketch、Figma、Adobe XD</li>
+<li>开发工具：Xcode、Android Studio、Visual Studio</li>
+<li>测试工具：JUnit、Selenium、Xcode UI Testing</li>
+<li>质量保证工具：SonarQube、Codeship、Travis CI</li>
+<li>营销工具：Google Ads、Facebook Ads、Twitter Ads</li>
+<li>客服工具：Zendesk、Intercom、HubSpot</li>
+</ul>
+<p><strong>注意</strong>：以上只是一个概述，具体的步骤和工作岗位可能会有所不同，具体情况要根据产品的不同而定。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

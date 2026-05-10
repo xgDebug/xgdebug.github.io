@@ -512,21 +512,6 @@ make -j$(nproc)
 </code></pre>]]></content:encoded>
     </item>
     <item>
-      <title>Arch安装stable-diffusion-webui中遇到的一些坑</title>
-      <link>https://xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</link>
-      <pubDate>Tue, 12 Sep 2023 15:21:53 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/tech/linux/arch%E5%AE%89%E8%A3%85stable-diffusion-webui%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/</guid>
-      <description>&lt;p&gt;1. 不要使用清华的源，要用阿里的，因为清华的源不全&lt;br&gt;
-2. 要使用 python launch.py 来安装一些 git 库&lt;br&gt;
-3. 要安装 requirements_versions.txt 带版本的 pip 库&lt;br&gt;
-4. 可以使用 python webui.py &amp;ndash;port=7860 &amp;ndash;server=0.0.0.0 &amp;ndash;medvram 节省显存&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>1. 不要使用清华的源，要用阿里的，因为清华的源不全<br>
-2. 要使用 python launch.py 来安装一些 git 库<br>
-3. 要安装 requirements_versions.txt 带版本的 pip 库<br>
-4. 可以使用 python webui.py &ndash;port=7860 &ndash;server=0.0.0.0 &ndash;medvram 节省显存</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Use ncnn to deploy pytorch model to Android phone</title>
       <link>https://xgdebug.com/posts/tech/ai/use-ncnn-to-deploy-pytorch-model-to-android-phone/</link>
       <pubDate>Fri, 11 Aug 2023 01:18:11 +0000</pubDate>
