@@ -14,40 +14,40 @@
     <lastBuildDate>Sat, 28 Sep 2024 04:32:12 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/debug/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在Android 11 上使用 LLDV 调试原生程序</title>
-      <link>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</link>
+      <title>Using LLDV to debug native programs on Android 11</title>
+      <link>https://xgdebug.com/posts/tech/debug/using-lldv-to-debug-native-programs-on-android-11/</link>
       <pubDate>Sat, 28 Sep 2024 04:32:12 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-programs-with-lldv-on-android-11/</guid>
-      <description>本文详细介绍了如何通过 ADB 和 LLDB 在手机端和电脑端搭建调试环境，并提供了从启动调试服务到附加进程、设置断点等完整操作步骤。</description>
-      <content:encoded><![CDATA[<h1 id="手机端">手机端</h1>
-<h2 id="push-调试服务器到手机">PUSH 调试服务器到手机</h2>
+      <guid>https://xgdebug.com/posts/tech/debug/using-lldv-to-debug-native-programs-on-android-11/</guid>
+      <description>This article details how to set up a debugging environment on both the mobile device and the computer using ADB and LLDB, and provides complete operational steps, ranging from starting the debugging service to attaching processes and setting breakpoints.</description>
+      <content:encoded><![CDATA[<h1 id="mobile-side">Mobile Side</h1>
+<h2 id="push-debug-server-to-phone">PUSH Debug Server to Phone</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">adb push lldb-server /data/local/tmp
 </span></span><span class="line"><span class="cl">chmod <span class="m">755</span> /data/local/tmp/lldb-server
-</span></span></code></pre></div><h2 id="启动调试器服务">启动调试器服务</h2>
+</span></span></code></pre></div><h2 id="start-debugger-service">Start Debugger Service</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/data/local/tmp/lldb-server platform --listen <span class="s2">&#34;*:8888&#34;</span> --server
 </span></span></code></pre></div><hr>
-<h1 id="电脑端">电脑端</h1>
-<h2 id="端口转发">端口转发</h2>
+<h1 id="pc-side">PC Side</h1>
+<h2 id="port-forwarding">Port Forwarding</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">adb forward tcp:8888 tcp:8888
-</span></span></code></pre></div><h2 id="启动-lldb">启动 LLDB</h2>
+</span></span></code></pre></div><h2 id="start-lldb">Start LLDB</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.<span class="se">\l</span>ldb.exe
-</span></span></code></pre></div><h2 id="查看支持平台">查看支持平台</h2>
+</span></span></code></pre></div><h2 id="view-supported-platforms">View Supported Platforms</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform list
-</span></span></code></pre></div><h2 id="选-android-平台">选 ANDROID 平台</h2>
+</span></span></code></pre></div><h2 id="select-android-platform">Select ANDROID Platform</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform <span class="k">select</span> remote-android
-</span></span></code></pre></div><h2 id="连接到手机-手机序列号-9643e0ec0604-要换成当前调试的手机使用-adb-devices-查看序列号">连接到手机 手机序列号: <strong>9643e0ec0604</strong> 要换成当前调试的手机,使用 adb devices 查看序列号</h2>
+</span></span></code></pre></div><h2 id="connect-to-phone-phone-serial-number-9643e0ec0604-to-change-to-the-currently-debugging-phone-use-adb-devices-to-view-the-serial-number">Connect to Phone Phone Serial Number: <strong>9643e0ec0604</strong> (To change to the currently debugging phone, use <code>adb devices</code> to view the serial number)</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform connect connect://9643e0ec0604:8888
-</span></span></code></pre></div><h2 id="查看当前正在运行的进程">查看当前正在运行的进程</h2>
+</span></span></code></pre></div><h2 id="view-currently-running-processes">View Currently Running Processes</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform process list
-</span></span></code></pre></div><h2 id="附加上去">附加上去</h2>
+</span></span></code></pre></div><h2 id="attach">Attach</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">attach <span class="m">9053</span>
-</span></span></code></pre></div><h2 id="下断点">下断点</h2>
+</span></span></code></pre></div><h2 id="set-breakpoint">Set Breakpoint</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">b send
-</span></span></code></pre></div><h2 id="跑起来">跑起来</h2>
+</span></span></code></pre></div><h2 id="run-continue">Run (Continue)</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">c
-</span></span></code></pre></div><h2 id="查看线程列表">查看线程列表</h2>
+</span></span></code></pre></div><h2 id="view-thread-list">View Thread List</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">thread list
-</span></span></code></pre></div><h2 id="查看调用栈">查看调用栈</h2>
+</span></span></code></pre></div><h2 id="view-call-stack">View Call Stack</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">bt
 </span></span></code></pre></div>]]></content:encoded>
     </item>

@@ -14,10 +14,27 @@
     <lastBuildDate>Wed, 12 Feb 2025 23:21:27 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/zh/tags/game-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>恐惧基础的稳定与反抗平衡</title>
+      <link>https://xgdebug.com/zh/posts/philosophy/fear-base-stability-and-resistance-balance/</link>
+      <pubDate>Sun, 27 Oct 2024 21:58:36 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/posts/philosophy/fear-base-stability-and-resistance-balance/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;In authoritarian regimes, leaders often secure prolonged control through oppressive tactics that prevent opposition from organizing or gaining momentum. From a game theory perspective, this strategy can be understood as a &amp;ldquo;fear-based stability,&amp;rdquo; where the cost of opposition is high, and the risk of repression discourages dissenters from taking action.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在独裁体制下，领导者通常通过高压手段来确保长期的统治地位，这些手段阻止了反对派组织起来或获得势头。从博弈论的角度来看，这种策略可以被理解为一种“基于恐惧的稳定”（fear-based stability），在这种状态下，反对的成本很高，而镇压的风险则阻止了异议者采取行动。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><strong>In authoritarian regimes, leaders often secure prolonged control through oppressive tactics that prevent opposition from organizing or gaining momentum. From a game theory perspective, this strategy can be understood as a &ldquo;fear-based stability,&rdquo; where the cost of opposition is high, and the risk of repression discourages dissenters from taking action.</strong></p>
+<p>在独裁体制下，领导者通常通过高压手段来确保长期的统治地位，这些手段阻止了反对派组织起来或获得势头。从博弈论的角度来看，这种策略可以被理解为一种“基于恐惧的稳定”（fear-based stability），在这种状态下，反对的成本很高，而镇压的风险则阻止了异议者采取行动。</p>
+<p><strong>In such regimes, individuals face a <code>prisoner's dilemma</code>: although collective action could increase the likelihood of challenging the ruler successfully, the first to oppose often suffers severe consequences if others do not join. This creates a situation where everyone prefers to avoid the risk, maintaining a Nash equilibrium in which silence and compliance are rational choices. This mutual inaction leads to a stable yet coercive equilibrium where the authoritarian’s rule remains unchallenged.</strong></p>
+<p>在这样的体制中，个体面临着一个“囚徒困境”（prisoner&rsquo;s dilemma）：尽管集体行动可能会增加成功挑战统治者的可能性，但如果其他人不加入，第一个站出来反对的人往往会遭受严重的后果。这形成了一种局面，即每个人都倾向于规避风险，从而维持了一种纳什均衡（Nash equilibrium），在这种均衡中，沉默和顺从是理性的选择。这种相互不作为导致了一种稳定而又具有强制性的均衡状态，使得独裁者的统治得以不受挑战。</p>
+<p><strong>However, during extreme conditions—such as famine, economic collapse, or war—this equilibrium may shift. When basic survival is under threat, the difference between acting and not acting diminishes, as both paths may offer similarly low chances of survival. At this point, rebellion equilibrium can emerge, where the collective desperation motivates more individuals to take action despite the risks.</strong></p>
+<p>然而，在极端条件下——例如饥荒、经济崩溃或战争——这种均衡可能会发生转变。当基本生存受到威胁时，采取行动和不采取行动之间的差异就会减小，因为无论选择哪条道路，生存的几率都可能同样低下。在这一点上，“反抗均衡”（rebellion equilibrium）可能会出现，在这种状态下，集体的绝望会促使更多个体尽管面临风险，仍选择采取行动。</p>
+<p><strong>Authoritarian leaders are therefore keenly aware of the need to prevent crises that push citizens into such a rebellion equilibrium. By maintaining a degree of economic stability and suppressing dissent through fear, they preserve their regime’s authority. Nonetheless, game theory illustrates that in the face of overwhelming hardship, even fear-based stability can break, exposing authoritarian rule to the risk of mass uprising.</strong></p>
+<p>因此，独裁领导者非常清楚地认识到需要防止危机将公民推入这种反抗均衡状态。通过维持一定程度的经济稳定并利用恐惧来压制异议，他们得以维护政权的权威。尽管如此，博弈论表明，在面对压倒性的困境时，即使是基于恐惧的稳定也可能崩溃，从而使独裁统治暴露于大规模起义的风险之下。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>囚徒困境的一种解决方案就是宗教与信仰</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/religion-as-solution-to-prisoners-dilemma/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/prisoner-dilemma-solution-religion-faith/</link>
       <pubDate>Mon, 26 Jun 2023 09:06:13 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/religion-as-solution-to-prisoners-dilemma/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/prisoner-dilemma-solution-religion-faith/</guid>
       <description>&lt;p&gt;佛曰:我不进监狱谁进监狱。&lt;br&gt;
 这样反而会达到集体最大利益。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>佛曰:我不进监狱谁进监狱。<br>
@@ -26,27 +43,27 @@
     </item>
     <item>
       <title>获得幸福很容易</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/happiness-is-easy/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/getting-happiness-is-easy/</link>
       <pubDate>Mon, 26 Jun 2023 09:03:33 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/happiness-is-easy/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/getting-happiness-is-easy/</guid>
       <description>&lt;p&gt;困扰我们的不是如何获得幸福，而是如何比别人更幸福。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>困扰我们的不是如何获得幸福，而是如何比别人更幸福。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>智猪博弈</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/boxed-pig-game-theory/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/smart-pig-game/</link>
       <pubDate>Fri, 09 Jun 2023 13:49:45 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/boxed-pig-game-theory/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/smart-pig-game/</guid>
       <description>&lt;p&gt;这是一个搭便车的博弈，一方付出的相应的代价，双方共享了获得的收益。 个体理性与集体理性是否冲突取决于游戏规则。当 A&amp;lt;10 的时候，对于集体而言应该去按。但是由于收入分配不均，导致对于个人而言，都不愿去按。 要解决这一冲突，我们不能否定个人的利益（让大猪无私地按按钮），而是应该改变游戏的规则（小猪没有按就少吃点）。所以，搭便车的同时，别忘了给对方以回报。 富人愿意行善，离不开穷人的点赞。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>这是一个搭便车的博弈，一方付出的相应的代价，双方共享了获得的收益。 个体理性与集体理性是否冲突取决于游戏规则。当 A&lt;10 的时候，对于集体而言应该去按。但是由于收入分配不均，导致对于个人而言，都不愿去按。 要解决这一冲突，我们不能否定个人的利益（让大猪无私地按按钮），而是应该改变游戏的规则（小猪没有按就少吃点）。所以，搭便车的同时，别忘了给对方以回报。 富人愿意行善，离不开穷人的点赞。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>‘陷阱’，有三个特征</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/three-features-of-traps/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/trap-three-characteristics/</link>
       <pubDate>Fri, 09 Jun 2023 13:49:44 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/three-features-of-traps/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/trap-three-characteristics/</guid>
       <description>&lt;p&gt;有一个明显的诱饵&lt;br&gt;
 通往诱饵之路是单向的，可进不可出（沉默成本）&lt;br&gt;
 越想挣脱，就越陷越深&lt;/p&gt;</description>
@@ -57,9 +74,9 @@
     </item>
     <item>
       <title>避免万元陷阱</title>
-      <link>https://xgdebug.com/zh/posts/self/avoiding-ten-thousand-yuan-trap/</link>
+      <link>https://xgdebug.com/zh/posts/self/avoid-ten-thousand-trap/</link>
       <pubDate>Fri, 09 Jun 2023 13:49:44 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/avoiding-ten-thousand-yuan-trap/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/avoid-ten-thousand-trap/</guid>
       <description>&lt;p&gt;不要指望能够以很低的价格买入。（不要指望花 100 买 10000，应该直接出价 9900）&lt;br&gt;
 两个抢劫犯经过一个绞刑架，一个感叹道：如果绞刑架没有该多好啊。另一个说，你傻啊，没有它别人就会来抢我们了。&lt;br&gt;
 尽快传递“势在必得”的信号。（破釜沉舟，告诉别人我就是倾家荡产也要把它拿到）&lt;br&gt;
@@ -74,9 +91,9 @@
     </item>
     <item>
       <title>既然事情已经发生，请坦然面对与接受</title>
-      <link>https://xgdebug.com/zh/posts/self/accept-what-has-happened/</link>
+      <link>https://xgdebug.com/zh/posts/self/since-things-have-happened-face-and-accept/</link>
       <pubDate>Fri, 09 Jun 2023 11:57:17 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/accept-what-has-happened/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/since-things-have-happened-face-and-accept/</guid>
       <description>&lt;p&gt;每个人都发犯错，重要的是意识到错误并且止损。并且承担后果。&lt;br&gt;
 把注意力放在以后，不要犯同样的错.&lt;/p&gt;
 &lt;p&gt;有沉默成本的地方就会有万元陷阱。&lt;/p&gt;
@@ -89,9 +106,9 @@
     </item>
     <item>
       <title>如何跳出一万美元陷阱?</title>
-      <link>https://xgdebug.com/zh/posts/economics/how-to-escape-ten-thousand-dollar-trap/</link>
+      <link>https://xgdebug.com/zh/posts/economics/how-to-escape-the-ten-thousand-dollar-trap/</link>
       <pubDate>Fri, 09 Jun 2023 11:27:15 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/economics/how-to-escape-ten-thousand-dollar-trap/</guid>
+      <guid>https://xgdebug.com/zh/posts/economics/how-to-escape-the-ten-thousand-dollar-trap/</guid>
       <description>&lt;p&gt;掉入陷阱的人通常有两个动机&lt;br&gt;
 一个是经济学动机，此为理性动机，想要少损失钱。&lt;br&gt;
 另一个是非经济学动机，渴望挽回面子,惩罚对手 。&lt;/p&gt;
@@ -135,9 +152,9 @@
     </item>
     <item>
       <title>用博弈论的方法来讲价</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/game-theory-in-bargaining/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/game-theory-pricing/</link>
       <pubDate>Fri, 09 Jun 2023 09:56:29 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/game-theory-in-bargaining/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/game-theory-pricing/</guid>
       <description>&lt;p&gt;不能使用老板给的参照系，反而要给老板一个参照系。&lt;/p&gt;
 &lt;p&gt;比如你告诉老板：隔壁那边那家才卖 60 块。&lt;/p&gt;
 &lt;p&gt;最极端的情况是老板能不能白送给我。&lt;br&gt;
@@ -150,9 +167,9 @@
     </item>
     <item>
       <title>囚徒博弈</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/prisoners-game/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/prisoner-game/</link>
       <pubDate>Fri, 09 Jun 2023 07:46:09 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/prisoners-game/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/prisoner-game/</guid>
       <description>&lt;p&gt;游戏结局与真相无关,游戏规则决定游戏结局。&lt;br&gt;
 即便都没有干过，说谎也是最好的选择，因为说谎有可能立即释放。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>游戏结局与真相无关,游戏规则决定游戏结局。<br>
@@ -161,27 +178,27 @@
     </item>
     <item>
       <title>人做出决策需要参照物</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/decision-making-needs-reference-points/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/how-humans-make-decisions-need-reference/</link>
       <pubDate>Fri, 09 Jun 2023 07:03:42 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/decision-making-needs-reference-points/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/how-humans-make-decisions-need-reference/</guid>
       <description>&lt;p&gt;不可能在真空中做出决策，而参照物是可以被操控的。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>不可能在真空中做出决策，而参照物是可以被操控的。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>让人多做选择题，不要让他们做判断题</title>
-      <link>https://xgdebug.com/zh/posts/investment/provide-options-instead-of-judgment-calls/</link>
+      <link>https://xgdebug.com/zh/posts/investment/let-them-do-multiple-choice-questions-not-judgment-questions/</link>
       <pubDate>Fri, 09 Jun 2023 07:03:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/investment/provide-options-instead-of-judgment-calls/</guid>
+      <guid>https://xgdebug.com/zh/posts/investment/let-them-do-multiple-choice-questions-not-judgment-questions/</guid>
       <description>&lt;p&gt;如果不给对方两利相权，那么对方就会把你的一利与其它人的一利相权，从而理你而去 。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>如果不给对方两利相权，那么对方就会把你的一利与其它人的一利相权，从而理你而去 。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>把参照系牢牢掌握在自己手里，才能得到最好的结果</title>
-      <link>https://xgdebug.com/zh/posts/investment/keep-the-reference-frame-in-your-hands/</link>
+      <link>https://xgdebug.com/zh/posts/investment/mastering-your-frame-of-reference-for-best-results/</link>
       <pubDate>Fri, 09 Jun 2023 07:03:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/investment/keep-the-reference-frame-in-your-hands/</guid>
+      <guid>https://xgdebug.com/zh/posts/investment/mastering-your-frame-of-reference-for-best-results/</guid>
       <description>&lt;p&gt;挖个坑问你跳不跳，你说不跳。&lt;br&gt;
 如果挖两个坑，问你跳哪个，大的还是小的，你多半会跳那个小的。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>挖个坑问你跳不跳，你说不跳。<br>
@@ -190,29 +207,29 @@
     </item>
     <item>
       <title>光着屁股的皇帝</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/emperor-with-no-clothes/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/naked-emperor/</link>
       <pubDate>Fri, 09 Jun 2023 07:03:39 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/emperor-with-no-clothes/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/naked-emperor/</guid>
       <description>&lt;p&gt;在信息不对称的情况下，博弈的结果不取决于大家是怎么样的，而在于大家认为别人是怎么想的。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>在信息不对称的情况下，博弈的结果不取决于大家是怎么样的，而在于大家认为别人是怎么想的。</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Don&#39;t Pursue Success in a Highly Competitive Market</title>
-      <link>https://xgdebug.com/zh/posts/business/dont-pursue-success-in-highly-competitive-market/</link>
+      <title>不要追求高度竞争市场中的成功</title>
+      <link>https://xgdebug.com/zh/posts/business/dont-chase-success-in-competitive-markets/</link>
       <pubDate>Fri, 09 Jun 2023 07:03:37 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/dont-pursue-success-in-highly-competitive-market/</guid>
-      <description>&lt;p&gt;No matter how hard you try, you can only achieve average profit levels.
+      <guid>https://xgdebug.com/zh/posts/business/dont-chase-success-in-competitive-markets/</guid>
+      <description>&lt;p&gt;无论你如何努力，也只能达到平均的盈利水平。
 +++&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>No matter how hard you try, you can only achieve average profit levels.
+      <content:encoded><![CDATA[<p>无论你如何努力，也只能达到平均的盈利水平。
 +++</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>蜈蚣博弈，大智若愚</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/centipede-game-wisdom/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/centipede-game-wise-foolish/</link>
       <pubDate>Fri, 09 Jun 2023 07:03:37 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/centipede-game-wisdom/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/centipede-game-wise-foolish/</guid>
       <description>&lt;p&gt;如果因为对方眼中你的傻，而让对方愿意和你合作，何乐而不为呢？&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>如果因为对方眼中你的傻，而让对方愿意和你合作，何乐而不为呢？</p>
 ]]></content:encoded>

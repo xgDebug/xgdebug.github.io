@@ -15,9 +15,9 @@
     <atom:link href="https://xgdebug.com/zh/series/navalmanack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>不要阅读畅销书</title>
-      <link>https://xgdebug.com/zh/posts/self/dont-read-bestsellers/</link>
+      <link>https://xgdebug.com/zh/posts/self/do-not-read-bestsellers/</link>
       <pubDate>Sun, 24 Nov 2024 11:57:18 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/dont-read-bestsellers/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/do-not-read-bestsellers/</guid>
       <description>本文探讨了选择高质量阅读材料的重要性，提倡通过写作来促进思考，并将读书比喻为饮食，强调深度而非广度，推荐使用费曼学习法来巩固所学知识。</description>
       <content:encoded><![CDATA[<h1 id="阅读与思考">阅读与思考</h1>
 <h2 id="选择阅读材料">选择阅读材料</h2>
@@ -29,68 +29,477 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Most books have an argument that you can understand and move on to the next one.</title>
-      <link>https://xgdebug.com/zh/posts/business/read-the-argument-then-move-on/</link>
+      <title>读你爱的，直到爱上阅读。</title>
+      <link>https://xgdebug.com/zh/posts/self/reading-you-until-in-love-with-reading/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:43 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/reading-you-until-in-love-with-reading/</guid>
+      <description>&lt;p&gt;你几乎不得不读你正在读的这些东西，因为你喜欢它。你不需要任何其他理由。这里没有需要完成的任务。就因为你享受它，所以去读吧。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你几乎不得不读你正在读的这些东西，因为你喜欢它。你不需要任何其他理由。这里没有需要完成的任务。就因为你享受它，所以去读吧。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>如果你拿不定主意，答案就是不。</title>
+      <link>https://xgdebug.com/zh/posts/self/if-you-can-t-decide-the-answer-is-no/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:43 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/if-you-can-t-decide-the-answer-is-no/</guid>
+      <description>在充满无尽选择的世界中，在重大的生活抉择上做决定可能会让人感到不知所措。这篇文章提出，如果你发现自己无法做出决定，这通常是一个答案是否定的信号，从而强调了在这样一个选择丰富的社会中，清晰度和果断性的重要性。</description>
+      <content:encoded><![CDATA[<h1 id="在无尽选择的世界中做决定">在无尽选择的世界中做决定</h1>
+<h2 id="常见的生命问题">常见的生命问题</h2>
+<ul>
+<li>我应该和这个人结婚吗？</li>
+<li>我应该接受这份工作吗？</li>
+<li>我应该买这栋房子吗？</li>
+<li>我应该搬到这个城市吗？</li>
+<li>我应该和这个人一起创业吗？</li>
+</ul>
+<h2 id="当你无法做决定时的答案">当你无法做决定时的答案</h2>
+<p>如果你无法做出决定，那么答案是“不”。原因在于，现代社会充满了各种选择。可供选择的选项是数不胜数的。</p>
+<p>我们生活在一个拥有七十亿人口的星球上，并且通过互联网与每一个人相连。有数十万种职业可供你选择。面对如此多的选择，保持清晰和果断至关重要。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Principal-Agent Problem</title>
+      <link>https://xgdebug.com/zh/posts/self/principal-agent-problem/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:42 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/principal-agent-problem/</guid>
+      <description>&lt;p&gt;只有确保利益绑定，才能从根本上降低代理人问题，最大限度的保护我们自己的利益。&lt;br&gt;
+To me, the principal-agent problem is the single most fundamental problem in microeconomics. If you do not understand the principal-agent problem, you will not know how to navigate your way through the world. It is important if you want to build a successful company or be successful in your dealings.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>只有确保利益绑定，才能从根本上降低代理人问题，最大限度的保护我们自己的利益。<br>
+To me, the principal-agent problem is the single most fundamental problem in microeconomics. If you do not understand the principal-agent problem, you will not know how to navigate your way through the world. It is important if you want to build a successful company or be successful in your dealings.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>复利</title>
+      <link>https://xgdebug.com/zh/posts/investment/compound-interest/</link>
+      <pubDate>Mon, 03 Jul 2023 08:09:42 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/investment/compound-interest/</guid>
+      <description>本文探讨了复利如何应用于企业增长，从而带来用户数量的指数级增长，这往往超出了最初的预期。</description>
+      <content:encoded><![CDATA[<h2 id="知识领域的复利力量">知识领域的复利力量</h2>
+<p>在知识领域中，复利规则是适用的。</p>
+<p>当你观察一家拥有一百名用户、以每月 20% 的复利速度增长的企业时，它能够非常迅速地扩大规模，达到数百万用户的规模。有时，甚至这些公司的创始人也会对自己的业务增长速度感到惊讶。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>这就是它了</title>
+      <link>https://xgdebug.com/zh/posts/self/this-is-it/</link>
+      <pubDate>Wed, 28 Jun 2023 04:14:15 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/this-is-it/</guid>
+      <description>&lt;p&gt;我绝不问是否是“我喜欢它”或“我不喜欢它”。我思考的是“这就是它本身”或“这就是它不是”。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>我绝不问是否是“我喜欢它”或“我不喜欢它”。我思考的是“这就是它本身”或“这就是它不是”。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>X 过去发生了，所以 X 未来会发生。</title>
+      <link>https://xgdebug.com/zh/posts/business/past-happened-so-future-will-happen/</link>
+      <pubDate>Wed, 28 Jun 2023 04:14:14 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/past-happened-so-future-will-happen/</guid>
+      <description>&lt;p&gt;A lousy way to do memory prediction is “X happened in the past, therefore X will happen in the future.” It’s too based on specific circumstances. What you want is principles. You want mental models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Translation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;进行记忆预测的一个糟糕方法是：“X 在过去发生了，因此 X 在未来也会发生。” 它过于依赖于特定的情况。你想要的是原则。你想要的是心智模型。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>A lousy way to do memory prediction is “X happened in the past, therefore X will happen in the future.” It’s too based on specific circumstances. What you want is principles. You want mental models.</p>
+<p><strong>Translation:</strong></p>
+<p>进行记忆预测的一个糟糕方法是：“X 在过去发生了，因此 X 在未来也会发生。” 它过于依赖于特定的情况。你想要的是原则。你想要的是心智模型。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>思想清晰者诉诸自身权威。</title>
+      <link>https://xgdebug.com/zh/posts/self/clear-thinkers-own-authority/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:17 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/clear-thinkers-own-authority/</guid>
+      <description>&lt;p&gt;有效决策的核心在于面对现实。当你做决策时，如何确保你是在面对现实的？&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>有效决策的核心在于面对现实。当你做决策时，如何确保你是在面对现实的？</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>如何确保你在做决策时是基于现实的？</title>
+      <link>https://xgdebug.com/zh/posts/self/how-to-ensure-you-are-making-reality-based-decisions/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:16 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/how-to-ensure-you-are-making-reality-based-decisions/</guid>
+      <description>&lt;p&gt;By not having a strong sense of self or judgments or mind presence. The “monkey mind” will always respond with this regurgitated emotional response to what it thinks the world should be. Those desires will cloud your reality. This happens a lot of times when people are mixing politics and business.
+The number one thing clouding us from being able to see reality is we have preconceived notions of the way it should be.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>By not having a strong sense of self or judgments or mind presence. The “monkey mind” will always respond with this regurgitated emotional response to what it thinks the world should be. Those desires will cloud your reality. This happens a lot of times when people are mixing politics and business.
+The number one thing clouding us from being able to see reality is we have preconceived notions of the way it should be.</p>
+<hr>
+<p>缺乏强大的自我意识、判断力或觉知（mind presence），“杂念心”（monkey mind）就会总是对它认为世界应该有的样子做出这种固化的情绪反应。这些欲望会蒙蔽你的现实。当人们将政治和商业混在一起时，这种情况经常发生。
+使我们无法看清现实的首要原因，是我们对事物应该有的样子抱有先入为主的观念（preconceived notions）。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>最难的是看到真相。</title>
+      <link>https://xgdebug.com/zh/posts/self/hardest-is-seeing-the-truth/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:15 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/hardest-is-seeing-the-truth/</guid>
+      <description>&lt;p&gt;要看见真相，你必须把你的小我移开，因为你的小我不想面对真相。你能让你的小我越小，你的反应就能越不被条件化，你对你想要的结果的欲望就能越少，你就能越容易看到现实。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>要看见真相，你必须把你的小我移开，因为你的小我不想面对真相。你能让你的小我越小，你的反应就能越不被条件化，你对你想要的结果的欲望就能越少，你就能越容易看到现实。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>高智商的人往往会变得古怪，因为他们坚持要自己把所有事情都想透。</title>
+      <link>https://xgdebug.com/zh/posts/business/high-iq-people-overthink-everything/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:14 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/high-iq-people-overthink-everything/</guid>
+      <description>&lt;p&gt;你的感受对事实没有任何说明——它仅仅说明了你对事实的估计。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你的感受对事实没有任何说明——它仅仅说明了你对事实的估计。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>我对某事能按某种方式发展（或：成事）的渴望越强，我就越不容易看到真相。</title>
+      <link>https://xgdebug.com/zh/posts/self/desire-for-outcome-obscures-truth/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:14 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/desire-for-outcome-obscures-truth/</guid>
+      <description>&lt;p&gt;The problem is their desire is colliding with reality and preventing them from seeing the truth, no matter how much you say it. The same thing happens when I make decisions. The more desire I have for something to work out a certain way, the less likely I am to see the truth. Especially in business, if something isn’t going well, I try to acknowledge it publicly and I try to acknowledge it publicly in front of my co-founders and friends and co-workers. Then, I’m not hiding it from anybody else. If I’m not hiding it from anybody, I’m not going to delude myself from what’s actually going on.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>The problem is their desire is colliding with reality and preventing them from seeing the truth, no matter how much you say it. The same thing happens when I make decisions. The more desire I have for something to work out a certain way, the less likely I am to see the truth. Especially in business, if something isn’t going well, I try to acknowledge it publicly and I try to acknowledge it publicly in front of my co-founders and friends and co-workers. Then, I’m not hiding it from anybody else. If I’m not hiding it from anybody, I’m not going to delude myself from what’s actually going on.</p>
+<hr>
+<p><strong>Translation:</strong></p>
+<p>问题在于，他们的欲望与现实发生了冲突，这阻碍了他们看到真相，无论你告诉他们多少次。当我做决定时，也会发生同样的事情。我对某件事希望它能以某种方式发展得越多，我就越不容易看到真相。尤其是在商业领域，如果某件事进展不顺利，我会努力公开承认它，我会努力在我的联合创始人、朋友和同事们面前公开承认它。这样，我就没有对其他人隐瞒。如果我没有对任何人隐瞒，我就不会自我欺骗，不会对实际发生的事情产生错觉。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>紧张是你认为你应该成为的自己。放松是你本来就是的自己。</title>
+      <link>https://xgdebug.com/zh/posts/self/tension-is-the-self-you-think-you-should-be-relaxation-is-the-self-you-are-naturally/</link>
+      <pubDate>Tue, 27 Jun 2023 11:21:13 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/tension-is-the-self-you-think-you-should-be-relaxation-is-the-self-you-are-naturally/</guid>
+      <description>&lt;p&gt;几乎所有的偏差都是节省时间的启发式方法。对于重要的决定，抛弃记忆和身份，专注于问题。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>几乎所有的偏差都是节省时间的启发式方法。对于重要的决定，抛弃记忆和身份，专注于问题。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>愚蠢的游戏，愚蠢的奖赏。</title>
+      <link>https://xgdebug.com/zh/posts/self/stupid-game-stupid-rewards/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:26 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/stupid-game-stupid-rewards/</guid>
+      <description>&lt;p&gt;不要玩零和博弈。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>不要玩零和博弈。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>你住在哪里，你和谁在一起，以及你做什么。</title>
+      <link>https://xgdebug.com/zh/posts/business/where-are-you-with-whom-and-what-you-do/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:25 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/where-are-you-with-whom-and-what-you-do/</guid>
+      <description>&lt;p&gt;花更多时间来做重大的决定。基本上有三个非常重大的决定。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>花更多时间来做重大的决定。基本上有三个非常重大的决定。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>找到像玩乐一样的工作</title>
+      <link>https://xgdebug.com/zh/posts/self/finding-a-job-like-play/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:25 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/finding-a-job-like-play/</guid>
+      <description>&lt;p&gt;Any end goal will just lead to another goal, lead to another goal. We just play games in life. When you grow up, you’re playing the school game, or you’re playing the social game. Then you’re playing the money game, and then you’re playing the status game. These games just have longer and longer and longer-lived horizons. At some point, at least I believe, these are all just games. These are games where the outcome really stops mattering once you see through the game.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Any end goal will just lead to another goal, lead to another goal. We just play games in life. When you grow up, you’re playing the school game, or you’re playing the social game. Then you’re playing the money game, and then you’re playing the status game. These games just have longer and longer and longer-lived horizons. At some point, at least I believe, these are all just games. These are games where the outcome really stops mattering once you see through the game.</p>
+<hr>
+<p>任何一个终极目标都会导向另一个目标，导向另一个目标。我们的人生就是在玩游戏。当你长大后，你就是在玩学校的游戏，或者你就是在玩社交的游戏。然后你就是在玩金钱的游戏，接着你就是在玩地位的游戏。这些游戏只是拥有越来越长、越来越长、越来越长的视野。在某个时刻，至少我相信，这些都只是游戏。这些游戏是，一旦你看穿了游戏，结果就真的不再重要了。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>你认为自己财务上安全，那个数字是多少？</title>
+      <link>https://xgdebug.com/zh/posts/business/how-much-is-financial-security-for-you/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:24 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/how-much-is-financial-security-for-you/</guid>
+      <description>&lt;p&gt;金钱的爱所带来的惩罚，与金钱本身是同时交付的。当你赚到钱时，你只会想要更多，你会变得偏执和害怕失去你已拥有的东西。没有免费的午餐。&lt;/p&gt;
+&lt;p&gt;你赚钱是为了解决你的金钱和物质问题。我认为，远离这种对金钱的持续热爱，最好的方法是不要随着你赚钱而升级你的生活方式。随着你赚钱而升级生活方式是非常容易做到的。但是，如果你能保持你的生活方式固定不变，并且希望你的财富是以巨大的笔（或“大笔”）而非涓涓细流的形式积累起来，那么你就没有时间去升级你的生活方式了。你可能会领先得非常远，甚至真正实现财务自由。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>金钱的爱所带来的惩罚，与金钱本身是同时交付的。当你赚到钱时，你只会想要更多，你会变得偏执和害怕失去你已拥有的东西。没有免费的午餐。</p>
+<p>你赚钱是为了解决你的金钱和物质问题。我认为，远离这种对金钱的持续热爱，最好的方法是不要随着你赚钱而升级你的生活方式。随着你赚钱而升级生活方式是非常容易做到的。但是，如果你能保持你的生活方式固定不变，并且希望你的财富是以巨大的笔（或“大笔”）而非涓涓细流的形式积累起来，那么你就没有时间去升级你的生活方式了。你可能会领先得非常远，甚至真正实现财务自由。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>别数。</title>
+      <link>https://xgdebug.com/zh/posts/self/dont-count/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:23 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/dont-count/</guid>
+      <description>&lt;p&gt;这并不是说它很容易。它不容易。实际上，它真的超级难。它是你将要做的最难的事情。但它也很有回报。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>这并不是说它很容易。它不容易。实际上，它真的超级难。它是你将要做的最难的事情。但它也很有回报。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>运用专业知识并借助杠杆，终将获得你应得的回报。</title>
+      <link>https://xgdebug.com/zh/posts/self/leveraging-expertise-for-deserved-returns/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:23 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/leveraging-expertise-for-deserved-returns/</guid>
+      <description>&lt;h3 id=&#34;达成成功的时间因素&#34;&gt;达成成功的“时间因素”&lt;/h3&gt;
+&lt;p&gt;需要时间。即使你已经拥有了所有必要的要素，你仍然需要投入一个无法确定的时间量。如果你不断地计算着小时或天数，你很可能会在实现成功之前就先耗尽耐心。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="达成成功的时间因素">达成成功的“时间因素”</h3>
+<p>需要时间。即使你已经拥有了所有必要的要素，你仍然需要投入一个无法确定的时间量。如果你不断地计算着小时或天数，你很可能会在实现成功之前就先耗尽耐心。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>一个正确的决定就能赢得一切</title>
+      <link>https://xgdebug.com/zh/posts/self/a-correct-decision-can-win-everything/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:22 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/a-correct-decision-can-win-everything/</guid>
+      <description>&lt;p&gt;你不是靠花时间来省钱而致富的。你是靠节省时间来赚钱而致富的。
+在一个杠杆的时代，一个正确的决定就能赢得一切。没有努力工作，你将无法培养出判断力和杠杆效应。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你不是靠花时间来省钱而致富的。你是靠节省时间来赚钱而致富的。
+在一个杠杆的时代，一个正确的决定就能赢得一切。没有努力工作，你将无法培养出判断力和杠杆效应。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>没有努力，你就无法获得判断力和影响力。</title>
+      <link>https://xgdebug.com/zh/posts/business/no-effort-no-judgment-or-influence/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:21 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/no-effort-no-judgment-or-influence/</guid>
+      <description>&lt;p&gt;You have to put in the time, but the judgment is more important. The direction you’re heading in matters more than how fast you move, especially with leverage. Picking the direction you’re heading in for every decision is far, far more important than how much force you apply. Just pick the right direction to start walking in, and start walking.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>You have to put in the time, but the judgment is more important. The direction you’re heading in matters more than how fast you move, especially with leverage. Picking the direction you’re heading in for every decision is far, far more important than how much force you apply. Just pick the right direction to start walking in, and start walking.</p>
+<p><strong>Translation:</strong></p>
+<p>你必须投入时间，但判断更重要。你所朝向的方向比你移动的速度更重要，尤其是在运用杠杆时。在每一个决策中选择正确的方向，远比你施加多少力量要重要得多。只需选择正确的方向开始走，然后就开始走吧。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>你的方向比你的速度更重要。</title>
+      <link>https://xgdebug.com/zh/posts/self/direction-is-more-important-than-speed/</link>
+      <pubDate>Tue, 27 Jun 2023 03:55:20 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/direction-is-more-important-than-speed/</guid>
+      <description>&lt;p&gt;You have to put in the time, but the judgment is more important. The direction you’re heading in matters more than how fast you move, especially with leverage. Picking the direction you’re heading in for every decision is far, far more important than how much force you apply. Just pick the right direction to start walking in, and start walking.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>You have to put in the time, but the judgment is more important. The direction you’re heading in matters more than how fast you move, especially with leverage. Picking the direction you’re heading in for every decision is far, far more important than how much force you apply. Just pick the right direction to start walking in, and start walking.</p>
+<p><strong>Translation:</strong></p>
+<p>你必须投入时间，但判断力更重要。你朝哪个方向前进比你移动得有多快更重要，尤其是在利用杠杆时。在每一个决策中选择正确的方向，比你施加多少力量要重要得多得多。你只需要选择正确的方向开始走，然后就开始走。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>不要专注于金钱。你应该专注于创造价值。</title>
+      <link>https://xgdebug.com/zh/posts/business/stop-focusing-on-money-focus-on-creating-value/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:06 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/stop-focusing-on-money-focus-on-creating-value/</guid>
+      <description>&lt;p&gt;越是你不想要某件事，你就越不把它放在心上，你就越不为此而纠结，你就越能以一种自然的方式去做它。你将更多地为自己去做这件事。你会用你擅长的方式去做，并且你会坚持下去。你周围的人会看到你的工作质量更高。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>越是你不想要某件事，你就越不把它放在心上，你就越不为此而纠结，你就越能以一种自然的方式去做它。你将更多地为自己去做这件事。你会用你擅长的方式去做，并且你会坚持下去。你周围的人会看到你的工作质量更高。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>如果他们能训练你做它，那么最终他们也会训练一台计算机来做它。</title>
+      <link>https://xgdebug.com/zh/posts/self/if-they-can-train-you-to-do-it-they-will-also-train-a-computer-to-do-it/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:06 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/if-they-can-train-you-to-do-it-they-will-also-train-a-computer-to-do-it/</guid>
+      <description>&lt;p&gt;如果有人可以训练其他人如何做某件事，那么他们就可以取代你。如果他们可以取代你，那么他们就不需要给你支付高薪。你应该掌握一些别人在特定时期内不知道如何做到的技能。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>如果有人可以训练其他人如何做某件事，那么他们就可以取代你。如果他们可以取代你，那么他们就不需要给你支付高薪。你应该掌握一些别人在特定时期内不知道如何做到的技能。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>社会会奖励你，因为你提供了它所渴望的，而它却不知道如何从别处获取。</title>
+      <link>https://xgdebug.com/zh/posts/business/reward-for-providing-what-society-craves/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:05 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/reward-for-providing-what-society-craves/</guid>
+      <description>&lt;p&gt;Think about what product or service society wants but does not yet know how to get. You want to become the person who delivers it and delivers it at scale. That is really the challenge of how to make money. Now, the problem is becoming good at whatever “it” is. It moves around from generation to generation, but a lot of it happens to be in technology.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Think about what product or service society wants but does not yet know how to get. You want to become the person who delivers it and delivers it at scale. That is really the challenge of how to make money. Now, the problem is becoming good at whatever “it” is. It moves around from generation to generation, but a lot of it happens to be in technology.</p>
+<hr>
+<p><strong>Translation:</strong></p>
+<p>思考一下社会想要但尚未知道如何获得的产品或服务。你想成为那个提供它、并且能够大规模交付它的人。这才是真正关于如何赚钱的挑战。现在，问题在于要擅长那个“它”本身。它会从一代又一代地转移，但其中很大一部分往往发生在技术领域。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>抛开富者与贫者、白领与蓝领。如今是杠杆化与非杠杆化。</title>
+      <link>https://xgdebug.com/zh/posts/business/beyond-class-leveraging-vs-non-leveraging/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:04 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/beyond-class-leveraging-vs-non-leveraging/</guid>
+      <description>&lt;p&gt;The most interesting and the most important form of leverage is the idea of products that have no marginal cost of replication. This is the new form of leverage. This was only invented in the last few hundred years. It started with the printing press. It accelerated with broadcast media, and now it’s really blown up with the internet and with coding. Now, you can multiply your efforts without involving other humans and without needing money from other humans.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>The most interesting and the most important form of leverage is the idea of products that have no marginal cost of replication. This is the new form of leverage. This was only invented in the last few hundred years. It started with the printing press. It accelerated with broadcast media, and now it’s really blown up with the internet and with coding. Now, you can multiply your efforts without involving other humans and without needing money from other humans.</p>
+<hr>
+<p><strong>Translation:</strong></p>
+<p>最具趣味性且最重要的杠杆形式，是那些复制边际成本为零的产品理念。这就是新的杠杆形式。这个概念直到最近几百年才被发明出来。它始于印刷术。它随着广播媒体而加速发展，而现在，它随着互联网和编码技术而真正爆发式增长。现在，你可以在不涉及其他人类的情况下，并且无需其他人类资金的情况下，将你的努力进行倍增。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>有三种广义的杠杆类别</title>
+      <link>https://xgdebug.com/zh/posts/self/three-types-of-broad-leverage-categories/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:04 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/three-types-of-broad-leverage-categories/</guid>
+      <description>&lt;p&gt;一种杠杆形式是劳动力——即其他为你工作的人类。这是最古老的杠杆形式，但在现代世界中，它实际上并不是一个很优秀的。[1] 我认为这是你可能使用的最糟糕的杠杆形式。管理其他人的事情极其混乱。它需要巨大的领导能力。你距离一场叛乱、被吃掉或被暴民撕碎只差一步之遥。[78] 货币作为一种杠杆形式是很好的。这意味着每当你做出一个决定时，你都会将它乘以货币的力量。[1] 资本是一种更棘手的杠杆形式。它更现代。它是人们在过去一个世纪中用来变得极其富有的一种方式。它很可能是过去一个世纪中占主导地位的杠杆形式。你可以通过寻找最富有的人来观察这一点。他们是银行家、在印钞的腐败国家中的政治家，本质上是那些调动大量资金的人。如果你看那些非常大型公司（排除科技公司之外）的顶层，在许多许多大型老公司中，首席执行官（CEO）的工作实际上是一份金融工作。它具有非常、非常好的可扩展性。如果你擅长管理资本，你就能比管理越来越多的人更容易地管理越来越多资本。最后一种杠杆形式是全新的——也是最民主的形式。它是：“复制的边际成本为零的产品。”这包括书籍、媒体、电影和代码。代码可能是最强大的无许可杠杆形式。你只需要一台电脑——你不需要任何人的许可。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>一种杠杆形式是劳动力——即其他为你工作的人类。这是最古老的杠杆形式，但在现代世界中，它实际上并不是一个很优秀的。[1] 我认为这是你可能使用的最糟糕的杠杆形式。管理其他人的事情极其混乱。它需要巨大的领导能力。你距离一场叛乱、被吃掉或被暴民撕碎只差一步之遥。[78] 货币作为一种杠杆形式是很好的。这意味着每当你做出一个决定时，你都会将它乘以货币的力量。[1] 资本是一种更棘手的杠杆形式。它更现代。它是人们在过去一个世纪中用来变得极其富有的一种方式。它很可能是过去一个世纪中占主导地位的杠杆形式。你可以通过寻找最富有的人来观察这一点。他们是银行家、在印钞的腐败国家中的政治家，本质上是那些调动大量资金的人。如果你看那些非常大型公司（排除科技公司之外）的顶层，在许多许多大型老公司中，首席执行官（CEO）的工作实际上是一份金融工作。它具有非常、非常好的可扩展性。如果你擅长管理资本，你就能比管理越来越多的人更容易地管理越来越多资本。最后一种杠杆形式是全新的——也是最民主的形式。它是：“复制的边际成本为零的产品。”这包括书籍、媒体、电影和代码。代码可能是最强大的无许可杠杆形式。你只需要一台电脑——你不需要任何人的许可。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>普通人的杠杆</title>
+      <link>https://xgdebug.com/zh/posts/self/ordinary-people-leverage/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:03 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/ordinary-people-leverage/</guid>
+      <description>&lt;p&gt;Probably the most interesting thing to keep in mind about new forms of leverage is they are permissionless. They don’t require somebody else’s permission for you to use them or succeed. For labor leverage, somebody has to decide to follow you. For capital leverage, somebody has to give you money to invest or to turn into a product.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;关于新型杠杆最值得记住的一点是，它们是无许可的（permissionless）。它们不需要别人给予许可，你就可以使用它们或取得成功。对于劳动力杠杆而言，必须有人决定跟随你。对于资本杠杆而言，必须有人给你资金进行投资或将其转化为产品。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Probably the most interesting thing to keep in mind about new forms of leverage is they are permissionless. They don’t require somebody else’s permission for you to use them or succeed. For labor leverage, somebody has to decide to follow you. For capital leverage, somebody has to give you money to invest or to turn into a product.</p>
+<hr>
+<p>关于新型杠杆最值得记住的一点是，它们是无许可的（permissionless）。它们不需要别人给予许可，你就可以使用它们或取得成功。对于劳动力杠杆而言，必须有人决定跟随你。对于资本杠杆而言，必须有人给你资金进行投资或将其转化为产品。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>你永远不可能靠出租时间暴富。</title>
+      <link>https://xgdebug.com/zh/posts/business/you-can-never-get-rich-by-renting-time/</link>
+      <pubDate>Sun, 25 Jun 2023 05:48:02 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/you-can-never-get-rich-by-renting-time/</guid>
+      <description>&lt;p&gt;Whenever you can in life, optimize for independence rather than pay. If you have independence and you&amp;rsquo;re accountable on your output, as opposed to your input— that&amp;rsquo;s the dream. A leveraged worker can out-produce a non-leveraged worker by a factor of one thousand or ten thousand. With a leveraged worker, judgment is far more important than how much time they put in or how hard they work.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Whenever you can in life, optimize for independence rather than pay. If you have independence and you&rsquo;re accountable on your output, as opposed to your input— that&rsquo;s the dream. A leveraged worker can out-produce a non-leveraged worker by a factor of one thousand or ten thousand. With a leveraged worker, judgment is far more important than how much time they put in or how hard they work.</p>
+<p>+++</p>
+<p>在生活中，只要有可能，就应该优化（追求）独立性而非薪酬。如果你拥有独立性，并且你对你的“产出”（output）负责，而不是对你的“投入”（input）负责——那就是梦想。一个杠杆型员工（leveraged worker）的产出可以比一个非杠杆型员工（non-leveraged worker）高出千倍甚至万倍。对于杠杆型员工来说，判断力比他们投入了多少时间或付出了多大的努力要重要得多。</p>
+<p>+++</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>我的语言的边界就是我的世界的边界</title>
+      <link>https://xgdebug.com/zh/posts/self/boundaries-of-language-are-boundaries-of-world/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:30 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/boundaries-of-language-are-boundaries-of-world/</guid>
+      <description>&lt;p&gt;心理模型是代表你对世界中某事物如何运作的理解的概念。想象一下开车：当你踩下右侧的踏板时，你预期会发生什么？如果汽车减速了，你可能会感到惊讶——因为这个踏板本应是油门（加速器）。你对世界的模型准确性决定了你的预期、决策、行为，以及——从长远来看——你的结果。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>心理模型是代表你对世界中某事物如何运作的理解的概念。想象一下开车：当你踩下右侧的踏板时，你预期会发生什么？如果汽车减速了，你可能会感到惊讶——因为这个踏板本应是油门（加速器）。你对世界的模型准确性决定了你的预期、决策、行为，以及——从长远来看——你的结果。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>谁能最好地描述问题，谁就最有可能解决它。</title>
+      <link>https://xgdebug.com/zh/posts/business/who-can-best-describe-the-problem-is-most-likely-to-solve-it/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:25 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/who-can-best-describe-the-problem-is-most-likely-to-solve-it/</guid>
+      <description>&lt;p&gt;你应该清楚地知道这个问题。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你应该清楚地知道这个问题。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>你该不该上商学院？</title>
+      <link>https://xgdebug.com/zh/posts/self/should-you-go-to-business-school/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:20 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/should-you-go-to-business-school/</guid>
+      <description>&lt;p&gt;存在区别在于：
+(A) MBA 对你所做的事情，帮助你向他人证明你的能力。
+(B) 获得 MBA 实际上对你能力带来的提升。它们是两件不同的事情。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>存在区别在于：
+(A) MBA 对你所做的事情，帮助你向他人证明你的能力。
+(B) 获得 MBA 实际上对你能力带来的提升。它们是两件不同的事情。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>价值创造</title>
+      <link>https://xgdebug.com/zh/posts/business/value-creation/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:15 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/value-creation/</guid>
+      <description>&lt;p&gt;创造人们想要的东西 . . . 没有比一个正变得可以解决的未被满足的需求更宝贵的了。如果你发现了一个可以为很多人修复的“破点”，你就找到了一个金矿。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>创造人们想要的东西 . . . 没有比一个正变得可以解决的未被满足的需求更宝贵的了。如果你发现了一个可以为很多人修复的“破点”，你就找到了一个金矿。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>理解财富的创造</title>
+      <link>https://xgdebug.com/zh/posts/investment/understanding-wealth-creation/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:10 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/investment/understanding-wealth-creation/</guid>
+      <description>&lt;p&gt;关键不在于努力工作。
+你可以在一家餐厅每周工作八十个小时，但你不会发财。
+变得富有在于知道该做什么、和谁一起做，以及什么时候做。
+它更多的是关于洞察力，而不是纯粹的努力工作。
+是的，努力工作很重要，你不能马虎。
+但它必须朝着正确的方向努力。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>关键不在于努力工作。
+你可以在一家餐厅每周工作八十个小时，但你不会发财。
+变得富有在于知道该做什么、和谁一起做，以及什么时候做。
+它更多的是关于洞察力，而不是纯粹的努力工作。
+是的，努力工作很重要，你不能马虎。
+但它必须朝着正确的方向努力。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>如何致富 (不靠运气):</title>
+      <link>https://xgdebug.com/zh/posts/business/how-to-get-rich-without-luck/</link>
+      <pubDate>Thu, 22 Jun 2023 15:41:05 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/how-to-get-rich-without-luck/</guid>
+      <description>&lt;p&gt;追求财富，而非金钱或地位。财富是拥有能为你睡着时持续创造收益的资产。金钱是我们转移时间和财富的方式。地位是你在社会等级中的位置。&lt;/p&gt;
+&lt;p&gt;忽略那些玩弄地位游戏的人。他们通过攻击那些玩弄财富创造游戏的人来获取地位。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>追求财富，而非金钱或地位。财富是拥有能为你睡着时持续创造收益的资产。金钱是我们转移时间和财富的方式。地位是你在社会等级中的位置。</p>
+<p>忽略那些玩弄地位游戏的人。他们通过攻击那些玩弄财富创造游戏的人来获取地位。</p>
+<p>你不可能仅仅靠出租你的时间而致富。你必须拥有股权——即一家企业的份额——才能获得财务自由。</p>
+<p>你会通过为社会提供它渴望但尚未知道如何获取的东西而致富。而且是规模化的。</p>
+<p>选择一个你可以与长期的人玩长期游戏的行业。</p>
+<p>互联网极大地拓宽了职业的可能性空间。大多数人尚未意识到这一点。</p>
+<p>↓ 玩迭代游戏。生活中所有的回报，无论是财富、人际关系还是知识，都来自于复利。
+↓ 选择拥有高智商、高能量，最重要的是拥有高诚信度（或：高正直）的商业伙伴。
+↓ 不要与愤世嫉俗者和悲观主义者合作。他们的信念是自我实现的。
+↓ 学会销售。学会构建。如果你能做到这两点，你将势不可挡。
+↓ 武装自己，掌握特定的知识、问责制和杠杆。
+↓ 特定的知识是指那些无法通过培训获得的知识。如果社会可以训练你，它也可以训练其他人来取代你。
+↓ 特定的知识是通过追求你真正的好奇心和热情来获得的，而不是追逐当下最热门的东西。
+↓ 构建特定的知识对你来说会感觉像“玩耍”，但对别人来说看起来像“工作”。
+↓ 当特定的知识被传授时，它是通过学徒制而非学校来实现的。
+↓ 特定的知识通常是高度技术性或创造性的。它不能被外包或自动化。
+↓ 拥抱问责制，并在自己的名下承担商业风险。社会将用责任、股权和杠杆来回报你。
+↓ “给我一个足够长的杠杆和一个可以站立的地方，我将撼动大地。” — 亚里士多德（Archimedes）
+↓ 财富需要杠杆。商业杠杆来源于资本、人力和没有边际复制成本的产品（代码和媒体）。
+↓ 资本意味着金钱。要筹集资金，你需要运用你的特定知识，并承担问责制，同时展示出良好的判断力。
+↓ 人力意味着为你工作的员工。这是最古老也最激烈争夺的杠杆形式。人力杠杆会让你父母印象深刻，但不要浪费生命去追逐它。
+↓ 资本和人力是“许可型”杠杆（Permissioned Leverage）。每个人都在追逐资本，但必须有人给予你资本。每个人都在试图引领，但必须有人跟随你。
+↓ 代码和媒体是“无许可型”杠杆（Permissionless Leverage）。它们是新富阶层背后的杠杆。你可以创建能为你睡着时持续运作的软件和媒体。
+↓ 机器人军队是免费可获得的——它们只是被打包在数据中心中，以实现散热和空间效率。请使用它。
+↓ 如果你不会编程，那就去写书和博客，录制视频和播客。
+↓ 杠杆是你的判断力的“力量倍增器”（Force Multiplier）。
+↓ 判断力需要经验，但可以通过学习基础技能更快地建立起来。
+↓ 没有一项技能叫做“商业”。避开商业杂志和商业课程。
+↓ 研究微观经济学、博弈论、心理学、说服力、伦理学、数学和计算机科学。
+↓ 阅读比听讲更快。实践比观看更快。
+↓ 你应该忙到连“喝咖啡”都来不及做，同时还能保持一个井然有序的日程表。
+↓ 设定并执行一个理想的个人时薪。如果解决一个问题花费的时间少于你的时薪，就忽略它。如果外包一项任务的成本少于你的时薪，就外包它。
+↓ 尽你所能地努力工作。尽管你与谁一起工作和从事什么工作，比你工作得有多努力更重要。
+↓ 在你所做的事情上成为世界第一。不断重新定义你的工作内容，直到这一点成为事实。
+↓ 没有什么“快速致富”的计划。那只是别人在利用你致富。
+↓ 运用特定的知识，结合杠杆，最终你将获得你应得的回报。
+↓ 当你最终变得富有时，你会意识到你最初追求的并非是金钱本身。但这又是另一个话题了。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>大多数书都有一个论点，你可以理解它，然后就可以继续读下一本了。</title>
+      <link>https://xgdebug.com/zh/posts/business/most-books-have-an-argument-you-can-understand-and-then-move-on-to-the-next/</link>
       <pubDate>Fri, 16 Jun 2023 04:55:00 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/read-the-argument-then-move-on/</guid>
-      <description>&lt;p&gt;The author presents an argument, supports it with numerous examples, and then uses their own perspective to explain various phenomena in the world. Once I feel like I&amp;rsquo;ve understood this argument, I stop reading further. There are so many such books; I call them pseudo-science bestsellers.
+      <guid>https://xgdebug.com/zh/posts/business/most-books-have-an-argument-you-can-understand-and-then-move-on-to-the-next/</guid>
+      <description>&lt;p&gt;作者提出了一个论点，用大量的例子来支持它，然后又用自己的视角来解释世界上各种现象。一旦我觉得自己已经理解了这个论点，我就停止继续阅读了。这类书实在太多了；我称它们为伪科学畅销书。
 +++&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>The author presents an argument, supports it with numerous examples, and then uses their own perspective to explain various phenomena in the world. Once I feel like I&rsquo;ve understood this argument, I stop reading further. There are so many such books; I call them pseudo-science bestsellers.
+      <content:encoded><![CDATA[<p>作者提出了一个论点，用大量的例子来支持它，然后又用自己的视角来解释世界上各种现象。一旦我觉得自己已经理解了这个论点，我就停止继续阅读了。这类书实在太多了；我称它们为伪科学畅销书。
 +++</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>等得到那个东西，我就快乐了？</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/happiness-is-not-waiting-for-something/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/waiting-for-that-thing-to-be-happy/</link>
       <pubDate>Fri, 16 Jun 2023 04:54:59 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/happiness-is-not-waiting-for-something/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/waiting-for-that-thing-to-be-happy/</guid>
       <description>&lt;p&gt;举例来说，我买了一辆新车，现在等着提车。我自然会很关注这件事，每天晚上都上论坛查看、研究相关信息。我为什么要这样做？只是一辆普普通通的车，不会给我的生活带来什么实质性改变。我知道，只要车一到手，我就不会再关注它了。问题的关键在于，我沉迷于对外物的“欲望”。我对外部事物会带给我幸福和快乐的执念其实是一种痴念。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>举例来说，我买了一辆新车，现在等着提车。我自然会很关注这件事，每天晚上都上论坛查看、研究相关信息。我为什么要这样做？只是一辆普普通通的车，不会给我的生活带来什么实质性改变。我知道，只要车一到手，我就不会再关注它了。问题的关键在于，我沉迷于对外物的“欲望”。我对外部事物会带给我幸福和快乐的执念其实是一种痴念。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>嫉妒是幸福的敌人</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/envy-is-the-enemy-of-happiness/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/jealousy-is-the-enemy-of-happiness/</link>
       <pubDate>Fri, 16 Jun 2023 04:54:58 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/envy-is-the-enemy-of-happiness/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/jealousy-is-the-enemy-of-happiness/</guid>
       <description>&lt;p&gt;我认为，生活本身没有那么难，是我们自己把生活变难了。我在生活中努力摆脱“应该”这个词。当“应该”在脑海中出现时，其背后隐藏的是负罪感或社会规训。如果做一件事是因为“应该”，那就表示你内心是不想这么做的，而违背自己的心意会让你变得痛苦不堪。因此，我努力在生活中减少“应该”做的事。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>我认为，生活本身没有那么难，是我们自己把生活变难了。我在生活中努力摆脱“应该”这个词。当“应该”在脑海中出现时，其背后隐藏的是负罪感或社会规训。如果做一件事是因为“应该”，那就表示你内心是不想这么做的，而违背自己的心意会让你变得痛苦不堪。因此，我努力在生活中减少“应该”做的事。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>人生而孤独</title>
-      <link>https://xgdebug.com/zh/posts/self/born-to-be-lonely/</link>
+      <link>https://xgdebug.com/zh/posts/self/lonely-life/</link>
       <pubDate>Fri, 16 Jun 2023 04:54:58 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/born-to-be-lonely/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/lonely-life/</guid>
       <description>&lt;p&gt;而现实是，生活就是一场单人游戏。人独自出生，独自死亡，独自解读人世间的一切。你的记忆只属于你一个人。你出生前无人在意，你离开人世后也无人在意，你存在于人世间只是短短几十年，人生就是一场单人游戏。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>而现实是，生活就是一场单人游戏。人独自出生，独自死亡，独自解读人世间的一切。你的记忆只属于你一个人。你出生前无人在意，你离开人世后也无人在意，你存在于人世间只是短短几十年，人生就是一场单人游戏。</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Commodifying Yourself</title>
-      <link>https://xgdebug.com/zh/posts/business/commodify-yourself/</link>
-      <pubDate>Wed, 14 Jun 2023 16:38:54 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/commodify-yourself/</guid>
-      <description>&lt;p&gt;I believe that one of the key points to making money is reputation and credibility. In other words, people need to know you and trust you so that they can transact through you. I mentioned earlier about divers as an example. Because your diving skills are excellent and you have high visibility, treasure hunters will come to you on their own initiative and share some treasures with you in exchange for your skills.
-+++&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I believe that one of the key points to making money is reputation and credibility. In other words, people need to know you and trust you so that they can transact through you. I mentioned earlier about divers as an example. Because your diving skills are excellent and you have high visibility, treasure hunters will come to you on their own initiative and share some treasures with you in exchange for your skills.
-+++</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>拥有独立性</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/possessing-independence/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/having-independence/</link>
       <pubDate>Wed, 14 Jun 2023 16:38:54 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/possessing-independence/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/having-independence/</guid>
       <description>&lt;p&gt;为自己独特的产出成果负责（而不是像打工一样为投入的时间负责），这才是最理想的状态。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>为自己独特的产出成果负责（而不是像打工一样为投入的时间负责），这才是最理想的状态。</p>
 ]]></content:encoded>
     </item>
     <item>
+      <title>自我商品化</title>
+      <link>https://xgdebug.com/zh/posts/business/self-commodification/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:54 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/self-commodification/</guid>
+      <description>&lt;p&gt;我认为，致富的关键点之一是声誉和可信度。换句话说，人们需要了解你并信任你，这样他们才能通过你进行交易。我之前提到过潜水员作为例子。因为你的潜水技能非常出色，而且你具有很高的知名度，寻宝者们会主动地来到你身边，并用一些宝藏来交换你的技能。
++++&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>我认为，致富的关键点之一是声誉和可信度。换句话说，人们需要了解你并信任你，这样他们才能通过你进行交易。我之前提到过潜水员作为例子。因为你的潜水技能非常出色，而且你具有很高的知名度，寻宝者们会主动地来到你身边，并用一些宝藏来交换你的技能。
++++</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Success Takes Time. Even When Everything is Ready</title>
-      <link>https://xgdebug.com/zh/posts/business/success-takes-time/</link>
+      <link>https://xgdebug.com/zh/posts/business/success-takes-time-even-when-everything-is-ready/</link>
       <pubDate>Wed, 14 Jun 2023 16:38:53 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/success-takes-time/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/success-takes-time-even-when-everything-is-ready/</guid>
       <description>&lt;p&gt;If you keep counting down the time until success truly arrives, your patience will be worn thin.&lt;/p&gt;
 &lt;h3 id=&#34;成功需要时间即使万事俱备&#34;&gt;成功需要时间。即使万事俱备&lt;/h3&gt;
 &lt;p&gt;即使所有条件都已具备，成功也需要时间。在你等待的过程中，耐心会逐渐耗尽。&lt;/p&gt;
@@ -104,46 +513,144 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>玩世不恭很容易，随波逐流也很容易。</title>
-      <link>https://xgdebug.com/zh/posts/self/cynicism-and-conformity-are-easy/</link>
+      <title>如果你远离风险，你也也会远离利益。</title>
+      <link>https://xgdebug.com/zh/posts/self/avoid-risk-avoid-profit/</link>
       <pubDate>Wed, 14 Jun 2023 16:38:52 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/cynicism-and-conformity-are-easy/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/avoid-risk-avoid-profit/</guid>
+      <description>&lt;p&gt;我承担了风险。加密货币也是如此。早期，我承担了风险。但当你将自己的名字公之于众时，你就承担了某些方面的风险。你也能收获回报。你也能获得益处。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>我承担了风险。加密货币也是如此。早期，我承担了风险。但当你将自己的名字公之于众时，你就承担了某些方面的风险。你也能收获回报。你也能获得益处。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>玩世不恭很容易，随波逐流也很容易。</title>
+      <link>https://xgdebug.com/zh/posts/self/carefree-and-easy-to-go-with-the-flow/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:52 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/carefree-and-easy-to-go-with-the-flow/</guid>
       <description>&lt;p&gt;非常聪明的人往往都是特立独行的，他们坚持独立思考、亲力亲为，以厘清事情的来龙去脉。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>非常聪明的人往往都是特立独行的，他们坚持独立思考、亲力亲为，以厘清事情的来龙去脉。</p>
 ]]></content:encoded>
     </item>
     <item>
+      <title>大家似乎认为，你可以通过工作赚钱来创造财富。但这可能行不通。</title>
+      <link>https://xgdebug.com/zh/posts/self/working-doesnt-create-wealth/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:51 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/working-doesnt-create-wealth/</guid>
+      <description>&lt;p&gt;Without ownership, your inputs are very closely tied to your outputs. In almost any salaried job, even one paying a lot per hour like a lawyer or a doctor, you’re still putting in the hours, and every hour you get paid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Translation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;没有所有权，你的投入（inputs）与你的产出（outputs）会非常紧密地关联。在几乎任何一份受薪工作中，即使是像律师或医生这样每小时薪水很高的工作，你仍然是在投入时间，并且你为每一个小时都得到了报酬。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Without ownership, your inputs are very closely tied to your outputs. In almost any salaried job, even one paying a lot per hour like a lawyer or a doctor, you’re still putting in the hours, and every hour you get paid.</p>
+<p><strong>Translation:</strong></p>
+<p>没有所有权，你的投入（inputs）与你的产出（outputs）会非常紧密地关联。在几乎任何一份受薪工作中，即使是像律师或医生这样每小时薪水很高的工作，你仍然是在投入时间，并且你为每一个小时都得到了报酬。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>努力工作不能让你发财，你只能让老板发财。</title>
+      <link>https://xgdebug.com/zh/posts/business/hard-work-doesnt-make-you-rich-it-only-makes-the-boss-rich/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:50 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/hard-work-doesnt-make-you-rich-it-only-makes-the-boss-rich/</guid>
+      <description>&lt;p&gt;你的老板总是会给你支付刚好够的薪水。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你的老板总是会给你支付刚好够的薪水。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>咱们去股票市场吧！</title>
+      <link>https://xgdebug.com/zh/posts/self/lets-go-to-the-stock-market/</link>
+      <pubDate>Wed, 14 Jun 2023 16:38:50 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/lets-go-to-the-stock-market/</guid>
+      <description>&lt;p&gt;持有公司股权，基本上就意味着你拥有上涨的潜力（upside）。当你持有债务时，你拥有的是保证的收入流，并且你拥有的是下跌的风险（downside）。你想要拥有的是股权。如果你没有在一家企业中拥有股权，你赚钱的几率就会非常渺茫。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>持有公司股权，基本上就意味着你拥有上涨的潜力（upside）。当你持有债务时，你拥有的是保证的收入流，并且你拥有的是下跌的风险（downside）。你想要拥有的是股权。如果你没有在一家企业中拥有股权，你赚钱的几率就会非常渺茫。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>大自然的法则是春播秋收，极少有事情是立竿见影的</title>
-      <link>https://xgdebug.com/zh/posts/self/sowing-and-reaping-takes-time/</link>
+      <link>https://xgdebug.com/zh/posts/self/nature-laws-are-spring-sowing-autumn-harvest-rarely-is-anything-instant/</link>
       <pubDate>Wed, 14 Jun 2023 09:25:47 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/sowing-and-reaping-takes-time/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/nature-laws-are-spring-sowing-autumn-harvest-rarely-is-anything-instant/</guid>
       <description>&lt;p&gt;时间的投入是必需的，所以我认为，你需要做的就是拥有专长，有责任感，有影响力，利用杠杆效应，获得独步天下的技能组合，在自己的专业领域做到首屈一指。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>时间的投入是必需的，所以我认为，你需要做的就是拥有专长，有责任感，有影响力，利用杠杆效应，获得独步天下的技能组合，在自己的专业领域做到首屈一指。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>功利驱动</title>
-      <link>https://xgdebug.com/zh/posts/business/utility-driven/</link>
+      <link>https://xgdebug.com/zh/posts/business/utilitarian-drive/</link>
       <pubDate>Tue, 13 Jun 2023 16:03:28 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/utility-driven/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/utilitarian-drive/</guid>
       <description>&lt;p&gt;对一件事情的欲望越小，顾虑就越少，执念就越少，反而越会顺其自然，遵循内心。你会以自己擅长的方式，始终不渝地做下去，工作质量也会因此提高。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>对一件事情的欲望越小，顾虑就越少，执念就越少，反而越会顺其自然，遵循内心。你会以自己擅长的方式，始终不渝地做下去，工作质量也会因此提高。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>没有股权，就没有通往财务自由的路径。</title>
-      <link>https://xgdebug.com/zh/posts/investment/no-equity-no-financial-freedom/</link>
+      <link>https://xgdebug.com/zh/posts/investment/no-equity-no-path-to-financial-freedom/</link>
       <pubDate>Tue, 13 Jun 2023 16:03:28 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/investment/no-equity-no-financial-freedom/</guid>
+      <guid>https://xgdebug.com/zh/posts/investment/no-equity-no-path-to-financial-freedom/</guid>
       <description>&lt;p&gt;如果不持有企业股权，个人投入和收益的关联性就会非常强。几乎所有领取月薪的工作，即便是律师或医生这样的高薪职业，也需要投入时间才能获得相应的收入。如果不持有企业股权，睡觉的时候没有收入，退休以后没有收入，度假期间也没有收入。总之，收入是相对固定的，根本无法实现实质性突破。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>如果不持有企业股权，个人投入和收益的关联性就会非常强。几乎所有领取月薪的工作，即便是律师或医生这样的高薪职业，也需要投入时间才能获得相应的收入。如果不持有企业股权，睡觉的时候没有收入，退休以后没有收入，度假期间也没有收入。总之，收入是相对固定的，根本无法实现实质性突破。</p>
 ]]></content:encoded>
     </item>
     <item>
+      <title>互联网极大地拓宽了职业领域。大多数人还没有意识到这一点。</title>
+      <link>https://xgdebug.com/zh/posts/investment/internet-widened-career-fields-most-dont-realize/</link>
+      <pubDate>Tue, 13 Jun 2023 16:03:27 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/investment/internet-widened-career-fields-most-dont-realize/</guid>
+      <description>&lt;p&gt;你可以上互联网，找到你的受众。你可以建立一个生意，创造一个产品，积累财富，让人们快乐，这一切都仅仅是通过互联网，让你独特地表达自己所实现的。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你可以上互联网，找到你的受众。你可以建立一个生意，创造一个产品，积累财富，让人们快乐，这一切都仅仅是通过互联网，让你独特地表达自己所实现的。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>具体的知识不能被传授，但它可以被习得。</title>
+      <link>https://xgdebug.com/zh/posts/self/knowledge-is-acquired-not-taught/</link>
+      <pubDate>Tue, 13 Jun 2023 16:03:26 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/knowledge-is-acquired-not-taught/</guid>
+      <description>&lt;p&gt;你得自己做。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>你得自己做。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>努力很重要，但是有一些事情比努力更重要。</title>
+      <link>https://xgdebug.com/zh/posts/business/more-important-than-effort/</link>
+      <pubDate>Sat, 10 Jun 2023 11:41:32 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/more-important-than-effort/</guid>
+      <description>&lt;p&gt;尽你所能地努力工作。虽然你和谁一起工作以及你的工作内容比你的努力程度更重要。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>尽你所能地努力工作。虽然你和谁一起工作以及你的工作内容比你的努力程度更重要。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>不要找快速致富的捷径</title>
+      <link>https://xgdebug.com/zh/posts/business/no-need-to-find-quick-riches-shortcuts/</link>
+      <pubDate>Sat, 10 Jun 2023 11:41:31 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/no-need-to-find-quick-riches-shortcuts/</guid>
+      <description>这篇文章揭穿了快速致富计划，并揭示了这些计划往往使推广者而非参与者受益。</description>
+      <content:encoded><![CDATA[<p>没有快速暴富的套路。那些只是别人靠你发财。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>财富和钱有什么区别？</title>
+      <link>https://xgdebug.com/zh/posts/business/wealth-vs-money/</link>
+      <pubDate>Sat, 10 Jun 2023 11:41:31 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/wealth-vs-money/</guid>
+      <description>&lt;p&gt;钱是我们转移财富的方式。
+钱是社会信用。
+它是拥有他人时间（的）信用和债务的能力。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>钱是我们转移财富的方式。
+钱是社会信用。
+它是拥有他人时间（的）信用和债务的能力。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>什么是财富？</title>
+      <link>https://xgdebug.com/zh/posts/business/what-is-wealth/</link>
+      <pubDate>Sat, 10 Jun 2023 11:41:30 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/what-is-wealth/</guid>
+      <description>&lt;p&gt;财富就是你所渴望的。财富是当你睡眠时仍在产生收入的资产。财富是工厂、是机器人，持续不断地生产物品。财富是夜间运行的计算机程序，为其他客户提供服务。财富也是存放在银行中、并被再投资到其他资产和业务中的资金。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>财富就是你所渴望的。财富是当你睡眠时仍在产生收入的资产。财富是工厂、是机器人，持续不断地生产物品。财富是夜间运行的计算机程序，为其他客户提供服务。财富也是存放在银行中、并被再投资到其他资产和业务中的资金。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>神书《纳瓦尔宝典：财富和幸福指南》</title>
-      <link>https://xgdebug.com/zh/posts/self/the-almanack-of-naval-ravikant/</link>
+      <link>https://xgdebug.com/zh/posts/self/god-book-naval-guide-to-wealth-and-happiness/</link>
       <pubDate>Wed, 07 Jun 2023 12:36:45 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/the-almanack-of-naval-ravikant/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/god-book-naval-guide-to-wealth-and-happiness/</guid>
       <description>Naval Ravikant 关于财富、知识、决策和幸福的深刻见解，助你打造更成功、更充实的人生。</description>
       <content:encoded><![CDATA[<h2 id="1人应该寻求财富而不是金钱或地位">1、人应该寻求财富，而不是金钱或地位</h2>
 <p>人不应该通过繁重的工作获得财富。<br>

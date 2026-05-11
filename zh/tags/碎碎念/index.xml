@@ -15,9 +15,9 @@
     <atom:link href="https://xgdebug.com/zh/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>蓝星社会样本观察报告-有才华的穷人</title>
-      <link>https://xgdebug.com/zh/posts/life/ovserver/blue-star-report-talented-poor/</link>
+      <link>https://xgdebug.com/zh/posts/life/ovserver/blue-star-society-sample-observation-report-talented-poor/</link>
       <pubDate>Tue, 03 Mar 2026 01:09:27 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/life/ovserver/blue-star-report-talented-poor/</guid>
+      <guid>https://xgdebug.com/zh/posts/life/ovserver/blue-star-society-sample-observation-report-talented-poor/</guid>
       <description>为什么这世界满是有才华的穷人？—— 5道隐秘的认知门槛</description>
       <content:encoded><![CDATA[<h2 id="前言">前言：</h2>
 <p>很多人问我：“这世界上到处都是有才华的穷人，这确实是这样吗？”
@@ -146,9 +146,9 @@
     </item>
     <item>
       <title>蓝星社会样本观察报告 友谊</title>
-      <link>https://xgdebug.com/zh/posts/life/ovserver/blue-star-report-friendship/</link>
+      <link>https://xgdebug.com/zh/posts/life/ovserver/lanxing-social-sample-observation-report-friendship/</link>
       <pubDate>Sun, 13 Jul 2025 01:09:27 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/life/ovserver/blue-star-report-friendship/</guid>
+      <guid>https://xgdebug.com/zh/posts/life/ovserver/lanxing-social-sample-observation-report-friendship/</guid>
       <description>本文从观察视角出发，剖析蓝星人社会中‘友谊’现象与个体生存能力之间的反比关系，揭示其背后的功利性本质及宇宙丛林法则下的生存逻辑。</description>
       <content:encoded><![CDATA[<p><strong>主题:</strong> 蓝星人社会中“友谊”现象的功利性本质及其与个体生存能力的反比关系</p>
 <p><strong>1. 现象概述</strong></p>
@@ -212,9 +212,9 @@
     </item>
     <item>
       <title>当下即永恒</title>
-      <link>https://xgdebug.com/zh/posts/life/happiness-/now-is-eternal/</link>
+      <link>https://xgdebug.com/zh/posts/life/happiness-/present-is-eternal/</link>
       <pubDate>Tue, 13 May 2025 05:36:05 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/life/happiness-/now-is-eternal/</guid>
+      <guid>https://xgdebug.com/zh/posts/life/happiness-/present-is-eternal/</guid>
       <description>丢掉幻想，准备斗争</description>
       <content:encoded><![CDATA[<p>幻想是一切苦难的根源。
 例如幻想自己能够升官发财，幻想孩子能够考上985/211，幻想自己能够住上豪宅，开上豪车，迎娶长公主殿下然后活到150岁。
@@ -222,10 +222,45 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>202503小本本</title>
+      <link>https://xgdebug.com/zh/posts/self/diary/2025/202503-small-book/</link>
+      <pubDate>Tue, 25 Mar 2025 22:23:34 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/diary/2025/202503-small-book/</guid>
+      <description> 2025年3月日记</description>
+      <content:encoded><![CDATA[<h2 id="0325">0325</h2>
+<h3 id="今日工作完成情况">今日工作完成情况</h3>
+<p>今天完成了很多工作：</p>
+<ol>
+<li>使用AI对正文进行了润色。</li>
+<li>制作了着陆页（Landing Page）。</li>
+<li>让AI帮我写了小广告，并在论坛上发布了。</li>
+</ol>
+<h3 id="晚间的领悟">晚间的领悟</h3>
+<p>晚上还有一点小小的领悟：即便是发广告，也是一种创造。这属于内容输出，而不仅仅是内容消费。人应该源源不断地向社会输出一些东西，才能得到自己想要的。</p>
+<h3 id="明日计划">明日计划</h3>
+<p>明天应该录制视频了。</p>
+<h2 id="0328">0328</h2>
+<ul>
+<li>暗黑模式搞定了</li>
+</ul>
+<h2 id="0329">0329</h2>
+<ol>
+<li>又重新优化了一下卡片的效果</li>
+<li>搞定了文件的移动</li>
+<li>添加了URL跳转</li>
+</ol>
+<h2 id="0330">0330</h2>
+<ul>
+<li>添加了个登录</li>
+<li>用户退出登录之后直接回到Dashboard</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>1984-新语爱好者学习笔记</title>
-      <link>https://xgdebug.com/zh/posts/history/dictator/1984-newspeak-study-notes/</link>
+      <link>https://xgdebug.com/zh/posts/history/dictator/1984-new-language-lover-study-notes/</link>
       <pubDate>Sun, 29 Dec 2024 17:08:47 +0800</pubDate>
-      <guid>https://xgdebug.com/zh/posts/history/dictator/1984-newspeak-study-notes/</guid>
+      <guid>https://xgdebug.com/zh/posts/history/dictator/1984-new-language-lover-study-notes/</guid>
       <description>&lt;p&gt;《1984》中新语设计的精髓和恐怖之处在于无声的操控。 奥威尔的深刻洞察力在于揭示了语言对思想的塑造力量。 新语不仅仅是删减词汇那么简单，它的最终目标是摧毁独立思考的能力。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>《1984》中新语设计的精髓和恐怖之处在于无声的操控。 奥威尔的深刻洞察力在于揭示了语言对思想的塑造力量。 新语不仅仅是删减词汇那么简单，它的最终目标是摧毁独立思考的能力。</p>
 <h2 id="新语的精髓"><strong>新语的精髓</strong></h2>
@@ -462,9 +497,9 @@
     </item>
     <item>
       <title>超越同情：一个外星观察者眼中的人类世界</title>
-      <link>https://xgdebug.com/zh/posts/life/ovserver/beyond-sympathy-alien-observer/</link>
+      <link>https://xgdebug.com/zh/posts/life/ovserver/beyond-sympathy-a-human-world-through-an-alien-observers-eyes/</link>
       <pubDate>Fri, 27 Dec 2024 12:37:49 +0800</pubDate>
-      <guid>https://xgdebug.com/zh/posts/life/ovserver/beyond-sympathy-alien-observer/</guid>
+      <guid>https://xgdebug.com/zh/posts/life/ovserver/beyond-sympathy-a-human-world-through-an-alien-observers-eyes/</guid>
       <description>一个外星观察者的理性启示</description>
       <content:encoded><![CDATA[<h2 id="前言">前言</h2>
 <p>我来自B-614星球，目前是一个“蓝星观察员”，作为一个“蓝星观察员”，我的主要职责确实是 <strong>记录和研究</strong>，而不是基于人类情感进行干预或评判。</p>
@@ -749,9 +784,9 @@
     </item>
     <item>
       <title>不要把圣物给猪狗，恐怕它践踏了圣物，转过来咬你</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/bullshit/%E4%B8%8D%E8%A6%81%E6%8A%8A%E5%9C%A3%E7%89%A9%E7%BB%99%E7%8C%AA%E7%8B%97%E6%81%90%E6%80%95%E5%AE%83%E8%B7%B5%E8%B8%8F%E4%BA%86%E5%9C%A3%E7%89%A9%E8%BD%AC%E8%BF%87%E6%9D%A5%E5%92%AC%E4%BD%A0/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/bullshit/dont-give-sacred-relic-to-pigs-dogs-it-might-trample-it-and-bite-you/</link>
       <pubDate>Tue, 19 Nov 2024 23:27:53 +0800</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/bullshit/%E4%B8%8D%E8%A6%81%E6%8A%8A%E5%9C%A3%E7%89%A9%E7%BB%99%E7%8C%AA%E7%8B%97%E6%81%90%E6%80%95%E5%AE%83%E8%B7%B5%E8%B8%8F%E4%BA%86%E5%9C%A3%E7%89%A9%E8%BD%AC%E8%BF%87%E6%9D%A5%E5%92%AC%E4%BD%A0/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/bullshit/dont-give-sacred-relic-to-pigs-dogs-it-might-trample-it-and-bite-you/</guid>
       <description>&lt;p&gt;多年形成的认知，并非你只言片语能唤醒的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;弃医从文也救不了中国人&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这个世界上最难的两件事情，一是把别人的钱放进自己的口袋，二是把自己的思想装进别人的脑袋。第一件事情触及别人的利益，第二件事情触及别人的灵魂。&lt;/p&gt;</description>
@@ -761,28 +796,349 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>记录10月的时间是怎么没的</title>
+      <link>https://xgdebug.com/zh/posts/self/diary/2024/how-october-time-vanished/</link>
+      <pubDate>Wed, 02 Oct 2024 22:38:01 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/diary/2024/how-october-time-vanished/</guid>
+      <description>&lt;h2 id=&#34;2024-10-01&#34;&gt;2024-10-01&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;上午 10 点 30 才起，更加厉害了，因为昨天晚上 1 点过才睡觉&lt;/li&gt;
+&lt;li&gt;写下了昨天晚上突然闪现的一点思考 &lt;a href=&#34;https://xgdebug.com/posts/economics/dictators-response-to-economic-downturn/&#34;&gt;经济衰退一种可能的应对方案
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下午计划去商场逛一逛，或许找个咖啡店看看书？这就是生活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-02&#34;&gt;2024-10-02&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;轻松的假期，啥都没做一样。&lt;/li&gt;
+&lt;li&gt;下午修理了两个机器人，改了一些BUG。&lt;/li&gt;
+&lt;li&gt;还有余额显示的BUG没有修，不想动了。&lt;/li&gt;
+&lt;li&gt;晚上看了直播，秋实聊到了目前做一个视频号大概是普通人有机会跨越阶级的唯一机会。因为普通人也干不了AI。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-03&#34;&gt;2024-10-03&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;时间好快，今天起得比较早&lt;/li&gt;
+&lt;li&gt;上午收到了AWS帐单，感觉好贵，花一上午时间换了一台 512的VPS&lt;/li&gt;
+&lt;li&gt;The greatest Enemies of the Equity investor are &lt;strong&gt;Expenses&lt;/strong&gt; and &lt;strong&gt;Emotions&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;股票投资者最大的敌人是&lt;strong&gt;费用&lt;/strong&gt;和&lt;strong&gt;情绪&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;研究了一下债券，这东西感觉和定期存款差不多，主要还是用来与股票做搭配，关键作用是用来再平衡，实现算法上的抄底与逃顶。当然了，代价是截断收益与提前加仓。&lt;/li&gt;
+&lt;li&gt;下午和晚上搞了一下 AI ，收人红包800帮人办事，没有复利效应，很不划算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-05&#34;&gt;2024-10-05&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;上午学习了一会儿数字币的安全知识，这世界不存在绝对的安全。&lt;/li&gt;
+&lt;li&gt;拒绝了同学的程序开发请求，因为我不想做&lt;/li&gt;
+&lt;li&gt;&amp;lt;简单逻辑学&amp;gt;看到50%了，前面都 是一些基础概念，到了后面的计算部分反而觉得简单很多，因为与或非在计算机中常用。&lt;/li&gt;
+&lt;li&gt;更新大话计算器，浪费8小时生命&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-08&#34;&gt;2024-10-08&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A股今天开始交易，一开盘就全线涨停。我无法判断是散户的疯狂还是有形之手在操作。从直觉判断，散户应该不会直接挂涨停价买。但是成交量也很高，这让我很困惑。有成交量就说明有人在涨停价出，同时也有人在接手。如果不是自己和自己玩亏手续费。那就是真的有大量散户在入场。&lt;/li&gt;
+&lt;li&gt;涨停板并没有封住，很快就一路下滑，最终涨4.59%成交3.5万亿。&lt;/li&gt;
+&lt;li&gt;上周就开始有公司公布减持，在市场情绪如此高涨时，有钱不赚钱反而开始减持，这里面必然有期原因。我想主要还是他们自己也不相信自己的公司。&lt;/li&gt;
+&lt;li&gt;想不明白是谁在真金白银的接盘。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-09&#34;&gt;2024-10-09&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;打包了 MAC 的 AI&lt;/li&gt;
+&lt;li&gt;写了个记录 &lt;a href=&#34;https://xgdebug.com/zh/posts/investment/stock/first-drop-after-surge-volatility-or-market-warning/&#34;&gt;暴涨后首次大跌：短期波动还是市场预警？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-10&#34;&gt;2024-10-10&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;今天是个特殊的日子，值得铭记&lt;/li&gt;
+&lt;li&gt;今天下午操作了我的帐户，卖出了50% &lt;em&gt;工商银行&lt;/em&gt;股份。&lt;/li&gt;
+&lt;li&gt;今天市场小盘整体下跌，权重大盘股涨了4～5%，同时财政部宣布周6召开新闻发布会。我分析后认为，政策制定者是想要暂时稳住市场所以拉了大盤股，同时释放消息稳定市场信心。 同六的新闻发布会一定会出台一些实际的政策把市场拉回来，因为他们的目的还远没有达成，并且现在也还有很多招没有出，现在不可能放弃市场。&lt;/li&gt;
+&lt;li&gt;基于上面的判断，我决定今日与明日分批卖出，每次为卖出时持仓的50% ,并且于下周一周二逐步补回。&lt;/li&gt;
+&lt;li&gt;这一次操作违背了我最重要的条原则：不要尝试TIMING市场。 但是我又想真金白银的检验一下自己最近的认知，到底是不是正确，同时不可否认我也有一些贪婪的欲望想要赚钱。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-12&#34;&gt;2024-10-12&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;正的智者往往有独立的思想和判断，不依赖他人的认可或社会的标准来确认自己的价值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024-10-13&#34;&gt;2024-10-13&lt;/h2&gt;
+&lt;p&gt;内阁根本是个摆设，全部由嘉靖帝一人决定。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="2024-10-01">2024-10-01</h2>
+<ul>
+<li>上午 10 点 30 才起，更加厉害了，因为昨天晚上 1 点过才睡觉</li>
+<li>写下了昨天晚上突然闪现的一点思考 <a href="/posts/economics/dictators-response-to-economic-downturn/">经济衰退一种可能的应对方案
+</a></li>
+<li>下午计划去商场逛一逛，或许找个咖啡店看看书？这就是生活。</li>
+</ul>
+<h2 id="2024-10-02">2024-10-02</h2>
+<ul>
+<li>轻松的假期，啥都没做一样。</li>
+<li>下午修理了两个机器人，改了一些BUG。</li>
+<li>还有余额显示的BUG没有修，不想动了。</li>
+<li>晚上看了直播，秋实聊到了目前做一个视频号大概是普通人有机会跨越阶级的唯一机会。因为普通人也干不了AI。</li>
+</ul>
+<h2 id="2024-10-03">2024-10-03</h2>
+<ul>
+<li>时间好快，今天起得比较早</li>
+<li>上午收到了AWS帐单，感觉好贵，花一上午时间换了一台 512的VPS</li>
+<li>The greatest Enemies of the Equity investor are <strong>Expenses</strong> and <strong>Emotions</strong>.</li>
+<li>股票投资者最大的敌人是<strong>费用</strong>和<strong>情绪</strong>。</li>
+<li>研究了一下债券，这东西感觉和定期存款差不多，主要还是用来与股票做搭配，关键作用是用来再平衡，实现算法上的抄底与逃顶。当然了，代价是截断收益与提前加仓。</li>
+<li>下午和晚上搞了一下 AI ，收人红包800帮人办事，没有复利效应，很不划算。</li>
+</ul>
+<h2 id="2024-10-05">2024-10-05</h2>
+<ul>
+<li>上午学习了一会儿数字币的安全知识，这世界不存在绝对的安全。</li>
+<li>拒绝了同学的程序开发请求，因为我不想做</li>
+<li>&lt;简单逻辑学&gt;看到50%了，前面都 是一些基础概念，到了后面的计算部分反而觉得简单很多，因为与或非在计算机中常用。</li>
+<li>更新大话计算器，浪费8小时生命</li>
+</ul>
+<h2 id="2024-10-08">2024-10-08</h2>
+<ul>
+<li>A股今天开始交易，一开盘就全线涨停。我无法判断是散户的疯狂还是有形之手在操作。从直觉判断，散户应该不会直接挂涨停价买。但是成交量也很高，这让我很困惑。有成交量就说明有人在涨停价出，同时也有人在接手。如果不是自己和自己玩亏手续费。那就是真的有大量散户在入场。</li>
+<li>涨停板并没有封住，很快就一路下滑，最终涨4.59%成交3.5万亿。</li>
+<li>上周就开始有公司公布减持，在市场情绪如此高涨时，有钱不赚钱反而开始减持，这里面必然有期原因。我想主要还是他们自己也不相信自己的公司。</li>
+<li>想不明白是谁在真金白银的接盘。</li>
+</ul>
+<h2 id="2024-10-09">2024-10-09</h2>
+<ul>
+<li>打包了 MAC 的 AI</li>
+<li>写了个记录 <a href="/zh/posts/investment/stock/first-drop-after-surge-volatility-or-market-warning/">暴涨后首次大跌：短期波动还是市场预警？</a></li>
+</ul>
+<h2 id="2024-10-10">2024-10-10</h2>
+<ul>
+<li>今天是个特殊的日子，值得铭记</li>
+<li>今天下午操作了我的帐户，卖出了50% <em>工商银行</em>股份。</li>
+<li>今天市场小盘整体下跌，权重大盘股涨了4～5%，同时财政部宣布周6召开新闻发布会。我分析后认为，政策制定者是想要暂时稳住市场所以拉了大盤股，同时释放消息稳定市场信心。 同六的新闻发布会一定会出台一些实际的政策把市场拉回来，因为他们的目的还远没有达成，并且现在也还有很多招没有出，现在不可能放弃市场。</li>
+<li>基于上面的判断，我决定今日与明日分批卖出，每次为卖出时持仓的50% ,并且于下周一周二逐步补回。</li>
+<li>这一次操作违背了我最重要的条原则：不要尝试TIMING市场。 但是我又想真金白银的检验一下自己最近的认知，到底是不是正确，同时不可否认我也有一些贪婪的欲望想要赚钱。</li>
+</ul>
+<h2 id="2024-10-12">2024-10-12</h2>
+<ul>
+<li>正的智者往往有独立的思想和判断，不依赖他人的认可或社会的标准来确认自己的价值。</li>
+</ul>
+<h2 id="2024-10-13">2024-10-13</h2>
+<p>内阁根本是个摆设，全部由嘉靖帝一人决定。</p>
+<ul>
+<li>决策是仓促的</li>
+<li>手段是激烈的</li>
+<li>效果是极端的</li>
+<li>结果是烂尾的</li>
+<li>晚上观看了StarShip 第5次发射，Super Heavy 被接住的一刻，我无比激动，人类终于要走向宇宙了。</li>
+</ul>
+<h2 id="2024-10-14">2024-10-14</h2>
+<ul>
+<li><a href="/zh/posts/investment/stock/my-first-speculative-attempt/">第一次有意识的投机操作</a> 的时候卖出部分，今天与明天计划购回，不过事情并没有像我预期的发展</li>
+<li>工商银行今天继续上涨，我没有做任何操作。明日再观察一下，如果没有机会回补那就不回补了，直接加仓到ETF吧。</li>
+<li>事实证明我们确实不可能TIMING市场。</li>
+<li>晚上给我的BLOG添加了 github action cache</li>
+<li>今天没看书，晚上和AI讨论了老半天，有一点点收获，但是不太多</li>
+</ul>
+<h2 id="2024-10-15">2024-10-15</h2>
+<ul>
+<li>半个月已经过了，时间真是太快了，仿佛虚度了半个月，为什么呢？我想大概是因为自己没有做出什么东西来</li>
+<li>今天小区停电，最终还是没有出门，不知道是不是懒。</li>
+<li>上午看了一上午的书 《The Millionaire Next Door》,前面两章讲的都是节省，不要让你有生活方式超过你的能力。并且要让生活方式远远的低于你的能力。</li>
+<li>很多人拥有一堆的负债，无数的东西不断的从他们的口袋里面掏钱出来，但是却没有什么向他们口袋放钱的资产。</li>
+<li>除非是你刻意节省，否则你的支出永远等于你的收入</li>
+<li>无论你的收入高低，你一定要先为自己工作。而不是为房东，为裁缝店，为肉铺，为学校等等打工。</li>
+<li>让你的钱为你工作，这是一个技术活，一定要认真的学习</li>
+</ul>
+<h2 id="2024-10-16">2024-10-16</h2>
+<ul>
+<li>上午看到要重启搞一次城中村改造，今年完成100万套项目，采用货币货安置，也就是涨价去库存2.0</li>
+<li>100万套*100万一平方，也就是一万亿而已</li>
+<li>并且危房数量是有限的，不可能每年都100万套</li>
+<li>平均一年也就是新增加10万套左右的危房而已，所以这也是不可持续的</li>
+<li>除非是一把拉起来，让老百姓去接，否则也拉不起来的</li>
+<li>今年郑州居然还有60万套烂尾楼?</li>
+</ul>
+<h2 id="2024-10-17">2024-10-17</h2>
+<ul>
+<li>10号的判断少考虑了烂尾的因素。</li>
+<li>我们可能需要一直修正自己的判断。因为世界是变化的。</li>
+<li>那么我们也要收放自如，不停的翻大饼吗？</li>
+<li>保持灵活性：由于世界变化迅速，我们需要不断修正自己的判断和策略。无论是投资者、政策制定者还是个人，都应根据新的信息和变化的环境做出调整，避免因过时的判断而陷入困境。</li>
+<li>动态应对：不论是经济政策还是投资决策，都应采取动态应对策略。对于经济刺激措施的效果保持警惕，观察其对实际经济的反馈，并根据新情况及时调整。对长期趋势和短期波动保持平衡的视角，避免过度依赖某种措施或理论。</li>
+<li>夫处世之道，亦即应变之术，岂可偏执一端。</li>
+</ul>
+<h2 id="2024-10-18">2024-10-18</h2>
+<ul>
+<li>居民存款与贷款变成了开发商的房款</li>
+<li>开发商的房款变成土地转让费，开发税费，盖章好处费。</li>
+<li>最终变成了官吏们的付款，没有车的高速，豪华的办公大楼，以及开发商手里无力开发的荒废土地</li>
+<li>下午A股又拉起来了，看来之前的判断还是有一定的道理。先不想了</li>
+</ul>
+<h2 id="2024-10-19">2024-10-19</h2>
+<ul>
+<li>重读旧书，Just Keep Buying 前面主要是讲储蓄，感觉没什么劲。</li>
+<li>选股会导致自己的情绪受到极大影响，这与短期投机一样。</li>
+<li>不要考验自己的情绪管理能力。</li>
+<li>凡是选择，必有代价。</li>
+<li>晚上我计算了一下5年前持有工商银行，到现在收益约 9.14 ，长江电力约为14.8%。所以，你不可能打败指数。</li>
+</ul>
+<h2 id="2024-10-21">2024-10-21</h2>
+<ul>
+<li>又是忙碌的周一</li>
+<li>更新了我的F3P固件</li>
+<li>写了T15更新说明</li>
+<li>重构了我的BLOG</li>
+<li>开始阅读新书</li>
+</ul>
+<h2 id="2024-10-24">2024-10-24</h2>
+<ul>
+<li>这三天时间不知道去哪儿了对吧？这三天时间被我卖了。 很不划算又无可奈何</li>
+<li>人太忙碌了也不好，时间过得太快了。 大脑被代码占满。完全没有时间思考 。</li>
+</ul>
+<h2 id="2024-10-25">2024-10-25</h2>
+<ul>
+<li>openssl key生成部分搞定了</li>
+<li>基本上目录浏览搞定了</li>
+<li>预览markdown文件</li>
+</ul>
+<h2 id="2024-10-26">2024-10-26</h2>
+<ul>
+<li>编辑与新建文章搞定了</li>
+<li>优化了一下文章加载太慢的问题，主要是先把控件画出来然后再填内容</li>
+<li>目前还差提交与推送到服务器</li>
+</ul>
+<h2 id="2024-10-27">2024-10-27</h2>
+<ul>
+<li>尝试了一下android编译，当然只成功了dart部分</li>
+<li>搞定了向服务器提交</li>
+<li>最后调通了Linux平台下插件交互</li>
+<li>突然意识到自己走了弯路，不过还不算晚，我应该先向优秀的库学习一下，看看人家是如此组织文件，如何使用cmake编译多平台</li>
+</ul>
+<h2 id="2024-10-29">2024-10-29</h2>
+<ul>
+<li>希望能搞定目录列表</li>
+<li>一会儿要修改一下访问监控</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>经济衰退一种可能的应对方案</title>
+      <link>https://xgdebug.com/zh/posts/history/dictator/economic-recession-possible-solution/</link>
+      <pubDate>Tue, 01 Oct 2024 03:33:50 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/history/dictator/economic-recession-possible-solution/</guid>
+      <description>&lt;h2 id=&#34;当前面临的主要困境&#34;&gt;当前面临的主要困境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;经济到达债务顶峰，债务压力导致个人收入减少&lt;/li&gt;
+&lt;li&gt;个人节省开支，直接导致消费下降&lt;/li&gt;
+&lt;li&gt;消费下降导致企业收入下降&lt;/li&gt;
+&lt;li&gt;企业收入下降导致员工收入与税收下降&lt;/li&gt;
+&lt;li&gt;个人与企业投资意愿下降导致房地产疲软&lt;/li&gt;
+&lt;li&gt;土地销售不畅，地方财政濒临破产，部分地区官吏薪俸已无法足额发放&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;历史教训&#34;&gt;历史教训&lt;/h2&gt;
+&lt;p&gt;这种情况必定导致极端的变革，这是不能接受的，所以必须做出应对。那么应对的目标是什么呢？当然是维持社会的稳定，在这一点上，所有人的利益都是一至的。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="当前面临的主要困境">当前面临的主要困境</h2>
+<ul>
+<li>经济到达债务顶峰，债务压力导致个人收入减少</li>
+<li>个人节省开支，直接导致消费下降</li>
+<li>消费下降导致企业收入下降</li>
+<li>企业收入下降导致员工收入与税收下降</li>
+<li>个人与企业投资意愿下降导致房地产疲软</li>
+<li>土地销售不畅，地方财政濒临破产，部分地区官吏薪俸已无法足额发放</li>
+</ul>
+<h2 id="历史教训">历史教训</h2>
+<p>这种情况必定导致极端的变革，这是不能接受的，所以必须做出应对。那么应对的目标是什么呢？当然是维持社会的稳定，在这一点上，所有人的利益都是一至的。</p>
+<h2 id="目前的解决方案">目前的解决方案</h2>
+<h3 id="1-货币政策干预">1. 货币政策干预</h3>
+<ul>
+<li>量化宽松：他们可以指示中央银行进行大规模的货币注入，增加市场流动性。这种做法能够迅速提高资产价格，刺激消费，营造出经济繁荣的假象。</li>
+<li>降低利率：通过降低利率，鼓励个人和企业借贷，促进投资和消费，从而刺激经济活动。</li>
+</ul>
+<h3 id="2-财政政策刺激">2. 财政政策刺激</h3>
+<ul>
+<li>增加政府支出：他们可以通过政府项目和基础设施建设等方式增加支出，以创造就业和促进经济增长。这种投资可以迅速见效，增强民众对政府的支持。</li>
+<li>减税：短期内减少税收负担，增加消费者的可支配收入，刺激消费，从而促进经济增长。</li>
+</ul>
+<h3 id="3-操控市场">3. 操控市场</h3>
+<ul>
+<li>股市操控：通过各种手段（例如央行直接购买股票）来拉升股市，制造财富效应，使得中产阶级和有资产的人群感到富裕，从而增加消费和投资。</li>
+<li>房地产市场刺激：降低购房贷款利率或提供购房补贴，促进房地产市场回暖，以拉动相关产业的发展。</li>
+</ul>
+<h3 id="4-信息操控">4. 信息操控</h3>
+<ul>
+<li>宣传和舆论控制：通过宣传机器塑造积极的经济形象，降低社会对经济问题的关注，增强公众对政府的信任和支持。</li>
+<li>数据操控：在经济指标上进行操控，发布乐观的经济数据，以制造经济繁荣的假象。</li>
+</ul>
+<h3 id="5-压制社会不满">5. 压制社会不满</h3>
+<ul>
+<li>镇压反对声音：通过严厉打压抗议和反对派，保持社会的表面稳定，防止社会动荡和不满情绪的爆发。</li>
+<li>提供短期福利：为低收入群体提供一些短期的经济援助或补贴，缓解民生压力，以获得民众的支持。</li>
+</ul>
+<h3 id="6-增加国家控制">6. 增加国家控制</h3>
+<p>国有化或控制关键产业：通过控制关键经济领域来实现国家的利益和政权的稳定。这可以帮助他们在经济困难时更好地应对危机。
+结论
+通过这些短期或中期的策略，他们可以有效地在经济衰退中维持表面的繁荣与稳定，增强自己的统治基础。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>尝试开始写日记，记录时间是怎么没的</title>
+      <link>https://xgdebug.com/zh/posts/self/diary/2024/trying-to-start-writing-a-diary-recording-how-time-disappears/</link>
+      <pubDate>Sun, 29 Sep 2024 11:01:12 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/posts/self/diary/2024/trying-to-start-writing-a-diary-recording-how-time-disappears/</guid>
+      <description>&lt;h2 id=&#34;2024-09-29&#34;&gt;2024-09-29&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;上午 10 点半才起床，把我的 blog 部署到了 github,改为使用 github action 来部署，感觉比以前两个仓库方便多了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上午 11 点开始放视频，所以接下来这一个小时基本上要浪费掉的。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="2024-09-29">2024-09-29</h2>
+<ul>
+<li>
+<p>上午 10 点半才起床，把我的 blog 部署到了 github,改为使用 github action 来部署，感觉比以前两个仓库方便多了</p>
+</li>
+<li>
+<p>上午 11 点开始放视频，所以接下来这一个小时基本上要浪费掉的。</p>
+</li>
+<li>
+<p>下午给我的 blog 加上了搜索功能，感觉很快时间就过了。</p>
+</li>
+<li>
+<p>晚上开始阅读了一点 The 48 Law Of Power ,这本书感觉有点暗黑，我不喜欢。 但是我怀疑我这种君子情节是受到了封建礼教的毒害，万一当个小人更加快乐呢？天知道。</p>
+</li>
+<li>
+<p>一天过完，人生就是这么的快。</p>
+</li>
+</ul>
+<h2 id="2024-09-30">2024-09-30</h2>
+<ul>
+<li>
+<p>上午依然 10 点起床，然后开始了疯狂的一天,整个股市一篇欢腾，开盘 30 分钟成交量破万亿，到下午大盘上涨了 8%。</p>
+</li>
+<li>
+<p>下午在群里看大家发各种段子，一天时间就这样被浪费掉了。</p>
+</li>
+<li>
+<p>今天我没有作任何的操作，上午有调整一下仓位的想法，但是很快打消了念头，目前我的持仓很合理。到了下午又想起了看的书。4 根大阳线无法改变我的信仰。</p>
+</li>
+<li>
+<p>最终我花了一点时间，把今天发生的事写了下来: <a href="/posts/economics/the-largest-signle-day-surge-in-the-history-of-chinas-stock-market/">写在 A 股历史性的爆涨之日:虚假繁荣还是稳步上行？
+</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>容忍傻子，理解傻子，收割傻子。</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/bullshit/%E5%AE%B9%E5%BF%8D%E5%82%BB%E5%AD%90%E7%90%86%E8%A7%A3%E5%82%BB%E5%AD%90%E6%94%B6%E5%89%B2%E5%82%BB%E5%AD%90/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/bullshit/tolerating-understanding-harvesting-idiots/</link>
       <pubDate>Wed, 30 Aug 2023 09:52:55 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/bullshit/%E5%AE%B9%E5%BF%8D%E5%82%BB%E5%AD%90%E7%90%86%E8%A7%A3%E5%82%BB%E5%AD%90%E6%94%B6%E5%89%B2%E5%82%BB%E5%AD%90/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/bullshit/tolerating-understanding-harvesting-idiots/</guid>
       <description>这篇文章探讨了触动上层利益和改变下层观念之间的复杂关系，指出这两者实际上紧密相连，因为下层的观念是上层利益的基础。</description>
       <content:encoded><![CDATA[<p><strong>别动上层人的利益，也别动下层人的观念。动上层人的利益犹如要他的性命，动下层人的观念犹如刨他的祖坟，而下层的观念正是上层利益的来源。</strong></p>
 ]]></content:encoded>
     </item>
     <item>
       <title>2023个人认为获取幸福感的最佳方式</title>
-      <link>https://xgdebug.com/zh/posts/self/best-way-to-find-happiness/</link>
+      <link>https://xgdebug.com/zh/posts/self/best-ways-to-achieve-happiness-2023/</link>
       <pubDate>Wed, 02 Aug 2023 15:55:23 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/best-way-to-find-happiness/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/best-ways-to-achieve-happiness-2023/</guid>
       <description>&lt;p&gt;个人觉得获得幸福的最佳方法是把生活从网络游戏变成单机游戏。网络游戏比如吃鸡或者王者农药，你需要比别人技术好，装备比别人牛，连皮肤都要比一比。强中自有强中手，你失意是大概率事件。但是如果我们把生活换成单机游戏呢？比如塞尔达，你只要和自己比就可以了。每一步都幸福感满满。投射到现实就是，身材要比别人好，房子要比别人大，车子要比别人豪。 天天想着当人上人，要压过别人，注定很难幸福。个人认为正确的方法是：买了房不用老搬家了，开心。 买了车不用挤地铁了，开心。买了洗碗机不用洗碗了，开心&amp;hellip;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>个人觉得获得幸福的最佳方法是把生活从网络游戏变成单机游戏。网络游戏比如吃鸡或者王者农药，你需要比别人技术好，装备比别人牛，连皮肤都要比一比。强中自有强中手，你失意是大概率事件。但是如果我们把生活换成单机游戏呢？比如塞尔达，你只要和自己比就可以了。每一步都幸福感满满。投射到现实就是，身材要比别人好，房子要比别人大，车子要比别人豪。 天天想着当人上人，要压过别人，注定很难幸福。个人认为正确的方法是：买了房不用老搬家了，开心。 买了车不用挤地铁了，开心。买了洗碗机不用洗碗了，开心&hellip;</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>给自己的一些建议</title>
-      <link>https://xgdebug.com/zh/posts/self/some-advice-to-myself/</link>
+      <link>https://xgdebug.com/zh/posts/self/some-advice-for-myself/</link>
       <pubDate>Sun, 16 Jul 2023 14:46:48 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/some-advice-to-myself/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/some-advice-for-myself/</guid>
       <description>&lt;p&gt;关于读书：养成一个读书习惯比读什么书更重要。我主要在 Kindle 上买书，用 iPad 阅读。目前在重读一些物理、历史、哲学相关的书。&lt;/p&gt;
 &lt;p&gt;关于习惯：早上健身 30 分钟是我最重要的习惯。另外习惯有冥想、阅读、减少饮酒和咖啡。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>关于读书：养成一个读书习惯比读什么书更重要。我主要在 Kindle 上买书，用 iPad 阅读。目前在重读一些物理、历史、哲学相关的书。</p>
@@ -796,9 +1152,9 @@
     </item>
     <item>
       <title>遇到事了，就只能无助的哭泣，仿佛一只巨婴</title>
-      <link>https://xgdebug.com/zh/posts/self/behaving-like-a-giant-baby/</link>
+      <link>https://xgdebug.com/zh/posts/self/helpless-crying-like-a-giant-baby/</link>
       <pubDate>Tue, 27 Jun 2023 03:54:37 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/behaving-like-a-giant-baby/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/helpless-crying-like-a-giant-baby/</guid>
       <description>&lt;p&gt;读书是一种可以确保活在及格线以上的稳妥方法，即不至于变的过分的庸俗，低级，和自以为是，有中上水平的思考和内省能力。&lt;br&gt;
 达到这个及格线以后，想更进一步变的更厉害，其实也非常简单，去实践。把在书里看到的东西，实践起来。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>读书是一种可以确保活在及格线以上的稳妥方法，即不至于变的过分的庸俗，低级，和自以为是，有中上水平的思考和内省能力。<br>
@@ -807,9 +1163,9 @@
     </item>
     <item>
       <title>要把脑力用在重要的事情上</title>
-      <link>https://xgdebug.com/zh/posts/self/use-brain-power-on-important-things/</link>
+      <link>https://xgdebug.com/zh/posts/self/focus-on-important-things/</link>
       <pubDate>Tue, 27 Jun 2023 02:19:31 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/use-brain-power-on-important-things/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/focus-on-important-things/</guid>
       <description>&lt;p&gt;大脑是个耗能极高的器官，它以 2%左右的身体重量，消耗了身体总消耗的 20%-30%的能量。 人每天大脑运行的产出是有限的，要把脑力用在重要的事情上。不要白白浪费你的生命。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>大脑是个耗能极高的器官，它以 2%左右的身体重量，消耗了身体总消耗的 20%-30%的能量。 人每天大脑运行的产出是有限的，要把脑力用在重要的事情上。不要白白浪费你的生命。</p>
 ]]></content:encoded>
@@ -825,27 +1181,27 @@
     </item>
     <item>
       <title>程序杠杆</title>
-      <link>https://xgdebug.com/zh/posts/business/software-leverage/</link>
+      <link>https://xgdebug.com/zh/posts/business/program-leverage/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/software-leverage/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/program-leverage/</guid>
       <description>&lt;p&gt;而编程、写书、录播客、发推特、拍视频这些事情不需要经过任何人的许可。由此可见，新杠杆就像一个均衡器，极大地缩小了人与人之间的差距，让社会变得更平等。 [78] 比如，每个出色的软件开发者现在都有一大群机器人在为其工作。写好代码后，这些机器人就开始工作，在开发者睡觉的时候也在为其赚钱。 [78] 靠出租自己的时间是永远无法致富的。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>而编程、写书、录播客、发推特、拍视频这些事情不需要经过任何人的许可。由此可见，新杠杆就像一个均衡器，极大地缩小了人与人之间的差距，让社会变得更平等。 [78] 比如，每个出色的软件开发者现在都有一大群机器人在为其工作。写好代码后，这些机器人就开始工作，在开发者睡觉的时候也在为其赚钱。 [78] 靠出租自己的时间是永远无法致富的。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>出发点并不重要，行为本身才重要。</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/actions-matter-more-than-intentions/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/action-matters-more/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/actions-matter-more-than-intentions/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/action-matters-more/</guid>
       <description>&lt;p&gt;所以对你的伤害都是对方反复权衡的结果&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>所以对你的伤害都是对方反复权衡的结果</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>而要追求自己真正感兴趣的事情</title>
-      <link>https://xgdebug.com/zh/posts/self/pursue-what-you-are-interested-in/</link>
+      <link>https://xgdebug.com/zh/posts/self/pursuing-what-you-truly-enjoy/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/pursue-what-you-are-interested-in/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/pursuing-what-you-truly-enjoy/</guid>
       <description>&lt;p&gt;对一件事情的欲望越小，顾虑就越少，执念就越少，反而越会顺其自然，遵循内心。你会以自己擅长的方式，始终不渝地做下去，工作质量也会因此提高。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>对一件事情的欲望越小，顾虑就越少，执念就越少，反而越会顺其自然，遵循内心。你会以自己擅长的方式，始终不渝地做下去，工作质量也会因此提高。</p>
 ]]></content:encoded>
@@ -863,27 +1219,27 @@
     </item>
     <item>
       <title>工作的目标</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/goal-of-work/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/goals-of-work/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/goal-of-work/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/goals-of-work/</guid>
       <description>&lt;p&gt;人生的一大目标应该是掌控自己的时间。理想的工作是利用杠杆效应的工作。在这种工作模式下，你可以掌控自己的时间，并能对自己的产出成果负责。如果你通过提供绝佳的解决方案给企业带来了神奇的转机，那么你必将得到金钱的回报。特别是，如果别人根本不知道你是如何做到的，他们就必须不断地付钱给你，让你继续提供这种产品或服务。而你之所以能够做到这一点，就是因为你的痴迷、技能或天赋。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>人生的一大目标应该是掌控自己的时间。理想的工作是利用杠杆效应的工作。在这种工作模式下，你可以掌控自己的时间，并能对自己的产出成果负责。如果你通过提供绝佳的解决方案给企业带来了神奇的转机，那么你必将得到金钱的回报。特别是，如果别人根本不知道你是如何做到的，他们就必须不断地付钱给你，让你继续提供这种产品或服务。而你之所以能够做到这一点，就是因为你的痴迷、技能或天赋。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>关键在于，准确把握并满足社会所需。每一代人所需的产品或服务都不一样，但绝大多数都与科技相关。</title>
-      <link>https://xgdebug.com/zh/posts/business/meeting-societal-needs-with-technology/</link>
+      <link>https://xgdebug.com/zh/posts/business/tech-solutions-for-diverse-generational-needs/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/meeting-societal-needs-with-technology/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/tech-solutions-for-diverse-generational-needs/</guid>
       <description>&lt;p&gt;当新的需求乍现，而你恰好又是唯一具备相关技能组合的人时，大显身手的时刻就到了。这期间，你可以通过免费提供产品或服务在推特、 YouTube （视频网站）上建立自己的品牌。在这个过程中，你可能会承担一定的风险和损失，但是你为自己打造了个人品牌，赢得了声誉。当机会到来时，你就能最大限度地利用杠杆效应，扩大自己提供的产品或服务的规模。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>当新的需求乍现，而你恰好又是唯一具备相关技能组合的人时，大显身手的时刻就到了。这期间，你可以通过免费提供产品或服务在推特、 YouTube （视频网站）上建立自己的品牌。在这个过程中，你可能会承担一定的风险和损失，但是你为自己打造了个人品牌，赢得了声誉。当机会到来时，你就能最大限度地利用杠杆效应，扩大自己提供的产品或服务的规模。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>获得财富需要杠杆。杠杆可以来自劳动力、资本、代码或媒体。</title>
-      <link>https://xgdebug.com/zh/posts/investment/wealth-requires-leverage-labor-capital-code-media/</link>
+      <link>https://xgdebug.com/zh/posts/investment/gaining-wealth-requires-leverage-from-labor-capital-code-or-media/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/investment/wealth-requires-leverage-labor-capital-code-media/</guid>
+      <guid>https://xgdebug.com/zh/posts/investment/gaining-wealth-requires-leverage-from-labor-capital-code-or-media/</guid>
       <description>&lt;p&gt;我们需要了解获得权益回报和赚取薪资报酬的区别。如果你是通过出租时间来换取报酬的，即使从事律师和医生等高薪职业，你能够获得的报酬也非常有限，不足以让你实现财务自由。而如果拥有企业股权，你就可以获得被动收入 —— 即使你在度假，企业也在帮你赚钱。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>我们需要了解获得权益回报和赚取薪资报酬的区别。如果你是通过出租时间来换取报酬的，即使从事律师和医生等高薪职业，你能够获得的报酬也非常有限，不足以让你实现财务自由。而如果拥有企业股权，你就可以获得被动收入 —— 即使你在度假，企业也在帮你赚钱。</p>
 <p>从本质上看，上班就是给人打工。而企业所有者在承担风险和责任的同时也拥有知识产权和品牌效应。所以，他们支付给你的报酬一定低于你创造的价值。为了让你工作，他们会给你提供最低限度的报酬。</p>
@@ -891,99 +1247,99 @@
     </item>
     <item>
       <title>靠出租自己的时间是永远无法致富的</title>
-      <link>https://xgdebug.com/zh/posts/business/renting-time-will-not-make-you-rich/</link>
+      <link>https://xgdebug.com/zh/posts/business/renting-time-never-leads-to-wealth/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/renting-time-will-not-make-you-rich/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/renting-time-never-leads-to-wealth/</guid>
       <description>&lt;p&gt;无论处于人生的哪个阶段，努力的目标都是不断提高自己的独立性，而不是升职加薪。拥有独立性，为自己独特的产出成果负责（而不是像打工一样为投入的时间负责），这才是最理想的状态。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>无论处于人生的哪个阶段，努力的目标都是不断提高自己的独立性，而不是升职加薪。拥有独立性，为自己独特的产出成果负责（而不是像打工一样为投入的时间负责），这才是最理想的状态。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>温故知新</title>
-      <link>https://xgdebug.com/zh/posts/history/reviewing-the-old-to-know-the-new/</link>
+      <link>https://xgdebug.com/zh/posts/history/old-knowledge-new-insights/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/history/reviewing-the-old-to-know-the-new/</guid>
+      <guid>https://xgdebug.com/zh/posts/history/old-knowledge-new-insights/</guid>
       <description>&lt;p&gt;如果没有结合亲身经历，推文读起来就会像鸡汤集锦，内容精彩，一时间让人备受鼓舞。你甚至还把它们做成精美的海报，以时时激励自己。但很可能过段时间你就忘掉了，继续按部就班地生活。所谓的心智模型，其实就是有助于调取你所学知识的简单方法。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>如果没有结合亲身经历，推文读起来就会像鸡汤集锦，内容精彩，一时间让人备受鼓舞。你甚至还把它们做成精美的海报，以时时激励自己。但很可能过段时间你就忘掉了，继续按部就班地生活。所谓的心智模型，其实就是有助于调取你所学知识的简单方法。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>学校教的东西只能让你用来出售时间</title>
-      <link>https://xgdebug.com/zh/posts/self/school-teaches-you-to-sell-time/</link>
+      <link>https://xgdebug.com/zh/posts/self/school-lessons-only-let-you-sell-time/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/school-teaches-you-to-sell-time/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/school-lessons-only-let-you-sell-time/</guid>
       <description>&lt;p&gt;大家都能学会的东西是不可能让你致富的。凡是可以批量化培训的技能都是能够被雇佣的技能。只有你自己学到的东西，才是属于你独有的能力，才有可能让你创业成功。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>大家都能学会的东西是不可能让你致富的。凡是可以批量化培训的技能都是能够被雇佣的技能。只有你自己学到的东西，才是属于你独有的能力，才有可能让你创业成功。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>越觉得自己无所不知，规避和处置风险的方法越少。</title>
-      <link>https://xgdebug.com/zh/posts/self/arrogance-leads-to-risk/</link>
+      <link>https://xgdebug.com/zh/posts/self/more-knowledge-fewer-risk-strategies/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/arrogance-leads-to-risk/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/more-knowledge-fewer-risk-strategies/</guid>
       <description>&lt;p&gt;决策就是一切。事实上，一个决策正确率为 80% 的人比正确率为 70% 的人在市场上的价值和获得的回报要高出数百倍。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>决策就是一切。事实上，一个决策正确率为 80% 的人比正确率为 70% 的人在市场上的价值和获得的回报要高出数百倍。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>在根据记忆进行预测的过程中，这个逻辑是最靠不住的</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/unreliability-of-memory-based-prediction/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/unreliable-logic-in-memory-prediction/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:41 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/unreliability-of-memory-based-prediction/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/unreliable-logic-in-memory-prediction/</guid>
       <description>&lt;p&gt;这件事在过去发生了，因此在未来也会发生。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>这件事在过去发生了，因此在未来也会发生。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>对美好现实的渴求蒙蔽了对真实世界的认知。所谓痛苦，就是无法继续无视事实。</title>
-      <link>https://xgdebug.com/zh/posts/self/pain-is-not-ignoring-the-truth/</link>
+      <link>https://xgdebug.com/zh/posts/self/longing-for-a-better-reality-blinds-perception-of-the-real-world/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/pain-is-not-ignoring-the-truth/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/longing-for-a-better-reality-blinds-perception-of-the-real-world/</guid>
       <description>&lt;p&gt;难点在于看清真相。要看清真相，就必须摆脱自我，因为自我不想面对真相。自我越弱小，对自己反应的限制越少，对自己想要的结果的执念越低，就越容易看清现实。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>难点在于看清真相。要看清真相，就必须摆脱自我，因为自我不想面对真相。自我越弱小，对自己反应的限制越少，对自己想要的结果的执念越低，就越容易看清现实。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>给自己的时间设定价格</title>
-      <link>https://xgdebug.com/zh/posts/investment/set-a-price-for-your-time/</link>
+      <link>https://xgdebug.com/zh/posts/investment/pricing-your-own-time/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/investment/set-a-price-for-your-time/</guid>
+      <guid>https://xgdebug.com/zh/posts/investment/pricing-your-own-time/</guid>
       <description>&lt;p&gt;用时薪计算时间价值。如果用花钱的方式节省的时间价值更高，那就花钱，不要犹豫。要想真的赚到钱，先要相信你自己很值钱。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>用时薪计算时间价值。如果用花钱的方式节省的时间价值更高，那就花钱，不要犹豫。要想真的赚到钱，先要相信你自己很值钱。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>归纳法与推理法</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/induction-and-inference/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/inductive-and-deductive-reasoning/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/induction-and-inference/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/inductive-and-deductive-reasoning/</guid>
       <description>&lt;p&gt;几乎所有的偏见都是为了帮助人们在信息不完整的情况下迅速做出判断。对于重要的决策，要抛开记忆和身份，专注于问题本身。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>几乎所有的偏见都是为了帮助人们在信息不完整的情况下迅速做出判断。对于重要的决策，要抛开记忆和身份，专注于问题本身。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>没有思考，你就不会有出色的商业创意，也不可能做出正确的判断。</title>
-      <link>https://xgdebug.com/zh/posts/self/thinking-is-key-to-business-ideas/</link>
+      <link>https://xgdebug.com/zh/posts/self/no-thinking-no-great-business-ideas-or-correct-judgments/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/thinking-is-key-to-business-ideas/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/no-thinking-no-great-business-ideas-or-correct-judgments/</guid>
       <description>&lt;p&gt;悠闲的大脑才能产生伟大的创意。一个倍感压力、案牍劳形、四处奔波、焦头烂额的人，是没有办法思考的。所以，一定要为思考挤出时间。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>悠闲的大脑才能产生伟大的创意。一个倍感压力、案牍劳形、四处奔波、焦头烂额的人，是没有办法思考的。所以，一定要为思考挤出时间。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>努力的作用被大大高估了。在现代经济中，工作的努力程度并没有那么重要。</title>
-      <link>https://xgdebug.com/zh/posts/business/hard-work-is-overrated-in-modern-economy/</link>
+      <link>https://xgdebug.com/zh/posts/business/effort-overrated-modern-economy/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/hard-work-is-overrated-in-modern-economy/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/effort-overrated-modern-economy/</guid>
       <description>&lt;p&gt;在杠杆时代，一个正确的决策可以帮你赢得一切。不付出努力，就无法培养判断力，也不会获得任何杠杆。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>在杠杆时代，一个正确的决策可以帮你赢得一切。不付出努力，就无法培养判断力，也不会获得任何杠杆。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>如何达到退休状态？</title>
-      <link>https://xgdebug.com/zh/posts/self/how-to-reach-retirement-state/</link>
+      <link>https://xgdebug.com/zh/posts/self/how-to-reach-retirement/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/how-to-reach-retirement-state/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/how-to-reach-retirement/</guid>
       <description>文章介绍了实现退休状态的三种方法：通过存钱获得被动收入，减少开销至零如出家修行，以及从事自己热爱的事情而不受金钱束缚。</description>
       <content:encoded><![CDATA[<h1 id="实现退休状态的多种方法">实现退休状态的多种方法</h1>
 <h2 id="存钱">存钱</h2>
@@ -997,34 +1353,34 @@
     </item>
     <item>
       <title>如何确保自己是在直面现实问题？</title>
-      <link>https://xgdebug.com/zh/posts/self/facing-reality-head-on/</link>
+      <link>https://xgdebug.com/zh/posts/self/how-to-ensure-you-are-facing-reality-problems/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/facing-reality-head-on/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/how-to-ensure-you-are-facing-reality-problems/</guid>
       <description>&lt;p&gt;要直面现实，就要放下自我，消除自我意识，忘记自我判断，平复自我情绪。人虽然是高级动物，但情绪化的自我意识的存在会带来反刍式思维，让一些欲望蒙蔽我们的双眼，让我们看不清现实，从而让我们对“世界应该怎样”妄下判断。这种情况经常发生，尤其是在把政治诉求和商业问题搅在一起时。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>要直面现实，就要放下自我，消除自我意识，忘记自我判断，平复自我情绪。人虽然是高级动物，但情绪化的自我意识的存在会带来反刍式思维，让一些欲望蒙蔽我们的双眼，让我们看不清现实，从而让我们对“世界应该怎样”妄下判断。这种情况经常发生，尤其是在把政治诉求和商业问题搅在一起时。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>如何确定一个人是否值得信赖？</title>
-      <link>https://xgdebug.com/zh/posts/self/how-to-determine-trustworthiness/</link>
+      <link>https://xgdebug.com/zh/posts/self/how-to-determine-if-someone-is-trustworthy/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/how-to-determine-trustworthiness/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/how-to-determine-if-someone-is-trustworthy/</guid>
       <description>&lt;p&gt;如果一个人大谈特谈自己有多诚实，那么他很可能是不诚实的。这只是我学到的一个小小的警示信号。当一个人不断宣扬自己的价值观，或者自我吹嘘时，那就意味着他在掩饰什么&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>如果一个人大谈特谈自己有多诚实，那么他很可能是不诚实的。这只是我学到的一个小小的警示信号。当一个人不断宣扬自己的价值观，或者自我吹嘘时，那就意味着他在掩饰什么</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>省出时间来赚钱才是正确的思路。</title>
-      <link>https://xgdebug.com/zh/posts/philosophy/save-time-to-make-money/</link>
+      <link>https://xgdebug.com/zh/posts/philosophy/time-to-earn-money-is-the-right-mindset/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/philosophy/save-time-to-make-money/</guid>
+      <guid>https://xgdebug.com/zh/posts/philosophy/time-to-earn-money-is-the-right-mindset/</guid>
       <description></description>
     </item>
     <item>
       <title>提供免费的产品或服务，主动向世界传递善意。好人终有好报</title>
-      <link>https://xgdebug.com/zh/posts/business/free-products-convey-goodwill/</link>
+      <link>https://xgdebug.com/zh/posts/business/spreading-goodwill-by-offering-free-products-or-services/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/free-products-convey-goodwill/</guid>
+      <guid>https://xgdebug.com/zh/posts/business/spreading-goodwill-by-offering-free-products-or-services/</guid>
       <description>&lt;p&gt;找到自己擅长的领域，然后用自己的技能去帮助他人：提供免费的产品或服务，主动向世界传递善意。好人终有好报。只要始终如一，假以时日，付出就一定能获得相应的回报。但不要计较自己付出了多少 —— 一旦开始计较，耐心就会被消耗殆尽。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>找到自己擅长的领域，然后用自己的技能去帮助他人：提供免费的产品或服务，主动向世界传递善意。好人终有好报。只要始终如一，假以时日，付出就一定能获得相应的回报。但不要计较自己付出了多少 —— 一旦开始计较，耐心就会被消耗殆尽。</p>
 ]]></content:encoded>
@@ -1039,28 +1395,37 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>我说的“退休”不是说到了 65 岁</title>
-      <link>https://xgdebug.com/zh/posts/investment/retirement-is-not-at-sixty-five/</link>
+      <title>挑选一个行业，让你能够与有长期眼光的人进行长期博弈。</title>
+      <link>https://xgdebug.com/zh/posts/self/choosing-an-industry-for-long-term-play/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/investment/retirement-is-not-at-sixty-five/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/choosing-an-industry-for-long-term-play/</guid>
+      <description>&lt;p&gt;挑选拥有高智慧、高活力，最重要的是正直的商业伙伴。 ↓ 不要与愤世嫉俗者和悲观主义者合作。 他们的信念是自我实现的。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>挑选拥有高智慧、高活力，最重要的是正直的商业伙伴。 ↓ 不要与愤世嫉俗者和悲观主义者合作。 他们的信念是自我实现的。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>我说的“退休”不是说到了 65 岁</title>
+      <link>https://xgdebug.com/zh/posts/investment/what-i-mean-by-retirement-isnt-at-65/</link>
+      <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/investment/what-i-mean-by-retirement-isnt-at-65/</guid>
       <description>&lt;p&gt;不管是通过降低生活标准还是通过拼命赚钱，一旦摆脱了金钱问题的困扰，你就可以退休了。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>不管是通过降低生活标准还是通过拼命赚钱，一旦摆脱了金钱问题的困扰，你就可以退休了。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>要做到诚实，就要在发表观点时抛开自己的身份。</title>
-      <link>https://xgdebug.com/zh/posts/self/honesty-requires-dropping-identity/</link>
+      <link>https://xgdebug.com/zh/posts/self/honesty-requires-setting-aside-identity/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/honesty-requires-dropping-identity/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/honesty-requires-setting-aside-identity/</guid>
       <description>&lt;p&gt;我们每个人都有一些离经叛道的信仰，这些信仰不被社会接受。但是，我们的身份和所在的族群越是排斥这样的信仰，它就越有可能是符合现实的。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>我们每个人都有一些离经叛道的信仰，这些信仰不被社会接受。但是，我们的身份和所在的族群越是排斥这样的信仰，它就越有可能是符合现实的。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>在前进的过程中，方向比速度更重要，特别是运用了杠杆以后。</title>
-      <link>https://xgdebug.com/zh/posts/self/direction-over-speed-and-leverage/</link>
+      <link>https://xgdebug.com/zh/posts/self/direction-over-speed-especially-with-leverage/</link>
       <pubDate>Thu, 08 Jun 2023 14:21:40 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/self/direction-over-speed-and-leverage/</guid>
+      <guid>https://xgdebug.com/zh/posts/self/direction-over-speed-especially-with-leverage/</guid>
       <description>&lt;p&gt;如果有人用词花哨，动辄谈论宏大而复杂的概念，那么他们很有可能并不了解自己所谈论的东西。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>如果有人用词花哨，动辄谈论宏大而复杂的概念，那么他们很有可能并不了解自己所谈论的东西。</p>
 ]]></content:encoded>

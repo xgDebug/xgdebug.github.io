@@ -15,9 +15,9 @@
     <atom:link href="https://xgdebug.com/zh/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>怎么推广APP呢？</title>
-      <link>https://xgdebug.com/zh/posts/tech/app/how-to-promote-apps/</link>
+      <link>https://xgdebug.com/zh/posts/tech/app/how-to-promote-app/</link>
       <pubDate>Tue, 19 Nov 2024 14:58:38 +0800</pubDate>
-      <guid>https://xgdebug.com/zh/posts/tech/app/how-to-promote-apps/</guid>
+      <guid>https://xgdebug.com/zh/posts/tech/app/how-to-promote-app/</guid>
       <description>&lt;p&gt;这是个比较难搞的问题，目前想到的都有。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;youtube教程下面回帖&lt;/li&gt;
@@ -125,25 +125,138 @@ Fake it till you make it .</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Developing solutions without fully understanding users&#39; problems is something I&#39;ve made many mistakes in.</title>
-      <link>https://xgdebug.com/zh/posts/business/avoid-developing-before-understanding-problems/</link>
+      <title>在没有充分理解用户问题的情况下开发解决方案，是我犯了很多错误的。</title>
+      <link>https://xgdebug.com/zh/posts/business/developing-solutions-without-fully-understanding-user-problems/</link>
       <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/business/avoid-developing-before-understanding-problems/</guid>
-      <description>&lt;p&gt;1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p&gt;
-&lt;p&gt;2. If there was a solution, would they buy it?&lt;/p&gt;
-&lt;p&gt;3. Would they buy it from us?&lt;/p&gt;
-&lt;p&gt;4. Can we build a solution for that problem?&amp;quot; The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>1. Do consumers recognize that they have the problem you are trying to solve?</p>
-<p>2. If there was a solution, would they buy it?</p>
-<p>3. Would they buy it from us?</p>
-<p>4. Can we build a solution for that problem?&quot; The common tendency of product development is to skip straight to the fourth question and build a solution before confirming that customers have the problem.</p>
+      <guid>https://xgdebug.com/zh/posts/business/developing-solutions-without-fully-understanding-user-problems/</guid>
+      <description>&lt;p&gt;1. 消费者是否意识到他们存在你试图解决的问题？&lt;/p&gt;
+&lt;p&gt;2. 如果存在一个解决方案，他们会购买吗？&lt;/p&gt;
+&lt;p&gt;3. 他们会从我们这里购买吗？&lt;/p&gt;
+&lt;p&gt;4. 我们能否为这个问题构建一个解决方案？产品开发中常见的倾向是直接跳到第四个问题，在确认客户存在问题之前就构建解决方案。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>1. 消费者是否意识到他们存在你试图解决的问题？</p>
+<p>2. 如果存在一个解决方案，他们会购买吗？</p>
+<p>3. 他们会从我们这里购买吗？</p>
+<p>4. 我们能否为这个问题构建一个解决方案？产品开发中常见的倾向是直接跳到第四个问题，在确认客户存在问题之前就构建解决方案。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>从 0 到售出</title>
+      <link>https://xgdebug.com/zh/posts/business/untitled/</link>
+      <pubDate>Mon, 24 Jul 2023 07:30:19 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/untitled/</guid>
+      <description>老师们开始通过 Google Sheets 分享他们自制的解决方案，这凸显了他们社群中存在的一个共性问题。这一契机最终促成了一个 Web 应用程序的诞生，从而更高效地解决了他们的需求。</description>
+      <content:encoded><![CDATA[<p>我们发现，当许多其他老师开始在他们的线上社区中谈论他们自己构建的解决方案时，他们也做了同样的事情。老师们开始通过 Google 表格分享他们的模板。很明显，这是一个在紧密社区中共享的问题。</p>
+<p><strong>Note - Location 252</strong></p>
+<p>发现了一个群体的集体痛点</p>
+<p><strong>Highlight (pink) - Location 252</strong></p>
+<p>尽管它有所帮助，但它仍然笨拙且令人不知所措。我研究了一下，似乎很有可能构建一个基于网络的应用程序来更快、更可靠地完成这项工作。</p>
+<p><strong>Note - Location 254</strong></p>
+<p>发现了一个更好的解决方案</p>
+<p><strong>Highlight (pink) - Location 254</strong></p>
+<p>存在一个规模可观的市场，存在一个明显、共享且关键的问题。这个问题是可解决的，但还没有人构建出任何能使其明显更容易的东西。</p>
+<p><strong>Note - Location 255</strong></p>
+<p>商机的定义。</p>
+<p><strong>Highlight (yellow) - Location 262</strong></p>
+<p>所以，我们将其发布给公众，搭建了一个着陆页，然后等待着。没有发生什么。有一两个人在免费试用中注册了，但除此之外就没什么了。我们没有做任何营销，也没有产生任何销售。这个服务只是在那里空转着。</p>
+<p><strong>Note - Location 264</strong></p>
+<p>市场需要冷启动</p>
+<p><strong>Highlight (blue) - Location 264</strong></p>
+<p>然后，有一天，一切都改变了。在一篇关于老师如何处理反馈的 Facebook 帖子下，Danielle 评论中分享了我们产品的链接，并解释了她是如何使用它的。老师们开始回应，询问更多细节，他们查看了该程序，然后回来在社交媒体上分享他们新发现的“宝藏”。</p>
+<p><strong>Note - Location 266</strong></p>
+<p>在知乎上也经常有类似操作</p>
+<p><strong>Highlight (blue) - Location 267</strong></p>
+<p>这推动了我们业务的增长，从最初的几个用户到几个月后成千上万的客户。这感觉超现实，但我们触及了一个高度活跃的群体。一旦我们明白了这一点，在推广我们的产品时，我们就不需要做太多了：我们的用户会为我们完成大部分推广工作。</p>
+<p><strong>Note - Location 269</strong></p>
+<p>社区一条帖子就完成了冷启动：一个好东西被大家看到了。</p>
+<p><strong>Highlight (yellow) - Location 278</strong></p>
+<p>每天都有新的老师注册，由于我们提供的服务很好地解决了他们的问题，我们拥有了极高的留存率和转化率。</p>
+<p><strong>Note - Location 279</strong></p>
+<p>确实解决问题并且高频使用</p>
+<p><strong>Highlight (yellow) - Location 279</strong></p>
+<p>对于我们的许多客户来说，在家教学是一个副业。使用我们的产品使许多人能够将其转变为全职收入来源。我们将服务定价为可负担且易于证明其价值。即使在运营业务的一年后，我们也将价格提高了 50%，但它仍然持续增长。</p>
+<p><strong>Note - Location 281</strong></p>
+<p>价值被真正的创造了出来</p>
+<p><strong>Highlight (yellow) - Location 303</strong></p>
+<p>从零开始的业务，没有任何外部资金或援助。独立启动（Bootstrapping）的意义在于实现&hellip;</p>
+<p><strong>Highlight (yellow) - Location 331</strong></p>
+<p>在准备阶段，重点将是找到一个受众、他们最大的问题，以及一种能以让人们愿意为此付费的方式来解决这个问题的方案。你将了解如何初步定价你的产品并开始销售。</p>
+<p><strong>Note - Location 333</strong></p>
+<p>第一阶段最大的问题是种子用户与定价让他们付钱</p>
+<p><strong>Highlight (yellow) - Location 334</strong></p>
+<p>在生存阶段，重点将是找到一种可重复的盈利方式。你将学会如何改进产品、倾听你的早期客户，并开始建立流程和自动化来保持业务的领先地位。</p>
+<p><strong>Highlight (yellow) - Location 352</strong></p>
+<p>找到你的细分受众。找到并验证他们关键的问题。发明并验证解决他们问题的方案。构建一个实施该方案的产品。构建一个能够反复向你的受众销售该产品的业务。</p>
+<p><strong>Note - Location 354</strong></p>
+<p>价值创造一般过程</p>
+<p><strong>Highlight (yellow) - Location 362</strong></p>
+<p>技术创始人——而我算自己也是其中之一——专注于产品，因为我们用产品来解决自己的问题。毕竟，当你遇到一项具有挑战性的任务时，你首先会寻找什么？是对该任务认识论本质的深入科学解释？还是一个安装后几秒钟就能为你完成工作的工具？</p>
+<p><strong>Note - Location 365</strong></p>
+<p>作为一个技术宅,万不可太沉迷于技术,应该关注产品。解决问题而不是研究科学。能用就行</p>
+<p><strong>Highlight (yellow) - Location 368</strong></p>
+<p>成功的企业是通过为愿意为解决其问题付费的受众解决关键问题而建立起来的。准备阶段就是你做出这些基础性选择的时期。一旦业务启动，它就具有一定的惯性，使得这些决策难以改变。尽管将你的业务转向新市场有时是正确的选择，但这需要额外的努力。这就是为什么一开始就花大量时间把它做对是明智的。</p>
+<p><strong>Note - Location 371</strong></p>
+<p>为特定群体解决一个关键的问题,这个问值得他们花钱解决。</p>
+<p><strong>Highlight (yellow) - Location 378</strong></p>
+<p>他们失败是因为客户不够多。他们失败是因为产品解决了错误的问题。他们失败是因为产品以错误的方式解决了问题。有时，即使产品解决了客户的问题，他们也会失败。</p>
+<p><strong>Note - Location 380</strong></p>
+<p>一句话总结就是产品必须要真的有价值</p>
+<p><strong>Highlight (yellow) - Location 385</strong></p>
+<p>许多成功的独立启动企业都从一个受众、一个特定的细分市场开始。他们找到了客户的关键问题，并提供了人们乐于付费的宝贵解决方案。他们的产品围绕着持续为新老客户提供价值而构建。受众、问题、解决方案和产品可以单独来看待。</p>
+<p><strong>Note - Location 387</strong></p>
+<p>Fake it until you make it . Who why how what</p>
+<p><strong>Highlight (blue) - Location 390</strong></p>
+<p>我在帮助谁？你将发现如何找到完美的细分市场，并确保它能在第一步（你的受众）中支持你的业务。他们为什么需要帮助？学习如何在第二步（他们的问题）中找到并验证他们关键的问题。我如何帮助他们？找到一个好的解决方案，并确保它符合你潜在客户的工作流程，在第三步（你的解决方案）中实现。我可以创造什么来帮助他们？你将学习如何在第四步（你的产品）中创建一个易于维护和可靠的产品。</p>
+<p><strong>Highlight (blue) - Location 400</strong></p>
+<p>没有客户，业务就一文不值。你可以拥有世界上最好的产品，但如果没有人为你的产品付费，你就无法建立任何有意义的业务。</p>
+<p><strong>Note - Location 401</strong></p>
+<p>换句话说，没有客户的产品一文不值</p>
+<p><strong>Highlight (pink) - Location 402</strong></p>
+<p>你在哪里找到这些付费客户？建立业务的第一步就是回答这个问题，对于独立启动的创始人来说，有一个关键组成部分：找到完美的细分市场。</p>
+<p><strong>Note - Location 403</strong></p>
+<p>需要回答的第一个问题</p>
+<p><strong>Highlight (pink) - Location 406</strong></p>
+<p>对于独立启动的业务来说，选择你的目标受众有一些重要的限制：你必须小心地找到一个处于“金发姑娘区”（Goldilocks Zone）的市场——介于太小和太大之间，而且最好是以某种方式增长的。你将发现如何找到数据和数字，以便对你的受众做出明智的决策。</p>
+<p><strong>Note - Location 408</strong></p>
+<p>市场规模太大会有巨头，太小无法支撑成本</p>
+<p><strong>Highlight (yellow) - Location 417</strong></p>
+<p>那么，什么让一个细分市场对独立启动者来说是有趣的呢？细分客户的哪些特质可以被你利用来创建一个可持续的业务？你需要找到多深的细分市场才能找到一个好的受众？</p>
+<p><strong>Note - Location 419</strong></p>
+<p>为什么种子用户对你的东西感兴趣，你如何利用这些种子用户作为杠杆来撬动车轮转起来。</p>
+<p><strong>Highlight (blue) - Location 422</strong></p>
+<p>有时我们寻找像年龄或性别这样的不可改变的细分市场。其他时候，我们感兴趣的具体因素是流动的，比如偏好或经验水平。有些细分市场可以足够大，容纳数百万人口，而其他可能只由少数几个人组成。</p>
+<p><strong>Note - Location 423</strong></p>
+<p>细分市场的一些共性</p>
+<p><strong>Highlight (orange) - Location 424</strong></p>
+<p>所有的细分市场所共有的特质是，它们包含某些群体，同时排除了其他群体。内部群体的成员会相对相似，这取决于细分市场的具体程度。这就是为什么细分市场对独立启动的业务如此有效：如果你能提供一个能很好地解决细分市场问题的工具，你可以确定该细分市场中的每个人都会对它感兴趣。</p>
+<p><strong>Highlight (orange) - Location 427</strong></p>
+<p>在</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>如何零成本启动一个App生意？</title>
+      <link>https://xgdebug.com/zh/posts/business/how-to-start-an-app-business-for-free/</link>
+      <pubDate>Wed, 19 Jul 2023 03:57:24 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/posts/business/how-to-start-an-app-business-for-free/</guid>
+      <description>了解独立启动你的应用业务的实用策略，着重于低成本工具、用户验证和创意变现方法，以实现高效的构建和增长。</description>
+      <content:encoded><![CDATA[<ul>
+<li>使用免费或低成本的工具。例如，你可以使用 React Native 等框架来构建跨平台应用，这样就无需为多个原生平台付费。使用 GIMP 等免费图形工具代替 Photoshop。</li>
+<li><strong>首先验证你的应用想法。</strong> 在投入时间和金钱进行完整开发之前，先从目标用户那里获取反馈。创建模型或原型来衡量兴趣。</li>
+<li>考虑使用自由职业者而不是全职员工。聘请价格合理的自由职业者来协助处理图形、营销等事务。</li>
+<li><strong>利用应用市场</strong>，如 App Store 和 Google Play。它们使分发变得容易，而无需你投入自己的营销预算。</li>
+<li>使用免费的推广渠道。在社交媒体、论坛、与你的细分领域相关的博客上推广你的应用。联系意见领袖和媒体。</li>
+<li>通过广告实现盈利。通过 AdMob 等网络提供的移动广告即使对于免费应用也能提供收入。</li>
+<li>随着时间推移逐步发展并再投资收入。从小处开始，证明概念，然后通过再投资任何利润实现有机增长。</li>
+<li>考虑众筹。运行 Kickstarter 运动来资助开发成本并评估需求。</li>
+<li>寻找初创企业补助金和投资。申请应用初创企业资助计划，并在获得一定的关注度（traction）后向天使投资人推介。</li>
+</ul>
+<p>关键在于<strong>从小处开始，验证需求，利用免费/低成本</strong>的工具，并在初期使用创造力而不是大量资本来启动你的应用业务。</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>一个现代化APP的开发通常会涉及以下几个步骤和工具</title>
-      <link>https://xgdebug.com/zh/posts/tech/app/modern-app-development-steps/</link>
+      <link>https://xgdebug.com/zh/posts/tech/app/modern-app-development-steps-and-tools/</link>
       <pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/tech/app/modern-app-development-steps/</guid>
+      <guid>https://xgdebug.com/zh/posts/tech/app/modern-app-development-steps-and-tools/</guid>
       <description>&lt;h2 id=&#34;需求分析&#34;&gt;需求分析&lt;/h2&gt;
 &lt;p&gt;分析目标用户的需求,确定 APP 要实现的核心功能和特色。这需要进行用户研究、竞品分析等。&lt;br&gt;
 信息架构和交互设计
@@ -167,9 +280,9 @@ Fake it till you make it .</p>
     </item>
     <item>
       <title>一个现代的APP是如何诞生的？</title>
-      <link>https://xgdebug.com/zh/posts/tech/app/birth-of-a-modern-app/</link>
+      <link>https://xgdebug.com/zh/posts/tech/app/how-a-modern-app-is-born/</link>
       <pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate>
-      <guid>https://xgdebug.com/zh/posts/tech/app/birth-of-a-modern-app/</guid>
+      <guid>https://xgdebug.com/zh/posts/tech/app/how-a-modern-app-is-born/</guid>
       <description>&lt;p&gt;一个现代的 APP 是如何诞生的？&lt;/p&gt;
 &lt;p&gt;从创意到产品上线运营所的所有步骤与工作岗位和他们需要用到的工具：&lt;/p&gt;
 &lt;ol&gt;
