@@ -14,22 +14,22 @@
     <lastBuildDate>Sun, 24 Nov 2024 23:38:55 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to promote an app?</title>
-      <link>https://xgdebug.com/posts/tech/app/how-to-promote-an-app/</link>
+      <title>How to promote an APP?</title>
+      <link>https://xgdebug.com/posts/tech/app/how-to-promote-app/</link>
       <pubDate>Tue, 19 Nov 2024 14:58:38 +0800</pubDate>
-      <guid>https://xgdebug.com/posts/tech/app/how-to-promote-an-app/</guid>
-      <description>&lt;p&gt;This is a relatively tricky problem, and I have all the options/ideas.&lt;/p&gt;
+      <guid>https://xgdebug.com/posts/tech/app/how-to-promote-app/</guid>
+      <description>&lt;p&gt;This is a rather tricky problem, and I have ideas for everything.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Comment under the YouTube tutorial&lt;/li&gt;
-&lt;li&gt;Comment on the blog tutorial&lt;/li&gt;
-&lt;li&gt;Comment on all related content found via search&lt;/li&gt;
+&lt;li&gt;Comment under YouTube tutorials&lt;/li&gt;
+&lt;li&gt;Comment under blog tutorials&lt;/li&gt;
+&lt;li&gt;Comment after searching all related content&lt;/li&gt;
 &lt;li&gt;Post on X&lt;/li&gt;
 &lt;/ul&gt;</description>
-      <content:encoded><![CDATA[<p>This is a relatively tricky problem, and I have all the options/ideas.</p>
+      <content:encoded><![CDATA[<p>This is a rather tricky problem, and I have ideas for everything.</p>
 <ul>
-<li>Comment under the YouTube tutorial</li>
-<li>Comment on the blog tutorial</li>
-<li>Comment on all related content found via search</li>
+<li>Comment under YouTube tutorials</li>
+<li>Comment under blog tutorials</li>
+<li>Comment after searching all related content</li>
 <li>Post on X</li>
 </ul>
 ]]></content:encoded>
@@ -40,41 +40,41 @@
       <pubDate>Sat, 09 Nov 2024 13:05:38 +0800</pubDate>
       <guid>https://xgdebug.com/posts/tech/app/hugo-mobile-project-analysis/</guid>
       <description>&lt;h2 id=&#34;pain-points&#34;&gt;Pain Points&lt;/h2&gt;
-&lt;p&gt;Hugo is a very useful static site generator framework. Many people use it to write blogs and deploy them on GitHub Pages. However, this solution can only be used on a computer, meaning you have to open your computer every time you want to write an article. I strongly need a solution that allows me to record my thoughts at any moment—when my ideas are flowing, I can open my phone and immediately record them. Therefore, I need an app that can be operated on a mobile phone.&lt;/p&gt;</description>
+&lt;p&gt;Hugo is a very useful static site generator framework. Many people use it to write blogs and deploy them on GitHub Pages. However, this solution can only be used on a computer, meaning you have to open your computer every time you want to write an article. I strongly need a solution that allows me to record my thoughts at any moment—when my mind is racing, I can open my phone and immediately record it. Therefore, I need an APP that can be operated on a mobile phone.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="pain-points">Pain Points</h2>
-<p>Hugo is a very useful static site generator framework. Many people use it to write blogs and deploy them on GitHub Pages. However, this solution can only be used on a computer, meaning you have to open your computer every time you want to write an article. I strongly need a solution that allows me to record my thoughts at any moment—when my ideas are flowing, I can open my phone and immediately record them. Therefore, I need an app that can be operated on a mobile phone.</p>
+<p>Hugo is a very useful static site generator framework. Many people use it to write blogs and deploy them on GitHub Pages. However, this solution can only be used on a computer, meaning you have to open your computer every time you want to write an article. I strongly need a solution that allows me to record my thoughts at any moment—when my mind is racing, I can open my phone and immediately record it. Therefore, I need an APP that can be operated on a mobile phone.</p>
 <h2 id="market-research">Market Research</h2>
-<p>Before starting, I conducted a project evaluation survey to gauge user willingness to pay.
+<p>Before starting, I need to conduct a project evaluation survey to gauge user willingness to pay.
 Fake it till you make it.</p>
 <h2 id="implementation-methods">Implementation Methods</h2>
 <ol>
-<li>Local operation with Git and OpenSSL directly on the mobile device.</li>
-<li>Server side: Git clone the repository, use Hugo for parsing, and provide API calls. This includes directories, categories, tags, etc.</li>
+<li>Mobile operation with Git and OpenSSL directly on the local device.</li>
+<li>Server Git clones the repository, uses Hugo for parsing, and provides API calls. This includes directories, categories, Tags, etc.</li>
 </ol>
 <h2 id="making-the-same-mistake-again">Making the Same Mistake Again</h2>
-<p>I didn&rsquo;t do any market research and started developing the prototype immediately. Although progress was fast, I know this is a form of laziness. Development is the easiest thing for me. This time, however, there is a slight difference: I have a real need, so at least I should use it first. If I don&rsquo;t use the product myself, no one else will.</p>
+<p>I didn&rsquo;t do any market research and started developing the prototype immediately. Although the progress was fast, I know this is a form of laziness. Development is the easiest thing for me. This time, however, something is different: I have a real need, so at least I should use it myself first. If I don&rsquo;t use the product, no one else will.</p>
 <h3 id="2024-10-26">2024-10-26</h3>
 <ul>
 <li>Finished editing and creating new articles.</li>
 <li>Optimized the slow article loading issue, mainly by drawing the controls first and then filling in the content.</li>
-<li>Currently missing submission and pushing to the server.</li>
+<li>Currently, only submission and pushing to the server are missing.</li>
 </ul>
 <h3 id="2024-10-27">2024-10-27</h3>
 <ul>
-<li>Tried Android compilation (though only the Dart part was successful).</li>
+<li>Tried Android compilation, although only the Dart part was successful.</li>
 <li>Finished submitting to the server.</li>
-<li>Finally tuned the plugin interaction on the Linux platform.</li>
+<li>Finally, the plugin interaction on the Linux platform was working.</li>
 </ul>
 <h3 id="2024-11-08">2024-11-08</h3>
 <ul>
-<li>Feel like I can release the first version; it&rsquo;s decent enough.</li>
+<li>I feel like I can release the first version; it&rsquo;s barely decent.</li>
 <li>Later, I think I can add repository analysis header image loading.</li>
 <li>Next, I need to think about how to promote it.</li>
 </ul>
 <h3 id="2024-11-09">2024-11-09</h3>
 <ul>
 <li>
-<p>Planned to only display <code>.md</code> files, but it seems ineffective.</p>
+<p>Planned to only display .md files, but it seems ineffective.</p>
 </li>
 <li>
 <p>Considering displaying images.</p>
@@ -83,7 +83,7 @@ Fake it till you make it.</p>
 <p>Finished the two issues above this morning.</p>
 </li>
 <li>
-<p>New bug: After analysis, the program must be restarted to take effect.</p>
+<p>New bug: After analysis, the program must be restarted for it to take effect.</p>
 </li>
 <li>
 <p>Should place the &ldquo;Add Tag&rdquo; function below the existing tags.</p>
@@ -92,14 +92,14 @@ Fake it till you make it.</p>
 <p>Completed the first version.</p>
 </li>
 <li>
-<p>Currently missing a landing page.</p>
+<p>Currently, only a landing page is missing.</p>
 </li>
 <li>
-<p>Next, I need to purchase a domain and create a blog for the product itself.</p>
+<p>Next, I need to purchase a domain name to create a blog for the product itself.</p>
 </li>
 </ul>
 <h3 id="2024-11-11">2024-11-11</h3>
-<p>Today I discovered a big pitfall: the keyboard covers the toolbar below the input field. At this point, I need to wrap it in a <code>SingleChildscrollView</code>. This will automatically push the input field up when the keyboard pops up.</p>
+<p>Today I discovered a huge pitfall: the keyboard covers the toolbar below the input field. At this point, it needs to be wrapped in a <code>SingleChildScrollView</code> at the outermost layer. This will automatically push the input field up when the keyboard pops up.</p>
 <ul>
 <li>The icons were lost.</li>
 </ul>
@@ -107,11 +107,11 @@ Fake it till you make it.</p>
 <ul>
 <li>Lots of details this evening; the devil is in the details.</li>
 <li>Tomorrow, I can make the preview font a bit larger; I think the current preview font is too small.</li>
-<li>The synchronization status also has issues; I need to check it tomorrow. Mainly, the progress bar is not displaying as expected during synchronization.</li>
+<li>The synchronization status also has issues; I need to check it tomorrow. Mainly, the progress bar isn&rsquo;t displaying as expected during synchronization.</li>
 </ul>
 <h3 id="2024-11-12-1">2024-11-12</h3>
 <ul>
-<li>Finished multilingual support today.</li>
+<li>Finished multi-language support today.</li>
 <li>Considering making the URL theme smaller.</li>
 <li>Changing the loading state when syncing.</li>
 </ul>
@@ -119,16 +119,16 @@ Fake it till you make it.</p>
 <p>If synchronization is in progress, clicking the repository should directly enter the settings synchronization page, instead of entering the directory browsing mode.</p>
 <h3 id="2024-11-22">2024-11-22</h3>
 <ul>
-<li>I think I need a &ldquo;Recently Edited&rdquo; function. This way, I can open the most recently modified files at the fastest speed.</li>
+<li>I think a &ldquo;Recently Edited&rdquo; function is needed. This way, I can open the most recently modified files as quickly as possible.</li>
 <li>I also need a full-text search, but I don&rsquo;t know which technology stack would be best for it.</li>
 </ul>
 ]]></content:encoded>
     </item>
     <item>
       <title>Developing solutions without fully understanding users&#39; problems is something I&#39;ve made many mistakes in.</title>
-      <link>https://xgdebug.com/posts/business/developing-solutions-without-fully-understanding-users-problems-is-something-ive-made-many-mistakes-in/</link>
+      <link>https://xgdebug.com/posts/business/developing-solutions-without-understanding-user-problems/</link>
       <pubDate>Wed, 26 Jul 2023 12:19:30 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/business/developing-solutions-without-fully-understanding-users-problems-is-something-ive-made-many-mistakes-in/</guid>
+      <guid>https://xgdebug.com/posts/business/developing-solutions-without-understanding-user-problems/</guid>
       <description>&lt;p&gt;1. Do consumers recognize that they have the problem you are trying to solve?&lt;/p&gt;
 &lt;p&gt;2. If there was a solution, would they buy it?&lt;/p&gt;
 &lt;p&gt;3. Would they buy it from us?&lt;/p&gt;
@@ -141,9 +141,9 @@ Fake it till you make it.</p>
     </item>
     <item>
       <title>How to start an app business with no money?</title>
-      <link>https://xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</link>
+      <link>https://xgdebug.com/posts/business/start-app-business-no-money/</link>
       <pubDate>Wed, 19 Jul 2023 03:57:24 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/business/how-to-start-an-app-business-with-no-money/</guid>
+      <guid>https://xgdebug.com/posts/business/start-app-business-no-money/</guid>
       <description>Discover practical strategies for bootstrapping your app business, focusing on low-cost tools, user validation, and creative monetization methods to build and grow efficiently.</description>
       <content:encoded><![CDATA[<ul>
 <li>Use free or low-cost tools. For example, you can build cross-platform apps with frameworks like React Native which don&rsquo;t require paying for multiple native platforms. Use free graphics tools like GIMP instead of Photoshop.</li>
@@ -160,45 +160,45 @@ Fake it till you make it.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>The development of a modern APP usually involves the following steps and tools.</title>
-      <link>https://xgdebug.com/posts/tech/app/development-of-a-modern-app-steps-and-tools/</link>
+      <title>The development of a modern app typically involves the following steps and tools</title>
+      <link>https://xgdebug.com/posts/tech/app/modern-app-development-steps-tools/</link>
       <pubDate>Sun, 16 Jul 2023 01:14:02 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/tech/app/development-of-a-modern-app-steps-and-tools/</guid>
-      <description>&lt;h2 id=&#34;requirement-analysis&#34;&gt;Requirement Analysis&lt;/h2&gt;
-&lt;p&gt;Analyze the needs of the target users and determine the core functions and features that the APP needs to implement. This requires user research, competitor analysis, etc.&lt;/p&gt;
-&lt;h3 id=&#34;information-architecture-and-interaction-design&#34;&gt;Information Architecture and Interaction Design&lt;/h3&gt;
-&lt;p&gt;Based on the requirements and user research, design the APP&amp;rsquo;s information architecture, determine the interface flow and interaction logic. Common design tools include Axure, Sketch, etc.&lt;/p&gt;
+      <guid>https://xgdebug.com/posts/tech/app/modern-app-development-steps-tools/</guid>
+      <description>&lt;h2 id=&#34;requirements-analysis&#34;&gt;Requirements Analysis&lt;/h2&gt;
+&lt;p&gt;Analyze the needs of target users and determine the core functions and features the APP must implement. This requires conducting user research, competitor analysis, and more.
+&lt;strong&gt;Information Architecture and Interaction Design&lt;/strong&gt;
+Based on the requirements and user research, design the APP&amp;rsquo;s information architecture, determining the interface flow and interaction logic. Common design tools include Axure, Sketch, etc.&lt;/p&gt;
 &lt;h2 id=&#34;visual-design&#34;&gt;Visual Design&lt;/h2&gt;
 &lt;p&gt;Conduct the visual design of the APP, including interface style, icons, colors, fonts, etc. Common tools include Photoshop, Illustrator, etc.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="requirement-analysis">Requirement Analysis</h2>
-<p>Analyze the needs of the target users and determine the core functions and features that the APP needs to implement. This requires user research, competitor analysis, etc.</p>
-<h3 id="information-architecture-and-interaction-design">Information Architecture and Interaction Design</h3>
-<p>Based on the requirements and user research, design the APP&rsquo;s information architecture, determine the interface flow and interaction logic. Common design tools include Axure, Sketch, etc.</p>
+      <content:encoded><![CDATA[<h2 id="requirements-analysis">Requirements Analysis</h2>
+<p>Analyze the needs of target users and determine the core functions and features the APP must implement. This requires conducting user research, competitor analysis, and more.
+<strong>Information Architecture and Interaction Design</strong>
+Based on the requirements and user research, design the APP&rsquo;s information architecture, determining the interface flow and interaction logic. Common design tools include Axure, Sketch, etc.</p>
 <h2 id="visual-design">Visual Design</h2>
 <p>Conduct the visual design of the APP, including interface style, icons, colors, fonts, etc. Common tools include Photoshop, Illustrator, etc.</p>
 <h2 id="frontend-development">Frontend Development</h2>
-<p>Develop the APP interface using frontend development frameworks, such as React Native, Flutter, etc. Proficiency in languages like JavaScript, Dart is required.</p>
+<p>Develop the APP interface using frontend development frameworks, such as React Native, Flutter, etc. Proficiency in languages like JavaScript and Dart is required.</p>
 <h2 id="backend-development">Backend Development</h2>
-<p>Develop the APP&rsquo;s backend business logic, providing interfaces and data support. Uses server languages like PHP, Java, Python, and databases like MySQL, MongoDB.</p>
+<p>Develop the APP&rsquo;s backend business logic, providing interfaces and data support. Use server languages like PHP, Java, Python, as well as databases like MySQL and MongoDB.</p>
 <h2 id="testing">Testing</h2>
 <p>Conduct functional testing, interface testing, performance testing, security testing, etc., during the development process to ensure APP quality. Tools used include Appium, JMeter, etc.</p>
 <h2 id="deployment-and-operations">Deployment and Operations</h2>
-<p>Deploy the APP to the App Store and Google Play, and conduct continuous monitoring and later optimization/upgrades. Uses platforms like Firebase.</p>
-<p>Therefore, modern APP development requires interdisciplinary collaboration and mastery of various professional tools to create a product that users love. This process requires the concerted efforts of designers, developers, and testers.</p>
+<p>Deploy the APP to the App Store and Google Play, and conduct continuous monitoring and subsequent optimization and upgrades. Platforms used include Firebase.</p>
+<p>Therefore, modern APP development requires multidisciplinary collaboration and mastery of various professional tools to create a user-favorite product. This process requires the concerted efforts of designers, developers, and testers.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>How is a modern APP born?</title>
-      <link>https://xgdebug.com/posts/tech/app/how-is-a-modern-app-born/</link>
+      <title>How is a modern APP created?</title>
+      <link>https://xgdebug.com/posts/tech/app/how-a-modern-app-is-born/</link>
       <pubDate>Fri, 14 Jul 2023 05:07:13 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/tech/app/how-is-a-modern-app-born/</guid>
-      <description>&lt;p&gt;How is a modern APP born?&lt;/p&gt;
-&lt;p&gt;All the steps, job roles, and tools required from the idea to product launch and operation:&lt;/p&gt;
+      <guid>https://xgdebug.com/posts/tech/app/how-a-modern-app-is-born/</guid>
+      <description>&lt;p&gt;How is a modern app created?&lt;/p&gt;
+&lt;p&gt;All the steps, roles, and tools required from the initial idea to product launch and operation:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Ideation (or Concept)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Idea&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;Product Manager: Responsible for defining the product&amp;rsquo;s goals, features, and user experience.&lt;/li&gt;
+&lt;li&gt;Product Manager: Responsible for defining the product&amp;rsquo;s goals, functions, and user experience.&lt;/li&gt;
 &lt;li&gt;Designer: Responsible for designing the product&amp;rsquo;s interface and interaction.&lt;/li&gt;
 &lt;li&gt;Developer: Responsible for developing the product&amp;rsquo;s code.&lt;/li&gt;
 &lt;/ul&gt;
@@ -207,7 +207,7 @@ Fake it till you make it.</p>
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;Developer: Responsible for developing the product&amp;rsquo;s code.&lt;/li&gt;
-&lt;li&gt;Tester: Responsible for testing the product&amp;rsquo;s functionality and performance.&lt;/li&gt;
+&lt;li&gt;Tester: Responsible for testing the product&amp;rsquo;s functions and performance.&lt;/li&gt;
 &lt;li&gt;Quality Assurance Engineer (QA Engineer): Responsible for ensuring the product meets quality standards.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;3&#34;&gt;
@@ -215,23 +215,23 @@ Fake it till you make it.</p>
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;Product Manager: Responsible for formulating the product launch strategy.&lt;/li&gt;
-&lt;li&gt;Operations Specialist (or Operations Staff): Responsible for post-launch operations, including promotion, marketing, customer service, etc.&lt;/li&gt;
+&lt;li&gt;Operations Staff: Responsible for post-launch operations, including promotion, marketing, and customer service, etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Operations&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operation&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;Operations Specialist (or Operations Staff): Responsible for post-launch operations, including promotion, marketing, customer service, etc.&lt;/li&gt;
+&lt;li&gt;Operations Staff: Responsible for post-launch operations, including promotion, marketing, and customer service, etc.&lt;/li&gt;
 &lt;li&gt;Data Analyst: Responsible for analyzing the product&amp;rsquo;s user data and making improvements based on the data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Here are some commonly used tools:&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>How is a modern APP born?</p>
-<p>All the steps, job roles, and tools required from the idea to product launch and operation:</p>
+&lt;p&gt;Below are some commonly used tools:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>How is a modern app created?</p>
+<p>All the steps, roles, and tools required from the initial idea to product launch and operation:</p>
 <ol>
-<li><strong>Ideation (or Concept)</strong></li>
+<li><strong>Idea</strong></li>
 </ol>
 <ul>
-<li>Product Manager: Responsible for defining the product&rsquo;s goals, features, and user experience.</li>
+<li>Product Manager: Responsible for defining the product&rsquo;s goals, functions, and user experience.</li>
 <li>Designer: Responsible for designing the product&rsquo;s interface and interaction.</li>
 <li>Developer: Responsible for developing the product&rsquo;s code.</li>
 </ul>
@@ -240,7 +240,7 @@ Fake it till you make it.</p>
 </ol>
 <ul>
 <li>Developer: Responsible for developing the product&rsquo;s code.</li>
-<li>Tester: Responsible for testing the product&rsquo;s functionality and performance.</li>
+<li>Tester: Responsible for testing the product&rsquo;s functions and performance.</li>
 <li>Quality Assurance Engineer (QA Engineer): Responsible for ensuring the product meets quality standards.</li>
 </ul>
 <ol start="3">
@@ -248,16 +248,16 @@ Fake it till you make it.</p>
 </ol>
 <ul>
 <li>Product Manager: Responsible for formulating the product launch strategy.</li>
-<li>Operations Specialist (or Operations Staff): Responsible for post-launch operations, including promotion, marketing, customer service, etc.</li>
+<li>Operations Staff: Responsible for post-launch operations, including promotion, marketing, and customer service, etc.</li>
 </ul>
 <ol start="4">
-<li><strong>Operations</strong></li>
+<li><strong>Operation</strong></li>
 </ol>
 <ul>
-<li>Operations Specialist (or Operations Staff): Responsible for post-launch operations, including promotion, marketing, customer service, etc.</li>
+<li>Operations Staff: Responsible for post-launch operations, including promotion, marketing, and customer service, etc.</li>
 <li>Data Analyst: Responsible for analyzing the product&rsquo;s user data and making improvements based on the data.</li>
 </ul>
-<p>Here are some commonly used tools:</p>
+<p>Below are some commonly used tools:</p>
 <ul>
 <li>Product Management Tools: Jira, Asana, Trello</li>
 <li>Design Tools: Sketch, Figma, Adobe XD</li>
@@ -267,7 +267,7 @@ Fake it till you make it.</p>
 <li>Marketing Tools: Google Ads, Facebook Ads, Twitter Ads</li>
 <li>Customer Service Tools: Zendesk, Intercom, HubSpot</li>
 </ul>
-<p><strong>Note</strong>: This is just an overview; the specific steps and job roles may vary. The specifics depend on the different products.</p>
+<p><strong>Note</strong>: The above is just an overview; the specific steps and roles may vary, depending on the specific product.</p>
 ]]></content:encoded>
     </item>
   </channel>

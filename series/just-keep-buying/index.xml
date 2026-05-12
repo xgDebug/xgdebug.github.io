@@ -15,19 +15,19 @@
     <atom:link href="https://xgdebug.com/series/just-keep-buying/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why You Should Not Fear Volatility</title>
-      <link>https://xgdebug.com/posts/investment/stock/why-you-should-not-fear-volatility/</link>
+      <link>https://xgdebug.com/posts/investment/stock/why-not-fear-volatility/</link>
       <pubDate>Sun, 20 Oct 2024 20:59:36 +0800</pubDate>
-      <guid>https://xgdebug.com/posts/investment/stock/why-you-should-not-fear-volatility/</guid>
-      <description>市场总是会恢复，即便是在二战期间，在CONVID-19市场也不会真正的崩溃</description>
-      <content:encoded><![CDATA[<p>If you want the upside building wealth, you have to accept volatility and periodic declines that come with it. it&rsquo;s the price of admission for long term investment success.</p>
-<p>If you&rsquo;re not willing to react with equanimity to a market price decline of 50% two or three times a century you&rsquo;re not fit to be a common shareholder and you deserve the mediocre result you&rsquo;re going to get.</p>
-<p>换句话说，市场在一个世纪才会出现两到三次完美买入机会，你绝对不应该错过它</p>
-<p>期望年回报 = （1+%需要多少恢复到高点）^ （1/几年时间恢复）- 1</p>
+      <guid>https://xgdebug.com/posts/investment/stock/why-not-fear-volatility/</guid>
+      <description>Markets always recover. Even during World War II, they won&amp;#39;t truly collapse in the COVID-19 market either.</description>
+      <content:encoded><![CDATA[<p>If you want the upside building wealth, you have to accept volatility and periodic declines that come with it. It&rsquo;s the price of admission for long-term investment success.</p>
+<p>If you&rsquo;re not willing to react with equanimity to a market price decline of 50% two or three times a century, you&rsquo;re not fit to be a common shareholder, and you deserve the mediocre result you&rsquo;re going to get.</p>
+<p>In other words, the market only offers two to three perfect buying opportunities per century, and you absolutely should not miss them.</p>
+<p>Expected Annual Return = (1 + % needed to recover to peak) ^ (1 / Years to Recover) - 1</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">pow</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
-</span></span></code></pre></div><p>如果市场已经下跌了 33% 那么需要上涨 50%才能恢复。如果一年内能恢复的话。 你在-30%处买入会在恢复同样点位时获得 50%的回报
-哪怕市场 5 年才恢复，你也可以获得 8%的回报</p>
-<p>事实上 2008 股灾时，用了 5 年市场才恢复到之前高点。
-2020 CONVID-19 时用了 9 个月就恢复到了市场高点。</p>
+</span></span></code></pre></div><p>If the market has already fallen 33%, it needs to rise 50% to recover. If this recovery happens within one year, buying at -30% will yield a 50% return when it reaches the same level.
+Even if the market takes 5 years to recover, you can still achieve an 8% return.</p>
+<p>In fact, during the 2008 financial crisis, it took the market 5 years to recover to its previous high.
+During the 2020 COVID-19 period, it only took 9 months for the market to recover to its peak.</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -234,48 +234,47 @@ The Most Important Asset And why you’ll never get any more of it</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>All-in on one go, or buy in gradually?</title>
-      <link>https://xgdebug.com/posts/investment/stock/all-in-or-buy-in-gradually/</link>
+      <title>All-in or gradual buying?</title>
+      <link>https://xgdebug.com/posts/investment/stock/all-in-or-gradual-buy/</link>
       <pubDate>Sat, 19 Oct 2024 13:28:19 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/investment/stock/all-in-or-buy-in-gradually/</guid>
-      <description>Explore the advantages of early investment, integrating historical data analysis and risk considerations, to provide recommendations suitable for different investors.</description>
+      <guid>https://xgdebug.com/posts/investment/stock/all-in-or-gradual-buy/</guid>
+      <description>Examine the advantages of early investment, integrating historical data analysis and risk considerations to provide tailored recommendations for various investors.</description>
       <content:encoded><![CDATA[<h2 id="most-stock-markets-go-up-most-of-the-time">Most Stock Markets Go Up Most of the Time</h2>
-<p><strong>Including during the World Wars and the COVID-19 pandemic</strong>
+<p><strong>Including during World Wars and COVID-19</strong>
 Most stock markets go up most of the time.</p>
-<p>Although it feels like we are always at the epicenter of a market crash, the fact is that major crashes are very rare. This is why Average-In has performed poorly for most of history.</p>
+<p>While it feels like we are always at the epicenter of a market crash, the fact is that major crashes are very rare. This is why Average-In has performed poorly for most of history.</p>
 <h2 id="the-best-time-to-start-was-yesterday">The Best Time to Start Was Yesterday</h2>
 <p>The next best time is today.
 The best time to start was yesterday. The next best time is today.</p>
 <ul>
 <li>If we assume that the assets you are investing in will increase in value over time (otherwise why would you be investing?), then it should be clear that buying now will be better than buying over the course of 100 years. Waiting a century to get invested means buying at ever higher prices while your uninvested cash also loses value to inflation.</li>
-<li>如果我们假设你所投资的资产会随着时间的推移而增值（否则你为什么要投资？），那么应该很清楚，现在购买将比在 100 年内购买更好。等待一个世纪才能获得投资意味着以更高的价格购买，而您未投资的现金也会因通货膨胀而失去价值。</li>
+<li>If we assume that the assets you are investing in will increase in value over time (otherwise why would you be investing?), then it should be clear that buying now will be better than buying over the course of 100 years. Waiting a century to get invested means buying at ever higher prices while your uninvested cash also loses value to inflation.</li>
 </ul>
-<h2 id="why-the-future-might-have-better-prices">Why the Future Might Have Better Prices</h2>
-<p>One trading day out of every 20 trading days (one per month) will offer you an absolutely cheap price. The other 19 will leave you regretting the purchase at some point in the future.
-<strong>This is why it feels like waiting for a lower price is the right move. Technically, you have a 95% chance of being right.</strong></p>
+<h2 id="why-there-might-be-better-prices-in-the-future">Why There Might Be Better Prices in the Future</h2>
+<p>One trading day out of every 20 (one per month) will offer you an absolutely cheap price. The other 19 will leave you regretting your purchase at some point in the future.
+<strong>This is why it feels right to wait for lower prices. Technically, you have a 95% chance of being right.</strong></p>
 <h2 id="why-you-shouldnt-wait">Why You Shouldn&rsquo;t Wait</h2>
-<p>Sometimes the lower price never comes, or you have to wait a very long time to see it.
-Most importantly, you cannot time the market; you don&rsquo;t know when the price will be better. Because &ldquo;better&rdquo; is a relative concept.</p>
-<p><strong><em>Although it feels like we are always at the epicenter of a market crash, the fact is that major crashes are very rare. This is why Average-In has performed poorly for most of history.</em></strong></p>
-<p><img alt="average in vs buy now.jpg" loading="lazy" src="/posts/investment/stock/all-in-or-buy-in-gradually/average-in-vs-buy-now.jpg">
+<p>Sometimes lower prices never appear, or you might have to wait a very long time to see that lower price.
+The most critical point is that you cannot time the market; you don&rsquo;t know when the price will be better. Because &ldquo;better&rdquo; is a relative concept.</p>
+<p><strong><em>While it feels like we are always at the epicenter of a market crash, the fact is that major crashes are very rare. This is why Average-In has performed poorly for most of history.</em></strong></p>
+<p><img alt="average in vs buy now.jpg" loading="lazy" src="/posts/investment/stock/all-in-or-gradual-buy/average-in-vs-buy-now.jpg">
 Why did &ldquo;Buy Now&rdquo; perform so poorly compared to Average-In in August 2008?</p>
 <p>Because the US stock market crashed shortly after August 2008. More specifically, if you invested $12,000 in the S&amp;P 500 index at the end of August 2008, by the end of August 2009, you would only have $9,810 (including reinvested dividends), resulting in a total loss of 18.25%.</p>
-<p>However, what is truly visible in this chart is not the peak, but the fact that this line is usually below 0%. If the line is below 0%, Average-In performs worse than Buy Now, and when it is above 0%, Average-In performs better than Buy Now.</p>
-<p>As you can see, most of the time, Average-In performs worse than Buy Now. This is not just recent bias. If we look at US stock returns since 1920, we find that in every rolling 12-month period, the average performance is 4.5% lower than &ldquo;Buy Now,&rdquo; and across all rolling 12-month periods, the average performance is 4.5% lower than &ldquo;Buy Now.&rdquo; The chart below illustrates this longer period in the same way as the previous chart.</p>
+<p>However, what you truly see in this chart is not the peak, but the line usually being below 0%. If the line is below 0%, Average-In performs worse than Buy Now, and when it is above 0%, Average-In performs better than Buy Now.</p>
+<p>As you can see, most of the time, Average-In performs worse than Buy Now. This is not just recency bias. If we look at US stock returns since 1920, we find that in every rolling 12-month period, the average performance is 4.5% lower than &ldquo;Buy Now,&rdquo; and across all rolling 12-month periods, the average performance is 4.5% lower than &ldquo;Buy Now.&rdquo; The chart below illustrates this longer period in the same way as the previous chart.</p>
 <h2 id="what-about-risk">What About Risk?</h2>
-<p><strong>High returns inevitably bring high risk. Betting on a 4% return with a larger drawdown—is it worth it?</strong></p>
-<p>However, if you are worried about risk, then maybe you should consider following the Buy Now strategy and investing into a more conservative portfolio instead.</p>
+<p><strong>High returns inevitably bring high risk. Is it worth risking a larger drawdown for a potential 4% gain?</strong></p>
 <p>However, if you are worried about risk, then maybe you should consider following the Buy Now strategy and investing into a more conservative portfolio instead.</p>
 <p>For example, if originally you were going to Average-In to a 100% stock portfolio, you could follow the Buy Now strategy into a 60/40 stock/bond portfolio to have slightly better returns for the same level of risk.</p>
 <p>If you think that the market is overvalued and due for a major pullback, you may need to wait years, if ever, before you are vindicated. Consider this before you use valuation as an excuse to stay in cash.</p>
 <h2 id="final-summary">Final Summary</h2>
 <p>When deciding whether to invest all funds now or invest over time, investing now is almost always better. This applies to all asset classes, time periods, and almost all valuation regimes. Generally speaking, the longer you wait to deploy your funds, the worse your situation will be.</p>
-<p>The reason I say this is that the only time you can improve by averaging in over time is when the market crashes. However, it is precisely when the market crashes that you are least inclined to invest.</p>
+<p>The reason I say this is that over time, the only time you can improve by averaging in is when the market crashes. However, precisely when the market crashes, you are least inclined to invest.</p>
 <p>Everyone is frantically selling, and you don&rsquo;t know how far the market will fall.</p>
-<p>It is hard to resist this emotion, which is why many investors cannot continue buying when the market drops, no matter what.</p>
+<p>It is hard to resist these emotions, which is why many investors cannot continue buying when the market is falling.</p>
 <h2 id="ai-qa">AI Q&amp;A</h2>
-<p>The author&rsquo;s core view is: Stock markets go up most of the time, so investing early is better than diversifying, because waiting usually means missing out on upward opportunities. Historical data shows that dollar-cost averaging (Average-In) performs worse than lump-sum investing most of the time (76% to 82% of 12-month periods), especially when the market is generally trending upward. Even if lower prices may appear in the short term, the long-term gains from entering the market early are greater.</p>
-<h3 id="rationality-of-the-authors-argument">Rationality of the Author&rsquo;s Argument</h3>
+<p>The author&rsquo;s core view is: stock markets go up most of the time, so investing early is better than diversifying, because waiting usually means missing out on upward opportunities. Historical data shows that the average cost method performs worse than lump-sum investing most of the time (76% to 82% of 12-month periods), especially when the market is generally trending upward. Even if lower prices might appear in the short term, the long-term gains from entering the market early are greater.</p>
+<h3 id="validity-of-the-authors-argument">Validity of the Author&rsquo;s Argument</h3>
 <h4 id="data-support">Data Support</h4>
 <ul>
 <li>The author provides sufficient historical data to support the argument.</li>
@@ -285,48 +284,48 @@ Why did &ldquo;Buy Now&rdquo; perform so poorly compared to Average-In in August
 <h4 id="theoretical-basis">Theoretical Basis</h4>
 <ul>
 <li>The long-term upward trend of the market indeed supports the logic of investing early.</li>
-<li>Controlling risk by adjusting asset allocation is a reasonable suggestion.</li>
+<li>Adjusting asset allocation to control risk is a reasonable suggestion.</li>
 </ul>
 <h3 id="limitations-of-the-authors-argument">Limitations of the Author&rsquo;s Argument</h3>
 <h4 id="psychological-factors-not-fully-considered">Psychological Factors Not Fully Considered</h4>
 <ul>
-<li>Investment decisions are not just a matter of math and statistics.</li>
+<li>Investment decisions are not just mathematical and statistical issues.</li>
 <li>The psychological pressure of investing a large sum upfront may lead investors to make poor decisions during market downturns.</li>
-<li>One of the values of dollar-cost averaging is helping investors build good investment habits and psychological resilience.</li>
+<li>One of the values of dollar-cost averaging (DCA) is helping investors build good investment habits and psychological resilience.</li>
 </ul>
-<h4 id="differences-in-personal-circumstances">Differences in Personal Circumstances</h4>
+<h4 id="differences-in-individual-circumstances">Differences in Individual Circumstances</h4>
 <ul>
 <li>Different investors have different risk tolerances.</li>
 <li>The stability of income sources affects the choice of investment strategy.</li>
 <li>Differences in investment goals and time horizons should also be considered.</li>
 </ul>
-<h4 id="complexity-of-real-world-situations">Complexity of Real-World Situations</h4>
+<h4 id="real-world-complexity">Real-world Complexity</h4>
 <ul>
 <li>The real market environment is more complex than historical data.</li>
-<li>Factors such as macroeconomic environment and policy changes can affect strategy performance.</li>
+<li>Factors such as macroeconomic conditions and policy changes can affect strategy performance.</li>
 <li>Past performance cannot fully predict the future.</li>
 </ul>
-<h3 id="suggested-balanced-view">Suggested Balanced View</h3>
+<h3 id="suggested-balanced-viewpoint">Suggested Balanced Viewpoint</h3>
 <h4 id="strategy-combination">Strategy Combination</h4>
 <ul>
-<li>One can consider combining lump-sum buying and dollar-cost averaging.</li>
+<li>One can consider combining lump-sum buying and dollar-cost averaging (DCA).</li>
 <li>For example, investing a portion of funds upfront while maintaining a regular investment habit.</li>
-<li>This way, you can gain the advantage of early investment while maintaining investment discipline.</li>
+<li>This way, you can gain the advantages of early investment while maintaining investment discipline.</li>
 </ul>
-<h4 id="tailored-approach">Tailored Approach</h4>
+<h4 id="tailored-to-the-individual">Tailored to the Individual</h4>
 <ul>
-<li>Choose the appropriate strategy based on individual circumstances.</li>
+<li>Choose the appropriate strategy based on specific individual circumstances.</li>
 <li>Consider your risk tolerance, investment experience, and financial goals.</li>
-<li>Choosing a method that makes you feel comfortable is more important.</li>
+<li>Choosing a method that allows you peace of mind is more important.</li>
 </ul>
 <h4 id="dynamic-adjustment">Dynamic Adjustment</h4>
 <ul>
 <li>Regularly evaluate and adjust the investment strategy.</li>
-<li>Make appropriate adjustments based on changes in the market environment and personal circumstances.</li>
+<li>Make appropriate adjustments based on changes in market conditions and personal circumstances.</li>
 <li>Maintain flexibility and adaptability.</li>
 </ul>
 <h3 id="conclusion">Conclusion</h3>
-<p>The author&rsquo;s analysis is convincing from a data and theoretical perspective, but investment decisions should not be based solely on historical data. Every investor needs to find a way that suits them, balancing rational analysis with psychological endurance. While dollar-cost averaging might be slightly inferior in terms of pure returns, its value in reducing psychological stress and cultivating investment habits should not be overlooked.</p>
+<p>The author&rsquo;s analysis is convincing from a data and theoretical perspective, but investment decisions should not be based solely on historical data. Every investor needs to find a method that suits them, balancing rational analysis with psychological endurance. While DCA might be slightly inferior in terms of pure returns, its value in reducing psychological pressure and cultivating investment habits should not be overlooked.</p>
 ]]></content:encoded>
     </item>
     <item>

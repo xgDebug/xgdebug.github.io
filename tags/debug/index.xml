@@ -14,28 +14,28 @@
     <lastBuildDate>Sat, 28 Sep 2024 04:32:12 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/tags/debug/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Using LLDV to debug native programs on Android 11</title>
-      <link>https://xgdebug.com/posts/tech/debug/using-lldv-to-debug-native-programs-on-android-11/</link>
+      <title>Debugging native programs using LLDV on Android 11</title>
+      <link>https://xgdebug.com/posts/tech/debug/using-lldv-to-debug-native-android-11/</link>
       <pubDate>Sat, 28 Sep 2024 04:32:12 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/tech/debug/using-lldv-to-debug-native-programs-on-android-11/</guid>
-      <description>This article details how to set up a debugging environment on both the mobile device and the computer using ADB and LLDB, and provides complete operational steps, ranging from starting the debugging service to attaching processes and setting breakpoints.</description>
+      <guid>https://xgdebug.com/posts/tech/debug/using-lldv-to-debug-native-android-11/</guid>
+      <description>This article provides a detailed guide on how to set up a debugging environment using ADB and LLDB on both the mobile and computer platforms, offering complete operational steps from starting the debugging service to attaching processes and setting breakpoints.</description>
       <content:encoded><![CDATA[<h1 id="mobile-side">Mobile Side</h1>
 <h2 id="push-debug-server-to-phone">PUSH Debug Server to Phone</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">adb push lldb-server /data/local/tmp
 </span></span><span class="line"><span class="cl">chmod <span class="m">755</span> /data/local/tmp/lldb-server
-</span></span></code></pre></div><h2 id="start-debugger-service">Start Debugger Service</h2>
+</span></span></code></pre></div><h2 id="launch-debugger-service">Launch Debugger Service</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/data/local/tmp/lldb-server platform --listen <span class="s2">&#34;*:8888&#34;</span> --server
 </span></span></code></pre></div><hr>
 <h1 id="pc-side">PC Side</h1>
 <h2 id="port-forwarding">Port Forwarding</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">adb forward tcp:8888 tcp:8888
-</span></span></code></pre></div><h2 id="start-lldb">Start LLDB</h2>
+</span></span></code></pre></div><h2 id="launch-lldb">Launch LLDB</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.<span class="se">\l</span>ldb.exe
 </span></span></code></pre></div><h2 id="view-supported-platforms">View Supported Platforms</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform list
 </span></span></code></pre></div><h2 id="select-android-platform">Select ANDROID Platform</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform <span class="k">select</span> remote-android
-</span></span></code></pre></div><h2 id="connect-to-phone-phone-serial-number-9643e0ec0604-to-change-to-the-currently-debugging-phone-use-adb-devices-to-view-the-serial-number">Connect to Phone Phone Serial Number: <strong>9643e0ec0604</strong> (To change to the currently debugging phone, use <code>adb devices</code> to view the serial number)</h2>
+</span></span></code></pre></div><h2 id="connect-to-phone-phone-serial-number-9643e0ec0604-to-change-to-the-currently-debugging-phone-use-adb-devices-to-view-the-serial-number">Connect to Phone (Phone Serial Number: <strong>9643e0ec0604</strong>). To change to the currently debugging phone, use <code>adb devices</code> to view the serial number.</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform connect connect://9643e0ec0604:8888
 </span></span></code></pre></div><h2 id="view-currently-running-processes">View Currently Running Processes</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">platform process list
@@ -43,7 +43,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">attach <span class="m">9053</span>
 </span></span></code></pre></div><h2 id="set-breakpoint">Set Breakpoint</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">b send
-</span></span></code></pre></div><h2 id="run-continue">Run (Continue)</h2>
+</span></span></code></pre></div><h2 id="run">Run</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">c
 </span></span></code></pre></div><h2 id="view-thread-list">View Thread List</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">thread list
@@ -53,9 +53,9 @@
     </item>
     <item>
       <title>Debugging native applications with LLDV on Android 11</title>
-      <link>https://xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</link>
+      <link>https://xgdebug.com/posts/tech/debug/debugging-native-apps-with-lldb-on-android-11/</link>
       <pubDate>Fri, 11 Aug 2023 01:14:06 +0000</pubDate>
-      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-applications-with-lldv-on-android-11/</guid>
+      <guid>https://xgdebug.com/posts/tech/debug/debugging-native-apps-with-lldb-on-android-11/</guid>
       <description>&lt;h2 id=&#34;mobile&#34;&gt;Mobile&lt;/h2&gt;
 &lt;h2 id=&#34;push-debug-server-to-mobile&#34;&gt;PUSH debug server to mobile&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb push lldb-server /data/local/tmp
