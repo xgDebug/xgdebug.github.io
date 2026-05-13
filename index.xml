@@ -11,8 +11,41 @@
     </image>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 07 May 2026 06:21:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://xgdebug.com/pages/contact/</link>
+      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
+      <guid>https://xgdebug.com/pages/contact/</guid>
+      <description>Contact Information</description>
+      <content:encoded><![CDATA[<p>If you need to reach out, you can contact me via:</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/xgdebug">https://github.com/xgdebug</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://xgdebug.com/pages/privacy-policy/</link>
+      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
+      <guid>https://xgdebug.com/pages/privacy-policy/</guid>
+      <description>Privacy Policy for xgDebug</description>
+      <content:encoded><![CDATA[<h2 id="privacy-policy">Privacy Policy</h2>
+<p>Your privacy is important to us. This privacy policy explains how we collect, use, and protect your information when you visit <a href="https://xgdebug.com/">xgdebug.com</a>.</p>
+<h3 id="information-we-collect">Information We Collect</h3>
+<p>We may collect basic information about your visit to our website, such as your IP address, browser type, and the pages you view. This is done through standard web technologies (like cookies) provided by third-party services.</p>
+<h3 id="third-party-advertising">Third-Party Advertising</h3>
+<p>We use Google AdSense to display advertisements on this site. Google AdSense uses cookies to serve ads based on your visit to this site and other sites on the Internet.</p>
+<ul>
+<li>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads">Ads Settings</a>.</li>
+<li>Third-party vendors and ad networks may use cookies to serve ads on our site.</li>
+</ul>
+<h3 id="contact-us">Contact Us</h3>
+<p>If you have any questions about this privacy policy, please contact us at <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a>.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>How to Survive in a Low-Trust Society </title>
       <link>https://xgdebug.com/posts/life/survive-low-trust-society/</link>

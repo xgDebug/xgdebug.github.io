@@ -11,8 +11,41 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Sep 2024 21:20:32 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/zh/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>联系方式</title>
+      <link>https://xgdebug.com/zh/pages/contact/</link>
+      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/pages/contact/</guid>
+      <description>联系方式</description>
+      <content:encoded><![CDATA[<p>如果你需要联系我，可以通过以下方式：</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/xgdebug">https://github.com/xgdebug</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>隐私政策</title>
+      <link>https://xgdebug.com/zh/pages/privacy-policy/</link>
+      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/pages/privacy-policy/</guid>
+      <description>xgDebug 隐私政策</description>
+      <content:encoded><![CDATA[<h2 id="隐私政策">隐私政策</h2>
+<p>您的隐私对我们非常重要。本隐私政策说明了当您访问 <a href="https://xgdebug.com/">xgdebug.com</a> 时，我们如何收集、使用和保护您的信息。</p>
+<h3 id="我们收集的信息">我们收集的信息</h3>
+<p>我们可能会收集有关您访问本网站的基本信息，例如您的 IP 地址、浏览器类型以及您查看的页面。这是通过第三方服务提供的标准网络技术（如 Cookie）完成的。</p>
+<h3 id="第三方广告">第三方广告</h3>
+<p>我们使用 Google AdSense 在本网站上展示广告。Google AdSense 使用 Cookie 根据您对本网站及互联网上其他网站的访问来投放广告。</p>
+<ul>
+<li>您可以访问 <a href="https://www.google.com/settings/ads">Google 广告设置</a> 选择退出个性化广告。</li>
+<li>第三方供应商和广告网络可能会使用 Cookie 在我们的网站上投放广告。</li>
+</ul>
+<h3 id="联系我们">联系我们</h3>
+<p>如果您对本隐私政策有任何疑问，请通过 <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a> 与我们联系。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>一只会做计划的猴子而已</title>
       <link>https://xgdebug.com/zh/pages/about/</link>

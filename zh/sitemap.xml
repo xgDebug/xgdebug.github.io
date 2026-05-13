@@ -2,6 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xgdebug.com/zh/pages/</loc>
+    <lastmod>2026-05-13T10:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/pages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/pages/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/</loc>
+    <lastmod>2026-05-13T10:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/pages/contact/</loc>
+    <lastmod>2026-05-13T10:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/pages/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/pages/contact/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/pages/privacy-policy/</loc>
+    <lastmod>2026-05-13T10:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/pages/privacy-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/pages/privacy-policy/"
+                />
+  </url><url>
     <loc>https://xgdebug.com/zh/posts/</loc>
     <lastmod>2026-05-07T06:21:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -30,21 +90,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xgdebug.com/zh/posts/life/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/</loc>
-    <lastmod>2026-05-07T06:21:27+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/life/survive-low-trust-society/</loc>
@@ -3150,21 +3195,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xgdebug.com/zh/posts/history/dictator/economic-recession-possible-solution/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/pages/</loc>
-    <lastmod>2024-09-30T21:20:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/pages/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/pages/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/pages/about/</loc>
