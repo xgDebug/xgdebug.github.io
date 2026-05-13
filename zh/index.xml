@@ -11,41 +11,8 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 13 May 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 13:52:56 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/zh/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>联系方式</title>
-      <link>https://xgdebug.com/zh/pages/contact/</link>
-      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
-      <guid>https://xgdebug.com/zh/pages/contact/</guid>
-      <description>联系方式</description>
-      <content:encoded><![CDATA[<p>如果你需要联系我，可以通过以下方式：</p>
-<ul>
-<li><strong>Email:</strong> <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/xgdebug">https://github.com/xgdebug</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>隐私政策</title>
-      <link>https://xgdebug.com/zh/pages/privacy-policy/</link>
-      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
-      <guid>https://xgdebug.com/zh/pages/privacy-policy/</guid>
-      <description>xgDebug 隐私政策</description>
-      <content:encoded><![CDATA[<h2 id="隐私政策">隐私政策</h2>
-<p>您的隐私对我们非常重要。本隐私政策说明了当您访问 <a href="https://xgdebug.com/">xgdebug.com</a> 时，我们如何收集、使用和保护您的信息。</p>
-<h3 id="我们收集的信息">我们收集的信息</h3>
-<p>我们可能会收集有关您访问本网站的基本信息，例如您的 IP 地址、浏览器类型以及您查看的页面。这是通过第三方服务提供的标准网络技术（如 Cookie）完成的。</p>
-<h3 id="第三方广告">第三方广告</h3>
-<p>我们使用 Google AdSense 在本网站上展示广告。Google AdSense 使用 Cookie 根据您对本网站及互联网上其他网站的访问来投放广告。</p>
-<ul>
-<li>您可以访问 <a href="https://www.google.com/settings/ads">Google 广告设置</a> 选择退出个性化广告。</li>
-<li>第三方供应商和广告网络可能会使用 Cookie 在我们的网站上投放广告。</li>
-</ul>
-<h3 id="联系我们">联系我们</h3>
-<p>如果您对本隐私政策有任何疑问，请通过 <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a> 与我们联系。</p>
-]]></content:encoded>
-    </item>
     <item>
       <title>低信任社会如何生存</title>
       <link>https://xgdebug.com/zh/posts/life/survive-low-trust-society/</link>
@@ -17532,6 +17499,39 @@ You risk failure under your own name.<br>
 <p>阿 Q 的精神，也被称为&quot;阿 Q 精神&quot;，被一些人解读为一种乐观与豁达。阿 Q 在遭受挫折和欺凌时，常常用一种自我安慰的方式来维持自己的自尊和自信。他通过自欺欺人和自嘲来掩饰自己的失败和屈辱，使得他能够在困境中找到一种心理平衡。</p>
 <p>然而，阿 Q 精神并非真正的乐观与豁达，而是一种虚幻的心理防御机制。阿 Q 的乐观并非建立在对自身和社会现实的客观认知上，而是基于自欺和自嘲的假象。这种精神状态在一定程度上使他能够应对挫折，但同时也使他对改变现实和追求真正的进步缺乏动力。</p>
 <p>总的来说，阿 Q 精神在鲁迅的小说中被描绘为一种自我安慰和自我催眠的心理状态，虽然给予了阿 Q 一些表面上的乐观，但也揭示了社会现实中普通人的困境和无奈。它并非真正的乐观与豁达，而是对现实的一种逃避和虚幻的反应。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>联系方式</title>
+      <link>https://xgdebug.com/zh/pages/contact/</link>
+      <pubDate>Sat, 12 May 2018 16:00:00 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/pages/contact/</guid>
+      <description>联系方式</description>
+      <content:encoded><![CDATA[<p>如果你需要联系我，可以通过以下方式：</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/xgdebug">https://github.com/xgdebug</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>隐私政策</title>
+      <link>https://xgdebug.com/zh/pages/privacy-policy/</link>
+      <pubDate>Sat, 12 May 2018 16:00:00 +0000</pubDate>
+      <guid>https://xgdebug.com/zh/pages/privacy-policy/</guid>
+      <description>xgDebug 隐私政策</description>
+      <content:encoded><![CDATA[<h2 id="隐私政策">隐私政策</h2>
+<p>您的隐私对我们非常重要。本隐私政策说明了当您访问 <a href="https://xgdebug.com/">xgdebug.com</a> 时，我们如何收集、使用和保护您的信息。</p>
+<h3 id="我们收集的信息">我们收集的信息</h3>
+<p>我们可能会收集有关您访问本网站的基本信息，例如您的 IP 地址、浏览器类型以及您查看的页面。这是通过第三方服务提供的标准网络技术（如 Cookie）完成的。</p>
+<h3 id="第三方广告">第三方广告</h3>
+<p>我们使用 Google AdSense 在本网站上展示广告。Google AdSense 使用 Cookie 根据您对本网站及互联网上其他网站的访问来投放广告。</p>
+<ul>
+<li>您可以访问 <a href="https://www.google.com/settings/ads">Google 广告设置</a> 选择退出个性化广告。</li>
+<li>第三方供应商和广告网络可能会使用 Cookie 在我们的网站上投放广告。</li>
+</ul>
+<h3 id="联系我们">联系我们</h3>
+<p>如果您对本隐私政策有任何疑问，请通过 <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a> 与我们联系。</p>
 ]]></content:encoded>
     </item>
     <item>

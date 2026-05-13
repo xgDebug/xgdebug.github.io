@@ -11,12 +11,21 @@
     </image>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 13 May 2026 10:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 13:53:24 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Just a Monkey Who Makes Plans</title>
+      <link>https://xgdebug.com/pages/about/</link>
+      <pubDate>Mon, 30 Sep 2024 21:20:32 +0800</pubDate>
+      <guid>https://xgdebug.com/pages/about/</guid>
+      <description>Not everyone&amp;#39;s words deserve your attention—this is an excellent principle.</description>
+      <content:encoded><![CDATA[<p>The decisions we make while growing up should not be negotiated with those around us, but rather judged as independently as possible. Consultation is only necessary if the people around you possess high levels of experience and judgment. If you lack such judgment yourself, you&rsquo;ll likely take their advice for granted and follow it unquestioningly. Over time, this leads to gradually becoming as timid and characterless as they are. In such an environment, trusting your own judgment may actually mean drawing upon the wisdom of outstanding figures from history and successful thinkers.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Contact</title>
       <link>https://xgdebug.com/pages/contact/</link>
-      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
+      <pubDate>Sat, 12 May 2018 16:00:00 +0000</pubDate>
       <guid>https://xgdebug.com/pages/contact/</guid>
       <description>Contact Information</description>
       <content:encoded><![CDATA[<p>If you need to reach out, you can contact me via:</p>
@@ -29,7 +38,7 @@
     <item>
       <title>Privacy Policy</title>
       <link>https://xgdebug.com/pages/privacy-policy/</link>
-      <pubDate>Wed, 13 May 2026 10:00:00 +0800</pubDate>
+      <pubDate>Sat, 12 May 2018 16:00:00 +0000</pubDate>
       <guid>https://xgdebug.com/pages/privacy-policy/</guid>
       <description>Privacy Policy for xgDebug</description>
       <content:encoded><![CDATA[<h2 id="privacy-policy">Privacy Policy</h2>
@@ -44,15 +53,6 @@
 </ul>
 <h3 id="contact-us">Contact Us</h3>
 <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:admin@xgdebug.com">admin@xgdebug.com</a>.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Just a Monkey Who Makes Plans</title>
-      <link>https://xgdebug.com/pages/about/</link>
-      <pubDate>Mon, 30 Sep 2024 21:20:32 +0800</pubDate>
-      <guid>https://xgdebug.com/pages/about/</guid>
-      <description>Not everyone&amp;#39;s words deserve your attention—this is an excellent principle.</description>
-      <content:encoded><![CDATA[<p>The decisions we make while growing up should not be negotiated with those around us, but rather judged as independently as possible. Consultation is only necessary if the people around you possess high levels of experience and judgment. If you lack such judgment yourself, you&rsquo;ll likely take their advice for granted and follow it unquestioningly. Over time, this leads to gradually becoming as timid and characterless as they are. In such an environment, trusting your own judgment may actually mean drawing upon the wisdom of outstanding figures from history and successful thinkers.</p>
 ]]></content:encoded>
     </item>
   </channel>
