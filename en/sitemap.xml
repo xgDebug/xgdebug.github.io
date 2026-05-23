@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xgdebug.com/posts/investment/stock/cross-border-broker-overhaul/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/investment/stock/cross-border-broker-overhaul/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/investment/stock/cross-border-broker-overhaul/"
+                />
+  </url><url>
     <loc>https://xgdebug.com/posts/</loc>
-    <lastmod>2026-05-07T06:21:27+00:00</lastmod>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -15,6 +30,81 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/tags/economics/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/tags/economics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/tags/economics/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/posts/investment/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/investment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/investment/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/tags/notes/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/tags/notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/tags/notes/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/tags/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/tags/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/"
                 />
   </url><url>
     <loc>https://xgdebug.com/posts/life/survive-low-trust-society/</loc>
@@ -47,21 +137,6 @@
                 href="https://xgdebug.com/posts/life/"
                 />
   </url><url>
-    <loc>https://xgdebug.com/</loc>
-    <lastmod>2026-05-07T06:21:27+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/"
-                />
-  </url><url>
     <loc>https://xgdebug.com/tags/business/</loc>
     <lastmod>2026-04-07T10:54:53+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -77,21 +152,6 @@
                 href="https://xgdebug.com/tags/business/"
                 />
   </url><url>
-    <loc>https://xgdebug.com/tags/</loc>
-    <lastmod>2026-04-07T10:54:53+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/"
-                />
-  </url><url>
     <loc>https://xgdebug.com/posts/life/ovserver/trial-and-error-is-the-only-production-in-business/</loc>
     <lastmod>2026-04-07T10:54:53+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -105,21 +165,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/life/ovserver/trial-and-error-is-the-only-production-in-business/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/tags/notes/</loc>
-    <lastmod>2026-04-07T10:21:25+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/notes/"
                 />
   </url><url>
     <loc>https://xgdebug.com/posts/life/ovserver/matrix-hidden-logic-11-laws-of-power-and-business/</loc>
@@ -272,21 +317,6 @@
                 href="https://xgdebug.com/posts/investment/stock/2026-02-08-thoughts/"
                 />
   </url><url>
-    <loc>https://xgdebug.com/posts/investment/</loc>
-    <lastmod>2026-02-07T17:59:53+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/posts/investment/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/posts/investment/"
-                />
-  </url><url>
     <loc>https://xgdebug.com/tags/education/</loc>
     <lastmod>2026-02-06T10:11:53+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -330,21 +360,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/philosophy/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/tags/economics/</loc>
-    <lastmod>2026-02-06T10:08:42+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/economics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/economics/"
                 />
   </url><url>
     <loc>https://xgdebug.com/posts/philosophy/bullshit/from-governance-to-prison-management/</loc>

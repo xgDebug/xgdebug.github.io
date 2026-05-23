@@ -11,8 +11,31 @@
     </image>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 Apr 2026 10:21:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2026 15:51:31 +0800</lastBuildDate>
     <atom:link href="https://xgdebug.com/zh/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.22跨境券商大整顿</title>
+      <link>https://xgdebug.com/zh/posts/investment/stock/cross-border-broker-overhaul/</link>
+      <pubDate>Sat, 23 May 2026 15:51:31 +0800</pubDate>
+      <guid>https://xgdebug.com/zh/posts/investment/stock/cross-border-broker-overhaul/</guid>
+      <description>当不可能三角再次降临：跨境券商谢幕背后的汇率局与溢价局</description>
+      <content:encoded><![CDATA[<p>5月22日，监管靴子重重落下。证监会宣布没收老虎、富途、长桥三家券商的境内外全部非法所得。这不仅仅是一纸罚单，更是一个时代的终结。</p>
+<p>这一事件，再次验证了金融世界里那个冰冷的<strong>普通人不可能三角：普通人、有好处、不排队。</strong> 只要你是个普通人，一旦某个高收益路径变得不排队就能轻松进入，那么这个路径离关闭就不远了。</p>
+<h2 id="底层逻辑">底层逻辑</h2>
+<p>在很多人看来这是合规整治，但我认为更深层的动机在于外汇管理与宏观调控：</p>
+<ol>
+<li><strong>汇率升值的倒逼：</strong> 2026年以来，人民币汇率从7.3一路上破至6.7。这种强势升值虽然彰显了国力，但也极大地诱发了资金的出逃动机——毕竟，现在的RMB更值钱了，换成美元资产的性价比达到了三年最高。</li>
+<li><strong>底层们入场后的信号：</strong> 过去两年美股的史诗级牛市，让这种诱惑变成了全民性的躁动。当底层们都开始谈论标普500、试图绕道出海时，监管层感受到的就是这帮奴隶们要反了天了。</li>
+<li><strong>出口保护的必然：</strong> 6.7的汇率对国内出口商而言已是切肤之痛。要扭转这种不可持续的强势，必须先封堵非法流出通道，扎紧篱笆，才能腾出手来引导汇率有序回归。</li>
+</ol>
+<h2 id="两个预判">两个预判</h2>
+<ul>
+<li><strong>人民币贬值预期：</strong> 随着通道封堵完成，人民币汇率大概率会开启<code>降温模式</code>，逐步回到7.0以上，甚至触及7.2区间。</li>
+<li><strong>场内QDII的“溢价时代”：</strong> 既然直接出海的路被焊死了，境内投资者合规配置全球资产的唯一窗口就只剩下QDII。在额度高度稀缺的背景下，目前1%~4%的场内溢价只是开始。未来半年，场内QDII的溢价率极有可能常态化维持在5%~8%。</li>
+</ul>
+<h2 id="结语市场是检验真理的唯一标准当不排队的捷径消失我们只能支付更高的溢价去购买合规的船票">结语：市场是检验真理的唯一标准。当“不排队”的捷径消失，我们只能支付更高的溢价去购买合规的船票。</h2>
+]]></content:encoded>
+    </item>
     <item>
       <title>撕开 Matrix 刻意隐藏的底层逻辑：推动商业与权力的 11 条物理定律</title>
       <link>https://xgdebug.com/zh/posts/life/ovserver/matrix-hidden-logic-11-laws-of-power-and-business/</link>
