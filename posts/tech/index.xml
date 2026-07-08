@@ -126,35 +126,35 @@
 </span></span><span class="line"><span class="cl">ping -6 ipv6.google.com
 </span></span></code></pre></div><h1 id="common-issues-and-solutions"><strong>Common Issues and Solutions</strong></h1>
 <table>
-  <thead>
-      <tr>
-          <th>Issue</th>
-          <th>Cause</th>
-          <th>Solution</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>OpenWRT_B cannot obtain PD</td>
-          <td>OpenWRT_A did not correctly delegate the PD prefix</td>
-          <td>In OpenWRT_A&rsquo;s WAN6 interface Advanced Settings, change &ldquo;IPv6 Prefix Length&rdquo; to <code>60</code> or <code>56</code></td>
-      </tr>
-      <tr>
-          <td>PC cannot obtain address</td>
-          <td>RA/DHCPv6 services are disabled or blocked by the firewall</td>
-          <td>Check LAN interface IPv6 settings are set to &ldquo;Server Mode,&rdquo; and confirm the firewall allows forwarding</td>
-      </tr>
-      <tr>
-          <td>Address obtained but no internet</td>
-          <td>Missing default route or DNS</td>
-          <td>Ensure &ldquo;Always announce default router&rdquo; is checked in RA settings, and check DNS configuration</td>
-      </tr>
-      <tr>
-          <td>IPv6 address conflict</td>
-          <td>Subnet ID conflicts with OpenWRT_A</td>
-          <td>Modify OpenWRT_B LAN&rsquo;s &ldquo;IPv6 assignment hint&rdquo; to another value (1, 2, 3&hellip;)</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Issue</th>
+					<th>Cause</th>
+					<th>Solution</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>OpenWRT_B cannot obtain PD</td>
+					<td>OpenWRT_A did not correctly delegate the PD prefix</td>
+					<td>In OpenWRT_A&rsquo;s WAN6 interface Advanced Settings, change &ldquo;IPv6 Prefix Length&rdquo; to <code>60</code> or <code>56</code></td>
+			</tr>
+			<tr>
+					<td>PC cannot obtain address</td>
+					<td>RA/DHCPv6 services are disabled or blocked by the firewall</td>
+					<td>Check LAN interface IPv6 settings are set to &ldquo;Server Mode,&rdquo; and confirm the firewall allows forwarding</td>
+			</tr>
+			<tr>
+					<td>Address obtained but no internet</td>
+					<td>Missing default route or DNS</td>
+					<td>Ensure &ldquo;Always announce default router&rdquo; is checked in RA settings, and check DNS configuration</td>
+			</tr>
+			<tr>
+					<td>IPv6 address conflict</td>
+					<td>Subnet ID conflicts with OpenWRT_A</td>
+					<td>Modify OpenWRT_B LAN&rsquo;s &ldquo;IPv6 assignment hint&rdquo; to another value (1, 2, 3&hellip;)</td>
+			</tr>
+	</tbody>
 </table>
 <h1 id="recommended-configuration-summary"><strong>Recommended Configuration Summary</strong></h1>
 <p><strong>OpenWRT_A</strong> (Ensure):</p>
@@ -474,7 +474,7 @@ Value: Paste the content of the generated private key id_rsa.</p>
 </span></span></span><span class="line"><span class="cl"><span class="nt">jobs</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">deploy</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">steps: - name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout repository</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">steps</span><span class="p">:</span><span class="w"> </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout repository</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set up Hugo</span><span class="w">

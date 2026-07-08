@@ -126,35 +126,35 @@
 </span></span><span class="line"><span class="cl">ping -6 ipv6.google.com
 </span></span></code></pre></div><h1 id="常见问题与解决"><strong>常见问题与解决</strong></h1>
 <table>
-  <thead>
-      <tr>
-          <th>问题</th>
-          <th>原因</th>
-          <th>解决方案</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>OpenWRT_B获取不到PD</td>
-          <td>OpenWRT_A未正确分配PD前缀</td>
-          <td>在OpenWRT_A的WAN6接口高级设置中，将&quot;IPv6前缀长度&quot;改为<code>60</code>或<code>56</code></td>
-      </tr>
-      <tr>
-          <td>电脑获取不到地址</td>
-          <td>RA/DHCPv6服务未启用或防火墙阻拦</td>
-          <td>检查LAN口的IPv6设置为&quot;服务器模式&quot;，并确认防火墙允许转发</td>
-      </tr>
-      <tr>
-          <td>能获取地址但无法上网</td>
-          <td>缺少默认路由或DNS</td>
-          <td>确保RA设置中&quot;Always announce default router&quot;已勾选，并检查DNS配置</td>
-      </tr>
-      <tr>
-          <td>IPv6地址冲突</td>
-          <td>子网ID与OpenWRT_A冲突</td>
-          <td>修改OpenWRT_B LAN的&quot;IPv6 assignment hint&quot;为其他值（1,2,3&hellip;）</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>问题</th>
+					<th>原因</th>
+					<th>解决方案</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>OpenWRT_B获取不到PD</td>
+					<td>OpenWRT_A未正确分配PD前缀</td>
+					<td>在OpenWRT_A的WAN6接口高级设置中，将&quot;IPv6前缀长度&quot;改为<code>60</code>或<code>56</code></td>
+			</tr>
+			<tr>
+					<td>电脑获取不到地址</td>
+					<td>RA/DHCPv6服务未启用或防火墙阻拦</td>
+					<td>检查LAN口的IPv6设置为&quot;服务器模式&quot;，并确认防火墙允许转发</td>
+			</tr>
+			<tr>
+					<td>能获取地址但无法上网</td>
+					<td>缺少默认路由或DNS</td>
+					<td>确保RA设置中&quot;Always announce default router&quot;已勾选，并检查DNS配置</td>
+			</tr>
+			<tr>
+					<td>IPv6地址冲突</td>
+					<td>子网ID与OpenWRT_A冲突</td>
+					<td>修改OpenWRT_B LAN的&quot;IPv6 assignment hint&quot;为其他值（1,2,3&hellip;）</td>
+			</tr>
+	</tbody>
 </table>
 <h1 id="推荐配置总结"><strong>推荐配置总结</strong></h1>
 <p><strong>OpenWRT_A</strong>（确保）：</p>
@@ -464,7 +464,7 @@ Value: 将生成的私钥 id_rsa 的内容粘贴进去。</p>
 </span></span></span><span class="line"><span class="cl"><span class="nt">jobs</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">deploy</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="nt">steps: - name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout repository</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">steps</span><span class="p">:</span><span class="w"> </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout repository</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set up Hugo</span><span class="w">

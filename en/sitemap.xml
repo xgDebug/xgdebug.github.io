@@ -2,23 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xgdebug.com/posts/investment/stock/cross-border-broker-overhaul/</loc>
-    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/posts/investment/stock/cross-border-broker-overhaul/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/posts/investment/stock/cross-border-broker-overhaul/"
-                />
-  </url><url>
     <loc>https://xgdebug.com/posts/</loc>
-    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <lastmod>2026-07-08T00:14:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -32,8 +17,38 @@
                 href="https://xgdebug.com/posts/"
                 />
   </url><url>
+    <loc>https://xgdebug.com/posts/economics/stop-fighting-cycles-and-stop-believing-in-the-hard-work/</loc>
+    <lastmod>2026-07-08T00:14:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/economics/stop-fighting-cycles-and-stop-believing-in-the-hard-work/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/economics/stop-fighting-cycles-and-stop-believing-in-the-hard-work/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/posts/economics/</loc>
+    <lastmod>2026-07-08T00:14:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/economics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/economics/"
+                />
+  </url><url>
     <loc>https://xgdebug.com/tags/economics/</loc>
-    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <lastmod>2026-07-08T00:14:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -45,6 +60,51 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/tags/economics/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/tags/</loc>
+    <lastmod>2026-07-08T00:14:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/tags/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/</loc>
+    <lastmod>2026-07-08T00:14:26+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/posts/investment/stock/cross-border-broker-overhaul/</loc>
+    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/investment/stock/cross-border-broker-overhaul/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/investment/stock/cross-border-broker-overhaul/"
                 />
   </url><url>
     <loc>https://xgdebug.com/posts/investment/</loc>
@@ -75,36 +135,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/tags/notes/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/tags/</loc>
-    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/</loc>
-    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/"
                 />
   </url><url>
     <loc>https://xgdebug.com/posts/life/survive-low-trust-society/</loc>
@@ -645,21 +675,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/history/dictator/roadmap-rise-fall-dynasties-wandering-refugees-lying-flat-hidden-logic/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/posts/economics/</loc>
-    <lastmod>2025-10-04T03:28:51+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/posts/economics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/posts/economics/"
                 />
   </url><url>
     <loc>https://xgdebug.com/posts/economics/nash-equilibrium-world-system/</loc>
