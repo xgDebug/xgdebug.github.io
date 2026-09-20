@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xgdebug.com/zh/posts/</loc>
-    <lastmod>2026-08-11T11:13:09+00:00</lastmod>
+    <lastmod>2026-09-20T11:41:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -18,7 +18,7 @@
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/economics/</loc>
-    <lastmod>2026-08-11T11:13:09+00:00</lastmod>
+    <lastmod>2026-09-20T11:41:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -31,6 +31,26 @@
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/economics/"
                 />
+  </url><url>
+    <loc>https://xgdebug.com/zh/</loc>
+    <lastmod>2026-09-20T11:41:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/posts/economics/%E6%8A%95%E8%B5%84%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%B8%8D%E8%A6%81%E4%BA%8F%E9%92%B1_%E7%AC%AC%E4%BA%8C%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E5%BF%98%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%9D%A1/</loc>
+    <lastmod>2026-09-20T11:41:29+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://xgdebug.com/zh/tags/investment/</loc>
     <lastmod>2026-08-11T11:13:09+00:00</lastmod>
@@ -95,21 +115,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/series/the-simple-path-to-wealth/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/</loc>
-    <lastmod>2026-08-11T11:13:09+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/tags/economics/</loc>
