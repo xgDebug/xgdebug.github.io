@@ -9,7 +9,7 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.167.0</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 30 Nov 2025 01:39:49 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/zh/tags/linux/index.xml" rel="self" type="application/rss+xml" />
@@ -19,9 +19,9 @@
       <pubDate>Fri, 07 Nov 2025 11:40:50 +0000</pubDate>
       <guid>https://xgdebug.com/zh/posts/tech/openwrt/openwrt-dual-router-dhcpv6-pd-prefix-delegation-tutorial/</guid>
       <description>详解如何通过DHCPv6-PD在OpenWrt路由器级联环境下获取并分配IPv6公网前缀，包括WAN/LAN接口、RA/DHCPv6服务、防火墙与验证排错。</description>
-      <content:encoded><![CDATA[<h1 id="核心方案配置openwrt_"><strong>核心方案：配置OpenWRT_B通过DHCPv6-PD获取子前缀</strong></h1>
+      <content:encoded><![CDATA[<h1 id="核心方案配置openwrt_b通过dhcpv6-pd获取子前缀"><strong>核心方案：配置OpenWRT_B通过DHCPv6-PD获取子前缀</strong></h1>
 <p><strong>核心关键是要给对应的接口分配一个合适的前缀长度，并确保DHCPv6和RA服务正确启用。,最小也要63,才能给下一级路由器分配64位子网</strong></p>
-<h2 id="第一步配置openwrt_"><strong>第一步：配置OpenWRT_B的WAN口（连接OpenWRT_A）</strong></h2>
+<h2 id="第一步配置openwrt_b的wan口连接openwrt_a"><strong>第一步：配置OpenWRT_B的WAN口（连接OpenWRT_A）</strong></h2>
 <p>进入OpenWRT_B管理界面 → <strong>网络</strong> → <strong>接口</strong></p>
 <ol>
 <li><strong>编辑WAN接口</strong>（物理接口对应连接OpenWRT_A的网口）</li>
@@ -35,7 +35,7 @@
 <li><strong>切换到&quot;物理设置&quot;标签页</strong>：确认接口绑定正确（如eth0.2或lan口）</li>
 <li><strong>保存</strong></li>
 </ol>
-<h2 id="第二步配置openwrt_"><strong>第二步：配置OpenWRT_B的LAN口（连接你的电脑）</strong></h2>
+<h2 id="第二步配置openwrt_b的lan口连接你的电脑"><strong>第二步：配置OpenWRT_B的LAN口（连接你的电脑）</strong></h2>
 <p>仍在<strong>网络</strong> → <strong>接口</strong> → <strong>编辑LAN接口</strong></p>
 <ol>
 <li>
@@ -97,7 +97,7 @@
 </li>
 </ol>
 <h1 id="验证与排错"><strong>验证与排错</strong></h1>
-<h2 id="在openwrt_"><strong>在OpenWRT_B上执行以下命令：</strong></h2>
+<h2 id="在openwrt_b上执行以下命令"><strong>在OpenWRT_B上执行以下命令：</strong></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 检查是否成功获取PD</span>
 </span></span><span class="line"><span class="cl">ifstatus wan6
 </span></span><span class="line"><span class="cl">

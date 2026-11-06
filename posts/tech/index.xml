@@ -9,7 +9,7 @@
       <url>https://xgdebug.com/images/avatar.png</url>
       <link>https://xgdebug.com/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.167.0</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 30 Nov 2025 01:39:49 +0000</lastBuildDate>
     <atom:link href="https://xgdebug.com/posts/tech/index.xml" rel="self" type="application/rss+xml" />
@@ -19,9 +19,9 @@
       <pubDate>Fri, 07 Nov 2025 11:40:50 +0000</pubDate>
       <guid>https://xgdebug.com/posts/tech/openwrt/openwrt-dual-router-dhcpv6-pd-prefix-delegation-tutorial/</guid>
       <description>A detailed guide on how to obtain and allocate IPv6 public prefixes via DHCPv6-PD in an OpenWrt router cascade environment, covering WAN/LAN interfaces, RA/DHCPv6 services, firewall, and verification troubleshooting.</description>
-      <content:encoded><![CDATA[<h1 id="core-solution-configuring-openwrt_"><strong>Core Solution: Configuring OpenWRT_B to Obtain a Subprefix via DHCPv6-PD</strong></h1>
+      <content:encoded><![CDATA[<h1 id="core-solution-configuring-openwrt_b-to-obtain-a-subprefix-via-dhcpv6-pd"><strong>Core Solution: Configuring OpenWRT_B to Obtain a Subprefix via DHCPv6-PD</strong></h1>
 <p><strong>The core key is to assign a suitable prefix length to the corresponding interface and ensure that DHCPv6 and RA services are correctly enabled. A minimum of /63 is required to allocate a /64 subnet to the next-level router.</strong></p>
-<h2 id="step-1-configure-openwrt_"><strong>Step 1: Configure OpenWRT_B&rsquo;s WAN Port (Connected to OpenWRT_A)</strong></h2>
+<h2 id="step-1-configure-openwrt_bs-wan-port-connected-to-openwrt_a"><strong>Step 1: Configure OpenWRT_B&rsquo;s WAN Port (Connected to OpenWRT_A)</strong></h2>
 <p>Go to the OpenWRT_B management interface → <strong>Network</strong> → <strong>Interfaces</strong></p>
 <ol>
 <li><strong>Edit the WAN Interface</strong> (The physical interface corresponding to the port connected to OpenWRT_A)</li>
@@ -35,7 +35,7 @@
 <li><strong>Switch to the &ldquo;Physical Settings&rdquo; tab</strong>: Confirm the interface binding is correct (e.g., eth0.2 or LAN port)</li>
 <li><strong>Save</strong></li>
 </ol>
-<h2 id="step-2-configure-openwrt_"><strong>Step 2: Configure OpenWRT_B&rsquo;s LAN Port (Connected to Your PC)</strong></h2>
+<h2 id="step-2-configure-openwrt_bs-lan-port-connected-to-your-pc"><strong>Step 2: Configure OpenWRT_B&rsquo;s LAN Port (Connected to Your PC)</strong></h2>
 <p>Still in <strong>Network</strong> → <strong>Interfaces</strong> → <strong>Edit LAN Interface</strong></p>
 <ol>
 <li>
@@ -97,7 +97,7 @@
 </li>
 </ol>
 <h1 id="verification-and-troubleshooting"><strong>Verification and Troubleshooting</strong></h1>
-<h2 id="execute-the-following-commands-on-openwrt_"><strong>Execute the following commands on OpenWRT_B:</strong></h2>
+<h2 id="execute-the-following-commands-on-openwrt_b"><strong>Execute the following commands on OpenWRT_B:</strong></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Check if PD was successfully obtained</span>
 </span></span><span class="line"><span class="cl">ifstatus wan6
 </span></span><span class="line"><span class="cl">
