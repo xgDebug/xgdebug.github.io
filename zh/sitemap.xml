@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xgdebug.com/zh/posts/</loc>
-    <lastmod>2026-09-20T11:41:57+00:00</lastmod>
+    <lastmod>2026-11-06T04:58:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -15,6 +15,81 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/posts/philosophy/</loc>
+    <lastmod>2026-11-06T04:58:20+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/philosophy/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/tags/philosophy/</loc>
+    <lastmod>2026-11-06T04:58:20+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/tags/philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/tags/philosophy/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/tags/</loc>
+    <lastmod>2026-11-06T04:58:20+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/tags/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/</loc>
+    <lastmod>2026-11-06T04:58:20+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/"
+                />
+  </url><url>
+    <loc>https://xgdebug.com/zh/posts/philosophy/%E8%AF%86%E4%BA%BA_%E8%AF%86%E4%BA%8B_%E8%AF%86%E5%B1%80_30%E6%9D%A1%E7%94%9F%E5%AD%98%E6%99%BA%E6%85%A7/</loc>
+    <lastmod>2026-11-06T04:58:20+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/philosophy/%E8%AF%86%E4%BA%BA_%E8%AF%86%E4%BA%8B_%E8%AF%86%E5%B1%80_30%E6%9D%A1%E7%94%9F%E5%AD%98%E6%99%BA%E6%85%A7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/philosophy/%E8%AF%86%E4%BA%BA_%E8%AF%86%E4%BA%8B_%E8%AF%86%E5%B1%80_30%E6%9D%A1%E7%94%9F%E5%AD%98%E6%99%BA%E6%85%A7/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/economics/</loc>
@@ -32,25 +107,35 @@
                 href="https://xgdebug.com/posts/economics/"
                 />
   </url><url>
-    <loc>https://xgdebug.com/zh/</loc>
+    <loc>https://xgdebug.com/zh/tags/notes/</loc>
     <lastmod>2026-09-20T11:41:57+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xgdebug.com/zh/"
+                href="https://xgdebug.com/zh/tags/notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://xgdebug.com/"
+                href="https://xgdebug.com/tags/notes/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/economics/%E6%8A%95%E8%B5%84%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%B8%8D%E8%A6%81%E4%BA%8F%E9%92%B1_%E7%AC%AC%E4%BA%8C%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E5%BF%98%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%9D%A1/</loc>
     <lastmod>2026-09-20T11:41:57+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xgdebug.com/zh/posts/economics/%E6%8A%95%E8%B5%84%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%B8%8D%E8%A6%81%E4%BA%8F%E9%92%B1_%E7%AC%AC%E4%BA%8C%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E5%BF%98%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%9D%A1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://xgdebug.com/posts/economics/%E6%8A%95%E8%B5%84%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E4%B8%8D%E8%A6%81%E4%BA%8F%E9%92%B1_%E7%AC%AC%E4%BA%8C%E6%9D%A1%E8%A7%84%E5%88%99%E6%98%AF%E6%B0%B8%E8%BF%9C%E4%B8%8D%E8%A6%81%E5%BF%98%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%9D%A1/"
+                />
   </url><url>
     <loc>https://xgdebug.com/zh/tags/investment/</loc>
     <lastmod>2026-08-11T11:13:09+00:00</lastmod>
@@ -67,11 +152,6 @@
                 href="https://xgdebug.com/tags/investment/"
                 />
   </url><url>
-    <loc>https://xgdebug.com/zh/posts/economics/market_crashes_are_part_of_the_process_not_the_end_of_the_world/</loc>
-    <lastmod>2026-08-11T11:13:09+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://xgdebug.com/zh/series/</loc>
     <lastmod>2026-08-11T11:13:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,21 +165,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/series/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/tags/</loc>
-    <lastmod>2026-08-11T11:13:09+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/series/the-simple-path-to-wealth/</loc>
@@ -116,6 +181,11 @@
                 hreflang="en-US"
                 href="https://xgdebug.com/series/the-simple-path-to-wealth/"
                 />
+  </url><url>
+    <loc>https://xgdebug.com/zh/posts/economics/market_crashes_are_part_of_the_process_not_the_end_of_the_world/</loc>
+    <lastmod>2026-08-11T11:13:09+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://xgdebug.com/zh/tags/economics/</loc>
     <lastmod>2026-07-11T00:58:57+00:00</lastmod>
@@ -175,21 +245,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/posts/investment/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/tags/notes/</loc>
-    <lastmod>2026-05-23T15:51:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/notes/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/life/</loc>
@@ -280,21 +335,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/tags/observation/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/tags/philosophy/</loc>
-    <lastmod>2026-03-20T11:40:10+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/tags/philosophy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/tags/philosophy/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/life/ovserver/blue-star-observation-report-mist/</loc>
@@ -415,21 +455,6 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://xgdebug.com/tags/education/"
-                />
-  </url><url>
-    <loc>https://xgdebug.com/zh/posts/philosophy/</loc>
-    <lastmod>2026-02-06T10:11:53+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xgdebug.com/zh/posts/philosophy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://xgdebug.com/posts/philosophy/"
                 />
   </url><url>
     <loc>https://xgdebug.com/zh/posts/philosophy/bullshit/escaping-gu-education-survival-guide/</loc>
